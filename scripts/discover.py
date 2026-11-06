@@ -467,6 +467,7 @@ def official_watches(old_items):
                'detected':old.get('detected',NOW.date().isoformat()),
                'first_detected':old.get('first_detected',NOW.date().isoformat()),
                'last_checked':NOW.isoformat(timespec='seconds'),
+               'monitor_status':'Official source page fetched during this scan',
                'organization_candidate':org,'organization_key':org_key(org),
                'review_tier':'priority' if is_priority else 'watch','strong_evidence':{family:excerpt} if is_priority else {},
                'early_evidence':{} if is_priority else {family:excerpt},
@@ -482,6 +483,40 @@ def official_watches(old_items):
             result.append(item)
         except Exception as exc:
             failed.append(org+': '+type(exc).__name__+' '+str(exc)[:90])
+            # A researcher-verified public page passage can provide a TEMPORARY
+            # fallback when automation is blocked (403). Mark this as a cached
+            # source observation, NOT proof the page remains unchanged today.
+            baseline_date=spec.get('baseline_as_of','')
+            baseline_text=spec.get('baseline_excerpt','')
+            try:age=(NOW.date()-datetime.fromisoformat(baseline_date).date()).days
+            except ValueError:age=9999
+            if baseline_text and 0<=age<=30:
+                ident=hashlib.sha256(('watch:'+url).encode()).hexdigest()[:20]
+                old=old_by_id.get(ident,{})
+                family=spec.get('family','committee-reset')
+                is_priority=spec.get('tier')=='priority'
+                item={'id':ident,'title':org+' | '+spec.get('label','Organizational conference watch'),
+                  'summary':baseline_text[:280], 'url':url,'source':'Official association page (research snapshot)',
+                  'published':'','indexed_date':'',
+                  'date_basis':'Research snapshot checked '+baseline_date+'; runner could not access page in latest scan',
+                  'origin':'official_watch','platform':'','original_post_checked':False,
+                  'detected':old.get('detected',baseline_date),'first_detected':old.get('first_detected',baseline_date),
+                  'last_checked':old.get('last_checked',''),
+                  'monitor_status':'NOT RECHECKED LIVE: saved public-source research baseline from '+baseline_date,
+                  'organization_candidate':org,'organization_key':org_key(org),
+                  'review_tier':'priority' if is_priority else 'watch',
+                  'strong_evidence':{family:baseline_text} if is_priority else {},
+                  'early_evidence':{} if is_priority else {family:baseline_text},
+                  'types':[family],'priority':48 if is_priority else 30,
+                  'query_id':'official-page-baseline','play':'Smart',
+                  'next_action':'Recheck original source because automated access failed. '+spec.get('next_action',''),
+                  'flags':[],
+                  'signal_strength':'Previously verified public passage, NOT confirmed current; outside planning need unverified',
+                  'signal_evidence':{family:baseline_text},
+                  'evidence_gate':'Known public research baseline; URL not reachable from automated runner',
+                  'verified_revenue':False,'verified_event':False,'verified_opening':False,
+                  'qualification':'Unverified source watch'}
+                result.append(item)
         time.sleep(.1)
     return result,checks,failed
 
