@@ -1,12 +1,15 @@
 {
-  "generated_at": "2026-11-06T19:24:24+00:00",
+  "generated_at": "2026-11-06T19:33:06+00:00",
   "scanner_version": "4.0-two-lane-stacks",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
   "scan_sources_ok": 129,
-  "official_pages_checked": 0,
-  "official_pages_monitored": 0,
-  "official_watch_errors": [],
-  "scan_sources_failed": 0,
+  "official_pages_checked": 2,
+  "official_pages_monitored": 2,
+  "official_watch_errors": [
+    "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
+    "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden"
+  ],
+  "scan_sources_failed": 2,
   "scan_queries": 104,
   "social_index_queries": 45,
   "social_index_candidates_seen": 0,
@@ -19,15 +22,168 @@
   },
   "sources_attempted": 129,
   "coverage_warning": "Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.",
-  "new_discoveries": 1,
+  "new_discoveries": 3,
   "review_priority_count": 0,
-  "review_watch_count": 0,
-  "stacked_organizations": 0,
-  "organizations": [],
-  "rejected_irrelevant_hits": 802,
-  "previous_noise_removed": 1,
-  "errors": [],
-  "signals": [],
+  "review_watch_count": 2,
+  "stacked_organizations": 2,
+  "organizations": [
+    {
+      "key": "nonprofit association of oregon",
+      "name": "Nonprofit Association of Oregon",
+      "signal_ids": [
+        "b6bf4a5ddd897e69bd79"
+      ],
+      "families": [
+        "attendee-change"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "b6bf4a5ddd897e69bd79",
+          "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
+          "url": "https://nonprofitoregon.org/conference-notification-form/",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "families": [
+            "attendee-change"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-06",
+      "play": "Bold",
+      "qualifying_status": "Requires manual verification",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "priority": 45,
+      "stack_stage": "single-source clue",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "association of higher education parent family program professionals",
+      "name": "Association of Higher Education Parent/Family Program Professionals",
+      "signal_ids": [
+        "3e11a7c3c675163b29cb"
+      ],
+      "families": [
+        "committee-reset"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "3e11a7c3c675163b29cb",
+          "title": "Association of Higher Education Parent/Family Program Professionals | 2027 national conference planning committee recruiting",
+          "url": "https://www.aheppp.org/conference-team",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "families": [
+            "committee-reset"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-06",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "priority": 45,
+      "stack_stage": "single-source clue",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    }
+  ],
+  "rejected_irrelevant_hits": 357,
+  "previous_noise_removed": 0,
+  "errors": [
+    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
+    "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden"
+  ],
+  "signals": [
+    {
+      "id": "b6bf4a5ddd897e69bd79",
+      "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
+      "summary": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most",
+      "url": "https://nonprofitoregon.org/conference-notification-form/",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-06; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-06T19:33:06+00:00",
+      "organization_candidate": "Nonprofit Association of Oregon",
+      "organization_key": "nonprofit association of oregon",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "attendee-change": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most"
+      },
+      "types": [
+        "attendee-change"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Determine whether feedback from the latest Nonprofit Impact Conference is being used to change fall 2027 event planning. Confirm internal event staff and hotel agreements.",
+      "flags": [],
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "attendee-change": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "3e11a7c3c675163b29cb",
+      "title": "Association of Higher Education Parent/Family Program Professionals | 2027 national conference planning committee recruiting",
+      "summary": "rds) This position is not currently accepting applications. 2027 National Conference Planning Committee Reports to: Conference Chair(s) Term: 12 months (January 2027 – December 2027) Time commitment: 2–5 hours per",
+      "url": "https://www.aheppp.org/conference-team",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-06; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-06T19:33:06+00:00",
+      "organization_candidate": "Association of Higher Education Parent/Family Program Professionals",
+      "organization_key": "association of higher education parent family program professionals",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "committee-reset": "rds) This position is not currently accepting applications. 2027 National Conference Planning Committee Reports to: Conference Chair(s) Term: 12 months (January 2027 – December 2027) Time commitment: 2–5 hours per"
+      },
+      "types": [
+        "committee-reset"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Check whether hotel sourcing is already committed and whether its volunteer-led program needs outside logistical or contractual support. Confirm financial fit.",
+      "flags": [],
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "committee-reset": "rds) This position is not currently accepting applications. 2027 National Conference Planning Committee Reports to: Conference Chair(s) Term: 12 months (January 2027 – December 2027) Time commitment: 2–5 hours per"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    }
+  ],
   "discovery_enrichment": {
     "status": "public-index triage, not buyer qualification",
     "new_this_run": 0,
