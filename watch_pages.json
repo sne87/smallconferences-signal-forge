@@ -1,0 +1,41 @@
+{
+  "purpose": "Public, curator-selected association pages monitored for changes. These are research watches, not qualified leads or new RFPs.",
+  "sources": [
+    {
+      "organization": "Arkansas Education Association",
+      "url": "https://www.aeaonline.org/teach",
+      "label": "Summer 2027 conference calendar change",
+      "needle": "The Conference is currently being shifted to Summer 2027",
+      "family": "disruption",
+      "tier": "watch",
+      "next_action": "Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand."
+    },
+    {
+      "organization": "Nonprofit Association of Oregon",
+      "url": "https://nonprofitoregon.org/conference-notification-form/",
+      "label": "Attendee-input process for recurring conferences",
+      "needle": "Help NAO Shape Your Conference Experience",
+      "family": "attendee-change",
+      "tier": "watch",
+      "next_action": "Determine whether feedback from the latest Nonprofit Impact Conference is being used to change fall 2027 event planning. Confirm internal event staff and hotel agreements."
+    },
+    {
+      "organization": "New York State Association of Professional Land Surveyors",
+      "url": "https://www.nysapls.org/news/735249/HQ-Update-September-2026.htm",
+      "label": "2029 hotel proposals under review",
+      "needle": "reviewed proposals from Turning Stone and Resorts World Catskills",
+      "family": "venue-decision",
+      "tier": "priority",
+      "next_action": "Verify whether the 2029 negotiation remains open and whether the committee would welcome an independent total-cost review, despite existing internal planning responsibilities."
+    },
+    {
+      "organization": "Association of Higher Education Parent/Family Program Professionals",
+      "url": "https://www.aheppp.org/conference-team",
+      "label": "2027 national conference planning committee recruiting",
+      "needle": "2027 National Conference Planning Committee",
+      "family": "committee-reset",
+      "tier": "watch",
+      "next_action": "Check whether hotel sourcing is already committed and whether its volunteer-led program needs outside logistical or contractual support. Confirm financial fit."
+    }
+  ]
+}
