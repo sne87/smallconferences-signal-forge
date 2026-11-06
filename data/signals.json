@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T19:15:49+00:00",
+  "generated_at": "2026-11-06T19:17:36+00:00",
   "scanner_version": "4.0-two-lane-stacks",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
   "scan_sources_ok": 129,
@@ -56,7 +56,7 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 802,
+  "rejected_irrelevant_hits": 800,
   "previous_noise_removed": 0,
   "errors": [],
   "signals": [
