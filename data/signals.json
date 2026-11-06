@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T18:56:24+00:00",
+  "generated_at": "2026-11-06T18:58:50+00:00",
   "scanner_version": "3.1-buyer-evidence-gates",
   "purpose": "Specific pre-RFP planning clues only. No automatic buyer qualification or contract claims.",
   "scan_sources_ok": 91,
@@ -17,8 +17,8 @@
   "sources_attempted": 91,
   "coverage_warning": "Public news and indexed social search only. Indexes are incomplete and may not preserve original social post dates. Not direct or private-platform monitoring.",
   "new_discoveries": 0,
-  "rejected_irrelevant_hits": 501,
-  "previous_noise_removed": 58,
+  "rejected_irrelevant_hits": 138,
+  "previous_noise_removed": 0,
   "errors": [],
   "signals": [],
   "discovery_enrichment": {
