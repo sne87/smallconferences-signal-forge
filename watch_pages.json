@@ -8,7 +8,9 @@
       "needle": "The Conference is currently being shifted to Summer 2027",
       "family": "disruption",
       "tier": "watch",
-      "next_action": "Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand."
+      "next_action": "Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "The Conference is currently being shifted to Summer 2027."
     },
     {
       "organization": "Nonprofit Association of Oregon",
@@ -26,16 +28,9 @@
       "needle": "reviewed proposals from Turning Stone and Resorts World Catskills",
       "family": "venue-decision",
       "tier": "priority",
-      "next_action": "Verify whether the 2029 negotiation remains open and whether the committee would welcome an independent total-cost review, despite existing internal planning responsibilities."
-    },
-    {
-      "organization": "Association of Higher Education Parent/Family Program Professionals",
-      "url": "https://www.aheppp.org/conference-team",
-      "label": "2027 national conference planning committee recruiting",
-      "needle": "2027 National Conference Planning Committee",
-      "family": "committee-reset",
-      "tier": "watch",
-      "next_action": "Check whether hotel sourcing is already committed and whether its volunteer-led program needs outside logistical or contractual support. Confirm financial fit."
+      "next_action": "Verify whether the 2029 negotiation remains open and whether the committee would welcome an independent total-cost review, despite existing internal planning responsibilities.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference."
     }
   ]
 }
