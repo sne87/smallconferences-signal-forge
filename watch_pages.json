@@ -31,6 +31,39 @@
       "next_action": "Verify whether the 2029 negotiation remains open and whether the committee would welcome an independent total-cost review, despite existing internal planning responsibilities.",
       "baseline_as_of": "2026-11-06",
       "baseline_excerpt": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference."
+    },
+    {
+      "organization": "Arkansas Education Association",
+      "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
+      "label": "New executive director and program-operations leadership",
+      "needle": "Renee Johnson",
+      "family": "capacity",
+      "tier": "watch",
+      "next_action": "Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
+    },
+    {
+      "organization": "Nonprofit Association of Oregon",
+      "url": "https://nonprofitoregon.org/events-trainings/speaking-opportunities/",
+      "label": "2027 conference cycle and program decision milestones",
+      "needle": "Nonprofit Impact Conference",
+      "family": "event-review",
+      "tier": "watch",
+      "next_action": "Map the 2027 Nonprofit Impact Conference supplier decision cycle; the posted proposal dates are for speakers, not event management. Check whether event operations are internally staffed.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "NAO lists the fall 2027 Nonprofit Impact Conference and other 2027 programs; posted proposal windows concern speakers and session content, not venue sourcing."
+    },
+    {
+      "organization": "New York State Association of Professional Land Surveyors",
+      "url": "https://www.nysapls.org/news/731262/HQ-Update-July-2026.htm",
+      "label": "Board financial pressure and changing conference economics",
+      "needle": "declining revenue from educational programs and rising expenses",
+      "family": "economics",
+      "tier": "watch",
+      "next_action": "Determine whether the reported association financial concerns apply specifically to conference economics and whether there is an actionable cost review before any hotel decision.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "The NYSAPLS executive board reviewed its financial position in July 2026, noting declining revenue from educational programs and rising expenses, while discussing future annual conference locations."
     }
   ]
 }
