@@ -456,6 +456,8 @@ def official_watches(old_items):
         try:
             req=urllib.request.Request(url,headers={'User-Agent':HEADERS['User-Agent'],'Accept':'text/html,*/*'})
             with urllib.request.urlopen(req,timeout=10) as res:
+                if 'application/pdf' in res.headers.get('Content-Type','').lower():
+                    raise ValueError('PDF source requires visual review, preserving dated research snapshot only')
                 raw_html=res.read(800_000).decode('utf-8','replace')
             parser=PageText();parser.feed(raw_html)
             page=re.sub(r'\s+',' ',' '.join(parser.text)).strip()
@@ -486,7 +488,9 @@ def official_watches(old_items):
                'types':[family],'priority':61 if is_priority else 36,
                'query_id':'official-page-monitor','play':'Smart',
                'next_action':spec.get('next_action','Check the next event decision and incumbent planner.'),
-               'flags':[],'signal_strength':'Monitored official source passage; NOT proof of an open external contract',
+               'flags':spec.get('counterevidence_flags',[]),
+               'source_document_date':spec.get('source_document_date',''),
+               'signal_strength':'Monitored official source passage; NOT proof of an open external contract',
                'signal_evidence':{family:excerpt},
                'evidence_gate':'Named association and verifiable original page; recurring event/financial fit not yet verified',
                'verified_revenue':False,'verified_event':False,'verified_opening':False,
@@ -502,7 +506,7 @@ def official_watches(old_items):
             baseline_text=spec.get('baseline_excerpt','')
             try:age=(NOW.date()-datetime.fromisoformat(baseline_date).date()).days
             except ValueError:age=9999
-            if baseline_text and 0<=age<=30:
+            if baseline_text and 0<=age<=180:
                 ident=hashlib.sha256(('watch:'+url).encode()).hexdigest()[:20]
                 old=old_by_id.get(ident,{})
                 family=spec.get('family','committee-reset')
@@ -514,15 +518,16 @@ def official_watches(old_items):
                   'origin':'official_watch','platform':'','original_post_checked':False,
                   'detected':old.get('detected',baseline_date),'first_detected':old.get('first_detected',baseline_date),
                   'last_checked':old.get('last_checked',''),
-                  'monitor_status':'NOT RECHECKED LIVE: saved public-source research baseline from '+baseline_date,
+                  'monitor_status':('STALE RESEARCH ONLY: original page not rechecked since '+baseline_date if age>30 else 'NOT RECHECKED LIVE: saved public-source research baseline from '+baseline_date),
                   'organization_candidate':org,'organization_key':org_key(org),
                   'review_tier':'priority' if is_priority else 'watch',
                   'strong_evidence':{family:baseline_text} if is_priority else {},
                   'early_evidence':{} if is_priority else {family:baseline_text},
-                  'types':[family],'priority':48 if is_priority else 30,
+                  'types':[family],'priority':(20 if age>30 else 48 if is_priority else 30),
                   'query_id':'official-page-baseline','play':'Smart',
                   'next_action':'Recheck original source because automated access failed. '+spec.get('next_action',''),
-                  'flags':[],
+                  'flags':spec.get('counterevidence_flags',[]),
+                  'source_document_date':spec.get('source_document_date',''),
                   'signal_strength':'Previously verified public passage, NOT confirmed current; outside planning need unverified',
                   'signal_evidence':{family:baseline_text},
                   'evidence_gate':'Known public research baseline; URL not reachable from automated runner',
@@ -556,6 +561,7 @@ def organization_stacks(items):
              'evidence':[],'priority_count':0,'watch_count':0,'most_recent':'',
              'play':'Smart','qualifying_status':'Requires manual verification'})
         group['signal_ids'].append(x['id'])
+        group['first_detected']=min(group.get('first_detected','9999-12-31'),x.get('first_detected') or x.get('detected') or '9999-12-31')
         group['families'].update(x.get('types',[]))
         if x.get('review_tier')=='priority':group['priority_count']+=1
         else:group['watch_count']+=1
@@ -569,6 +575,9 @@ def organization_stacks(items):
         group['sources'].add(src)
         group['evidence'].append({'id':x['id'],'title':x['title'],'url':x['url'],
                'source':x.get('source',''),'published':x.get('published') or x.get('indexed_date') or '',
+               'document_date':x.get('source_document_date',''),
+               'freshness':x.get('monitor_status',''),
+               'counterevidence_flags':x.get('flags',[]),
                'families':x.get('types',[]),'tier':x.get('review_tier','watch')})
     out=[]
     for group in groups.values():
@@ -581,8 +590,11 @@ def organization_stacks(items):
         group['families']=sorted(group['families'])
         group['commitment_flags']=sorted(group['commitment_flags'])
         group['priority']=min(92,28 + min(kind_count,4)*10 + min(source_count,3)*7 + (10 if group['priority_count'] else 0) - (12 if group['commitment_flags'] else 0))
-        group['stack_stage']=('multi-source, multi-signal (unverified)' if source_count>=2 and kind_count>=2
-            else 'multiple mentions, single-family or source' if n>=2
+        # Revenue filings and the recurring event calendar support fit, but do
+        # NOT independently corroborate an open planning or procurement window.
+        buying_families=set(group['families'])-{'verified-financial-fit','event-cycle','decision-cadence','venue-committed'}
+        group['stack_stage']=('multiple sourced planning clues, contract openness unverified' if source_count>=2 and len(buying_families)>=2
+            else 'multiple evidence items, no verified buying window' if n>=2
             else 'single-source clue')
         group['first_question']=(
            'Which next conference decision is not yet contracted, and who authorizes an external planner?' if group['priority_count']
@@ -680,12 +692,14 @@ def run():
             x['priority']=max(10,int(x.get('priority',36))-12)
             x['next_action']='Reopen the original page; source watch was unreachable or the expected phrase changed. '+x.get('next_action','')
             seen[x['id']]=x
-    cutoff=(NOW.date()-timedelta(days=120)).isoformat()
+    cutoff=(NOW.date()-timedelta(days=180)).isoformat()
     kept=[x for x in seen.values() if (x.get('published') or x.get('detected') or '0000')>=cutoff]
     kept.sort(key=lambda x:(x.get('published') or x.get('indexed_date') or x.get('detected') or '',x.get('priority',0)),reverse=True)
     kept=kept[:180]
     organizations=organization_stacks(kept)
-    out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'4.0-two-lane-stacks',
+    old_org_keys={x.get('organization_key') for x in previous if x.get('organization_key')}
+    new_organizations=[g['name'] for g in organizations if g.get('key') not in old_org_keys]
+    out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'4.1-new-organizer-intelligence',
          'purpose':'Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.',
          'scan_sources_ok':fetched,'official_pages_checked':watched_ok,
          'official_pages_monitored':len(watched),'official_watch_errors':watch_errors,
@@ -695,7 +709,9 @@ def run():
          'social_by_platform':{p:sum(1 for x in kept if x.get('platform')==p) for p,_ in SOCIAL_DOMAINS},
          'sources_attempted':len(QUERIES)+5+sum(i%3==1 for i in range(len(QUERIES)))+social_attempted,
          'coverage_warning':'Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.',
-         'new_discoveries':fresh,'review_priority_count':sum(x.get('review_tier')=='priority' for x in kept),
+         'new_discoveries':fresh,'new_organizations':new_organizations,
+         'new_organizations_count':len(new_organizations),
+         'review_priority_count':sum(x.get('review_tier')=='priority' for x in kept),
          'review_watch_count':sum(x.get('review_tier')=='watch' for x in kept),
          'stacked_organizations':len(organizations),
          'organizations':organizations,'rejected_irrelevant_hits':rejected,

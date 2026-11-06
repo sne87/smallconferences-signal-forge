@@ -64,6 +64,86 @@
       "next_action": "Determine whether the reported association financial concerns apply specifically to conference economics and whether there is an actionable cost review before any hotel decision.",
       "baseline_as_of": "2026-11-06",
       "baseline_excerpt": "The NYSAPLS executive board reviewed its financial position in July 2026, noting declining revenue from educational programs and rising expenses, while discussing future annual conference locations."
+    },
+    {
+      "organization": "Association of Local Government Auditors",
+      "url": "https://algaonline.org/page/LTCP_Site_Selection",
+      "label": "Conference site votes three years ahead; 2029 cycle timing check",
+      "needle": "The ALGA Board of Directors votes to approve future conference sites three years in advance",
+      "family": "decision-cadence",
+      "tier": "watch",
+      "next_action": "Establish whether ALGA's 2029 conference city and hotel have already been approved; confirm whether its Site Selection Subcommittee permits independent sourcing advice. 2026-2028 cities are already announced.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "ALGA's board approves conference sites three years ahead. As of February 2026, 2026 Cleveland, 2027 Denver and 2028 St. Louis were selected; 2029 status was not established by this source.",
+      "source_document_date": "2026-02",
+      "counterevidence_flags": [
+        "2026–2028 host cities already approved"
+      ]
+    },
+    {
+      "organization": "Association of Local Government Auditors",
+      "url": "https://algaonline.org/page/conference",
+      "label": "Recurring hybrid annual conference and hundreds of attendees",
+      "needle": "2027 ALGA Annual Conference in Denver",
+      "family": "event-cycle",
+      "tier": "watch",
+      "next_action": "Research whether the 2029 annual event has an open venue decision and who manages vendor agreements; site subcommittee owns selection.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "ALGA advertises the May 2–5, 2027 hybrid annual conference in Denver, which draws hundreds in person and online.",
+      "counterevidence_flags": [
+        "2027 host city already announced"
+      ]
+    },
+    {
+      "organization": "Association of Local Government Auditors",
+      "url": "https://projects.propublica.org/nonprofits/organizations/232539807",
+      "label": "FY2025 $1.10M revenue supports financial fit",
+      "needle": "$1,101,786",
+      "family": "verified-financial-fit",
+      "tier": "watch",
+      "next_action": "Use the filed FY2025 Form 990 and audited statements to distinguish total nonprofit revenue, $615,052 conference revenue and $454,130 conference expenses. Conference margin is not an assumed savings opportunity.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "FY2025 Form 990, EIN 23-2539807: total revenue $1,101,786; independently audited FY2025 statements list $615,052 conference revenue and $454,130 conference expenses.",
+      "source_document_date": "FY2025"
+    },
+    {
+      "organization": "Council of Academic Programs in Communication Sciences and Disorders",
+      "url": "https://www.capcsd.org/assets/pdf/February%2B2025%2BBOD%2BMeeting%2BMinutes",
+      "label": "Board reviewed conference revenue and cost reduction, February 2025",
+      "needle": "Revenue generating and cost reduction strategies for the conference were discussed",
+      "family": "economics",
+      "tier": "watch",
+      "next_action": "The financial discussion is from February 2025, not a fresh 2026 trigger. Look for current board action, 2028 venue sourcing dates, and whether cost review can be outsourced despite internal staff.",
+      "source_document_date": "2025-02-09 to 2025-02-11",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "CAPCSD board minutes for February 9–11, 2025 say the board discussed future conference financial implications, revenue-generation and cost-reduction strategies, including evaluating tier-one and tier-two cities."
+    },
+    {
+      "organization": "Council of Academic Programs in Communication Sciences and Disorders",
+      "url": "https://www.capcsd.org/annual-conference/",
+      "label": "2027 annual conference subsidized; host hotel publicly named",
+      "needle": "CAPCSD is subsidizing the 2027 annual conference",
+      "family": "event-economics",
+      "tier": "watch",
+      "next_action": "Do not pitch 2027 venue sourcing: Atlanta Marriott Marquis is already named. Find the 2028 venue-planning cycle and whether full-service support is open; check current director of professional development and board approval.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "Official CAPCSD 2027 conference page says registration fees are subsidized and below actual per-person cost; the March 31–April 3, 2027 meeting is listed at Atlanta Marriott Marquis.",
+      "counterevidence_flags": [
+        "2027 host hotel already publicly named"
+      ],
+      "source_document_date": "2027 event notice"
+    },
+    {
+      "organization": "Council of Academic Programs in Communication Sciences and Disorders",
+      "url": "https://projects.propublica.org/nonprofits/organizations/630784938",
+      "label": "FY2025 $1.93M revenue verifies financial range",
+      "needle": "$1,930,497",
+      "family": "verified-financial-fit",
+      "tier": "watch",
+      "next_action": "Confirm legal identity and EIN 63-0784938; ProPublica displays an older legal name. FY2025 total revenue is not conference spend.",
+      "baseline_as_of": "2026-11-06",
+      "baseline_excerpt": "FY2025 Form 990, EIN 63-0784938, reports $1,930,497 total revenue. ProPublica uses an older organizational name, requiring an exact EIN identity confirmation.",
+      "source_document_date": "FY2025"
     }
   ]
 }
