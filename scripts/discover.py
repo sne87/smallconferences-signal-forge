@@ -8,6 +8,7 @@ Never infer that an unsigned contract, external planning need, or buyer exists.
 from __future__ import annotations
 import hashlib, html, json, re, sys, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -254,7 +255,7 @@ EARLY_SIGNALS = {
 
 # Do not mistake a host hotel's construction, a generic event consultant blog,
 # or a speaker-session CFP for organizer purchasing intent.
-HARD_NEGATIVE = re.compile(r'\b(?:what is a conference|dictionary|wikipedia|conference planning tips|best conferences to attend|top \d+ conferences|conference industry trends|how to plan a conference)\b',re.I)
+HARD_NEGATIVE = re.compile(r'\b(?:what is a conference|dictionary|wikipedia|conference planning tips|best conferences to attend|top \d+ conferences|conference industry trends|conference industry outlook|industry outlook survey|conference sector survey|how to plan a conference)\b',re.I)
 
 def weak_evidence(txt):
     found={}
@@ -414,6 +415,76 @@ def as_candidate(article,query_label):
       'verified_revenue':False,'verified_event':False,'verified_opening':False,
       'qualification':'Unverified discovery'}
 
+# Official-organization source watches cover quiet pages that rarely appear in
+# RSS/news. These start as transparent, manually chosen source watches, not
+# auto-discovered buyer intent. Failed fetches are reported, never filled in.
+class PageText(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.skip=0; self.text=[]
+    def handle_starttag(self,tag,attrs):
+        if tag in ('script','style','noscript','svg'):self.skip+=1
+        if tag in ('p','h1','h2','h3','li','section','br'):self.text.append(' ')
+    def handle_endtag(self,tag):
+        if tag in ('script','style','noscript','svg') and self.skip:self.skip-=1
+        if tag in ('p','h1','h2','h3','li','section','br'):self.text.append(' ')
+    def handle_data(self,data):
+        if not self.skip:self.text.append(data)
+
+def official_watches(old_items):
+    try:
+        raw=json.loads((ROOT/'watch_pages.json').read_text(encoding='utf-8'))
+        pages=raw.get('sources',[])
+    except (ValueError,OSError):pages=[]
+    old_by_id={v.get('id'):v for v in old_items}
+    result=[];checks=0;failed=[]
+    for spec in pages[:20]:
+        url=spec.get('url','');org=spec.get('organization','');needle=spec.get('needle','')
+        if not url.startswith('https://') or not org or len(needle)<10:continue
+        try:
+            req=urllib.request.Request(url,headers={'User-Agent':HEADERS['User-Agent'],'Accept':'text/html,*/*'})
+            with urllib.request.urlopen(req,timeout=10) as res:
+                raw_html=res.read(800_000).decode('utf-8','replace')
+            parser=PageText();parser.feed(raw_html)
+            page=re.sub(r'\s+',' ',' '.join(parser.text)).strip()
+            needle_norm=re.sub(r'\s+',' ',needle).strip()
+            # An exact known public passage must still exist. If not, escalate
+            # for manual review and do not pretend this source is current.
+            match=re.search(re.escape(needle_norm),page,re.I)
+            if not match:
+                failed.append(org+': expected source passage absent or changed')
+                continue
+            checks+=1
+            excerpt=page[max(0,match.start()-60):min(len(page),match.end()+110)]
+            ident=hashlib.sha256(('watch:'+url).encode()).hexdigest()[:20]
+            old=old_by_id.get(ident,{})
+            family=spec.get('family','committee-reset')
+            is_priority=spec.get('tier')=='priority'
+            item={'id':ident,'title':org+' | '+spec.get('label','Organizational conference watch'),
+               'summary':excerpt[:360],'url':url,'source':'Official association page (monitored)',
+               'published':'','indexed_date':'','date_basis':'Public webpage checked on '+NOW.date().isoformat()+'; original publication date not established',
+               'origin':'official_watch','platform':'','original_post_checked':False,
+               'detected':old.get('detected',NOW.date().isoformat()),
+               'first_detected':old.get('first_detected',NOW.date().isoformat()),
+               'last_checked':NOW.isoformat(timespec='seconds'),
+               'organization_candidate':org,'organization_key':org_key(org),
+               'review_tier':'priority' if is_priority else 'watch','strong_evidence':{family:excerpt} if is_priority else {},
+               'early_evidence':{} if is_priority else {family:excerpt},
+               'types':[family],'priority':61 if is_priority else 36,
+               'query_id':'official-page-monitor','play':'Smart',
+               'next_action':spec.get('next_action','Check the next event decision and incumbent planner.'),
+               'flags':[],'signal_strength':'Monitored official source passage; NOT proof of an open external contract',
+               'signal_evidence':{family:excerpt},
+               'evidence_gate':'Named association and verifiable original page; recurring event/financial fit not yet verified',
+               'verified_revenue':False,'verified_event':False,'verified_opening':False,
+               'qualification':'Unverified source watch'}
+            if old.get('research_assist'):item['research_assist']=old['research_assist']
+            result.append(item)
+        except Exception as exc:
+            failed.append(org+': '+type(exc).__name__+' '+str(exc)[:90])
+        time.sleep(.1)
+    return result,checks,failed
+
 def existing():
     if not DEST.exists():return []
     try:
@@ -483,6 +554,7 @@ def run():
     # discovery feed only. It does not erase private saved review/evidence notes.
     for x in previous:
         if not isinstance(x,dict) or not x.get('id'):continue
+        if x.get('origin')=='official_watch':continue
         source={'title':x.get('title',''),'summary':x.get('summary',''),
                 'url':x.get('url',''),'source':x.get('source',''),
                 'published':x.get('published','')}
@@ -536,6 +608,31 @@ def run():
         except Exception as ex:
             failed.append(f'{label} (public index): {type(ex).__name__}: {str(ex)[:100]}')
         time.sleep(.2)
+    watched,watched_ok,watch_errors=official_watches(previous)
+    for item in watched:
+        if item['id'] in seen:
+            # Direct official source supersedes an indexed duplicate only when the
+            # exact same source ID was previously present.
+            seen[item['id']].update(item)
+        else:
+            seen[item['id']]=item
+            if not any(x.get('id')==item['id'] for x in previous):fresh+=1
+    failed.extend('official watch: '+x for x in watch_errors)
+    # Preserve a recently verified official watch during temporary HTTP failure.
+    # Mark it stale, keep the original last-checked timestamp, and NEVER call
+    # the cached observation a fresh source confirmation.
+    watched_ids={x['id'] for x in watched}
+    for old in previous:
+        if old.get('origin')!='official_watch' or old.get('id') in watched_ids:continue
+        last_checked=old.get('last_checked','')[:10]
+        try:age=(NOW.date()-datetime.fromisoformat(last_checked).date()).days
+        except ValueError:continue
+        if 0<=age<=30:
+            x=dict(old)
+            x['monitor_status']='Source was not revalidated in latest scan; last verified '+last_checked
+            x['priority']=max(10,int(x.get('priority',36))-12)
+            x['next_action']='Reopen the original page; source watch was unreachable or the expected phrase changed. '+x.get('next_action','')
+            seen[x['id']]=x
     cutoff=(NOW.date()-timedelta(days=120)).isoformat()
     kept=[x for x in seen.values() if (x.get('published') or x.get('detected') or '0000')>=cutoff]
     kept.sort(key=lambda x:(x.get('published') or x.get('indexed_date') or x.get('detected') or '',x.get('priority',0)),reverse=True)
@@ -543,12 +640,14 @@ def run():
     organizations=organization_stacks(kept)
     out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'4.0-two-lane-stacks',
          'purpose':'Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.',
-         'scan_sources_ok':fetched,'scan_sources_failed':len(failed),
+         'scan_sources_ok':fetched,'official_pages_checked':watched_ok,
+         'official_pages_monitored':len(watched),'official_watch_errors':watch_errors,
+         'scan_sources_failed':len(failed),
          'scan_queries':len(QUERIES)+social_attempted,'social_index_queries':social_attempted,
          'social_index_candidates_seen':social_found,
          'social_by_platform':{p:sum(1 for x in kept if x.get('platform')==p) for p,_ in SOCIAL_DOMAINS},
          'sources_attempted':len(QUERIES)+5+sum(i%3==1 for i in range(len(QUERIES)))+social_attempted,
-         'coverage_warning':'Public news and indexed social search only. Indexes are incomplete and may not preserve original social post dates. Not direct or private-platform monitoring.',
+         'coverage_warning':'Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.',
          'new_discoveries':fresh,'review_priority_count':sum(x.get('review_tier')=='priority' for x in kept),
          'review_watch_count':sum(x.get('review_tier')=='watch' for x in kept),
          'stacked_organizations':len(organizations),
