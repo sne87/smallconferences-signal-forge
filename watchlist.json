@@ -1,0 +1,7 @@
+{
+  "targets": [
+    {"name": "Arkansas Education Association", "state": "AR", "ein": ""},
+    {"name": "Nonprofit Association of Oregon", "state": "OR", "ein": ""},
+    {"name": "New York State Association of Professional Land Surveyors", "state": "NY", "ein": ""}
+  ]
+}
