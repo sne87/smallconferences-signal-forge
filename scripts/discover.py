@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Signal Forge evidence-first public-source discovery for Robert Kraus.
+"""Signal Forge two-lane public discovery and organization signal stacking.
 
-Only public RSS/indexed pages; no private social scraping, no paid APIs.
-An event announcement alone is NOT a prospect. This tool requires a recognizable
-organizer AND evidence of an influenceable conference planning decision/problem.
-All results remain unverified until a human checks original sources.
+Public indexes only. Named organizers plus documented early change clues are
+retained as WATCH; specific purchasing or operational changes are PRIORITY.
+Never infer that an unsigned contract, external planning need, or buyer exists.
 """
 from __future__ import annotations
 import hashlib, html, json, re, sys, time, urllib.parse, urllib.request
@@ -66,6 +65,31 @@ QUERIES = [
  ('veterans-site', '"veterans association" "annual convention" "site proposals"'),
 ]
 
+
+# Broad association-owned pages are needed because exact 4-phrase news queries
+# rarely return anything. These are still gated by *article content*, not by
+# matching a search phrase. More matches never means more qualified prospects.
+QUERIES += [
+ ('committee-current','"2027 conference committee" "association"'),
+ ('committee-current-alt','"2027 conference planning committee" "society"'),
+ ('conference-survey','"association" "2027" "conference survey"'),
+ ('future-site','"association" "2028" "conference" "locations"'),
+ ('site-selection','"association" "conference" "site selection"'),
+ ('conference-budget','"association" "conference" "budget review"'),
+ ('conference-change','"association" "conference" "change next year"'),
+ ('new-chair-open','"association" "conference chair" "volunteers"'),
+ ('planning-window','"annual conference" "committee" "2027"'),
+ ('location-decision','"conference" "location" "2027" "proposals"'),
+ ('nonprofit-venue','"nonprofit" "conference" "venue options"'),
+ ('society-conference-planning','"professional society" "2027" "conference planning"'),
+ ('convention-2028','"state association" "2028 convention" "planning"'),
+ ('members-next-event','"association" "conference" "what would you change"'),
+ ('site-host-interest','"annual meeting" "host site" "association"'),
+ ('conference-finance-board','"conference committee" "budget" "board"'),
+ ('after-conference-feedback','"association" "conference" "evaluation results"'),
+ ('regional-attendee','"regional conference" "planning committee" "2027"'),
+]
+
 SOCIAL_TOPICS = [
  ('volunteer-shortage','"conference planning committee" "need volunteers"'),
  ('hotel-frustration','"association" "conference hotel" "too expensive"'),
@@ -111,6 +135,48 @@ EVENT_REGEX = re.compile(r'\b(?:conference|convention|annual meeting|annual gath
 BUYER_REGEX = re.compile(r'\b(?:association|professional society|historical society|nonprofit|non-profit|federation|fraternal|sorority|fraternity|chamber of commerce|membership organization|member association|faith-based organization|church association|veterans organization|guild|regional chapter|state chapter|education council)\b',re.I)
 # Name-like organization references, not just the word "association" alone.
 NAMED_BUYER_REGEX = re.compile(r'\b(?:(?:[A-Z][A-Za-z0-9&\x27.\-]*|of|the|for|and)\s+){1,11}(?:Association|Society|Federation|Council|Alliance|Coalition|Foundation|Chamber|Guild|Network|Fraternity|Sorority|Chapter)\b|\b(?:Association|Society|Federation|Council|Alliance|Coalition|Foundation|Chamber|Guild)\s+of\s+(?:(?:[A-Z][A-Za-z\x27.\-]+|the|and)\s*){1,7}', re.I)
+
+# Extract a defensible candidate organizer name. A name is not proof of EIN,
+# nonprofit status, buying authority, or ownership of a specific event.
+ORG_SUFFIX = r'(?:Association|Society|Federation|Council|Alliance|Coalition|Foundation|Chamber|Guild|Network|Fraternity|Sorority|Chapter)'
+ORG_NAME_1 = re.compile(
+    r"\b((?:[A-Z][A-Za-z0-9&'.-]+\s+){1,9}" + ORG_SUFFIX +
+    r"(?:\s+of\s+(?:[A-Z][A-Za-z&'.-]+\s*){1,7})?)\b")
+ORG_NAME_2 = re.compile(
+    r"\b(" + ORG_SUFFIX + r"\s+(?:of|for)\s+(?:(?:[A-Z][A-Za-z&'.-]+|the|of|and)\s*){2,9})\b")
+BAD_NAME_START = {'The','Our','Your','Upcoming','National Conference','Annual','Event','Join','Conference','2027','2028','2029'}
+BAD_ORG_NAMES = {'association','society','association conference','conference association','planning association', 'conference planning committee'}
+
+def candidate_organization(title, summary='', source='', known_names=()):
+    txt=' '.join((title or '',summary or ''))
+    # Confirm a known watchlist organization only when the full name occurs.
+    for name in sorted(known_names,key=len,reverse=True):
+        if re.search(r'(?<![\w])'+re.escape(name)+r'(?![\w])',txt,re.I):return name
+    matches=[]
+    for fragment in (title or '',source or '',summary or ''):
+        for rx in (ORG_NAME_1,ORG_NAME_2):
+            for m in rx.finditer(fragment):
+                name=re.sub(r'\s+',' ',m.group(1)).strip(' -:|,.')
+                name=re.sub(r'^The\s+','',name)
+                if len(name)<12 or len(name)>130 or name.lower() in BAD_ORG_NAMES:continue
+                if name.split()[0] in BAD_NAME_START:continue
+                if re.search(r'\b(?:Planning|Conference|Annual|Meeting|Hotel|Session|Program|Event)\s+'+ORG_SUFFIX+r'$' ,name):continue
+                matches.append((len(name),name))
+        if matches:break
+    return max(matches)[1] if matches else ''
+
+def org_key(name):
+    return re.sub(r'[^a-z0-9]+',' ',re.sub(r'^the\s+','',name.lower())).strip()
+
+
+def read_watchlist_names():
+    try:
+        source=json.loads((ROOT/'watchlist.json').read_text(encoding='utf-8'))
+        return [v['name'].strip() for v in source.get('targets',[]) if isinstance(v,dict) and v.get('name')]
+    except (OSError,ValueError,KeyError):return []
+
+WATCHLIST_NAMES=read_watchlist_names()
+
 # U.S.-specific foreign-place terms used as cautious exclusions, not as proof of
 # geography when absent. A source could still require human confirmation.
 FOREIGN_CONTEXT = re.compile(r'\b(?:Nigeria|Kenya|Scotland|Britain|British|United Kingdom|London|Southampton|Australia|India|Pakistan|Philippines|Jamaica|Toronto|Ottawa|Canadian)\b',re.I)
@@ -165,6 +231,41 @@ SIGNALS = {
   r'\b(?:association|society|foundation) (?:board|leadership)\b.{0,95}\b(?:conference|convention)\b.{0,60}\b(?:strategy|redesign|budget|restructure|review|change)\w*',
  ],
 }
+
+# Weaker, early indicators deserve review but MUST NOT be called buying intent.
+# A routine conference announcement, speaker CFP, or abstract call is not enough.
+EARLY_SIGNALS = {
+ 'committee-forming': [
+   r'\b(?:20(?:26|27|28|29|30) )?(?:annual |national |regional )?conference (?:planning )?committee\b',
+   r'\bconference committee\b.{0,80}\b(?:apply|join|volunteer|recruit|meeting|open positions|new members|202[6-9])\b',
+   r'\b(?:volunteers|nominations|applications|interest form)\b.{0,90}\bconference (?:planning )?committee\b'],
+ 'location-exploration': [
+   r'\b(?:future conference|conference locations?|host (?:cities|city|sites?)|site selection)\b.{0,100}\b(?:recommendations?|suggestions?|input|consider|looking|proposals|options|committee)\b',
+   r'\b(?:2027|2028|2029)\b.{0,80}\b(?:conference|convention)\b.{0,75}\b(?:location|host city|host site|venue)\b'],
+ 'event-review': [
+   r'\b(?:conference|annual meeting|annual convention)\b.{0,75}\b(?:survey|evaluation|feedback|debrief|improvements)\b',
+   r'\b(?:attendee|member)\b.{0,40}\b(?:survey|feedback)\b.{0,50}\bconference\b'],
+ 'operating-transition': [
+   r'\b(?:annual conference|convention|annual meeting)\b.{0,110}\b(?:new chair|new executive director|new planning team|planning changes|new format|moving to summer)\b',
+   r'\b(?:new conference chair|conference chair transition|conference planning handoff)\b'],
+ 'economics-watch': [
+   r'\b(?:conference|convention|annual meeting)\b.{0,80}\b(?:budget|costs|revenue|hotel contract|room block|food and beverage)\b'],
+}
+
+# Do not mistake a host hotel's construction, a generic event consultant blog,
+# or a speaker-session CFP for organizer purchasing intent.
+HARD_NEGATIVE = re.compile(r'\b(?:what is a conference|dictionary|wikipedia|conference planning tips|best conferences to attend|top \d+ conferences|conference industry trends|how to plan a conference)\b',re.I)
+
+def weak_evidence(txt):
+    found={}
+    for family,patterns in EARLY_SIGNALS.items():
+        for p in patterns:
+            m=re.search(p,txt,re.I)
+            if m:
+                found[family]=txt[max(0,m.start()-24):min(len(txt),m.end()+54)].strip()
+                break
+    return found
+
 COMMITMENT_CLUES = [
  ('venue_named',r'booked at|confirmed venue|venue has been selected|at the [A-Z][a-z]+ (?:Hotel|Resort|Convention Center)'),
  ('room_block',r'room block available|hotel block|reservation link|book your room'),
@@ -236,35 +337,41 @@ def evidence_groups(text):
     return found
 
 def relevance(article,label):
-    """Defensible discovery eligibility, not a verdict that the buyer is open."""
+    """Return concrete/early evidence tiers or None for junk.
+
+    This is a discovery heuristic, never an eligibility or buying conclusion.
+    """
     title=article.get('title','').strip()
     summary=article.get('summary','').strip()
     url=article.get('url','')
-    if not title or not url.startswith(('https://','http://')):
-        return None
-    txt=event_context(title,summary)
+    if not title or not url.startswith(('https://','http://')):return None
     h=host_name(url)
     if any(h==x or h.endswith('.'+x) for x in EXCLUDED_HOSTS):return None
-    if GENERIC_BLOG.search(title):return None
+    if GENERIC_BLOG.search(title) or HARD_NEGATIVE.search(title):return None
+    txt=event_context(title,summary)
     if not EVENT_REGEX.search(txt):return None
-    if not BUYER_REGEX.search(txt):return None
-    if not NAMED_BUYER_REGEX.search(txt):return None
     if FOREIGN_CONTEXT.search(txt):return None
     if not source_platform(article,label) and label.startswith('social-'):return None
-    signals=evidence_groups(txt)
-    if not signals:return None
-    # "Call for proposals" is commonly programming/speakers, not a hotel/planner RFP.
-    if ANNOUNCEMENT_ONLY.search(title) and len(signals)<2 and not any(k in signals for k in ('venue-decision','economics','disruption','capacity')):
+    org=candidate_organization(title,summary,article.get('source',''),WATCHLIST_NAMES)
+    if not org:return None
+    # Guard against a generic article that mentions someone else's association
+    # but is not about an organization's conference planning.
+    strong=evidence_groups(txt)
+    weak=weak_evidence(txt)
+    if not strong and not weak:return None
+    if ANNOUNCEMENT_ONLY.search(title) and not any(k in strong for k in ('venue-decision','economics','disruption','capacity','committee-reset','strategic-shift')):
+        return None
+    if re.search(r'\b(?:calls? for|invites?|requests?)\s+(?:speaker|session|presentation|paper|abstract)\s+proposals\b',title,re.I) and not strong:
         return None
     date=article.get('published','')
     if date:
         try:
             age=(NOW.date()-datetime.fromisoformat(date).date()).days
-            if age<0 or age>120:return None
+            if age<0 or age>150:return None
         except ValueError:return None
-    # Source is a page about an organization, but an event with no dated
-    # relevance would remain a research lead, never a qualified buyer.
-    return signals
+    # Priority requires actual source-text evidence. Watch can be exploratory.
+    tier='priority' if strong else 'watch'
+    return {'strong':strong,'weak':weak,'tier':tier,'organization':org}
 
 def next_action(types,flags,play):
     if flags:return 'Check named hotel, planner and room-block commitments first. Is any useful scope still influenceable?'
@@ -276,30 +383,34 @@ def next_action(types,flags,play):
     return 'Confirm legal organizer, prior event cycles, next decision point, hotel commitments and current planner.'
 
 def as_candidate(article,query_label):
-    signal_evidence=relevance(article,query_label)
-    if not signal_evidence:return None
+    assessment=relevance(article,query_label)
+    if not assessment:return None
     title,summary,url=article['title'],article['summary'],article['url']
     txt=event_context(title,summary)
     flags=[k for k,pattern in COMMITMENT_CLUES if re.search(pattern,txt,re.I)]
-    types=list(signal_evidence)
-    has_direct=('procurement' in types and re.search(r'\b(?:planner|planning services|management services|consultant)\b',txt,re.I))
-    play='Safe' if has_direct else ('Bold' if ('economics' in types or 'attendee-change' in types) and not ('venue-decision' in types or 'committee-reset' in types) else 'Smart')
-    # Priority is evidence density, not probability of purchase.
-    score=min(90, 38 + 11*min(len(types),3) + (10 if 'venue-decision' in types or has_direct else 0) + (6 if re.search(rf'\b({NOW.year+1}|{NOW.year+2}|{NOW.year+3})\b',txt) else 0) - 18*bool(flags))
-    is_social=query_label.startswith('social-') or bool(source_platform(article,query_label))
+    types=list(assessment['strong'])+ [k for k in assessment['weak'] if k not in assessment['strong']]
+    has_direct=('procurement' in assessment['strong'] and re.search(r'\b(?:planner|planning services|management services|consultant)\b',txt,re.I))
+    play='Safe' if has_direct else ('Bold' if ('economics' in types or 'attendee-change' in types or 'economics-watch' in types) and not ('venue-decision' in types or 'committee-reset' in types) else 'Smart')
+    score=min(92, (49 if assessment['tier']=='priority' else 28) + 9*min(len(assessment['strong']),3) + 5*min(len(assessment['weak']),3) + (7 if has_direct else 0) - 12*bool(flags))
     platform=source_platform(article,query_label) or ''
+    is_social=bool(platform)
     date=article.get('published','')
     ident=hashlib.sha256((url.split('#')[0].lower()+'|'+title.lower()).encode()).hexdigest()[:20]
     return {'id':ident,'title':title[:220],'summary':summary[:550],'url':url,
       'source':article.get('source') or 'Public news index',
       'published':('' if is_social else date),'indexed_date':(date if is_social else ''),
-      'date_basis':('Index/feed date. Original social post date NOT verified.' if is_social else 'RSS timestamp; verify on original source.'),
+      'date_basis':('Index/feed date; original social post date unknown' if is_social else 'Public search-feed timestamp; confirm original publication date'),
       'origin':('social_index' if is_social else 'news_index'),'platform':platform,
       'original_post_checked':False,'detected':NOW.date().isoformat(),
+      'organization_candidate':assessment['organization'],
+      'organization_key':org_key(assessment['organization']),
+      'review_tier':assessment['tier'],
+      'strong_evidence':assessment['strong'],'early_evidence':assessment['weak'],
       'types':types,'priority':score,'query_id':query_label,'play':play,
       'next_action':next_action(types,flags,play),'flags':flags,
-      'signal_strength':'Unverified specific planning/change clue; corroborate with official sources.',
-      'signal_evidence':signal_evidence,'evidence_gate':'named organizer + recurring event + actual change/decision clue',
+      'signal_strength':('Specific indexed buying/planning clue, not a confirmed buyer' if assessment['tier']=='priority' else 'Early indexed clue; no purchasing intent established'),
+      'signal_evidence':assessment['strong'] or assessment['weak'],
+      'evidence_gate':'Named organizer + event + planning/financial/venue clue; original source unverified',
       'verified_revenue':False,'verified_event':False,'verified_opening':False,
       'qualification':'Unverified discovery'}
 
@@ -309,6 +420,60 @@ def existing():
         d=json.loads(DEST.read_text(encoding='utf-8'))
         return d.get('signals',[]) if isinstance(d.get('signals',[]),list) else []
     except (ValueError,OSError):return []
+
+
+
+def organization_stacks(items):
+    """Group EXACT named-organizer candidates, never merge chapters heuristically.
+
+    Multiple categories in one post are not counted as independent sources.
+    All matching and timing fields remain unverified.
+    """
+    groups={}
+    for x in items:
+        key=x.get('organization_key')
+        if not key:continue
+        group=groups.setdefault(key,{'key':key,'name':x.get('organization_candidate',''),
+             'signal_ids':[],'families':set(),'sources':set(),'commitment_flags':set(),
+             'evidence':[],'priority_count':0,'watch_count':0,'most_recent':'',
+             'play':'Smart','qualifying_status':'Requires manual verification'})
+        group['signal_ids'].append(x['id'])
+        group['families'].update(x.get('types',[]))
+        if x.get('review_tier')=='priority':group['priority_count']+=1
+        else:group['watch_count']+=1
+        group['commitment_flags'].update(x.get('flags',[]))
+        group['most_recent']=max(group['most_recent'],x.get('published') or x.get('indexed_date') or x.get('detected') or '')
+        host=host_name(x['url'])
+        if host in ('news.google.com','bing.com','www.bing.com'):
+            publisher=(x.get('source') or 'unresolved-index-source').lower().strip()
+            src='publisher:'+publisher
+        else:src=host
+        group['sources'].add(src)
+        group['evidence'].append({'id':x['id'],'title':x['title'],'url':x['url'],
+               'source':x.get('source',''),'published':x.get('published') or x.get('indexed_date') or '',
+               'families':x.get('types',[]),'tier':x.get('review_tier','watch')})
+    out=[]
+    for group in groups.values():
+        source_count=len(group['sources'])
+        # No per-item query bonus; independent publishers beat repeated snippets.
+        kind_count=len(group['families'])
+        n=len(group['signal_ids'])
+        group['mentions']=n
+        group['distinct_sources']=source_count
+        group['families']=sorted(group['families'])
+        group['commitment_flags']=sorted(group['commitment_flags'])
+        group['priority']=min(92,28 + min(kind_count,4)*10 + min(source_count,3)*7 + (10 if group['priority_count'] else 0) - (12 if group['commitment_flags'] else 0))
+        group['stack_stage']=('multi-source, multi-signal (unverified)' if source_count>=2 and kind_count>=2
+            else 'multiple mentions, single-family or source' if n>=2
+            else 'single-source clue')
+        group['first_question']=(
+           'Which next conference decision is not yet contracted, and who authorizes an external planner?' if group['priority_count']
+           else 'What is this organization deciding next, and does it have an independent planning need?')
+        if 'procurement' in group['families']:group['play']='Safe'
+        elif any(k in group['families'] for k in ('economics','attendee-change','economics-watch')):group['play']='Bold'
+        group.pop('sources')
+        out.append(group)
+    return sorted(out,key=lambda g:(g['priority_count']>0,g['distinct_sources']>=2,g['priority'],g['most_recent']),reverse=True)
 
 def run():
     previous=existing()
@@ -325,6 +490,7 @@ def run():
         if curr:
             # Keep existing research assist, flagged counter-evidence and dates.
             curr.update({k:x[k] for k in ('research_assist','first_detected') if k in x})
+            curr['first_detected']=x.get('first_detected') or x.get('detected') or curr['detected']
             curr['detected']=x.get('detected',curr['detected'])
             seen[curr['id']]=curr
         else:dropped_previous+=1
@@ -346,7 +512,9 @@ def run():
                         old=seen[item['id']]
                         old['types']=sorted(set(old.get('types',[])+item['types']))
                         old['priority']=max(old.get('priority',0),item['priority'])
-                    else:seen[item['id']]=item;fresh+=1
+                    else:
+                        item['first_detected']=item['detected']
+                        seen[item['id']]=item;fresh+=1
             except Exception as ex:
                 failed.append(f'{label} ({engine}): {type(ex).__name__}: {str(ex)[:100]}')
         time.sleep(.25)
@@ -362,7 +530,9 @@ def run():
                     old=seen[item['id']]
                     old['types']=sorted(set(old.get('types',[])+item['types']))
                     old['priority']=max(old.get('priority',0),item['priority'])
-                else:seen[item['id']]=item;fresh+=1
+                else:
+                    item['first_detected']=item['detected']
+                    seen[item['id']]=item;fresh+=1
         except Exception as ex:
             failed.append(f'{label} (public index): {type(ex).__name__}: {str(ex)[:100]}')
         time.sleep(.2)
@@ -370,15 +540,19 @@ def run():
     kept=[x for x in seen.values() if (x.get('published') or x.get('detected') or '0000')>=cutoff]
     kept.sort(key=lambda x:(x.get('published') or x.get('indexed_date') or x.get('detected') or '',x.get('priority',0)),reverse=True)
     kept=kept[:180]
-    out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'3.1-buyer-evidence-gates',
-         'purpose':'Specific pre-RFP planning clues only. No automatic buyer qualification or contract claims.',
+    organizations=organization_stacks(kept)
+    out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'4.0-two-lane-stacks',
+         'purpose':'Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.',
          'scan_sources_ok':fetched,'scan_sources_failed':len(failed),
          'scan_queries':len(QUERIES)+social_attempted,'social_index_queries':social_attempted,
          'social_index_candidates_seen':social_found,
          'social_by_platform':{p:sum(1 for x in kept if x.get('platform')==p) for p,_ in SOCIAL_DOMAINS},
          'sources_attempted':len(QUERIES)+5+sum(i%3==1 for i in range(len(QUERIES)))+social_attempted,
          'coverage_warning':'Public news and indexed social search only. Indexes are incomplete and may not preserve original social post dates. Not direct or private-platform monitoring.',
-         'new_discoveries':fresh,'rejected_irrelevant_hits':rejected,
+         'new_discoveries':fresh,'review_priority_count':sum(x.get('review_tier')=='priority' for x in kept),
+         'review_watch_count':sum(x.get('review_tier')=='watch' for x in kept),
+         'stacked_organizations':len(organizations),
+         'organizations':organizations,'rejected_irrelevant_hits':rejected,
          'previous_noise_removed':dropped_previous,'errors':failed[:15],'signals':kept}
     DEST.parent.mkdir(parents=True,exist_ok=True)
     DEST.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
