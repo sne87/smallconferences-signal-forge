@@ -1,0 +1,10 @@
+{
+  "generated_at": null,
+  "scanner_version": "1.0",
+  "purpose": "Unverified public RSS discoveries only. Run the scanner after deployment.",
+  "scan_sources_ok": 0,
+  "scan_sources_failed": 0,
+  "new_discoveries": 0,
+  "errors": [],
+  "signals": []
+}
