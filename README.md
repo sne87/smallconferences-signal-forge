@@ -152,3 +152,9 @@ The **Organization stacks** tab combines exact name-matched public-indexed signa
 Results refresh via the existing GitHub Actions schedule. Previous candidate clues are rechecked against these gates and retained within the scanner's time horizon. Saved private research records remain in browser storage and are not published to GitHub. The app never auto-qualifies or contacts anyone.
 
 If a scan finds no newly indexed clues, that does not mean the target market has no opportunities. Check the organization intelligence and Search Lab, and review the public-source coverage warning.
+
+### Official association page monitoring
+
+`watch_pages.json` lists public, curator-chosen URLs. The scheduled runner checks whether a specific, already observed passage remains on each page. It records the check date and shows those results as **Monitored source watches**, not as newly won purchasing intent. Examples include AEA's summer 2027 schedule change and AHEPPP's 2027 committee recruitment. Public indexed clues and these monitored pages combine into exact-name organization stacks without conflating separate chapters. If a page is unavailable, the app records the source-check failure; previously checked watches may be shown as stale for up to 30 days, not newly verified.
+
+You can add URLs and passages by editing `watch_pages.json` in GitHub. This is not a scraper for private Facebook or LinkedIn posts. Do not add private notes, personal contact data, or privileged documents: the GitHub repository and generated feed are public.
