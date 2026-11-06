@@ -139,3 +139,16 @@ Each discovery displays the matching evidence excerpt and a precise next verific
 Social coverage is limited to publicly indexed pages. A result is only marked Facebook/LinkedIn/Threads/X/Reddit if the original URL hostname or a Google News source supports that platform. Bing's `site:` query is not always respected; mismatching results are rejected.
 
 What to prioritize: conference-site searches before RFP; annual-event budget and revenue reviews; committee chair or planner changes; attendee complaints about hotel price/format; room-block attrition and F&B minimum pressure; sponsor/exhibitor dissatisfaction; new overnight events; multi-year hotel contract cycles. Always verify venue/planner incumbents and official source dates before contacting anyone.
+
+## Version 4: Early-watch discovery and organization stacks
+
+Signal Forge retains two research lanes instead of discarding everything short of an explicit open hotel or planning decision:
+
+- **Priority**: a named, likely U.S.-based association or membership organizer with a source-text indication of venue evaluation, specific financial pressure, conference redesign, staff change, or consultant procurement.
+- **Early Watch**: a named organizer with a softer indicator such as conference committee formation, venue exploration, or post-event feedback. This does **not** establish purchasing intent, a financial fit, an open contract, or a current decision-maker.
+
+The **Organization stacks** tab combines exact name-matched public-indexed signals. Source count is a publisher/host approximation, not independently verified corroboration. Similar names, state chapters, and affiliates must be reconciled by the researcher, never silently merged. Public sources are untrusted, and dates may reflect indexing rather than publication.
+
+Results refresh via the existing GitHub Actions schedule. Previous candidate clues are rechecked against these gates and retained within the scanner's time horizon. Saved private research records remain in browser storage and are not published to GitHub. The app never auto-qualifies or contacts anyone.
+
+If a scan finds no newly indexed clues, that does not mean the target market has no opportunities. Check the organization intelligence and Search Lab, and review the public-source coverage warning.
