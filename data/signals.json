@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-06T20:13:54+00:00",
+  "generated_at": "2026-11-06T20:17:53+00:00",
   "scanner_version": "4.1-new-organizer-intelligence",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
-  "scan_sources_ok": 142,
+  "scan_sources_ok": 141,
   "official_pages_checked": 5,
-  "official_pages_monitored": 11,
+  "official_pages_monitored": 12,
   "official_watch_errors": [
     "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
@@ -12,9 +12,9 @@
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
-    "Council of Academic Programs in Communication Sciences and Disorders: expected source passage absent or changed"
+    "Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed"
   ],
-  "scan_sources_failed": 7,
+  "scan_sources_failed": 8,
   "scan_queries": 114,
   "social_index_queries": 45,
   "social_index_candidates_seen": 0,
@@ -27,16 +27,12 @@
   },
   "sources_attempted": 142,
   "coverage_warning": "Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.",
-  "new_discoveries": 6,
-  "new_organizations": [
-    "Association of Local Government Auditors",
-    "Council of Academic Programs in Communication Sciences and Disorders",
-    "International Atomic Spectrometry Association"
-  ],
-  "new_organizations_count": 3,
+  "new_discoveries": 1,
+  "new_organizations": [],
+  "new_organizations_count": 0,
   "review_priority_count": 1,
   "review_watch_count": 11,
-  "stacked_organizations": 6,
+  "stacked_organizations": 5,
   "organizations": [
     {
       "key": "new york state association of professional land surveyors",
@@ -174,9 +170,11 @@
       "name": "Council of Academic Programs in Communication Sciences and Disorders",
       "signal_ids": [
         "bc3681e0bb15dc2c6cd3",
-        "5495355894dd1bae53e6"
+        "5495355894dd1bae53e6",
+        "3f964c6691eaa8e48c9f"
       ],
       "families": [
+        "economics",
         "event-economics",
         "verified-financial-fit"
       ],
@@ -213,18 +211,32 @@
             "verified-financial-fit"
           ],
           "tier": "watch"
+        },
+        {
+          "id": "3f964c6691eaa8e48c9f",
+          "title": "Council of Academic Programs in Communication Sciences and Disorders | Board reviewed conference revenue and cost reduction, February 2025",
+          "url": "https://www.capcsd.org/assets/pdf/February%2B2025%2BBOD%2BMeeting%2BMinutes",
+          "source": "Official association page (research snapshot)",
+          "published": "",
+          "document_date": "2025-02-09 to 2025-02-11",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [],
+          "families": [
+            "economics"
+          ],
+          "tier": "watch"
         }
       ],
       "priority_count": 0,
-      "watch_count": 2,
+      "watch_count": 3,
       "most_recent": "2026-11-06",
-      "play": "Smart",
+      "play": "Bold",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
-      "mentions": 2,
+      "mentions": 3,
       "distinct_sources": 2,
-      "priority": 50,
-      "stack_stage": "multiple evidence items, no verified buying window",
+      "priority": 60,
+      "stack_stage": "multiple sourced planning clues, contract openness unverified",
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
@@ -334,56 +346,19 @@
       "priority": 55,
       "stack_stage": "multiple evidence items, no verified buying window",
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
-    },
-    {
-      "key": "international atomic spectrometry association",
-      "name": "International Atomic Spectrometry Association",
-      "signal_ids": [
-        "9daa9e032b4a984f921d"
-      ],
-      "families": [
-        "location-exploration"
-      ],
-      "commitment_flags": [],
-      "evidence": [
-        {
-          "id": "9daa9e032b4a984f921d",
-          "title": "The International Atomic Spectrometry Association Selects 2028 Conference Location - Spectroscopy Online",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNDdlUW8tSDNaUW1VTmFSbXpFcXpvdFBUckpaRTlTNDEzOURhdmtGc0ZGcnlZY2ttM2p6UnhKS1l0cUdHQ3NHRjBYbnVlMTF3Z0RQVTJHejFHRWlKYnRGX0hSNExkMkZ6MEc5Sl90YnVRZFJncVNkREF0YllnNVgwUFo2NFlFdW5UdWxVb0xvaEh0VERmVDREYlFzOXI1ZUU0WWF5SUpHbHllTjVqcUl1Uk1Ody1SZkRvZm1IbGNKbw?oc=5",
-          "source": "Spectroscopy Online",
-          "published": "2026-06-11",
-          "document_date": "",
-          "freshness": "",
-          "counterevidence_flags": [],
-          "families": [
-            "location-exploration"
-          ],
-          "tier": "watch"
-        }
-      ],
-      "priority_count": 0,
-      "watch_count": 1,
-      "most_recent": "2026-06-11",
-      "play": "Smart",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-06",
-      "mentions": 1,
-      "distinct_sources": 1,
-      "priority": 45,
-      "stack_stage": "single-source clue",
-      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 888,
-  "previous_noise_removed": 0,
+  "rejected_irrelevant_hits": 894,
+  "previous_noise_removed": 1,
   "errors": [
+    "planner-rfp (bing): ParseError: not well-formed (invalid token): line 1, column 41",
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Council of Academic Programs in Communication Sciences and Disorders: expected source passage absent or changed"
+    "official watch: Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed"
   ],
   "signals": [
     {
@@ -442,7 +417,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-06T20:13:54+00:00",
+      "last_checked": "2026-11-06T20:17:53+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -484,7 +459,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-06T20:13:54+00:00",
+      "last_checked": "2026-11-06T20:17:53+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -526,7 +501,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-06T20:13:54+00:00",
+      "last_checked": "2026-11-06T20:17:53+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -568,7 +543,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-06T20:13:54+00:00",
+      "last_checked": "2026-11-06T20:17:53+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -612,7 +587,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-06T20:13:54+00:00",
+      "last_checked": "2026-11-06T20:17:53+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -684,7 +659,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-06T20:15:02+00:00",
+        "checked_at": "2026-11-06T20:19:05+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -764,7 +739,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-06T20:15:03+00:00",
+        "checked_at": "2026-11-06T20:19:07+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -931,43 +906,46 @@
       "qualification": "Unverified source watch"
     },
     {
-      "id": "9daa9e032b4a984f921d",
-      "title": "The International Atomic Spectrometry Association Selects 2028 Conference Location - Spectroscopy Online",
-      "summary": "The International Atomic Spectrometry Association Selects 2028 Conference Location Spectroscopy Online",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNDdlUW8tSDNaUW1VTmFSbXpFcXpvdFBUckpaRTlTNDEzOURhdmtGc0ZGcnlZY2ttM2p6UnhKS1l0cUdHQ3NHRjBYbnVlMTF3Z0RQVTJHejFHRWlKYnRGX0hSNExkMkZ6MEc5Sl90YnVRZFJncVNkREF0YllnNVgwUFo2NFlFdW5UdWxVb0xvaEh0VERmVDREYlFzOXI1ZUU0WWF5SUpHbHllTjVqcUl1Uk1Ody1SZkRvZm1IbGNKbw?oc=5",
-      "source": "Spectroscopy Online",
-      "published": "2026-06-11",
+      "id": "3f964c6691eaa8e48c9f",
+      "title": "Council of Academic Programs in Communication Sciences and Disorders | Board reviewed conference revenue and cost reduction, February 2025",
+      "summary": "CAPCSD board minutes for February 9–11, 2025 say the board discussed future conference financial implications, revenue-generation and cost-reduction strategies, including evaluating tier-one and tier-two cities.",
+      "url": "https://www.capcsd.org/assets/pdf/February%2B2025%2BBOD%2BMeeting%2BMinutes",
+      "source": "Official association page (research snapshot)",
+      "published": "",
       "indexed_date": "",
-      "date_basis": "Public search-feed timestamp; confirm original publication date",
-      "origin": "news_index",
+      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "origin": "official_watch",
       "platform": "",
       "original_post_checked": false,
       "detected": "2026-11-06",
-      "organization_candidate": "International Atomic Spectrometry Association",
-      "organization_key": "international atomic spectrometry association",
+      "first_detected": "2026-11-06",
+      "last_checked": "",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
+      "organization_key": "council of academic programs in communication sciences and disorders",
       "review_tier": "watch",
       "strong_evidence": {},
       "early_evidence": {
-        "location-exploration": "try Association Selects 2028 Conference Location - Spectroscopy Online The International Atomic Spectr"
+        "economics": "CAPCSD board minutes for February 9–11, 2025 say the board discussed future conference financial implications, revenue-generation and cost-reduction strategies, including evaluating tier-one and tier-two cities."
       },
       "types": [
-        "location-exploration"
+        "economics"
       ],
-      "priority": 33,
-      "query_id": "future-site",
+      "priority": 30,
+      "query_id": "official-page-baseline",
       "play": "Smart",
-      "next_action": "Confirm legal organizer, prior event cycles, next decision point, hotel commitments and current planner.",
+      "next_action": "Recheck original source because automated access failed. The financial discussion is from February 2025, not a fresh 2026 trigger. Look for current board action, 2028 venue sourcing dates, and whether cost review can be outsourced despite internal staff.",
       "flags": [],
-      "signal_strength": "Early indexed clue; no purchasing intent established",
+      "source_document_date": "2025-02-09 to 2025-02-11",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
       "signal_evidence": {
-        "location-exploration": "try Association Selects 2028 Conference Location - Spectroscopy Online The International Atomic Spectr"
+        "economics": "CAPCSD board minutes for February 9–11, 2025 say the board discussed future conference financial implications, revenue-generation and cost-reduction strategies, including evaluating tier-one and tier-two cities."
       },
-      "evidence_gate": "Named organizer + event + planning/financial/venue clue; original source unverified",
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
-      "qualification": "Unverified discovery",
-      "first_detected": "2026-11-06"
+      "qualification": "Unverified source watch"
     }
   ],
   "discovery_enrichment": {
