@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-06T19:33:06+00:00",
+  "generated_at": "2026-11-06T19:35:35+00:00",
   "scanner_version": "4.0-two-lane-stacks",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
   "scan_sources_ok": 129,
-  "official_pages_checked": 2,
-  "official_pages_monitored": 2,
+  "official_pages_checked": 1,
+  "official_pages_monitored": 3,
   "official_watch_errors": [
     "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden"
@@ -22,11 +22,45 @@
   },
   "sources_attempted": 129,
   "coverage_warning": "Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.",
-  "new_discoveries": 3,
-  "review_priority_count": 0,
+  "new_discoveries": 4,
+  "review_priority_count": 1,
   "review_watch_count": 2,
-  "stacked_organizations": 2,
+  "stacked_organizations": 3,
   "organizations": [
+    {
+      "key": "new york state association of professional land surveyors",
+      "name": "New York State Association of Professional Land Surveyors",
+      "signal_ids": [
+        "af1518344eca1a7b1f04"
+      ],
+      "families": [
+        "venue-decision"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "af1518344eca1a7b1f04",
+          "title": "New York State Association of Professional Land Surveyors | 2029 hotel proposals under review",
+          "url": "https://www.nysapls.org/news/735249/HQ-Update-September-2026.htm",
+          "source": "Official association page (research snapshot)",
+          "published": "",
+          "families": [
+            "venue-decision"
+          ],
+          "tier": "priority"
+        }
+      ],
+      "priority_count": 1,
+      "watch_count": 0,
+      "most_recent": "2026-11-06",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "priority": 55,
+      "stack_stage": "single-source clue",
+      "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
+    },
     {
       "key": "nonprofit association of oregon",
       "name": "Nonprofit Association of Oregon",
@@ -62,24 +96,24 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
-      "key": "association of higher education parent family program professionals",
-      "name": "Association of Higher Education Parent/Family Program Professionals",
+      "key": "arkansas education association",
+      "name": "Arkansas Education Association",
       "signal_ids": [
-        "3e11a7c3c675163b29cb"
+        "d2c40d9ffb0bc10956e0"
       ],
       "families": [
-        "committee-reset"
+        "disruption"
       ],
       "commitment_flags": [],
       "evidence": [
         {
-          "id": "3e11a7c3c675163b29cb",
-          "title": "Association of Higher Education Parent/Family Program Professionals | 2027 national conference planning committee recruiting",
-          "url": "https://www.aheppp.org/conference-team",
-          "source": "Official association page (monitored)",
+          "id": "d2c40d9ffb0bc10956e0",
+          "title": "Arkansas Education Association | Summer 2027 conference calendar change",
+          "url": "https://www.aeaonline.org/teach",
+          "source": "Official association page (research snapshot)",
           "published": "",
           "families": [
-            "committee-reset"
+            "disruption"
           ],
           "tier": "watch"
         }
@@ -96,13 +130,54 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 357,
+  "rejected_irrelevant_hits": 323,
   "previous_noise_removed": 0,
   "errors": [
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden"
   ],
   "signals": [
+    {
+      "id": "af1518344eca1a7b1f04",
+      "title": "New York State Association of Professional Land Surveyors | 2029 hotel proposals under review",
+      "summary": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference.",
+      "url": "https://www.nysapls.org/news/735249/HQ-Update-September-2026.htm",
+      "source": "Official association page (research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "organization_candidate": "New York State Association of Professional Land Surveyors",
+      "organization_key": "new york state association of professional land surveyors",
+      "review_tier": "priority",
+      "strong_evidence": {
+        "venue-decision": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference."
+      },
+      "early_evidence": {},
+      "types": [
+        "venue-decision"
+      ],
+      "priority": 48,
+      "query_id": "official-page-baseline",
+      "play": "Smart",
+      "next_action": "Recheck original source because automated access failed. Verify whether the 2029 negotiation remains open and whether the committee would welcome an independent total-cost review, despite existing internal planning responsibilities.",
+      "flags": [],
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_evidence": {
+        "venue-decision": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference."
+      },
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
     {
       "id": "b6bf4a5ddd897e69bd79",
       "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
@@ -117,7 +192,8 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-06T19:33:06+00:00",
+      "last_checked": "2026-11-06T19:35:35+00:00",
+      "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
       "review_tier": "watch",
@@ -144,49 +220,88 @@
       "qualification": "Unverified source watch"
     },
     {
-      "id": "3e11a7c3c675163b29cb",
-      "title": "Association of Higher Education Parent/Family Program Professionals | 2027 national conference planning committee recruiting",
-      "summary": "rds) This position is not currently accepting applications. 2027 National Conference Planning Committee Reports to: Conference Chair(s) Term: 12 months (January 2027 – December 2027) Time commitment: 2–5 hours per",
-      "url": "https://www.aheppp.org/conference-team",
-      "source": "Official association page (monitored)",
+      "id": "d2c40d9ffb0bc10956e0",
+      "title": "Arkansas Education Association | Summer 2027 conference calendar change",
+      "summary": "The Conference is currently being shifted to Summer 2027.",
+      "url": "https://www.aeaonline.org/teach",
+      "source": "Official association page (research snapshot)",
       "published": "",
       "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-06; original publication date not established",
+      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
       "origin": "official_watch",
       "platform": "",
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-06T19:33:06+00:00",
-      "organization_candidate": "Association of Higher Education Parent/Family Program Professionals",
-      "organization_key": "association of higher education parent family program professionals",
+      "last_checked": "",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "organization_candidate": "Arkansas Education Association",
+      "organization_key": "arkansas education association",
       "review_tier": "watch",
       "strong_evidence": {},
       "early_evidence": {
-        "committee-reset": "rds) This position is not currently accepting applications. 2027 National Conference Planning Committee Reports to: Conference Chair(s) Term: 12 months (January 2027 – December 2027) Time commitment: 2–5 hours per"
+        "disruption": "The Conference is currently being shifted to Summer 2027."
       },
       "types": [
-        "committee-reset"
+        "disruption"
       ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
+      "priority": 30,
+      "query_id": "official-page-baseline",
       "play": "Smart",
-      "next_action": "Check whether hotel sourcing is already committed and whether its volunteer-led program needs outside logistical or contractual support. Confirm financial fit.",
+      "next_action": "Recheck original source because automated access failed. Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
       "flags": [],
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
       "signal_evidence": {
-        "committee-reset": "rds) This position is not currently accepting applications. 2027 National Conference Planning Committee Reports to: Conference Chair(s) Term: 12 months (January 2027 – December 2027) Time commitment: 2–5 hours per"
+        "disruption": "The Conference is currently being shifted to Summer 2027."
       },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
-      "qualification": "Unverified source watch"
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Arkansas Education Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-06T19:36:33+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "710004515",
+          "legal_name": "Arkansas Education Association",
+          "fiscal_year": 2023,
+          "revenue": 2760676,
+          "fit": "within",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "in-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
     }
   ],
   "discovery_enrichment": {
     "status": "public-index triage, not buyer qualification",
-    "new_this_run": 0,
+    "new_this_run": 1,
     "caveat": "Only headlines with explicit full nonprofit names are enriched. Other discoveries require manual organizer identity."
   }
 }
