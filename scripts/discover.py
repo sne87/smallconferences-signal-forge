@@ -89,6 +89,18 @@ QUERIES += [
  ('conference-finance-board','"conference committee" "budget" "board"'),
  ('after-conference-feedback','"association" "conference" "evaluation results"'),
  ('regional-attendee','"regional conference" "planning committee" "2027"'),
+ # Broader, buyer-oriented queries to catch quiet committee notes and
+ # changes without insisting all signal words appear in a short RSS excerpt.
+ ('association-site-options','"annual conference" "venue options" association'),
+ ('association-chair-search','"conference planning committee" "new chair"'),
+ ('association-annual-survey','"conference" "survey" "what should" association'),
+ ('association-budget-notes','"conference committee" "expenses"'),
+ ('association-committee-minutes','"conference committee" "board" "hotel"'),
+ ('association-host-interest','"conference" "future host" "association"'),
+ ('association-date-change','"annual conference" "moving to" association'),
+ ('association-hotel-review','"conference" "hotel contract" "review"'),
+ ('association-event-feedback','"annual conference" "improve" "feedback"'),
+ ('regional-convention-committee','"regional convention" "committee" "planning"'),
 ]
 
 SOCIAL_TOPICS = [
@@ -220,7 +232,7 @@ SIGNALS = {
   r'\b(?:what should we change|what would you change|how can we improve)\b.{0,65}\b(?:conference|convention|annual meeting|event)\b',
  ],
  'disruption': [
-  r'\b(?:conference|convention|annual meeting|meeting)\b.{0,100}\b(?:venue (?:fell through|cancelled|unavailable)|relocat|reschedul|moving to (?:spring|summer|fall|winter)|changed dates|new dates due to|hotel renovation|lost (?:hotel|venue))\w*',
+  r'\b(?:conference|convention|annual meeting|meeting)\b.{0,100}\b(?:venue (?:fell through|cancelled|unavailable)|relocat|reschedul|mov(?:ed|ing) to (?:spring|summer|fall|winter)|shift(?:ed|ing) to (?:spring|summer|fall|winter)|changed dates|new dates due to|hotel renovation|lost (?:hotel|venue))\w*',
   r'\b(?:venue fell through|hotel (?:closed|closing|renovation)|site unavailable)\b.{0,65}\b(?:conference|convention|annual meeting)\b',
  ],
  'capacity': [
