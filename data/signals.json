@@ -1,17 +1,20 @@
 {
-  "generated_at": "2026-11-06T19:57:29+00:00",
-  "scanner_version": "4.0-two-lane-stacks",
+  "generated_at": "2026-11-06T20:13:54+00:00",
+  "scanner_version": "4.1-new-organizer-intelligence",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
   "scan_sources_ok": 142,
-  "official_pages_checked": 2,
-  "official_pages_monitored": 6,
+  "official_pages_checked": 5,
+  "official_pages_monitored": 11,
   "official_watch_errors": [
     "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
-    "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden"
+    "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
+    "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
+    "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
+    "Council of Academic Programs in Communication Sciences and Disorders: expected source passage absent or changed"
   ],
-  "scan_sources_failed": 4,
+  "scan_sources_failed": 7,
   "scan_queries": 114,
   "social_index_queries": 45,
   "social_index_candidates_seen": 0,
@@ -24,10 +27,16 @@
   },
   "sources_attempted": 142,
   "coverage_warning": "Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.",
-  "new_discoveries": 1,
+  "new_discoveries": 6,
+  "new_organizations": [
+    "Association of Local Government Auditors",
+    "Council of Academic Programs in Communication Sciences and Disorders",
+    "International Atomic Spectrometry Association"
+  ],
+  "new_organizations_count": 3,
   "review_priority_count": 1,
-  "review_watch_count": 5,
-  "stacked_organizations": 3,
+  "review_watch_count": 11,
+  "stacked_organizations": 6,
   "organizations": [
     {
       "key": "new york state association of professional land surveyors",
@@ -48,6 +57,9 @@
           "url": "https://www.nysapls.org/news/735249/HQ-Update-September-2026.htm",
           "source": "Official association page (research snapshot)",
           "published": "",
+          "document_date": "",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [],
           "families": [
             "venue-decision"
           ],
@@ -59,6 +71,9 @@
           "url": "https://www.nysapls.org/news/731262/HQ-Update-July-2026.htm",
           "source": "Official association page (research snapshot)",
           "published": "",
+          "document_date": "",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [],
           "families": [
             "economics"
           ],
@@ -70,11 +85,147 @@
       "most_recent": "2026-11-06",
       "play": "Bold",
       "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-06",
       "mentions": 2,
       "distinct_sources": 1,
       "priority": 65,
-      "stack_stage": "multiple mentions, single-family or source",
+      "stack_stage": "multiple evidence items, no verified buying window",
       "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
+    },
+    {
+      "key": "association of local government auditors",
+      "name": "Association of Local Government Auditors",
+      "signal_ids": [
+        "47a9b187f0d9f5e341b3",
+        "de027aa5a16496824d30",
+        "3a16b563f667c3ca69c0"
+      ],
+      "families": [
+        "decision-cadence",
+        "event-cycle",
+        "verified-financial-fit"
+      ],
+      "commitment_flags": [
+        "2026–2028 host cities already approved",
+        "2027 host city already announced"
+      ],
+      "evidence": [
+        {
+          "id": "47a9b187f0d9f5e341b3",
+          "title": "Association of Local Government Auditors | FY2025 $1.10M revenue supports financial fit",
+          "url": "https://projects.propublica.org/nonprofits/organizations/232539807",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "FY2025",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "verified-financial-fit"
+          ],
+          "tier": "watch"
+        },
+        {
+          "id": "de027aa5a16496824d30",
+          "title": "Association of Local Government Auditors | Conference site votes three years ahead; 2029 cycle timing check",
+          "url": "https://algaonline.org/page/LTCP_Site_Selection",
+          "source": "Official association page (research snapshot)",
+          "published": "",
+          "document_date": "2026-02",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [
+            "2026–2028 host cities already approved"
+          ],
+          "families": [
+            "decision-cadence"
+          ],
+          "tier": "watch"
+        },
+        {
+          "id": "3a16b563f667c3ca69c0",
+          "title": "Association of Local Government Auditors | Recurring hybrid annual conference and hundreds of attendees",
+          "url": "https://algaonline.org/page/conference",
+          "source": "Official association page (research snapshot)",
+          "published": "",
+          "document_date": "",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [
+            "2027 host city already announced"
+          ],
+          "families": [
+            "event-cycle"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 3,
+      "most_recent": "2026-11-06",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-06",
+      "mentions": 3,
+      "distinct_sources": 2,
+      "priority": 60,
+      "stack_stage": "multiple evidence items, no verified buying window",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "council of academic programs in communication sciences and disorders",
+      "name": "Council of Academic Programs in Communication Sciences and Disorders",
+      "signal_ids": [
+        "bc3681e0bb15dc2c6cd3",
+        "5495355894dd1bae53e6"
+      ],
+      "families": [
+        "event-economics",
+        "verified-financial-fit"
+      ],
+      "commitment_flags": [
+        "2027 host hotel already publicly named"
+      ],
+      "evidence": [
+        {
+          "id": "bc3681e0bb15dc2c6cd3",
+          "title": "Council of Academic Programs in Communication Sciences and Disorders | 2027 annual conference subsidized; host hotel publicly named",
+          "url": "https://www.capcsd.org/annual-conference/",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2027 event notice",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [
+            "2027 host hotel already publicly named"
+          ],
+          "families": [
+            "event-economics"
+          ],
+          "tier": "watch"
+        },
+        {
+          "id": "5495355894dd1bae53e6",
+          "title": "Council of Academic Programs in Communication Sciences and Disorders | FY2025 $1.93M revenue verifies financial range",
+          "url": "https://projects.propublica.org/nonprofits/organizations/630784938",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "FY2025",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "verified-financial-fit"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 2,
+      "most_recent": "2026-11-06",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-06",
+      "mentions": 2,
+      "distinct_sources": 2,
+      "priority": 50,
+      "stack_stage": "multiple evidence items, no verified buying window",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
       "key": "nonprofit association of oregon",
@@ -95,6 +246,9 @@
           "url": "https://nonprofitoregon.org/conference-notification-form/",
           "source": "Official association page (monitored)",
           "published": "",
+          "document_date": "",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
           "families": [
             "attendee-change"
           ],
@@ -106,6 +260,9 @@
           "url": "https://nonprofitoregon.org/events-trainings/speaking-opportunities/",
           "source": "Official association page (monitored)",
           "published": "",
+          "document_date": "",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
           "families": [
             "event-review"
           ],
@@ -117,10 +274,11 @@
       "most_recent": "2026-11-06",
       "play": "Bold",
       "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-06",
       "mentions": 2,
       "distinct_sources": 1,
       "priority": 55,
-      "stack_stage": "multiple mentions, single-family or source",
+      "stack_stage": "multiple evidence items, no verified buying window",
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
@@ -142,6 +300,9 @@
           "url": "https://www.aeaonline.org/teach",
           "source": "Official association page (research snapshot)",
           "published": "",
+          "document_date": "",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [],
           "families": [
             "disruption"
           ],
@@ -153,6 +314,9 @@
           "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
           "source": "Official association page (research snapshot)",
           "published": "",
+          "document_date": "",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [],
           "families": [
             "capacity"
           ],
@@ -164,20 +328,62 @@
       "most_recent": "2026-11-06",
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-06",
       "mentions": 2,
       "distinct_sources": 1,
       "priority": 55,
-      "stack_stage": "multiple mentions, single-family or source",
+      "stack_stage": "multiple evidence items, no verified buying window",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "international atomic spectrometry association",
+      "name": "International Atomic Spectrometry Association",
+      "signal_ids": [
+        "9daa9e032b4a984f921d"
+      ],
+      "families": [
+        "location-exploration"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "9daa9e032b4a984f921d",
+          "title": "The International Atomic Spectrometry Association Selects 2028 Conference Location - Spectroscopy Online",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNDdlUW8tSDNaUW1VTmFSbXpFcXpvdFBUckpaRTlTNDEzOURhdmtGc0ZGcnlZY2ttM2p6UnhKS1l0cUdHQ3NHRjBYbnVlMTF3Z0RQVTJHejFHRWlKYnRGX0hSNExkMkZ6MEc5Sl90YnVRZFJncVNkREF0YllnNVgwUFo2NFlFdW5UdWxVb0xvaEh0VERmVDREYlFzOXI1ZUU0WWF5SUpHbHllTjVqcUl1Uk1Ody1SZkRvZm1IbGNKbw?oc=5",
+          "source": "Spectroscopy Online",
+          "published": "2026-06-11",
+          "document_date": "",
+          "freshness": "",
+          "counterevidence_flags": [],
+          "families": [
+            "location-exploration"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-06-11",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-06",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "priority": 45,
+      "stack_stage": "single-source clue",
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 891,
+  "rejected_irrelevant_hits": 888,
   "previous_noise_removed": 0,
   "errors": [
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
-    "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden"
+    "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
+    "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
+    "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
+    "official watch: Council of Academic Programs in Communication Sciences and Disorders: expected source passage absent or changed"
   ],
   "signals": [
     {
@@ -211,6 +417,7 @@
       "play": "Smart",
       "next_action": "Recheck original source because automated access failed. Verify whether the 2029 negotiation remains open and whether the committee would welcome an independent total-cost review, despite existing internal planning responsibilities.",
       "flags": [],
+      "source_document_date": "",
       "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
       "signal_evidence": {
         "venue-decision": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference."
@@ -235,7 +442,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-06T19:57:29+00:00",
+      "last_checked": "2026-11-06T20:13:54+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -252,6 +459,7 @@
       "play": "Smart",
       "next_action": "Determine whether feedback from the latest Nonprofit Impact Conference is being used to change fall 2027 event planning. Confirm internal event staff and hotel agreements.",
       "flags": [],
+      "source_document_date": "",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
         "attendee-change": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most"
@@ -276,7 +484,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-06T19:57:29+00:00",
+      "last_checked": "2026-11-06T20:13:54+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -293,9 +501,138 @@
       "play": "Smart",
       "next_action": "Map the 2027 Nonprofit Impact Conference supplier decision cycle; the posted proposal dates are for speakers, not event management. Check whether event operations are internally staffed.",
       "flags": [],
+      "source_document_date": "",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
         "event-review": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "47a9b187f0d9f5e341b3",
+      "title": "Association of Local Government Auditors | FY2025 $1.10M revenue supports financial fit",
+      "summary": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue",
+      "url": "https://projects.propublica.org/nonprofits/organizations/232539807",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-06; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-06T20:13:54+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Association of Local Government Auditors",
+      "organization_key": "association of local government auditors",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue"
+      },
+      "types": [
+        "verified-financial-fit"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Use the filed FY2025 Form 990 and audited statements to distinguish total nonprofit revenue, $615,052 conference revenue and $454,130 conference expenses. Conference margin is not an assumed savings opportunity.",
+      "flags": [],
+      "source_document_date": "FY2025",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "bc3681e0bb15dc2c6cd3",
+      "title": "Council of Academic Programs in Communication Sciences and Disorders | 2027 annual conference subsidized; host hotel publicly named",
+      "summary": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration ",
+      "url": "https://www.capcsd.org/annual-conference/",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-06; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-06T20:13:54+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
+      "organization_key": "council of academic programs in communication sciences and disorders",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "event-economics": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration "
+      },
+      "types": [
+        "event-economics"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Do not pitch 2027 venue sourcing: Atlanta Marriott Marquis is already named. Find the 2028 venue-planning cycle and whether full-service support is open; check current director of professional development and board approval.",
+      "flags": [
+        "2027 host hotel already publicly named"
+      ],
+      "source_document_date": "2027 event notice",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "event-economics": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration "
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "5495355894dd1bae53e6",
+      "title": "Council of Academic Programs in Communication Sciences and Disorders | FY2025 $1.93M revenue verifies financial range",
+      "summary": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev",
+      "url": "https://projects.propublica.org/nonprofits/organizations/630784938",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-06; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-06T20:13:54+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
+      "organization_key": "council of academic programs in communication sciences and disorders",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev"
+      },
+      "types": [
+        "verified-financial-fit"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Confirm legal identity and EIN 63-0784938; ProPublica displays an older legal name. FY2025 total revenue is not conference spend.",
+      "flags": [],
+      "source_document_date": "FY2025",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -334,6 +671,7 @@
       "play": "Smart",
       "next_action": "Recheck original source because automated access failed. Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
       "flags": [],
+      "source_document_date": "",
       "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
       "signal_evidence": {
         "disruption": "The Conference is currently being shifted to Summer 2027."
@@ -346,7 +684,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-06T19:58:36+00:00",
+        "checked_at": "2026-11-06T20:15:02+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -413,6 +751,7 @@
       "play": "Smart",
       "next_action": "Recheck original source because automated access failed. Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
       "flags": [],
+      "source_document_date": "",
       "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
       "signal_evidence": {
         "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
@@ -425,7 +764,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-06T19:58:38+00:00",
+        "checked_at": "2026-11-06T20:15:03+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -492,6 +831,7 @@
       "play": "Smart",
       "next_action": "Recheck original source because automated access failed. Determine whether the reported association financial concerns apply specifically to conference economics and whether there is an actionable cost review before any hotel decision.",
       "flags": [],
+      "source_document_date": "",
       "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
       "signal_evidence": {
         "economics": "The NYSAPLS executive board reviewed its financial position in July 2026, noting declining revenue from educational programs and rising expenses, while discussing future annual conference locations."
@@ -501,6 +841,133 @@
       "verified_event": false,
       "verified_opening": false,
       "qualification": "Unverified source watch"
+    },
+    {
+      "id": "de027aa5a16496824d30",
+      "title": "Association of Local Government Auditors | Conference site votes three years ahead; 2029 cycle timing check",
+      "summary": "ALGA's board approves conference sites three years ahead. As of February 2026, 2026 Cleveland, 2027 Denver and 2028 St. Louis were selected; 2029 status was not established by this source.",
+      "url": "https://algaonline.org/page/LTCP_Site_Selection",
+      "source": "Official association page (research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "organization_candidate": "Association of Local Government Auditors",
+      "organization_key": "association of local government auditors",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "decision-cadence": "ALGA's board approves conference sites three years ahead. As of February 2026, 2026 Cleveland, 2027 Denver and 2028 St. Louis were selected; 2029 status was not established by this source."
+      },
+      "types": [
+        "decision-cadence"
+      ],
+      "priority": 30,
+      "query_id": "official-page-baseline",
+      "play": "Smart",
+      "next_action": "Recheck original source because automated access failed. Establish whether ALGA's 2029 conference city and hotel have already been approved; confirm whether its Site Selection Subcommittee permits independent sourcing advice. 2026-2028 cities are already announced.",
+      "flags": [
+        "2026–2028 host cities already approved"
+      ],
+      "source_document_date": "2026-02",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_evidence": {
+        "decision-cadence": "ALGA's board approves conference sites three years ahead. As of February 2026, 2026 Cleveland, 2027 Denver and 2028 St. Louis were selected; 2029 status was not established by this source."
+      },
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "3a16b563f667c3ca69c0",
+      "title": "Association of Local Government Auditors | Recurring hybrid annual conference and hundreds of attendees",
+      "summary": "ALGA advertises the May 2–5, 2027 hybrid annual conference in Denver, which draws hundreds in person and online.",
+      "url": "https://algaonline.org/page/conference",
+      "source": "Official association page (research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "organization_candidate": "Association of Local Government Auditors",
+      "organization_key": "association of local government auditors",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "event-cycle": "ALGA advertises the May 2–5, 2027 hybrid annual conference in Denver, which draws hundreds in person and online."
+      },
+      "types": [
+        "event-cycle"
+      ],
+      "priority": 30,
+      "query_id": "official-page-baseline",
+      "play": "Smart",
+      "next_action": "Recheck original source because automated access failed. Research whether the 2029 annual event has an open venue decision and who manages vendor agreements; site subcommittee owns selection.",
+      "flags": [
+        "2027 host city already announced"
+      ],
+      "source_document_date": "",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_evidence": {
+        "event-cycle": "ALGA advertises the May 2–5, 2027 hybrid annual conference in Denver, which draws hundreds in person and online."
+      },
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "9daa9e032b4a984f921d",
+      "title": "The International Atomic Spectrometry Association Selects 2028 Conference Location - Spectroscopy Online",
+      "summary": "The International Atomic Spectrometry Association Selects 2028 Conference Location Spectroscopy Online",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNDdlUW8tSDNaUW1VTmFSbXpFcXpvdFBUckpaRTlTNDEzOURhdmtGc0ZGcnlZY2ttM2p6UnhKS1l0cUdHQ3NHRjBYbnVlMTF3Z0RQVTJHejFHRWlKYnRGX0hSNExkMkZ6MEc5Sl90YnVRZFJncVNkREF0YllnNVgwUFo2NFlFdW5UdWxVb0xvaEh0VERmVDREYlFzOXI1ZUU0WWF5SUpHbHllTjVqcUl1Uk1Ody1SZkRvZm1IbGNKbw?oc=5",
+      "source": "Spectroscopy Online",
+      "published": "2026-06-11",
+      "indexed_date": "",
+      "date_basis": "Public search-feed timestamp; confirm original publication date",
+      "origin": "news_index",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "organization_candidate": "International Atomic Spectrometry Association",
+      "organization_key": "international atomic spectrometry association",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "location-exploration": "try Association Selects 2028 Conference Location - Spectroscopy Online The International Atomic Spectr"
+      },
+      "types": [
+        "location-exploration"
+      ],
+      "priority": 33,
+      "query_id": "future-site",
+      "play": "Smart",
+      "next_action": "Confirm legal organizer, prior event cycles, next decision point, hotel commitments and current planner.",
+      "flags": [],
+      "signal_strength": "Early indexed clue; no purchasing intent established",
+      "signal_evidence": {
+        "location-exploration": "try Association Selects 2028 Conference Location - Spectroscopy Online The International Atomic Spectr"
+      },
+      "evidence_gate": "Named organizer + event + planning/financial/venue clue; original source unverified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified discovery",
+      "first_detected": "2026-11-06"
     }
   ],
   "discovery_enrichment": {
