@@ -254,7 +254,7 @@ EARLY_SIGNALS = {
    r'\b(?:volunteers|nominations|applications|interest form)\b.{0,90}\bconference (?:planning )?committee\b'],
  'location-exploration': [
    r'\b(?:future conference|conference locations?|host (?:cities|city|sites?)|site selection)\b.{0,100}\b(?:recommendations?|suggestions?|input|consider|looking|proposals|options|committee)\b',
-   r'\b(?:2027|2028|2029)\b.{0,80}\b(?:conference|convention)\b.{0,75}\b(?:location|host city|host site|venue)\b'],
+   r'\b(?:2027|2028|2029)\b.{0,80}\b(?:conference|convention)\b.{0,75}\b(?:location|host city|host site|venue)\b.{0,60}\b(?:exploring|considering|seeking|proposals|input|recommendations|options|not yet decided)\b'],
  'event-review': [
    r'\b(?:conference|annual meeting|annual convention)\b.{0,75}\b(?:survey|evaluation|feedback|debrief|improvements)\b',
    r'\b(?:attendee|member)\b.{0,40}\b(?:survey|feedback)\b.{0,50}\bconference\b'],
@@ -268,6 +268,11 @@ EARLY_SIGNALS = {
 # Do not mistake a host hotel's construction, a generic event consultant blog,
 # or a speaker-session CFP for organizer purchasing intent.
 HARD_NEGATIVE = re.compile(r'\b(?:what is a conference|dictionary|wikipedia|conference planning tips|best conferences to attend|top \d+ conferences|conference industry trends|conference industry outlook|industry outlook survey|conference sector survey|how to plan a conference)\b',re.I)
+
+# A *completed* hotel/city selection is a counter-signal, not a sourcing window.
+CLOSED_LOCATION = re.compile(
+ r'\b(?:selects?|selected|chooses?|chosen|announces?|confirms?|finalizes?|finalized)\b.{0,60}\b(?:20\d{2}\s+)?(?:conference|convention|annual meeting)\b.{0,40}\b(?:location|site|host city|venue|hotel)\b|'
+ r'\b(?:conference|convention|annual meeting)\b.{0,65}\b(?:location|site|host city|venue|hotel)\b.{0,45}\b(?:selected|chosen|confirmed|already booked|contracted)\b',re.I)
 
 def weak_evidence(txt):
     found={}
@@ -360,7 +365,7 @@ def relevance(article,label):
     if not title or not url.startswith(('https://','http://')):return None
     h=host_name(url)
     if any(h==x or h.endswith('.'+x) for x in EXCLUDED_HOSTS):return None
-    if GENERIC_BLOG.search(title) or HARD_NEGATIVE.search(title):return None
+    if GENERIC_BLOG.search(title) or HARD_NEGATIVE.search(title) or CLOSED_LOCATION.search(title):return None
     txt=event_context(title,summary)
     if not EVENT_REGEX.search(txt):return None
     if FOREIGN_CONTEXT.search(txt):return None
@@ -466,8 +471,8 @@ def official_watches(old_items):
             # for manual review and do not pretend this source is current.
             match=re.search(re.escape(needle_norm),page,re.I)
             if not match:
-                failed.append(org+': expected source passage absent or changed')
-                continue
+                # Preserve a dated snapshot with explicit stale-source warning.
+                raise ValueError('expected source passage absent or changed')
             checks+=1
             excerpt=page[max(0,match.start()-60):min(len(page),match.end()+110)]
             ident=hashlib.sha256(('watch:'+url).encode()).hexdigest()[:20]
