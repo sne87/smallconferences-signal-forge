@@ -332,6 +332,10 @@ def run():
     for i,(label,query) in enumerate(QUERIES):
         engines=['google']
         if i in (0,2,4,6,8):engines.append('bing')
+        # Association board minutes, member surveys and official notices often
+        # never reach a news index. Sample the general public web index too;
+        # the same strict buyer/action gates apply to every returned page.
+        if i % 3 == 1:engines.append('web')
         for engine in engines:
             try:
                 articles=fetch_rss(scan_url(query,engine));fetched+=1
@@ -372,7 +376,7 @@ def run():
          'scan_queries':len(QUERIES)+social_attempted,'social_index_queries':social_attempted,
          'social_index_candidates_seen':social_found,
          'social_by_platform':{p:sum(1 for x in kept if x.get('platform')==p) for p,_ in SOCIAL_DOMAINS},
-         'sources_attempted':len(QUERIES)+5+social_attempted,
+         'sources_attempted':len(QUERIES)+5+sum(i%3==1 for i in range(len(QUERIES)))+social_attempted,
          'coverage_warning':'Public news and indexed social search only. Indexes are incomplete and may not preserve original social post dates. Not direct or private-platform monitoring.',
          'new_discoveries':fresh,'rejected_irrelevant_hits':rejected,
          'previous_noise_removed':dropped_previous,'errors':failed[:15],'signals':kept}
