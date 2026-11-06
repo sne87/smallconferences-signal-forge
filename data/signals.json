@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T18:20:28+00:00",
+  "generated_at": "2026-11-06T18:30:45+00:00",
   "scanner_version": "2.1-social-radar",
   "purpose": "Public discovery only; not qualified organizations, venue availability, or confirmed buyer intent.",
   "scan_sources_ok": 96,
@@ -16,7 +16,7 @@
   },
   "sources_attempted": 96,
   "coverage_warning": "Public news RSS plus best-effort web-indexed social mentions only. Not direct Facebook/LinkedIn/Threads/X/Reddit API monitoring. Platform results may be absent, delayed, or incomplete; dates from the index are not original post timestamps. Reddit RSS is discontinued November 13, 2026. Check source links and dates manually.",
-  "new_discoveries": 57,
+  "new_discoveries": 1,
   "errors": [],
   "signals": [
     {
@@ -263,6 +263,33 @@
       "qualification": "Unverified discovery"
     },
     {
+      "id": "87c350a804dd11364153",
+      "title": "And just like that, the 28th International Leadership Association (ILA) Global Conference is officially over (and I am officially back in Colorado). There are four primary people I have to thank for this incredible exper",
+      "summary": "And just like that, the 28th International Leadership Association (ILA) Global Conference is officially over (and I am officially back in Colorado). There are four primary people I have to thank for this incredible experience: Marissa Khan, Calvin Hawks, Jessica Fo LinkedIn",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWlRmcXh5TlJodF80YjJ6SmJvXzBWZlp5WFBXY1REY25NWDZRRnpjZEtQTlpmNWZ1a29oajg4TkhWQ2hfcXJnS2ZRb0JuN1U2TklHS1A3RzM2ZktWQ3pFckFVZF9TSkRMT1gwejcya2t3Q01TenVZaENzdFFkaklYVWY5eEV3V1E5MjN5QUZRbWplRzVoMWdJWGFsSEd5eERBRkZFTS0xY0ptNEN1X1Nj?oc=5",
+      "source": "LinkedIn",
+      "published": "2026-11-02",
+      "indexed_date": "",
+      "date_basis": "Public feed date; verify on original source",
+      "origin": "news_index",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "types": [
+        "timing"
+      ],
+      "priority": 29,
+      "query_id": "linkedin-public",
+      "play": "Smart",
+      "next_action": "Verify the legal entity, recurring event, event cycle, hotel/planner arrangements and decision date from original organizational sources.",
+      "flags": [],
+      "signal_strength": "unverified indexed mention; corroboration required",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified discovery"
+    },
+    {
       "id": "d7d59e1d1a575d7681b3",
       "title": "The call for proposals has been extended for Region IV! The ACTE Region IV Conference Planning Committee invites career and technical education professionals and partners to submit presentation proposals for the 2027 ACT",
       "summary": "The call for proposals has been extended for Region IV! The ACTE Region IV Conference Planning Committee invites career and technical education professionals and partners to submit presentation proposals for the 2027 ACTE Region IV Conference, held LinkedIn",
@@ -276,8 +303,8 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "types": [
-        "timing",
-        "commercial"
+        "commercial",
+        "timing"
       ],
       "priority": 57,
       "query_id": "linkedin-public",
@@ -520,8 +547,8 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "types": [
-        "timing",
-        "disruption"
+        "disruption",
+        "timing"
       ],
       "priority": 36,
       "query_id": "facebook-public",
@@ -1305,8 +1332,8 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "types": [
-        "timing",
-        "disruption"
+        "disruption",
+        "timing"
       ],
       "priority": 48,
       "query_id": "early-planning",
@@ -1634,7 +1661,7 @@
   ],
   "discovery_enrichment": {
     "status": "public-index triage, not buyer qualification",
-    "new_this_run": 1,
+    "new_this_run": 0,
     "caveat": "Only headlines with explicit full nonprofit names are enriched. Other discoveries require manual organizer identity."
   }
 }
