@@ -129,3 +129,13 @@ Budget strain; post-event feedback; planning-chair turnover; hotel/venue reconsi
 - **Frequency:** GitHub workflow has four scheduled UTC runs per day, after GitHub Pages/Actions have been deployed. User's separate ChatGPT Robert watch runs 8 AM and 6 PM Central, and does not feed the app.
 - **What still requires your judgment:** legal organizer and chapter, accuracy/recurrence of events, whether an incumbent contract is exclusive, decision-maker authority, actual decision date, and whether Robert's fee-based service has a plausible buyer. Any missing source remains **unknown**, never a negative finding or a qualified lead.
 - **No live verification performed during packaging:** The current session can run syntax and mock tests, but it cannot reach ProPublica / public RSS endpoints from the local runtime. The first real scan must run in your deployed GitHub Actions account and you should check its log for failures or rate limits.
+
+## Buyer-evidence filtering (v3.1)
+
+The discovery scanner uses three evidence gates before adding anything to the public feed: (1) a recognizable, named association/nonprofit/SMERF organizer; (2) a relevant annual or recurring event; and (3) an explicit event-planning, venue, committee, financial, staffing, attendance, or attendee-feedback **change**. A blog discussing a conference as a topic, a simple event listing, a generic call for speakers, or a dictionary page cannot qualify as a discovery.
+
+Each discovery displays the matching evidence excerpt and a precise next verification question. A review priority is not a purchase probability. The scheduled scanner also removes older false positives from the **public feed** on its next successful scan. Locally saved private leads and evidence are not automatically deleted.
+
+Social coverage is limited to publicly indexed pages. A result is only marked Facebook/LinkedIn/Threads/X/Reddit if the original URL hostname or a Google News source supports that platform. Bing's `site:` query is not always respected; mismatching results are rejected.
+
+What to prioritize: conference-site searches before RFP; annual-event budget and revenue reviews; committee chair or planner changes; attendee complaints about hotel price/format; room-block attrition and F&B minimum pressure; sponsor/exhibitor dissatisfaction; new overnight events; multi-year hotel contract cycles. Always verify venue/planner incumbents and official source dates before contacting anyone.
