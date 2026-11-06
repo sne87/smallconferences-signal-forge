@@ -1,0 +1,61 @@
+name: Scan public signals and publish Signal Forge
+on:
+  schedule:
+    # Four public-index scans daily, approximately every six hours.
+    # UTC scheduling means local Central times shift during daylight saving time.
+    - cron: '15 0,6,12,18 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'scripts/**'
+      - 'watchlist.json'
+      - '.github/workflows/scan-and-publish.yml'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: signal-forge-pages
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Public discovery scan
+        run: python scripts/discover.py
+      - name: Auto-research promising clear-name discoveries
+        run: python scripts/enrich_discoveries.py
+      - name: Public organization intelligence
+        run: python scripts/enrich.py
+      - name: Save public feed to repository
+        run: |
+          git config user.name "signal-forge-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/signals.json data/intelligence.json
+          git diff --cached --quiet || (git commit -m "Refresh public discovery feed" && git push)
+      - name: Prepare static app
+        run: |
+          mkdir -p dist/data
+          cp index.html dist/index.html
+          cp data/signals.json dist/data/signals.json
+          cp data/intelligence.json dist/data/intelligence.json
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
