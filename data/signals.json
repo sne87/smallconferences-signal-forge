@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-07T04:46:03+00:00",
-  "scanner_version": "4.1-new-organizer-intelligence",
+  "generated_at": "2026-11-07T04:58:42+00:00",
+  "scanner_version": "4.2-robert-smerf-pre-rfp",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
   "scan_sources_ok": 147,
   "official_pages_checked": 5,
@@ -34,6 +34,65 @@
   "review_watch_count": 11,
   "stacked_organizations": 5,
   "organizations": [
+    {
+      "key": "nonprofit association of oregon",
+      "name": "Nonprofit Association of Oregon",
+      "signal_ids": [
+        "b6bf4a5ddd897e69bd79",
+        "00a7a89cdd60981d6e2d"
+      ],
+      "families": [
+        "attendee-change",
+        "event-review"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "b6bf4a5ddd897e69bd79",
+          "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
+          "url": "https://nonprofitoregon.org/conference-notification-form/",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "attendee-change"
+          ],
+          "tier": "watch"
+        },
+        {
+          "id": "00a7a89cdd60981d6e2d",
+          "title": "Nonprofit Association of Oregon | 2027 conference cycle and program decision milestones",
+          "url": "https://nonprofitoregon.org/events-trainings/speaking-opportunities/",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "event-review"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 2,
+      "most_recent": "2026-11-06",
+      "play": "Bold",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-06",
+      "mentions": 2,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "attendee-change",
+        "event-review"
+      ],
+      "pre_rfp_research_priority": true,
+      "priority": 71,
+      "stack_stage": "multiple evidence items, no verified buying window",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
     {
       "key": "new york state association of professional land surveyors",
       "name": "New York State Association of Professional Land Surveyors",
@@ -84,9 +143,149 @@
       "first_detected": "2026-11-06",
       "mentions": 2,
       "distinct_sources": 1,
-      "priority": 65,
+      "early_signal_families": [
+        "economics"
+      ],
+      "pre_rfp_research_priority": true,
+      "priority": 66,
       "stack_stage": "multiple evidence items, no verified buying window",
       "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
+    },
+    {
+      "key": "arkansas education association",
+      "name": "Arkansas Education Association",
+      "signal_ids": [
+        "d2c40d9ffb0bc10956e0",
+        "53d27bbb760d30f5643c"
+      ],
+      "families": [
+        "capacity",
+        "disruption"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "d2c40d9ffb0bc10956e0",
+          "title": "Arkansas Education Association | Summer 2027 conference calendar change",
+          "url": "https://www.aeaonline.org/teach",
+          "source": "Official association page (research snapshot)",
+          "published": "",
+          "document_date": "",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [],
+          "families": [
+            "disruption"
+          ],
+          "tier": "watch"
+        },
+        {
+          "id": "53d27bbb760d30f5643c",
+          "title": "Arkansas Education Association | New executive director and program-operations leadership",
+          "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
+          "source": "Official association page (research snapshot)",
+          "published": "",
+          "document_date": "",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [],
+          "families": [
+            "capacity"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 2,
+      "most_recent": "2026-11-06",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-06",
+      "mentions": 2,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "capacity"
+      ],
+      "pre_rfp_research_priority": true,
+      "priority": 61,
+      "stack_stage": "multiple evidence items, no verified buying window",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "council of academic programs in communication sciences and disorders",
+      "name": "Council of Academic Programs in Communication Sciences and Disorders",
+      "signal_ids": [
+        "bc3681e0bb15dc2c6cd3",
+        "5495355894dd1bae53e6",
+        "3f964c6691eaa8e48c9f"
+      ],
+      "families": [
+        "economics",
+        "event-economics",
+        "verified-financial-fit"
+      ],
+      "commitment_flags": [
+        "2027 host hotel already publicly named"
+      ],
+      "evidence": [
+        {
+          "id": "bc3681e0bb15dc2c6cd3",
+          "title": "Council of Academic Programs in Communication Sciences and Disorders | 2027 annual conference subsidized; host hotel publicly named",
+          "url": "https://www.capcsd.org/annual-conference/",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2027 event notice",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [
+            "2027 host hotel already publicly named"
+          ],
+          "families": [
+            "event-economics"
+          ],
+          "tier": "watch"
+        },
+        {
+          "id": "5495355894dd1bae53e6",
+          "title": "Council of Academic Programs in Communication Sciences and Disorders | FY2025 $1.93M revenue verifies financial range",
+          "url": "https://projects.propublica.org/nonprofits/organizations/630784938",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "FY2025",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "verified-financial-fit"
+          ],
+          "tier": "watch"
+        },
+        {
+          "id": "3f964c6691eaa8e48c9f",
+          "title": "Council of Academic Programs in Communication Sciences and Disorders | Board reviewed conference revenue and cost reduction, February 2025",
+          "url": "https://www.capcsd.org/assets/pdf/February%2B2025%2BBOD%2BMeeting%2BMinutes",
+          "source": "Official association page (research snapshot)",
+          "published": "",
+          "document_date": "2025-02-09 to 2025-02-11",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "counterevidence_flags": [],
+          "families": [
+            "economics"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 3,
+      "most_recent": "2026-11-06",
+      "play": "Bold",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-06",
+      "mentions": 3,
+      "distinct_sources": 2,
+      "early_signal_families": [
+        "economics"
+      ],
+      "pre_rfp_research_priority": false,
+      "priority": 58,
+      "stack_stage": "multiple sourced planning clues, contract openness unverified",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
       "key": "association of local government auditors",
@@ -161,194 +360,14 @@
       "first_detected": "2026-11-06",
       "mentions": 3,
       "distinct_sources": 2,
-      "priority": 60,
-      "stack_stage": "multiple evidence items, no verified buying window",
-      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
-    },
-    {
-      "key": "council of academic programs in communication sciences and disorders",
-      "name": "Council of Academic Programs in Communication Sciences and Disorders",
-      "signal_ids": [
-        "bc3681e0bb15dc2c6cd3",
-        "5495355894dd1bae53e6",
-        "3f964c6691eaa8e48c9f"
-      ],
-      "families": [
-        "economics",
-        "event-economics",
-        "verified-financial-fit"
-      ],
-      "commitment_flags": [
-        "2027 host hotel already publicly named"
-      ],
-      "evidence": [
-        {
-          "id": "bc3681e0bb15dc2c6cd3",
-          "title": "Council of Academic Programs in Communication Sciences and Disorders | 2027 annual conference subsidized; host hotel publicly named",
-          "url": "https://www.capcsd.org/annual-conference/",
-          "source": "Official association page (monitored)",
-          "published": "",
-          "document_date": "2027 event notice",
-          "freshness": "Official source page fetched during this scan",
-          "counterevidence_flags": [
-            "2027 host hotel already publicly named"
-          ],
-          "families": [
-            "event-economics"
-          ],
-          "tier": "watch"
-        },
-        {
-          "id": "5495355894dd1bae53e6",
-          "title": "Council of Academic Programs in Communication Sciences and Disorders | FY2025 $1.93M revenue verifies financial range",
-          "url": "https://projects.propublica.org/nonprofits/organizations/630784938",
-          "source": "Official association page (monitored)",
-          "published": "",
-          "document_date": "FY2025",
-          "freshness": "Official source page fetched during this scan",
-          "counterevidence_flags": [],
-          "families": [
-            "verified-financial-fit"
-          ],
-          "tier": "watch"
-        },
-        {
-          "id": "3f964c6691eaa8e48c9f",
-          "title": "Council of Academic Programs in Communication Sciences and Disorders | Board reviewed conference revenue and cost reduction, February 2025",
-          "url": "https://www.capcsd.org/assets/pdf/February%2B2025%2BBOD%2BMeeting%2BMinutes",
-          "source": "Official association page (research snapshot)",
-          "published": "",
-          "document_date": "2025-02-09 to 2025-02-11",
-          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
-          "counterevidence_flags": [],
-          "families": [
-            "economics"
-          ],
-          "tier": "watch"
-        }
-      ],
-      "priority_count": 0,
-      "watch_count": 3,
-      "most_recent": "2026-11-06",
-      "play": "Bold",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-06",
-      "mentions": 3,
-      "distinct_sources": 2,
-      "priority": 60,
-      "stack_stage": "multiple sourced planning clues, contract openness unverified",
-      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
-    },
-    {
-      "key": "nonprofit association of oregon",
-      "name": "Nonprofit Association of Oregon",
-      "signal_ids": [
-        "b6bf4a5ddd897e69bd79",
-        "00a7a89cdd60981d6e2d"
-      ],
-      "families": [
-        "attendee-change",
-        "event-review"
-      ],
-      "commitment_flags": [],
-      "evidence": [
-        {
-          "id": "b6bf4a5ddd897e69bd79",
-          "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
-          "url": "https://nonprofitoregon.org/conference-notification-form/",
-          "source": "Official association page (monitored)",
-          "published": "",
-          "document_date": "",
-          "freshness": "Official source page fetched during this scan",
-          "counterevidence_flags": [],
-          "families": [
-            "attendee-change"
-          ],
-          "tier": "watch"
-        },
-        {
-          "id": "00a7a89cdd60981d6e2d",
-          "title": "Nonprofit Association of Oregon | 2027 conference cycle and program decision milestones",
-          "url": "https://nonprofitoregon.org/events-trainings/speaking-opportunities/",
-          "source": "Official association page (monitored)",
-          "published": "",
-          "document_date": "",
-          "freshness": "Official source page fetched during this scan",
-          "counterevidence_flags": [],
-          "families": [
-            "event-review"
-          ],
-          "tier": "watch"
-        }
-      ],
-      "priority_count": 0,
-      "watch_count": 2,
-      "most_recent": "2026-11-06",
-      "play": "Bold",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-06",
-      "mentions": 2,
-      "distinct_sources": 1,
-      "priority": 55,
-      "stack_stage": "multiple evidence items, no verified buying window",
-      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
-    },
-    {
-      "key": "arkansas education association",
-      "name": "Arkansas Education Association",
-      "signal_ids": [
-        "d2c40d9ffb0bc10956e0",
-        "53d27bbb760d30f5643c"
-      ],
-      "families": [
-        "capacity",
-        "disruption"
-      ],
-      "commitment_flags": [],
-      "evidence": [
-        {
-          "id": "d2c40d9ffb0bc10956e0",
-          "title": "Arkansas Education Association | Summer 2027 conference calendar change",
-          "url": "https://www.aeaonline.org/teach",
-          "source": "Official association page (research snapshot)",
-          "published": "",
-          "document_date": "",
-          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
-          "counterevidence_flags": [],
-          "families": [
-            "disruption"
-          ],
-          "tier": "watch"
-        },
-        {
-          "id": "53d27bbb760d30f5643c",
-          "title": "Arkansas Education Association | New executive director and program-operations leadership",
-          "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-          "source": "Official association page (research snapshot)",
-          "published": "",
-          "document_date": "",
-          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
-          "counterevidence_flags": [],
-          "families": [
-            "capacity"
-          ],
-          "tier": "watch"
-        }
-      ],
-      "priority_count": 0,
-      "watch_count": 2,
-      "most_recent": "2026-11-06",
-      "play": "Smart",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-06",
-      "mentions": 2,
-      "distinct_sources": 1,
-      "priority": 55,
+      "early_signal_families": [],
+      "pre_rfp_research_priority": false,
+      "priority": 48,
       "stack_stage": "multiple evidence items, no verified buying window",
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 885,
+  "rejected_irrelevant_hits": 944,
   "previous_noise_removed": 0,
   "errors": [
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
@@ -416,7 +435,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T04:46:03+00:00",
+      "last_checked": "2026-11-07T04:58:42+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -458,7 +477,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T04:46:03+00:00",
+      "last_checked": "2026-11-07T04:58:42+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -500,7 +519,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T04:46:03+00:00",
+      "last_checked": "2026-11-07T04:58:42+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -542,7 +561,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T04:46:03+00:00",
+      "last_checked": "2026-11-07T04:58:42+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -586,7 +605,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T04:46:03+00:00",
+      "last_checked": "2026-11-07T04:58:42+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -658,7 +677,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-07T04:47:07+00:00",
+        "checked_at": "2026-11-07T04:59:52+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -738,7 +757,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-07T04:47:08+00:00",
+        "checked_at": "2026-11-07T04:59:54+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
