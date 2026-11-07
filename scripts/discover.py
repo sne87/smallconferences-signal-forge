@@ -245,9 +245,51 @@ SIGNALS = {
  ],
 }
 
+
+# Robert's nonprofit/SMERF research preference. Historical experience: 25-2500
+# guests, but 75-500 is the preferred solo-service research band. Always verify.
+# These are research heuristics, never buyer probabilities or qualification.
+ROBERT_EARLY_FAMILIES = {
+ 'board-location': 13, 'committee-forming': 12, 'event-financial-review': 15,
+ 'event-review': 11, 'location-exploration': 12, 'local-host-support': 11,
+ 'operating-transition': 10, 'committee-reset': 12, 'economics': 14,
+ 'attendee-change': 11, 'economics-watch': 8, 'capacity': 10,
+ 'strategic-shift': 10,
+}
+SMERF_FIT = re.compile(
+ r'\b(?:nonprofit|non-profit|501\(c\)|charitable|foundation|historical society|'
+ r'museum association|heritage society|educators? association|school boards?|'
+ r'library association|community development|religious|church|faith.based|'
+ r'ministr(?:y|ies)|veterans?|military families|fraternal|sorority|fraternity|'
+ r'civic association|senior centers?|social club|membership organization|'
+ r'state association|regional association|chapter)\b',re.I)
+CLEAR_NON_FIT = re.compile(r'\b(?:corporate product launch|investor roadshow|enterprise tech expo|commercial trade fair)\b',re.I)
+VENUE_FIXED = re.compile(r'\b(?:official (?:conference |host )?hotel|room block (?:now )?(?:open|available)|book your (?:hotel|room)|venue (?:is |has been )?(?:confirmed|contracted|booked))\b',re.I)
+RFP_PHASE = re.compile(r'\b(?:RFP|request for proposals|request for bids|accepting proposals|soliciting bids|hotel proposals under review)\b',re.I)
+def robert_discovery_priority(types, text, flags, baseline):
+    """Rank for investigation, not probability; verify legal identity and venue."""
+    types=set(types)
+    bonus=min(27,sum(ROBERT_EARLY_FAMILIES.get(t,0) for t in types))
+    fit='Possible nonprofit/SMERF clue' if SMERF_FIT.search(text) else 'Sector not yet verified'
+    if CLEAR_NON_FIT.search(text):bonus-=35;fit='Possible outside-specialty event'
+    if not SMERF_FIT.search(text):bonus-=9
+    if 'procurement' in types or RFP_PHASE.search(text):bonus-=11
+    if VENUE_FIXED.search(text):bonus-=20
+    if flags:bonus-=11
+    return max(0,min(92,baseline+bonus)),fit
+
 # Weaker, early indicators deserve review but MUST NOT be called buying intent.
 # A routine conference announcement, speaker CFP, or abstract call is not enough.
 EARLY_SIGNALS = {
+ 'board-location': [
+   r'\b(?:board|trustees|executive committee|site selection committee)\b.{0,110}\b(?:next|future|upcoming|annual) (?:conference|convention|meeting)\b.{0,95}\b(?:location|city|host|venue|format|site)\b',
+   r'\b(?:board minutes|committee minutes)\b.{0,100}\b(?:conference|convention|annual meeting)\b'],
+ 'event-financial-review': [
+   r'\b(?:conference|convention|annual meeting)\b.{0,75}\b(?:financial report|budget discussion|post.event financial|net proceeds|operating loss|expense review|cost assessment)\b',
+   r'\b(?:board|finance committee|treasurer)\b.{0,90}\b(?:conference|meeting) (?:costs|expenses|budget|margin|deficit)\b'],
+ 'local-host-support': [
+   r'\b(?:local host|host committee|chapter host|host organization)\b.{0,100}\b(?:conference|convention|annual meeting)\b.{0,70}\b(?:support|assistance|volunteers|logistics|planning|site)\b',
+   r'\b(?:conference|annual meeting)\b.{0,90}\b(?:local host|host chapter)\b.{0,60}\b(?:help|planning|logistics|assistance)\b'],
  'committee-forming': [
    r'\b(?:20(?:26|27|28|29|30) )?(?:annual |national |regional )?conference (?:planning )?committee\b',
    r'\bconference committee\b.{0,80}\b(?:apply|join|volunteer|recruit|meeting|open positions|new members|202[6-9])\b',
@@ -410,6 +452,7 @@ def as_candidate(article,query_label):
     has_direct=('procurement' in assessment['strong'] and re.search(r'\b(?:planner|planning services|management services|consultant)\b',txt,re.I))
     play='Safe' if has_direct else ('Bold' if ('economics' in types or 'attendee-change' in types or 'economics-watch' in types) and not ('venue-decision' in types or 'committee-reset' in types) else 'Smart')
     score=min(92, (49 if assessment['tier']=='priority' else 28) + 9*min(len(assessment['strong']),3) + 5*min(len(assessment['weak']),3) + (7 if has_direct else 0) - 12*bool(flags))
+    score,robert_fit=robert_discovery_priority(types,txt,flags,score)
     platform=source_platform(article,query_label) or ''
     is_social=bool(platform)
     date=article.get('published','')
@@ -424,7 +467,7 @@ def as_candidate(article,query_label):
       'organization_key':org_key(assessment['organization']),
       'review_tier':assessment['tier'],
       'strong_evidence':assessment['strong'],'early_evidence':assessment['weak'],
-      'types':types,'priority':score,'query_id':query_label,'play':play,
+      'types':types,'priority':score,'robert_fit_clue':robert_fit,'pre_rfp_priority':bool(set(types)&set(ROBERT_EARLY_FAMILIES)) and not bool(flags) and not bool(RFP_PHASE.search(txt)),'query_id':query_label,'play':play,
       'next_action':next_action(types,flags,play),'flags':flags,
       'signal_strength':('Specific indexed buying/planning clue, not a confirmed buyer' if assessment['tier']=='priority' else 'Early indexed clue; no purchasing intent established'),
       'signal_evidence':assessment['strong'] or assessment['weak'],
@@ -594,7 +637,13 @@ def organization_stacks(items):
         group['distinct_sources']=source_count
         group['families']=sorted(group['families'])
         group['commitment_flags']=sorted(group['commitment_flags'])
-        group['priority']=min(92,28 + min(kind_count,4)*10 + min(source_count,3)*7 + (10 if group['priority_count'] else 0) - (12 if group['commitment_flags'] else 0))
+        group['early_signal_families']=sorted(set(group['families']) & set(ROBERT_EARLY_FAMILIES))
+        group['pre_rfp_research_priority']=bool(group['early_signal_families']) and not group['commitment_flags'] and 'procurement' not in group['families']
+        group['priority']=min(92,28 + min(kind_count,4)*8 + min(source_count,3)*7 +
+                              min(20,len(group['early_signal_families'])*10) +
+                              (5 if group['priority_count'] else 0) -
+                              (18 if group['commitment_flags'] else 0) -
+                              (12 if 'procurement' in group['families'] else 0))
         # Revenue filings and the recurring event calendar support fit, but do
         # NOT independently corroborate an open planning or procurement window.
         buying_families=set(group['families'])-{'verified-financial-fit','event-cycle','decision-cadence','venue-committed'}
@@ -608,7 +657,7 @@ def organization_stacks(items):
         elif any(k in group['families'] for k in ('economics','attendee-change','economics-watch')):group['play']='Bold'
         group.pop('sources')
         out.append(group)
-    return sorted(out,key=lambda g:(g['priority_count']>0,g['distinct_sources']>=2,g['priority'],g['most_recent']),reverse=True)
+    return sorted(out,key=lambda g:(g['pre_rfp_research_priority'],g['distinct_sources']>=2,g['priority'],g['most_recent']),reverse=True)
 
 def run():
     previous=existing()
@@ -704,7 +753,7 @@ def run():
     organizations=organization_stacks(kept)
     old_org_keys={x.get('organization_key') for x in previous if x.get('organization_key')}
     new_organizations=[g['name'] for g in organizations if g.get('key') not in old_org_keys]
-    out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'4.1-new-organizer-intelligence',
+    out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'4.2-robert-smerf-pre-rfp',
          'purpose':'Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.',
          'scan_sources_ok':fetched,'official_pages_checked':watched_ok,
          'official_pages_monitored':len(watched),'official_watch_errors':watch_errors,
