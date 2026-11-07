@@ -1,7 +1,179 @@
 {
   "targets": [
-    {"name": "Arkansas Education Association", "state": "AR", "ein": ""},
-    {"name": "Nonprofit Association of Oregon", "state": "OR", "ein": ""},
-    {"name": "New York State Association of Professional Land Surveyors", "state": "NY", "ein": ""}
+    {
+      "name": "Arkansas Education Association",
+      "state": "AR",
+      "ein": ""
+    },
+    {
+      "name": "Nonprofit Association of Oregon",
+      "state": "OR",
+      "ein": ""
+    },
+    {
+      "name": "New York State Association of Professional Land Surveyors",
+      "state": "NY",
+      "ein": ""
+    },
+    {
+      "name": "Michigan Association of Senior Centers",
+      "state": "MI",
+      "ein": ""
+    },
+    {
+      "name": "South Carolina Sociological Association",
+      "state": "SC",
+      "ein": ""
+    },
+    {
+      "name": "Society for Asian and Comparative Philosophy",
+      "state": "",
+      "ein": ""
+    },
+    {
+      "name": "Text Encoding Initiative Consortium",
+      "state": "",
+      "ein": ""
+    },
+    {
+      "name": "International Association for College Admission Counseling",
+      "state": "",
+      "ein": ""
+    },
+    {
+      "name": "Public Management Research Association",
+      "state": "",
+      "ein": ""
+    },
+    {
+      "name": "SERVSIG",
+      "state": "",
+      "ein": ""
+    },
+    {
+      "name": "Ernest Hemingway Society",
+      "state": "",
+      "ein": ""
+    },
+    {
+      "name": "Arkansas Historical Association",
+      "state": "AR",
+      "ein": ""
+    },
+    {
+      "name": "Arkansas Speech-Language-Hearing Association",
+      "state": "AR",
+      "ein": ""
+    },
+    {
+      "name": "Louisiana Historical Association",
+      "state": "LA",
+      "ein": ""
+    },
+    {
+      "name": "Louisiana Library Association",
+      "state": "LA",
+      "ein": ""
+    },
+    {
+      "name": "NAMI Mississippi",
+      "state": "MS",
+      "ein": ""
+    },
+    {
+      "name": "Tennessee Primary Care Association",
+      "state": "TN",
+      "ein": ""
+    },
+    {
+      "name": "Minnesota Council of Nonprofits",
+      "state": "MN",
+      "ein": ""
+    },
+    {
+      "name": "South Carolina Counseling Association",
+      "state": "SC",
+      "ein": ""
+    },
+    {
+      "name": "North Carolina Museums Council",
+      "state": "NC",
+      "ein": ""
+    },
+    {
+      "name": "North Carolina Association of Metropolitan Planning Organizations",
+      "state": "NC",
+      "ein": ""
+    },
+    {
+      "name": "North Carolina Campus Engagement",
+      "state": "NC",
+      "ein": ""
+    },
+    {
+      "name": "Association for Continuing Higher Education",
+      "state": "",
+      "ein": ""
+    },
+    {
+      "name": "Kentucky Out-of-School Alliance",
+      "state": "KY",
+      "ein": ""
+    },
+    {
+      "name": "South Carolina Athletic Trainers Association",
+      "state": "SC",
+      "ein": ""
+    },
+    {
+      "name": "Arkansas Nurse Practitioner Association",
+      "state": "AR",
+      "ein": ""
+    },
+    {
+      "name": "Arkansas School Boards Association",
+      "state": "AR",
+      "ein": ""
+    },
+    {
+      "name": "Center for Nonprofit Excellence of Middle Tennessee",
+      "state": "TN",
+      "ein": ""
+    },
+    {
+      "name": "Oklahoma Drug and Alcohol Professional Counselors Association",
+      "state": "OK",
+      "ein": ""
+    },
+    {
+      "name": "Louisiana Travel Association",
+      "state": "LA",
+      "ein": ""
+    },
+    {
+      "name": "Minnesota Alliance of Local History Museums",
+      "state": "MN",
+      "ein": ""
+    },
+    {
+      "name": "North Carolina Association for Research in Education",
+      "state": "NC",
+      "ein": ""
+    },
+    {
+      "name": "North Carolina Economic Developers Association",
+      "state": "NC",
+      "ein": ""
+    },
+    {
+      "name": "Kentucky Association for Economic Development",
+      "state": "KY",
+      "ein": ""
+    },
+    {
+      "name": "Georgia Economic Developers Association",
+      "state": "GA",
+      "ein": ""
+    }
   ]
 }
