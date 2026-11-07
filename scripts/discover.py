@@ -103,6 +103,23 @@ QUERIES += [
  ('regional-convention-committee','"regional convention" "committee" "planning"'),
 ]
 
+# Extra SMERF/nonprofit, pre-RFP discovery lanes. Never delete general
+# signal coverage. Requiring real organizer and change wording still applies.
+QUERIES += [
+ ('smerf-board-site', '"nonprofit association" "board minutes" "conference" "location"'),
+ ('smerf-conference-chair', '"regional association" "new conference chair"'),
+ ('smerf-nonprofit-cost', '"nonprofit" "annual conference" "financial report"'),
+ ('smerf-attendee-feedback', '"state association" "conference" "member survey" "next"'),
+ ('smerf-venue-undecided', '"historical society" "annual meeting" "site selection"'),
+ ('smerf-museum-host-support', '"museum association" "annual conference" "host committee"'),
+ ('smerf-veterans', '"veterans association" "convention committee" "site"'),
+ ('smerf-religious', '"religious association" "annual conference" "planning committee"'),
+ ('smerf-education', '"education association" "conference" "board minutes" "venue"'),
+ ('smerf-fraternal', '"fraternal" "annual convention" "host committee"'),
+ ('smerf-retreat', '"nonprofit" "annual retreat" "venue" "committee"'),
+ ('smerf-finance-pressure', '"association" "conference" "post event" "budget"'),
+]
+
 SOCIAL_TOPICS = [
  ('volunteer-shortage','"conference planning committee" "need volunteers"'),
  ('hotel-frustration','"association" "conference hotel" "too expensive"'),
