@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T06:02:04+00:00",
+  "generated_at": "2026-11-07T09:53:45+00:00",
   "scanner_version": "4.2-robert-smerf-pre-rfp",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
   "scan_sources_ok": 163,
@@ -88,6 +88,18 @@
         "attendee-change",
         "event-review"
       ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
       "pre_rfp_research_priority": true,
       "priority": 71,
       "stack_stage": "multiple evidence items, no verified buying window",
@@ -146,6 +158,18 @@
       "early_signal_families": [
         "economics"
       ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
       "pre_rfp_research_priority": true,
       "priority": 66,
       "stack_stage": "multiple evidence items, no verified buying window",
@@ -204,6 +228,18 @@
       "early_signal_families": [
         "capacity"
       ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "No confirmed recurring event history",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
       "pre_rfp_research_priority": true,
       "priority": 61,
       "stack_stage": "multiple evidence items, no verified buying window",
@@ -282,6 +318,18 @@
       "early_signal_families": [
         "economics"
       ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "No confirmed recurring event history",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Potential commitment evidence present",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
       "pre_rfp_research_priority": false,
       "priority": 58,
       "stack_stage": "multiple sourced planning clues, contract openness unverified",
@@ -361,13 +409,25 @@
       "mentions": 3,
       "distinct_sources": 2,
       "early_signal_families": [],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Potential commitment evidence present",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
       "pre_rfp_research_priority": false,
       "priority": 48,
       "stack_stage": "multiple evidence items, no verified buying window",
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 990,
+  "rejected_irrelevant_hits": 983,
   "previous_noise_removed": 0,
   "errors": [
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
@@ -435,7 +495,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T06:02:04+00:00",
+      "last_checked": "2026-11-07T09:53:45+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -477,7 +537,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T06:02:04+00:00",
+      "last_checked": "2026-11-07T09:53:45+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -519,7 +579,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T06:02:04+00:00",
+      "last_checked": "2026-11-07T09:53:45+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -561,7 +621,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T06:02:04+00:00",
+      "last_checked": "2026-11-07T09:53:45+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -605,7 +665,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-07T06:02:04+00:00",
+      "last_checked": "2026-11-07T09:53:45+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -677,7 +737,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-07T06:03:12+00:00",
+        "checked_at": "2026-11-07T09:54:56+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -757,7 +817,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-07T06:03:13+00:00",
+        "checked_at": "2026-11-07T09:54:57+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
