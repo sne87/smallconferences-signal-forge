@@ -611,6 +611,32 @@ def existing():
 
 
 
+# Research-gate status is deliberately conservative. Public snippets cannot
+# establish a signed contract's absence, event-level budget, solo workload or
+# decision-maker authority. Keep all candidates but clearly flag missing proof.
+ROBERT_REQUIRED_CHECKS = ('nonprofit_smerf_identity','recurring_event',
+                         'event_level_spend','manageable_logistics',
+                         'decision_maker','pre_rfp_window','venue_planner_crosscheck')
+def preliminary_fit_gates(group):
+    families=set(group.get('families',[]))
+    flags=group.get('commitment_flags',[])
+    event_clues=bool(families & {'event-cycle','event-review','attendee-change',
+                       'committee-forming','location-exploration','board-location',
+                       'local-host-support','venue-decision','committee-reset'})
+    # A clue can initiate investigation, NEVER satisfy a qualification gate.
+    return {
+      'specialty':'Requires legal identity / nonprofit or SMERF confirmation',
+      'recurring_event':'Research previous two event cycles' if event_clues else 'No confirmed recurring event history',
+      'event_spend':'Event budget, room nights and supplier spend unverified',
+      'workload':'Attendance, days, tracks, exhibitors and staff unverified',
+      'decision_maker':'Named purchasing authority and accessibility unverified',
+      'venue_planner':'Potential commitment evidence present' if flags else 'Venue and planner agreement status unknown',
+      'pre_rfp':'Cannot confirm open sourcing from public silence; check decision owner',
+      'qualified':False,
+      'review_goal':'25-50 researched organizers, 12 sourced manual-ready prospects',
+      'suggested_next_check':'Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending',
+    }
+
 def organization_stacks(items):
     """Group EXACT named-organizer candidates, never merge chapters heuristically.
 
@@ -655,6 +681,7 @@ def organization_stacks(items):
         group['families']=sorted(group['families'])
         group['commitment_flags']=sorted(group['commitment_flags'])
         group['early_signal_families']=sorted(set(group['families']) & set(ROBERT_EARLY_FAMILIES))
+        group['robert_fit_screen']=preliminary_fit_gates(group)
         group['pre_rfp_research_priority']=bool(group['early_signal_families']) and not group['commitment_flags'] and 'procurement' not in group['families']
         group['priority']=min(92,28 + min(kind_count,4)*8 + min(source_count,3)*7 +
                               min(20,len(group['early_signal_families'])*10) +
