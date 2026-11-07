@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T20:19:08+00:00",
+  "generated_at": "2026-11-07T04:47:09+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -67,6 +67,418 @@
         "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=New%20York%20State%20Association%20of%20Professional%20Land%20Surveyors&state%5Bid%5D=NY"
       },
       "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Michigan Association of Senior Centers",
+      "state": "MI",
+      "input_ein": "",
+      "financial": {
+        "status": "identity-review",
+        "match": "unresolved",
+        "ein": "",
+        "legal_name": "",
+        "fiscal_year": null,
+        "revenue": null,
+        "fit": "unknown",
+        "source_url": null,
+        "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
+        "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Michigan%20Association%20of%20Senior%20Centers&state%5Bid%5D=MI"
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "South Carolina Sociological Association",
+      "state": "SC",
+      "input_ein": "",
+      "financial": {
+        "status": "source-unavailable",
+        "match": "unknown",
+        "revenue": null,
+        "fit": "unknown",
+        "caveat": "Public financial API unavailable; do not infer revenue."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [
+        "ProPublica: HTTP Error 404: Not Found"
+      ],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Society for Asian and Comparative Philosophy",
+      "state": "",
+      "input_ein": "",
+      "financial": {
+        "status": "source-unavailable",
+        "match": "unknown",
+        "revenue": null,
+        "fit": "unknown",
+        "caveat": "Public financial API unavailable; do not infer revenue."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [
+        "ProPublica: HTTP Error 404: Not Found"
+      ],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Text Encoding Initiative Consortium",
+      "state": "",
+      "input_ein": "",
+      "financial": {
+        "status": "provisional-identity",
+        "match": "unique exact name match, EIN confirmation required",
+        "ein": "542047783",
+        "legal_name": "Text Encoding Initiative Consortium",
+        "fiscal_year": 2023,
+        "revenue": 47572,
+        "fit": "below",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/542047783.json",
+        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "International Association for College Admission Counseling",
+      "state": "",
+      "input_ein": "",
+      "financial": {
+        "status": "identity-review",
+        "match": "unresolved",
+        "ein": "",
+        "legal_name": "",
+        "fiscal_year": null,
+        "revenue": null,
+        "fit": "unknown",
+        "source_url": null,
+        "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
+        "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=International%20Association%20for%20College%20Admission%20Counseling"
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Public Management Research Association",
+      "state": "",
+      "input_ein": "",
+      "financial": {
+        "status": "provisional-identity",
+        "match": "unique exact name match, EIN confirmation required",
+        "ein": "200006098",
+        "legal_name": "Public Management Research Association",
+        "fiscal_year": 2023,
+        "revenue": 159318,
+        "fit": "below",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/200006098.json",
+        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "SERVSIG",
+      "state": "",
+      "input_ein": "",
+      "financial": {
+        "status": "identity-review",
+        "match": "unresolved",
+        "ein": "",
+        "legal_name": "",
+        "fiscal_year": null,
+        "revenue": null,
+        "fit": "unknown",
+        "source_url": null,
+        "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
+        "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=SERVSIG"
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Ernest Hemingway Society",
+      "state": "",
+      "input_ein": "",
+      "financial": {
+        "status": "source-unavailable",
+        "match": "unknown",
+        "revenue": null,
+        "fit": "unknown",
+        "caveat": "Public financial API unavailable; do not infer revenue."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [
+        "ProPublica: HTTP Error 404: Not Found"
+      ],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Arkansas Historical Association",
+      "state": "AR",
+      "input_ein": "",
+      "financial": {
+        "status": "provisional-identity",
+        "match": "unique exact name match, EIN confirmation required",
+        "ein": "237401813",
+        "legal_name": "Arkansas Historical Association",
+        "fiscal_year": 2024,
+        "revenue": 133234,
+        "fit": "below",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/237401813.json",
+        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+      },
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "Historical Society garners two awards from Arkansas Historical Association - Stuttgart Daily Leader",
+          "summary": "Historical Society garners two awards from Arkansas Historical Association Stuttgart Daily Leader",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYktURk1YYnl0VXhkS2NqWV9xWTJmZ0hiR2F1SDhSZVFxU2t5VWFsVUVTZ3FNWlpkZWZYVFJiVE1kMWI3dDI4VGhIUDJxZ05MbXlQSTFab2JfQVNoYXBMTUdkWmd1bEFZZmFVX3MwMVByN3BKZ1ZEdVR2RExpREQybE9XNVVBZ3VBdnFxOWFvekxlSGx6Y0pEalBkaEdIcnhhSENtb2Q2V3ZTUlB3eHBjSFpR?oc=5",
+          "index_date": "2024-05-21",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
+      "checks": [],
+      "historical_years": [
+        2025
+      ],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Arkansas Speech-Language-Hearing Association",
+      "state": "AR",
+      "input_ein": "",
+      "financial": {
+        "status": "provisional-identity",
+        "match": "unique exact name match, EIN confirmation required",
+        "ein": "237389213",
+        "legal_name": "Arkansas Speech Language Hearing Association",
+        "fiscal_year": 2023,
+        "revenue": 22405,
+        "fit": "below",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/237389213.json",
+        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Louisiana Historical Association",
+      "state": "LA",
+      "input_ein": "",
+      "financial": {
+        "status": "provisional-identity",
+        "match": "unique exact name match, EIN confirmation required",
+        "ein": "720545987",
+        "legal_name": "Louisiana Historical Association",
+        "fiscal_year": 2023,
+        "revenue": 48129,
+        "fit": "below",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/720545987.json",
+        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+      },
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "Professor Sarah Hyde to address Southeast Louisiana Historical Association Meeting - The Advocate",
+          "summary": "Professor Sarah Hyde to address Southeast Louisiana Historical Association Meeting The Advocate",
+          "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNb2VWMnJsOFkyT1MyVzl0aXJjTjUtWGtxS3dKTUVsX3lhTVpSWG8wNTZCOWJKa24zX3N1TXZrWkc4OUxsZV9hX1ZDNlIzUEp0eC1rUC12VDdna2p6U2NBUkN2TGoxcGVTVVlCbUJ4czZ1Z1hYQ0ljTlhfeFJrTnd2RVFrRlZMcFdjbG56aWRzek9ZeGpNajQ1cThSMGZZYkhtaFlrbDdnWkxJTDdLNWJkZTB1MEwtX1BSNmQ3eWpkQ1JFOUJycXdpT0xJZ3p4cHRDRjI5akY5bkJSUE8zWWhqU3Q3cmZReERYMHV4Q3k1NWVNQ0hqclhBbGNSc0wwa0QxRDB4Q2x6U0NUc1VDOW1rZUlXS1NHaVBvcnVNb2pwYzV4dXVwNVZZWlZrTWg3bUp4VzNFeHVR?oc=5",
+          "index_date": "2017-03-29",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "event-history",
+          "query_year": 2026,
+          "title": "Louisiana Tech history student wins Louisiana Historical Association Rankin Prize - KTVE – myarklamiss.com – Your ArkLaMiss News Source",
+          "summary": "Louisiana Tech history student wins Louisiana Historical Association Rankin Prize KTVE – myarklamiss.com – Your ArkLaMiss News Source",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMExvMkZndTIzTzdiYXNMWHMwbDhXb1VLVUxlY3h3c1BlMjRQN1VrWEdEMWV2enVadnJacFA1aUhCU2RhTEQ2QlRkcFZpUHVObDF6eFhYc0wtXzBremhzRklMQy01V2FkSXZXRV9JUnlrMG1KOE8tU1pJMDA0cUVRcFluTjFacGdvdG10ZkZtN1lzcFozU3AyOWl6eFNnQ19VeVR0eFhFY19WREpvcm9rdncxVmVkWlBzOUp5M0RMQzZvcm4y0gHKAUFVX3lxTE1tTlZQdkhhS1Q3Yy1RNDVObGw5SEpEeWFNMGx4VXMwUHlndWNpQkFTdV9hOS1VS1lIRHB4UUlCcEoxSFZSaVRFa0RtQTllTEs2YTA4MjgzOVREdExSSkVXUWt6WUcwRGRSU3dPQWpzcXFEU2Y0b3E1YnFjMko3YU04aUNoR2FHZzFKN3l4WHBFS3hkNmkxU2lRTk1TNUxGelZTZWVkTUgzdzljTjZSOUVTRGxTeHhCNE16NGw3LWpHWHJGMGVXYWs5b0E?oc=5",
+          "index_date": "2016-03-29",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
+      "checks": [],
+      "historical_years": [
+        2026,
+        2025
+      ],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Louisiana Library Association",
+      "state": "LA",
+      "input_ein": "",
+      "financial": {
+        "status": "source-unavailable",
+        "match": "unknown",
+        "revenue": null,
+        "fit": "unknown",
+        "caveat": "Public financial API unavailable; do not infer revenue."
+      },
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "Rapides Parish Library staff honored at Louisiana Library Association - KALB | News Channel 5",
+          "summary": "Rapides Parish Library staff honored at Louisiana Library Association KALB | News Channel 5",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWl84OWljSWROeFNiMm5pQ3EtcTdPZ3M1a0l3WWhQS0tya2ZMUzQtU0pTS0tBNUFKOURvdUM1cjZ1ZmtHMEUwQ0I5bGhmY0JFRXp2SHN1NXNCb0VOYXNCYXJJZEY1YnhDeWNrQzhNTEN6eC1LMFNtbnBkQXdvbTN2QjJNMEV2VVgtQUVxYXBwcTFfNWloeXJPNEJPbVJfN2V00gG0AUFVX3lxTE1TOWtPMkFiekg0VU92UW9tdDlITTFuS2tWTW1ZREhvR3Zfdmw2aFo3V2JlMjdJdXp6ZEVaTlR4M1RETVJJMFhodEdJUnlTaWFNNVlNRWxRQzdGdWRpcjRjM3A2MzVTMHZUdmF6Y0lSUGEyLVVfVk1ySHpUWmEzQjdYd1M4bnlFeHdac2ZSRTZsdjVQRzdrTFhGRWktWnNGeFdvZko0Y1psUWZoUTgyanJ4ejItNg?oc=5",
+          "index_date": "2025-03-25",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
+      "checks": [],
+      "historical_years": [
+        2025
+      ],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [
+        "ProPublica: HTTP Error 404: Not Found"
+      ],
+      "status": "investigation-only"
+    },
+    {
+      "name": "NAMI Mississippi",
+      "state": "MS",
+      "input_ein": "",
+      "financial": {
+        "status": "provisional-identity",
+        "match": "unique exact name match, EIN confirmation required",
+        "ein": "640786349",
+        "legal_name": "Nami Mississippi",
+        "fiscal_year": 2024,
+        "revenue": 409839,
+        "fit": "below",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/640786349.json",
+        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Tennessee Primary Care Association",
+      "state": "TN",
+      "input_ein": "",
+      "financial": {
+        "status": "provisional-identity",
+        "match": "unique exact name match, EIN confirmation required",
+        "ein": "621036411",
+        "legal_name": "Tennessee Primary Care Association",
+        "fiscal_year": 2023,
+        "revenue": 4383702,
+        "fit": "within",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/621036411.json",
+        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+      },
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "Cempa Community Care's Shannon Burger Wins Executive Leadership Award From The Tennessee Primary Care Association - Chattanoogan.com Breaking News",
+          "summary": "Cempa Community Care's Shannon Burger Wins Executive Leadership Award From The Tennessee Primary Care Association Chattanoogan.com Breaking News",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQU1JMUVhPTkZxaHplSTZCSzhmVXVuRy14WGt1T2JkLVdsUEhqdTJmOXNwTm14RXZjdmhMdy1DQzBtUmJST0pET2FUTzhiaVJkc1ktR215a0pkcWZfVEFZUE9EWjdWRzZxQk5scERQWl9zRlRkTDZkQm1mUWM3bGhsN3lEZTEzaTRwWFFzNURxNUJDY2c?oc=5",
+          "index_date": "2023-10-12",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
+      "checks": [],
+      "historical_years": [
+        2025
+      ],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Minnesota Council of Nonprofits",
+      "state": "MN",
+      "input_ein": "",
+      "financial": {
+        "status": "identity-review",
+        "match": "unresolved",
+        "ein": "",
+        "legal_name": "",
+        "fiscal_year": null,
+        "revenue": null,
+        "fit": "unknown",
+        "source_url": null,
+        "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
+        "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Minnesota%20Council%20of%20Nonprofits&state%5Bid%5D=MN"
+      },
+      "sources": [
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Minnesota Council of Nonprofits is unionizing - The NewsGuild - CWA",
+          "summary": "Minnesota Council of Nonprofits is unionizing The NewsGuild - CWA",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9tWjlSQzJWdkp4QzJjMTJfbzBhY0hGdU5fb3dkUzdpT0lEMWV0aWlualFxZDhEanJlOGVlRERQZDlxRnRVampDblZ0WlExLWlGYllsanFnMkp5bnpYeFpqMHhCc0lEVUQ3enZVQzlERW41QVNzcVdr?oc=5",
+          "index_date": "2021-03-15",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Minnesota Council of Nonprofits appoints new executive director - The Business Journals",
+          "summary": "Minnesota Council of Nonprofits appoints new executive director The Business Journals",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbWg2dE1zc0xjUDI4MUZ3cUk0d1ZKaU1qdXR4bW1iRFZMMldjNnR4MjUzRUZYOWFqVzBkYzM1UGNxVUxZdmNXMEUwRWozUUs0aVNvMTBUbkhMdTl6TzdFZTlscHpGd2ViYkpYMmFnbXFoYU1VdWpyLWQxcTFnU0Q4cFBjbkhCa3JWTDRnUlU3dElxdjUzY1dQekZwbWt3S2RORVY0OVVmMTNobHpN?oc=5",
+          "index_date": "2021-07-08",
+          "clues": [
+            "decision-role"
+          ],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
