@@ -770,7 +770,7 @@ def run():
             except Exception as ex:
                 failed.append(f'{label} ({engine}): {type(ex).__name__}: {str(ex)[:100]}')
         time.sleep(.25)
-    social_queries=social_searches()
+    social_queries=list(social_searches())
     if light:
         social_queries=social_queries[(NOW.hour * 7) % max(1,len(social_queries)):] + social_queries[:(NOW.hour * 7) % max(1,len(social_queries))]
         social_queries=social_queries[:7]
