@@ -144,6 +144,30 @@
       "baseline_as_of": "2026-11-06",
       "baseline_excerpt": "FY2025 Form 990, EIN 63-0784938, reports $1,930,497 total revenue. ProPublica uses an older organizational name, requiring an exact EIN identity confirmation.",
       "source_document_date": "FY2025"
+    },
+    {
+      "organization": "New York State Association for College Admission Counseling",
+      "url": "https://nysacac.org/news/2025-2026-presidents-annual-report",
+      "label": "2029+ host selection historically unresolved and cost-control signals",
+      "needle": "2028",
+      "family": "location-exploration",
+      "tier": "priority",
+      "next_action": "Check whether 2029 host negotiations are STILL open as of today. Determine if the college-host planning process permits independent fee-paid venue/cost advice. The May 2026 report is historical, not current contract proof.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "The 2025-2026 president's annual report discussed expense pressures and stated future annual conference host agreements after 2028 were not yet signed at that report date. Does not establish their November 2026 status.",
+      "source_document_date": "2026 annual president report"
+    },
+    {
+      "organization": "New York State Association for College Admission Counseling",
+      "url": "https://nysacac.org/annual-conference-sites",
+      "label": "Multi-year college host history and future annual conference cycle",
+      "needle": "2027",
+      "family": "event-cycle",
+      "tier": "watch",
+      "next_action": "Verify two past conferences, expected 2029 event scale and venue model, plus whether campus-hosted logistics leave enough negotiated spend for Robert.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "The association's public conference host history identifies prior and forthcoming college campus hosts, including 2027 Keuka College; 2028 hosting was secured. This is event history, not confirmation of an open contract.",
+      "source_document_date": "Conference sites page reviewed 2026-11-08"
     }
   ]
 }
