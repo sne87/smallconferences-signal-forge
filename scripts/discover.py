@@ -823,7 +823,16 @@ def run():
     kept=kept[:180]
     organizations=organization_stacks(kept)
     old_org_keys={x.get('organization_key') for x in previous if x.get('organization_key')}
-    new_organizations=[g['name'] for g in organizations if g.get('key') not in old_org_keys]
+    indexed_keys={x.get('organization_key') for x in kept if x.get('origin') in ('news_index','social_index')}
+    new_organizations=[g['name'] for g in organizations if g.get('key') in indexed_keys and g.get('key') not in old_org_keys]
+    new_source_watch_organizations=[g['name'] for g in organizations if g.get('key') not in indexed_keys and g.get('key') not in old_org_keys]
+    try:
+        watches=json.loads((ROOT/'watch_pages.json').read_text(encoding='utf-8')).get('sources',[])
+        curated_count=len({w.get('organization') for w in watches if w.get('curated_by_chatgpt')})
+    except (OSError,ValueError):
+        curated_count=0
+    previous_ids={x.get('id') for x in previous}
+    fresh_indexed=sum(1 for x in kept if x.get('origin') in ('news_index','social_index') and x.get('id') not in previous_ids)
     out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'5.0-hourly-robert-pre-rfp', 'scan_mode':'light' if light else 'deep',
          'purpose':'Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.',
          'scan_sources_ok':fetched,'official_pages_checked':watched_ok,
@@ -834,8 +843,11 @@ def run():
          'social_by_platform':{p:sum(1 for x in kept if x.get('platform')==p) for p,_ in SOCIAL_DOMAINS},
          'sources_attempted':len(selected)+sum(i in (0,2,4,6,8) for i,_ in selected)+sum(i%3==1 for i,_ in selected)+social_attempted+len(watched),
          'coverage_warning':'Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.',
-         'new_discoveries':fresh,'new_organizations':new_organizations,
+         'new_discoveries':fresh_indexed,'new_organizations':new_organizations,
          'new_organizations_count':len(new_organizations),
+         'new_source_watch_organizations':new_source_watch_organizations,
+         'new_source_watch_count':len(new_source_watch_organizations),
+         'curated_research_additions':curated_count,
          'review_priority_count':sum(x.get('review_tier')=='priority' for x in kept),
          'review_watch_count':sum(x.get('review_tier')=='watch' for x in kept),
          'stacked_organizations':len(organizations),
