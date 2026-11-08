@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T22:56:24+00:00",
+  "generated_at": "2026-11-08T22:59:20+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -155,10 +155,10 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "The Conference is currently being shifted to Summer 2027. Additional separate clue: The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
-      "ai_summary": "Public association material notes a conference being shifted to Summer 2027, and a February 2026 executive-director appointment. Those are potentially relevant program-change signals, but they do not verify a venue search or any uncommitted 2027 hotel arrangement. An FY2023 nonprofit revenue match of roughly $2.76 million is provisional and cannot substitute for event-level budget evidence. The venue-change statement is a saved source snapshot, not a freshly confirmed page. First verify which conference is moving, the last two conferences, the 2027 host or room block, attendance, procurement owner and whether a fee-paid independent cost review would be welcomed. Do not recommend for immediate outreach until the buying window is independently supported.",
-      "ai_status": "chatgpt_source_review_2026-11-08",
-      "ai_source": "ChatGPT source-constrained research summary; original evidence URLs remain attached",
-      "ai_reviewed_at": "2026-11-08",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
         "Verify two past conference cycles, expected next event and manageable scope",
@@ -195,9 +195,9 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "on Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Cita",
-      "ai_summary": "NCAMC names a 2029 site-selection committee chaired by Shawne Southard and says conference facility contracting normally occurs about two years in advance. This creates a defensible early research trigger for a potential 2027 decision, not proof that the 2029 hotel remains unselected. It operates through a member committee, so Robert's role could duplicate existing work unless they welcome an outside cost or contract comparison. Verify current 2029 selection status, event attendee and hotel-room volume, whether contracts have been issued, finance authority and any incumbent event sourcing arrangements. Keep as a pre-decision watch until these unknowns are addressed.",
-      "ai_status": "chatgpt_source_review_2026-11-08",
-      "ai_source": "ChatGPT source-constrained research summary; original evidence URLs remain attached",
+      "ai_summary": "A named 2029 site-selection committee is listed on NCAMC's official leadership page, with a chair and responsibility for selecting the annual conference facility. The association's published procedure calls for hotel/facility contracts about two years ahead, placing the potential 2029 contracting decision in 2027. This creates an early research window, not a verified unawarded hotel contract. Check when 2029 proposals will be evaluated, whether a hotel is already committed, previous room nights and event spend, and whether committee leaders would accept independent, fee-paid venue and contract analysis. Until then, Robert's potential savings and outside-advisor access are unproven.",
+      "ai_status": "stale_source_change_recheck_required",
+      "ai_source": "ChatGPT source-constrained synthesis; original current status must be verified",
       "ai_reviewed_at": "2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
@@ -235,9 +235,9 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "- Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CM",
-      "ai_summary": "HiTOP's executive committee minutes document planning discussions involving 2027–2029 conference sites alongside budget uncertainty and consideration of inexpensive university venues. These organization-level minutes are stronger than generic conference publicity, but a low-cost campus model may leave little room to pay a sourcing advisor. The available minutes concern prior deliberations, not confirmation that upcoming choices remain open. Determine which 2027–2029 host decisions have since been approved, expected attendance, actual lodging and supplier spending, whether a campus or hotel model is feasible, and which committee member could authorize fee-paid assistance. Preserve this as a promising but financially unproven research lead.",
-      "ai_status": "chatgpt_source_review_2026-11-08",
-      "ai_source": "ChatGPT source-constrained research summary; original evidence URLs remain attached",
+      "ai_summary": "Public executive committee minutes document discussions of 2027–2029 conference planning and site selection, alongside historical uncertainty over costs and a preference for low-cost university facilities. These are unusually early organization-level planning signals, but they may also undermine the economics of paying an outside venue advisor. The minutes contain historical plans, not proof the upcoming decisions remain unresolved. Verify the latest 2026 board action, whether the event uses hotels or free institutional space, attendance, budget, current planning volunteers, and which committee member could authorize independent cost assessment. The prospect belongs on an early watchlist, not in Robert Ready.",
+      "ai_status": "stale_source_change_recheck_required",
+      "ai_source": "ChatGPT source-constrained synthesis; original current status must be verified",
       "ai_reviewed_at": "2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
@@ -275,9 +275,9 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past ",
-      "ai_summary": "NACDEP's official 2028 site-selection page seeks land-grant institution hosts, preferring the Southern region, following prior annual conferences. That is concrete evidence of a future host-selection process. However, a public call for university hosts is not itself an RFP for independent venue sourcing, and campus hosts may supply significant event logistics. Confirm whether submissions are still open, the 2028 timeline, room-night demand, previous venue and food costs, and the exact responsibility split between the association, host university and outside vendors. Robert's potential value is conditional on actual influenceable spending and permission to use a fee-paid advisor.",
-      "ai_status": "chatgpt_source_review_2026-11-08",
-      "ai_source": "ChatGPT source-constrained research summary; original evidence URLs remain attached",
+      "ai_summary": "NACDEP's official 2028 site-selection page says it is seeking a host site, favoring Southern land-grant institutions, after an established history of annual conferences. This verifies a future site-selection process but is a public host solicitation, not evidence that the association wants a paid event-planning consultant. A college-based host may cover most facilities, reducing hotel sourcing value. Verify whether 2028 submissions are still being considered, estimated 2028 lodging and supplier spend, host versus association contracting authority, and whether a neutral venue-cost review would add value. Treat as a timing and service-fit investigation rather than an available sales opening.",
+      "ai_status": "stale_source_change_recheck_required",
+      "ai_source": "ChatGPT source-constrained synthesis; original current status must be verified",
       "ai_reviewed_at": "2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
@@ -315,9 +315,9 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The ",
-      "ai_summary": "ASHE has opened recruitment for a site-selection committee expected to review potential 2030 and 2031 conference locations beginning late 2026 or early 2027. That is an early, documented planning step. It does not establish the absence of a contracted sourcing partner, a purchasing budget or suitability for a solo event consultant. The conference's scale and complexity may create a poor fit. Before prioritizing, verify prior attendance, annual hotel room nights, whether the current staff and committees already run vendor sourcing, future location decision timing and the feasibility of an outside no-cost assessment leading to paid work.",
-      "ai_status": "chatgpt_source_review_2026-11-08",
-      "ai_source": "ChatGPT source-constrained research summary; original evidence URLs remain attached",
+      "ai_summary": "ASHE's official 2027 volunteer call says its Site Selection Committee is preparing to review potential locations for the 2030 and 2031 conferences starting in late 2026 or early 2027. This is a strong early planning signal and potentially precedes venue negotiations. But the decision horizon is long, and ASHE may have conference complexity or existing professional event staff beyond a solo planner's ideal scope. No outside-advisor vacancy, open budget, or contract availability has been established. Verify the expected attendance, hotel nights, sourcing governance, retained management support, site-selection timetable, and whether a preliminary no-cost comparison would be welcomed.",
+      "ai_status": "stale_source_change_recheck_required",
+      "ai_source": "ChatGPT source-constrained synthesis; original current status must be verified",
       "ai_reviewed_at": "2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
@@ -355,9 +355,9 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "rian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall b",
-      "ai_summary": "The official Indiana municipal association committee directory identifies a 2028 Conference Site Selection Committee chaired by Terri Budde. This is direct evidence of internal planning responsibility, not a confirmed opportunity to replace or assist that committee. A separate paid sourcing role is unknown, as are event-level expenses, contract status and the future site decision date. Investigate previous conference sizes, lodging and food expenditures, the current 2028 host-hotel process and whether any independent fee-paid advisor could participate without duplicating association operations staff. Treat as a research watch rather than an outreach-ready prospect.",
-      "ai_status": "chatgpt_source_review_2026-11-08",
-      "ai_source": "ChatGPT source-constrained research summary; original evidence URLs remain attached",
+      "ai_summary": "The association's official committee page identifies a 2028 Conference Site Selection Committee chaired by Terri Budde. This is a real organization-level planning structure, not merely an event announcement, but it does not show when the hotel selection is due, whether an incumbent sourcing agent is involved, or that anyone would pay for outside help. Verify the last two conference formats, typical room nights and catering costs, the next committee decision date, whether any venue or room block is already executed, and contracting authority. Until those are established, this is an early research candidate rather than a demonstrated buying cycle.",
+      "ai_status": "stale_source_change_recheck_required",
+      "ai_source": "ChatGPT source-constrained synthesis; original current status must be verified",
       "ai_reviewed_at": "2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
@@ -532,9 +532,9 @@
       ],
       "suggested_bucket": "conflict-check",
       "evidence_digest": "of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred",
-      "ai_summary": "ALP's 2028 host-selection notice specifies an annual conference of more than 250 attendees and roughly 150–160 peak hotel room nights, useful scale evidence for Robert. But its site-selection timeline moves toward hotel/CVB bids during November 2026 and it publicly describes providing full conference services itself. Those are serious potential barriers to an early independent sourcing pitch. As of November 8, it must be checked whether hotel proposals are already being solicited, who negotiates terms and whether any cost-review responsibility remains outside the incumbent system. Keep flagged for urgent contradiction checking, not approved outreach.",
-      "ai_status": "chatgpt_source_review_2026-11-08",
-      "ai_source": "ChatGPT source-constrained research summary; original evidence URLs remain attached",
+      "ai_summary": "ALP publishes a detailed 2028 conference host selection process, with 250-plus attendees and a peak of roughly 150–160 room nights. This gives unusually helpful event-level scale information. However, its timeline placed hotel/CVB bidding in November 2026, making it a potentially late-stage sourcing situation as of November 8. ALP also says it manages end-to-end conference services, which is direct counterevidence to an external-planner pitch. Confirm whether bids have already been requested or a site selected, who negotiates hotel contracts, and whether any independent cost-review scope remains. Prioritize disqualifying research over outreach unless a real unassigned opportunity is proven.",
+      "ai_status": "stale_source_change_recheck_required",
+      "ai_source": "ChatGPT source-constrained synthesis; original current status must be verified",
       "ai_reviewed_at": "2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
@@ -547,7 +547,5 @@
       "qualified": false,
       "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     }
-  ],
-  "curated_research_added_at": "2026-11-08",
-  "chatgpt_manual_summary_count": 10
+  ]
 }
