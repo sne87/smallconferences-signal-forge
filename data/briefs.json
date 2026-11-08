@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T23:04:53+00:00",
+  "generated_at": "2026-11-08T23:56:19+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -118,7 +118,7 @@
     {
       "key": "arkansas education association",
       "name": "Arkansas Education Association",
-      "fingerprint": "7b3612dbeee8a11d219f",
+      "fingerprint": "2ef5f002cca8fd1c7357",
       "first_detected": "2026-11-06",
       "source_count": 2,
       "independent_publishers": 1,
@@ -126,19 +126,19 @@
         {
           "title": "Arkansas Education Association | Summer 2027 conference calendar change",
           "url": "https://www.aeaonline.org/teach",
-          "source": "Official association page (monitored)",
+          "source": "Official association page (research snapshot)",
           "reported_date": "",
-          "note": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b",
-          "freshness_warning": "Official source page fetched during this scan",
+          "note": "The Conference is currently being shifted to Summer 2027.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
           "commitment_flags": []
         },
         {
           "title": "Arkansas Education Association | New executive director and program-operations leadership",
           "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-          "source": "Official association page (monitored)",
+          "source": "Official association page (research snapshot)",
           "reported_date": "",
-          "note": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona",
-          "freshness_warning": "Official source page fetched during this scan",
+          "note": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
           "commitment_flags": []
         }
       ],
@@ -154,7 +154,7 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
-      "evidence_digest": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b Additional separate clue: The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona",
+      "evidence_digest": "The Conference is currently being shifted to Summer 2027. Additional separate clue: The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
       "ai_summary": "Arkansas Education Association has publicly discussed moving a conference to Summer 2027, and an earlier executive-director transition offers a reason to investigate who now controls event planning. These are change signals, not evidence of an uncommitted venue or available paid-planning contract. An FY2023 nonprofit revenue estimate is a provisional entity match and cannot establish conference-level expenditure. The source for the conference timing was not freshly revalidated during all automated scans. Verify the exact event, 2027 site and hotel contracts, prior attendance and room nights, current planning staff, decision-maker and timing before considering Robert's independent venue-cost assessment. Keep in research review until those are sourced.",
       "ai_status": "stale_source_change_recheck_required",
       "ai_source": "ChatGPT source-constrained research summary; source links require verification",
@@ -169,7 +169,7 @@
       ],
       "qualified": false,
       "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "2ef5f002cca8fd1c7357"
+      "ai_source_fingerprint": "7b3612dbeee8a11d219f"
     },
     {
       "key": "north carolina association of municipal clerks",

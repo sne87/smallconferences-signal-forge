@@ -1,20 +1,22 @@
 {
-  "generated_at": "2026-11-08T23:02:23+00:00",
+  "generated_at": "2026-11-08T23:53:15+00:00",
   "scanner_version": "5.0-hourly-robert-pre-rfp",
   "scan_mode": "deep",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
-  "scan_sources_ok": 178,
-  "official_pages_checked": 13,
+  "scan_sources_ok": 205,
+  "official_pages_checked": 11,
   "official_pages_monitored": 18,
   "official_watch_errors": [
+    "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
+    "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed"
   ],
-  "scan_sources_failed": 5,
-  "scan_queries": 141,
+  "scan_sources_failed": 7,
+  "scan_queries": 161,
   "social_index_queries": 45,
   "social_index_candidates_seen": 0,
   "social_by_platform": {
@@ -24,7 +26,7 @@
     "x": 0,
     "reddit": 0
   },
-  "sources_attempted": 196,
+  "sources_attempted": 223,
   "coverage_warning": "Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.",
   "new_discoveries": 0,
   "new_organizations": [],
@@ -194,10 +196,10 @@
           "id": "d2c40d9ffb0bc10956e0",
           "title": "Arkansas Education Association | Summer 2027 conference calendar change",
           "url": "https://www.aeaonline.org/teach",
-          "source": "Official association page (monitored)",
+          "source": "Official association page (research snapshot)",
           "published": "",
           "document_date": "",
-          "freshness": "Official source page fetched during this scan",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
           "counterevidence_flags": [],
           "families": [
             "disruption"
@@ -208,10 +210,10 @@
           "id": "53d27bbb760d30f5643c",
           "title": "Arkansas Education Association | New executive director and program-operations leadership",
           "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-          "source": "Official association page (monitored)",
+          "source": "Official association page (research snapshot)",
           "published": "",
           "document_date": "",
-          "freshness": "Official source page fetched during this scan",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
           "counterevidence_flags": [],
           "families": [
             "capacity"
@@ -757,10 +759,22 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 963,
+  "rejected_irrelevant_hits": 1168,
   "previous_noise_removed": 0,
+  "rejection_reasons": {
+    "no_event_reference": 735,
+    "excluded_host": 252,
+    "organizer_name_missing": 105,
+    "unverified_social_platform": 35,
+    "no_actionable_change_evidence": 23,
+    "blog_or_completed_site": 10,
+    "foreign_reference": 7,
+    "stale_or_future_index_date": 1
+  },
   "errors": [
+    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
+    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
@@ -781,7 +795,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "North Carolina Association of Municipal Clerks",
       "organization_key": "north carolina association of municipal clerks",
@@ -823,7 +837,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "HiTOP Society",
       "organization_key": "hitop society",
@@ -895,7 +909,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "National Association of Community Development Extension Professionals",
       "organization_key": "national association of community development extension professionals",
@@ -937,7 +951,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association for the Study of Higher Education",
       "organization_key": "association for the study of higher education",
@@ -979,7 +993,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
       "organization_key": "indiana league of municipal clerks and treasurers",
@@ -1021,7 +1035,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Leadership Programs",
       "organization_key": "association of leadership programs",
@@ -1095,86 +1109,6 @@
       "qualification": "Unverified source watch"
     },
     {
-      "id": "d2c40d9ffb0bc10956e0",
-      "title": "Arkansas Education Association | Summer 2027 conference calendar change",
-      "summary": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b",
-      "url": "https://www.aeaonline.org/teach",
-      "source": "Official association page (monitored)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T23:02:23+00:00",
-      "monitor_status": "Official source page fetched during this scan",
-      "organization_candidate": "Arkansas Education Association",
-      "organization_key": "arkansas education association",
-      "review_tier": "watch",
-      "strong_evidence": {},
-      "early_evidence": {
-        "disruption": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b"
-      },
-      "types": [
-        "disruption"
-      ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
-      "play": "Smart",
-      "next_action": "Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
-      "flags": [],
-      "source_document_date": "",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
-      "signal_evidence": {
-        "disruption": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b"
-      },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch",
-      "research_assist": {
-        "organization_name_candidate": "Arkansas Education Association",
-        "status": "unverified organizer",
-        "checked_at": "2026-11-08T23:00:50+00:00",
-        "decision_window": "unknown",
-        "decision_maker": "unknown",
-        "planner_venue_status": "unknown",
-        "financial": {
-          "status": "provisional-identity",
-          "match": "unique exact name match, EIN confirmation required",
-          "ein": "710004515",
-          "legal_name": "Arkansas Education Association",
-          "fiscal_year": 2023,
-          "revenue": 2760676,
-          "fit": "within",
-          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
-          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
-          "revenue_range": "in-range",
-          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
-        },
-        "research": {
-          "historical_event_mentions": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          },
-          "planner_and_hotel_counterchecks": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          },
-          "decision_and_leadership_clues": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          }
-        }
-      }
-    },
-    {
       "id": "b6bf4a5ddd897e69bd79",
       "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
       "summary": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most",
@@ -1188,7 +1122,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -1217,86 +1151,6 @@
       "qualification": "Unverified source watch"
     },
     {
-      "id": "53d27bbb760d30f5643c",
-      "title": "Arkansas Education Association | New executive director and program-operations leadership",
-      "summary": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona",
-      "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-      "source": "Official association page (monitored)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T23:02:23+00:00",
-      "monitor_status": "Official source page fetched during this scan",
-      "organization_candidate": "Arkansas Education Association",
-      "organization_key": "arkansas education association",
-      "review_tier": "watch",
-      "strong_evidence": {},
-      "early_evidence": {
-        "capacity": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona"
-      },
-      "types": [
-        "capacity"
-      ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
-      "play": "Smart",
-      "next_action": "Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
-      "flags": [],
-      "source_document_date": "",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
-      "signal_evidence": {
-        "capacity": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona"
-      },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch",
-      "research_assist": {
-        "organization_name_candidate": "Arkansas Education Association",
-        "status": "unverified organizer",
-        "checked_at": "2026-11-08T23:00:52+00:00",
-        "decision_window": "unknown",
-        "decision_maker": "unknown",
-        "planner_venue_status": "unknown",
-        "financial": {
-          "status": "provisional-identity",
-          "match": "unique exact name match, EIN confirmation required",
-          "ein": "710004515",
-          "legal_name": "Arkansas Education Association",
-          "fiscal_year": 2023,
-          "revenue": 2760676,
-          "fit": "within",
-          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
-          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
-          "revenue_range": "in-range",
-          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
-        },
-        "research": {
-          "historical_event_mentions": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          },
-          "planner_and_hotel_counterchecks": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          },
-          "decision_and_leadership_clues": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          }
-        }
-      }
-    },
-    {
       "id": "00a7a89cdd60981d6e2d",
       "title": "Nonprofit Association of Oregon | 2027 conference cycle and program decision milestones",
       "summary": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p",
@@ -1310,7 +1164,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -1352,7 +1206,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -1394,7 +1248,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -1438,7 +1292,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T23:02:23+00:00",
+      "last_checked": "2026-11-08T23:53:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -1465,6 +1319,166 @@
       "verified_event": false,
       "verified_opening": false,
       "qualification": "Unverified source watch"
+    },
+    {
+      "id": "d2c40d9ffb0bc10956e0",
+      "title": "Arkansas Education Association | Summer 2027 conference calendar change",
+      "summary": "The Conference is currently being shifted to Summer 2027.",
+      "url": "https://www.aeaonline.org/teach",
+      "source": "Official association page (research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-08T23:02:23+00:00",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "organization_candidate": "Arkansas Education Association",
+      "organization_key": "arkansas education association",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "disruption": "The Conference is currently being shifted to Summer 2027."
+      },
+      "types": [
+        "disruption"
+      ],
+      "priority": 30,
+      "query_id": "official-page-baseline",
+      "play": "Smart",
+      "next_action": "Recheck original source because automated access failed. Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
+      "flags": [],
+      "source_document_date": "",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_evidence": {
+        "disruption": "The Conference is currently being shifted to Summer 2027."
+      },
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Arkansas Education Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-08T23:54:57+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "710004515",
+          "legal_name": "Arkansas Education Association",
+          "fiscal_year": 2023,
+          "revenue": 2760676,
+          "fit": "within",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "in-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
+    },
+    {
+      "id": "53d27bbb760d30f5643c",
+      "title": "Arkansas Education Association | New executive director and program-operations leadership",
+      "summary": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
+      "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
+      "source": "Official association page (research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-08T23:02:23+00:00",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "organization_candidate": "Arkansas Education Association",
+      "organization_key": "arkansas education association",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
+      },
+      "types": [
+        "capacity"
+      ],
+      "priority": 30,
+      "query_id": "official-page-baseline",
+      "play": "Smart",
+      "next_action": "Recheck original source because automated access failed. Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
+      "flags": [],
+      "source_document_date": "",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_evidence": {
+        "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
+      },
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Arkansas Education Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-08T23:54:58+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "710004515",
+          "legal_name": "Arkansas Education Association",
+          "fiscal_year": 2023,
+          "revenue": 2760676,
+          "fit": "within",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "in-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
     },
     {
       "id": "bdda60c722506011eca5",
@@ -1641,7 +1655,7 @@
   ],
   "discovery_enrichment": {
     "status": "public-index triage, not buyer qualification",
-    "new_this_run": 0,
+    "new_this_run": 2,
     "caveat": "Only headlines with explicit full nonprofit names are enriched. Other discoveries require manual organizer identity."
   }
 }
