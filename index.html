@@ -153,7 +153,7 @@ function renderBuckets(){
  document.getElementById('bucketStats').innerHTML=BUCKETS.filter(b=>b.id!=='robert-ready').map(b=>'<div class="stat"><small>'+e(b.name)+'</small><b>'+counts[b.id]+'</b><span>'+e(b.description)+'</span></div>').join('');
  const notice=document.getElementById('bucketNotice');
  notice.textContent=briefMeta?.generated_at
-  ?'Public briefs updated '+briefMeta.generated_at+'. AI configured: '+(briefMeta.ai_configured?'Yes, source-limited summaries where available':'No, source-linked research digests only')+'. Public feed is not a verified buying opportunity. Human approval is required.'
+  ?'Public briefs updated '+briefMeta.generated_at+'. '+publicBriefs.filter(b=>b.ai_summary).length+' AI-written summaries on file. '+(briefMeta.ai_configured?'Gemini API configured.':'Background GitHub scanner itself uses source-linked digests; ChatGPT can separately sync AI summaries.')+' Public feed is not a verified buying opportunity. Human approval is required.'
   :'No published brief feed yet. Private records are available; hourly scans and briefing run through GitHub Actions.';
  const q=document.getElementById('bucketSearch').value.toLowerCase().trim();
  const filter=document.getElementById('bucketFilter').value;
@@ -176,7 +176,7 @@ function renderBuckets(){
   const fin=b.financial?.revenue?('FY'+e(b.financial.fiscal_year||'unknown')+' revenue $'+Number(b.financial.revenue).toLocaleString()+' (entity match must be verified)'):'Revenue not established';
   return '<article class="lead"><div class="cardline"><div><div class="meta">PUBLIC AUTO-DISCOVERY · '+e(b.independent_publishers||0)+' publisher(s)</div><h3>'+e(b.name)+'</h3></div>'+tag(bucketName(r.bucket),r.bucket==='blocked'?'orange':'purple')+'</div>'+
     '<p>'+e(r.summary.slice(0,980))+'</p><p class="tiny">'+e(fin)+'</p>'+
-    '<div class="chips">'+tag(b.ai_summary?'AI-assisted public clue synthesis':'Source-linked research digest')+tag((b.signal_families||[]).length+' signal families')+(b.commitment_flags?.length?tag('Possible contract conflict','orange'):'')+'</div>'+
+    '<div class="chips">'+tag(b.ai_summary?'ChatGPT / AI source-constrained brief':'Source-linked research digest')+tag((b.signal_families||[]).length+' signal families')+(b.commitment_flags?.length?tag('Possible contract conflict','orange'):'')+'</div>'+
     '<details><summary>Inspect '+(b.source_evidence||[]).length+' saved source links and cautions</summary><div class="stack" style="margin-top:10px">'+found+'</div><p class="tiny">No verified buying-window or external planner authority is implied by these extracts.</p></details>'+
     '<p class="tiny"><strong>Next:</strong> '+e((b.next_verification_questions||[])[0]||'Verify organizer, event cycle and venue status')+'</p>'+
     '<button class="btn primary small" data-bucketsave="'+e(b.key)+'">Save for guided qualification →</button></article>';
