@@ -103,6 +103,27 @@ QUERIES += [
  ('regional-convention-committee','"regional convention" "committee" "planning"'),
 ]
 
+# Lower-friction public-index queries for regional organizers. These still pass
+# the named-buyer, event-context and early-change filters in as_candidate().
+# Broader discovery must not be presented as verified demand.
+QUERIES += [
+ ('regional-committee-open','"2027 conference" "planning committee"'),
+ ('regional-committee-volunteer','"conference committee" "volunteers needed"'),
+ ('regional-board-minutes','"conference" "board minutes" "2027"'),
+ ('regional-budget-reset','"annual conference" "budget" "committee"'),
+ ('regional-event-survey','"annual conference" "survey results"'),
+ ('regional-location-vote','"annual conference" "location vote"'),
+ ('regional-site-selection','"2028 conference" "site selection"'),
+ ('regional-host-call','"2028 annual conference" "host" "proposals"'),
+ ('regional-new-chair','"conference" "new planning chair"'),
+ ('regional-attendee-feedback','"conference" "feedback" "next year"'),
+ ('regional-hotel-costs','"conference" "hotel costs" "board"'),
+ ('regional-event-staff','"association" "events manager" "vacancy"'),
+ ('regional-reimagine','"annual conference" "new format"'),
+ ('regional-venue-rethink','"annual conference" "venue change"'),
+ ('regional-planner-services','"nonprofit" "conference planning services" "proposal"'),
+]
+
 # Extra SMERF/nonprofit, pre-RFP discovery lanes. Never delete general
 # signal coverage. Requiring real organizer and change wording still applies.
 QUERIES += [
