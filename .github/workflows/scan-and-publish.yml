@@ -1,15 +1,16 @@
 name: Scan public signals and publish Signal Forge
 on:
   schedule:
-    # Six public-index scans daily, approximately every four hours.
-    # UTC scheduling means local Central times shift during daylight saving time.
-    - cron: '15 0,4,8,12,16,20 * * *'
+    # Hourly at minute 23 UTC; deep enrichment every 4 hours.
+    # Schedules are best-effort and can be delayed or skipped by GitHub.
+    - cron: '23 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - 'index.html'
       - 'scripts/**'
+      - 'data/briefs.json'
       - 'watchlist.json'
       - 'watch_pages.json'
       - '.github/workflows/scan-and-publish.yml'
@@ -33,19 +34,41 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Choose lightweight vs deep scan
+        id: mode
+        shell: bash
+        run: |
+          hour="$(date -u +%H)"
+          if [[ "${{ github.event_name }}" != "schedule" ]] || (( 10#$hour % 4 == 0 )); then
+            echo "full=true" >> "$GITHUB_OUTPUT"
+            echo "light=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "full=false" >> "$GITHUB_OUTPUT"
+            echo "light=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Public discovery scan
+        env:
+          SF_LIGHT_SCAN: ${{ steps.mode.outputs.light }}
         run: python scripts/discover.py
       - name: Auto-research promising clear-name discoveries
+        if: steps.mode.outputs.full == 'true'
         run: python scripts/enrich_discoveries.py
       - name: Public organization intelligence
+        if: steps.mode.outputs.full == 'true'
         run: python scripts/enrich.py
+      - name: Create source-linked research briefs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-3.5-flash-lite
+          SF_FULL_SCAN: ${{ steps.mode.outputs.full }}
+        run: python scripts/briefs.py
       - name: Save public feed to repository
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "signal-forge-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/signals.json data/intelligence.json
+          git add data/signals.json data/intelligence.json data/briefs.json
           if git diff --cached --quiet; then
             echo "No new public feed changes to commit."
             exit 0
@@ -69,6 +92,7 @@ jobs:
           cp index.html dist/index.html
           cp data/signals.json dist/data/signals.json
           cp data/intelligence.json dist/data/intelligence.json
+          cp data/briefs.json dist/data/briefs.json
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload site artifact
