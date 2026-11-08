@@ -28,16 +28,9 @@
   },
   "sources_attempted": 196,
   "coverage_warning": "Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.",
-  "new_discoveries": 6,
-  "new_organizations": [
-    "North Carolina Association of Municipal Clerks",
-    "HiTOP Society",
-    "National Association of Community Development Extension Professionals",
-    "Association for the Study of Higher Education",
-    "Indiana League of Municipal Clerks and Treasurers",
-    "Association of Leadership Programs"
-  ],
-  "new_organizations_count": 6,
+  "new_discoveries": 0,
+  "new_organizations": [],
+  "new_organizations_count": 0,
   "review_priority_count": 3,
   "review_watch_count": 15,
   "stacked_organizations": 11,
@@ -1651,5 +1644,15 @@
     "status": "public-index triage, not buyer qualification",
     "new_this_run": 3,
     "caveat": "Only headlines with explicit full nonprofit names are enriched. Other discoveries require manual organizer identity."
-  }
+  },
+  "new_source_watch_organizations": [
+    "North Carolina Association of Municipal Clerks",
+    "HiTOP Society",
+    "National Association of Community Development Extension Professionals",
+    "Association for the Study of Higher Education",
+    "Indiana League of Municipal Clerks and Treasurers",
+    "Association of Leadership Programs"
+  ],
+  "new_source_watch_count": 6,
+  "curated_research_additions": 6
 }
