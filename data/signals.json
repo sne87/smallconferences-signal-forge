@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-08T03:10:56+00:00",
+  "generated_at": "2026-11-08T03:14:00+00:00",
   "scanner_version": "4.2-robert-smerf-pre-rfp",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
-  "scan_sources_ok": 158,
+  "scan_sources_ok": 178,
   "official_pages_checked": 5,
   "official_pages_monitored": 12,
   "official_watch_errors": [
@@ -15,7 +15,7 @@
     "Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed"
   ],
   "scan_sources_failed": 7,
-  "scan_queries": 126,
+  "scan_queries": 141,
   "social_index_queries": 45,
   "social_index_candidates_seen": 0,
   "social_by_platform": {
@@ -25,7 +25,7 @@
     "x": 0,
     "reddit": 0
   },
-  "sources_attempted": 158,
+  "sources_attempted": 178,
   "coverage_warning": "Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.",
   "new_discoveries": 0,
   "new_organizations": [],
@@ -427,7 +427,7 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 939,
+  "rejected_irrelevant_hits": 1005,
   "previous_noise_removed": 0,
   "errors": [
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
@@ -495,7 +495,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T03:10:56+00:00",
+      "last_checked": "2026-11-08T03:14:00+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -537,7 +537,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T03:10:56+00:00",
+      "last_checked": "2026-11-08T03:14:00+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -579,7 +579,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T03:10:56+00:00",
+      "last_checked": "2026-11-08T03:14:00+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -621,7 +621,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T03:10:56+00:00",
+      "last_checked": "2026-11-08T03:14:00+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -665,7 +665,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T03:10:56+00:00",
+      "last_checked": "2026-11-08T03:14:00+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -737,7 +737,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-08T03:12:13+00:00",
+        "checked_at": "2026-11-08T03:15:20+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -817,7 +817,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-08T03:12:14+00:00",
+        "checked_at": "2026-11-08T03:15:22+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
