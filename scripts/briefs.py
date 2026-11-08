@@ -98,7 +98,7 @@ def main():
         ai_status="not_configured" if not KEY else "not_run"
         if previous_item.get("fingerprint")==fingerprint and previous_item.get("ai_summary"):
             ai_text=previous_item["ai_summary"]
-            ai_status="cached_ai_summary"
+            ai_status=previous_item.get("ai_status","cached_ai_summary")
         elif KEY and FULL and ai_calls<MAX_AI_PER_DEEP_RUN and evidence:
             ai_calls+=1
             ai_text,ai_status=model_summary(org["name"],evidence,financial)
@@ -124,6 +124,8 @@ def main():
             "suggested_bucket":suggested,
             "evidence_digest":summary,
             "ai_summary":ai_text,"ai_status":ai_status,
+            "ai_source":previous_item.get("ai_source","") if ai_text else "",
+            "ai_reviewed_at":previous_item.get("ai_reviewed_at","") if ai_text else "",
             "next_verification_questions":missing,
             "qualified":False,
             "caution":"Source-index clues are not proof of an open contract or an external advisor need."
