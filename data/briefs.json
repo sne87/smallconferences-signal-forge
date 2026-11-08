@@ -1,1 +1,290 @@
-{"version":"1.0","generated_at":null,"ai_configured":false,"briefs":[]}
+{
+  "generated_at": "2026-11-08T22:30:54+00:00",
+  "version": "1.0",
+  "ai_configured": false,
+  "ai_calls_this_run": 0,
+  "purpose": "Public-source clues for human review. No auto-qualification or outreach.",
+  "briefs": [
+    {
+      "key": "nonprofit association of oregon",
+      "name": "Nonprofit Association of Oregon",
+      "fingerprint": "413e00074c40ad289955",
+      "source_count": 2,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
+          "url": "https://nonprofitoregon.org/conference-notification-form/",
+          "source": "Official association page (monitored)",
+          "reported_date": "",
+          "note": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": []
+        },
+        {
+          "title": "Nonprofit Association of Oregon | 2027 conference cycle and program decision milestones",
+          "url": "https://nonprofitoregon.org/events-trainings/speaking-opportunities/",
+          "source": "Official association page (monitored)",
+          "reported_date": "",
+          "note": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {
+        "revenue": 2287021,
+        "fiscal_year": 2023,
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/930685385.json",
+        "match_status": "provisional-identity"
+      },
+      "signal_families": [
+        "attendee-change",
+        "event-review"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "early-watch",
+      "evidence_digest": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most Additional separate clue:  TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "new york state association of professional land surveyors",
+      "name": "New York State Association of Professional Land Surveyors",
+      "fingerprint": "be6fdff46a21bc42348c",
+      "source_count": 2,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "New York State Association of Professional Land Surveyors | 2029 hotel proposals under review",
+          "url": "https://www.nysapls.org/news/735249/HQ-Update-September-2026.htm",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "",
+          "note": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "commitment_flags": []
+        },
+        {
+          "title": "New York State Association of Professional Land Surveyors | Board financial pressure and changing conference economics",
+          "url": "https://www.nysapls.org/news/731262/HQ-Update-July-2026.htm",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "",
+          "note": "The NYSAPLS executive board reviewed its financial position in July 2026, noting declining revenue from educational programs and rising expenses, while discussing future annual conference locations.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {
+        "revenue": null,
+        "fiscal_year": null,
+        "source_url": null,
+        "match_status": "identity-review"
+      },
+      "signal_families": [
+        "economics",
+        "venue-decision"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "early-watch",
+      "evidence_digest": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference. Additional separate clue: The NYSAPLS executive board reviewed its financial position in July 2026, noting declining revenue from educational programs and rising expenses, while discussing future annual conference locations.",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "arkansas education association",
+      "name": "Arkansas Education Association",
+      "fingerprint": "2ef5f002cca8fd1c7357",
+      "source_count": 2,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "Arkansas Education Association | Summer 2027 conference calendar change",
+          "url": "https://www.aeaonline.org/teach",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "",
+          "note": "The Conference is currently being shifted to Summer 2027.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "commitment_flags": []
+        },
+        {
+          "title": "Arkansas Education Association | New executive director and program-operations leadership",
+          "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "",
+          "note": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {
+        "revenue": 2760676,
+        "fiscal_year": 2023,
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+        "match_status": "provisional-identity"
+      },
+      "signal_families": [
+        "capacity",
+        "disruption"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "early-watch",
+      "evidence_digest": "The Conference is currently being shifted to Summer 2027. Additional separate clue: The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "council of academic programs in communication sciences and disorders",
+      "name": "Council of Academic Programs in Communication Sciences and Disorders",
+      "fingerprint": "6df4081687fff4e701ba",
+      "source_count": 3,
+      "independent_publishers": 2,
+      "source_evidence": [
+        {
+          "title": "Council of Academic Programs in Communication Sciences and Disorders | 2027 annual conference subsidized; host hotel publicly named",
+          "url": "https://www.capcsd.org/annual-conference/",
+          "source": "Official association page (monitored)",
+          "reported_date": "2027 event notice",
+          "note": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration ",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": [
+            "2027 host hotel already publicly named"
+          ]
+        },
+        {
+          "title": "Council of Academic Programs in Communication Sciences and Disorders | FY2025 $1.93M revenue verifies financial range",
+          "url": "https://projects.propublica.org/nonprofits/organizations/630784938",
+          "source": "Official association page (monitored)",
+          "reported_date": "FY2025",
+          "note": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": []
+        },
+        {
+          "title": "Council of Academic Programs in Communication Sciences and Disorders | Board reviewed conference revenue and cost reduction, February 2025",
+          "url": "https://www.capcsd.org/assets/pdf/February%2B2025%2BBOD%2BMeeting%2BMinutes",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "2025-02-09 to 2025-02-11",
+          "note": "CAPCSD board minutes for February 9–11, 2025 say the board discussed future conference financial implications, revenue-generation and cost-reduction strategies, including evaluating tier-one and tier-two cities.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {},
+      "signal_families": [
+        "economics",
+        "event-economics",
+        "verified-financial-fit"
+      ],
+      "commitment_flags": [
+        "2027 host hotel already publicly named"
+      ],
+      "suggested_bucket": "conflict-check",
+      "evidence_digest": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration  Additional separate clue: nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "association of local government auditors",
+      "name": "Association of Local Government Auditors",
+      "fingerprint": "5dd43ac2de10aecb0ef3",
+      "source_count": 3,
+      "independent_publishers": 2,
+      "source_evidence": [
+        {
+          "title": "Association of Local Government Auditors | FY2025 $1.10M revenue supports financial fit",
+          "url": "https://projects.propublica.org/nonprofits/organizations/232539807",
+          "source": "Official association page (monitored)",
+          "reported_date": "FY2025",
+          "note": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": []
+        },
+        {
+          "title": "Association of Local Government Auditors | Conference site votes three years ahead; 2029 cycle timing check",
+          "url": "https://algaonline.org/page/LTCP_Site_Selection",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "2026-02",
+          "note": "ALGA's board approves conference sites three years ahead. As of February 2026, 2026 Cleveland, 2027 Denver and 2028 St. Louis were selected; 2029 status was not established by this source.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "commitment_flags": [
+            "2026–2028 host cities already approved"
+          ]
+        },
+        {
+          "title": "Association of Local Government Auditors | Recurring hybrid annual conference and hundreds of attendees",
+          "url": "https://algaonline.org/page/conference",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "",
+          "note": "ALGA advertises the May 2–5, 2027 hybrid annual conference in Denver, which draws hundreds in person and online.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "commitment_flags": [
+            "2027 host city already announced"
+          ]
+        }
+      ],
+      "financial": {},
+      "signal_families": [
+        "decision-cadence",
+        "event-cycle",
+        "verified-financial-fit"
+      ],
+      "commitment_flags": [
+        "2026–2028 host cities already approved",
+        "2027 host city already announced"
+      ],
+      "suggested_bucket": "conflict-check",
+      "evidence_digest": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue Additional separate clue: ALGA's board approves conference sites three years ahead. As of February 2026, 2026 Cleveland, 2027 Denver and 2028 St. Louis were selected; 2029 status was not established by this source.",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    }
+  ]
+}
