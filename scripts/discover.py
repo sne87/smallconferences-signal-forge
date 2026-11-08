@@ -103,6 +103,31 @@ QUERIES += [
  ('regional-convention-committee','"regional convention" "committee" "planning"'),
 ]
 
+# More precise future-cycle, owner-side planning and contract-review searches.
+# These are search terms only. Only source content can pass the gate.
+QUERIES += [
+ ('board-scheduled-location', '"association" "2029 conference" "site selection"'),
+ ('conference-host-lead', '"association" "2028" "site selection committee"'),
+ ('future-venue-committee', '"society" "2029" "conference planning"'),
+ ('future-meetings-board', '"association" "board minutes" "conference site"'),
+ ('chapter-host-search', '"state association" "host committee" "2028"'),
+ ('venue-comparison-board', '"association" "annual conference" "venue options"'),
+ ('hotel-block-review', '"society" "conference" "room block" "review"'),
+ ('member-conference-committee', '"association" "2028" "conference committee"'),
+ ('future-location-members', '"association" "2029" "future conference locations"'),
+ ('annual-conference-committee', '"state" "association" "conference" "committee formed"'),
+ ('nonprofit-site-selection', '"nonprofit" "conference" "site selection" "2028"'),
+ ('meeting-association-host', '"historical society" "annual meeting" "host" "2028"'),
+ ('board-venue-discussion', '"professional society" "annual meeting" "location" "committee"'),
+ ('venue-affordability-board', '"association" "conference" "hotel rates" "board"'),
+ ('fraternal-future-host', '"fraternal" "2028 convention" "host location"'),
+ ('campus-conference-review', '"educational association" "conference" "host site"'),
+ ('association-retreat-review', '"association" "annual retreat" "new venue"'),
+ ('conference-contract-renewal', '"nonprofit" "conference" "venue contract" "renewal"'),
+ ('conference-debrief-future', '"association" "conference" "debrief" "future"'),
+ ('committee-room-blocks', '"association" "2028" "hotel block" "planning committee"'),
+]
+
 # Lower-friction public-index queries for regional organizers. These still pass
 # the named-buyer, event-context and early-change filters in as_candidate().
 # Broader discovery must not be presented as verified demand.
@@ -434,6 +459,30 @@ def evidence_groups(text):
                 break
     return found
 
+# Collect why indexed material failed. This is the most important
+# diagnostic for a scanner that fetches hundreds of hits but finds few leads.
+REJECTION_COUNTS={}
+def reject(reason):
+    REJECTION_COUNTS[reason]=REJECTION_COUNTS.get(reason,0)+1
+    return None
+
+# The older signal patterns look for very specific word order. The fallback
+# accepts a few more arrangements, but only for explicit future committee,
+# cost, site or operational decisions. It never calls them qualified leads.
+FUTURE_CYCLE=re.compile(r'\b(?:2027|2028|2029|2030|2031)\b')
+PLANNING_CHANGE=[
+ ('future-site-research',re.compile(r'\b(?:site selection|host site|host city|conference venue|future conference location)\b.{0,135}\b(?:committee|review|reviewing|consider|discuss|decision|vote|seeking|search|evaluate|future|next)\b|\b(?:committee|review|reviewing|consider|discuss|decision|vote|seeking|evaluate)\b.{0,135}\b(?:site selection|host site|host city|conference venue|future conference location)\b',re.I)),
+ ('committee-research',re.compile(r'\b(?:conference|convention|annual meeting)\b.{0,75}\b(?:site selection|planning committee|conference chair|host committee)\b.{0,80}\b(?:formed|appointed|recruiting|future|new|seeking|202[7-9]|203[0-1])\b|\b(?:appointed|new|volunteer|selected)\b.{0,80}\b(?:conference|convention)\b.{0,60}\b(?:chair|committee|host)\b',re.I)),
+ ('financial-research',re.compile(r'\b(?:conference|annual meeting|convention)\b.{0,100}\b(?:expenses?|costs?|budget|room block|hotel rates|venue contract)\b.{0,100}\b(?:review|concerns?|increase|shortfall|discussion|consider|rising|negotiat)\b|\b(?:board|budget committee)\b.{0,85}\b(?:conference|annual meeting)\b.{0,85}\b(?:costs?|budget|hotel rates|room block)\b',re.I)),
+]
+def alternative_early_evidence(text):
+    if not FUTURE_CYCLE.search(text):return {}
+    for name,pattern in PLANNING_CHANGE:
+        match=pattern.search(text)
+        if match:
+            return {name:text[max(0,match.start()-30):match.end()+70][:330]}
+    return {}
+
 def relevance(article,label):
     """Return concrete/early evidence tiers or None for junk.
 
@@ -442,31 +491,32 @@ def relevance(article,label):
     title=article.get('title','').strip()
     summary=article.get('summary','').strip()
     url=article.get('url','')
-    if not title or not url.startswith(('https://','http://')):return None
+    if not title or not url.startswith(('https://','http://')):return reject('no_http_title')
     h=host_name(url)
-    if any(h==x or h.endswith('.'+x) for x in EXCLUDED_HOSTS):return None
-    if GENERIC_BLOG.search(title) or HARD_NEGATIVE.search(title) or CLOSED_LOCATION.search(title):return None
+    if any(h==x or h.endswith('.'+x) for x in EXCLUDED_HOSTS):return reject('excluded_host')
+    if GENERIC_BLOG.search(title) or HARD_NEGATIVE.search(title) or CLOSED_LOCATION.search(title):return reject('blog_or_completed_site')
     txt=event_context(title,summary)
-    if not EVENT_REGEX.search(txt):return None
-    if FOREIGN_CONTEXT.search(txt):return None
-    if not source_platform(article,label) and label.startswith('social-'):return None
+    if not EVENT_REGEX.search(txt):return reject('no_event_reference')
+    if FOREIGN_CONTEXT.search(txt):return reject('foreign_reference')
+    if not source_platform(article,label) and label.startswith('social-'):return reject('unverified_social_platform')
     org=candidate_organization(title,summary,article.get('source',''),WATCHLIST_NAMES)
-    if not org:return None
+    if not org:return reject('organizer_name_missing')
     # Guard against a generic article that mentions someone else's association
     # but is not about an organization's conference planning.
     strong=evidence_groups(txt)
     weak=weak_evidence(txt)
-    if not strong and not weak:return None
+    if not strong and not weak:weak=alternative_early_evidence(txt)
+    if not strong and not weak:return reject('no_actionable_change_evidence')
     if ANNOUNCEMENT_ONLY.search(title) and not any(k in strong for k in ('venue-decision','economics','disruption','capacity','committee-reset','strategic-shift')):
-        return None
+        return reject('routine_event_announcement')
     if re.search(r'\b(?:calls? for|invites?|requests?)\s+(?:speaker|session|presentation|paper|abstract)\s+proposals\b',title,re.I) and not strong:
-        return None
+        return reject('speaker_proposal_not_venue')
     date=article.get('published','')
     if date:
         try:
             age=(NOW.date()-datetime.fromisoformat(date).date()).days
-            if age<0 or age>150:return None
-        except ValueError:return None
+            if age<0 or age>150:return reject('stale_or_future_index_date')
+        except ValueError:return reject('invalid_date')
     # Priority requires actual source-text evidence. Watch can be exploratory.
     tier='priority' if strong else 'watch'
     return {'strong':strong,'weak':weak,'tier':tier,'organization':org}
@@ -852,7 +902,8 @@ def run():
          'review_watch_count':sum(x.get('review_tier')=='watch' for x in kept),
          'stacked_organizations':len(organizations),
          'organizations':organizations,'rejected_irrelevant_hits':rejected,
-         'previous_noise_removed':dropped_previous,'errors':failed[:15],'signals':kept}
+         'previous_noise_removed':dropped_previous,'rejection_reasons':dict(sorted(REJECTION_COUNTS.items(),key=lambda x:-x[1])),
+         'errors':failed[:15],'signals':kept}
     DEST.parent.mkdir(parents=True,exist_ok=True)
     DEST.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print(f'Feeds OK={fetched}, failed={len(failed)}, new={fresh}, retained={len(kept)}, filtered={rejected}, old_noise_removed={dropped_previous}')
