@@ -5,7 +5,7 @@
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
   "scan_sources_ok": 178,
   "official_pages_checked": 7,
-  "official_pages_monitored": 12,
+  "official_pages_monitored": 20,
   "official_watch_errors": [
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
@@ -29,9 +29,9 @@
   "new_discoveries": 0,
   "new_organizations": [],
   "new_organizations_count": 0,
-  "review_priority_count": 1,
-  "review_watch_count": 11,
-  "stacked_organizations": 5,
+  "review_priority_count": 3,
+  "review_watch_count": 15,
+  "stacked_organizations": 11,
   "organizations": [
     {
       "key": "nonprofit association of oregon",
@@ -424,6 +424,324 @@
       "priority": 48,
       "stack_stage": "multiple evidence items, no verified buying window",
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "north carolina association of municipal clerks",
+      "name": "North Carolina Association of Municipal Clerks",
+      "signal_ids": [
+        "ed4e16fb216af61b63cf"
+      ],
+      "families": [
+        "committee-forming"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "ed4e16fb216af61b63cf",
+          "title": "North Carolina Association of Municipal Clerks | 2029 conference site-selection committee with named chair",
+          "url": "https://ncamc.nclm.org/leadership/",
+          "source": "Official organization page (ChatGPT research snapshot)",
+          "published": "",
+          "document_date": "2025-26 leadership listing",
+          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
+          "counterevidence_flags": [],
+          "families": [
+            "committee-forming"
+          ],
+          "tier": "priority"
+        }
+      ],
+      "priority_count": 1,
+      "watch_count": 0,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "committee-forming"
+      ],
+      "pre_rfp_research_priority": true,
+      "priority": 62,
+      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
+      "first_question": "2029 has a named committee chaired by Shawne Southard; independently verify site or hotel contract status (two-year planning lead), event attendance, financial scale and whether any outside fee-paid sourcing is permitted.",
+      "robert_fit_screen": {
+        "specialty": "SMERF / nonprofit affiliation unverified",
+        "recurring_event": "Check two previous cycles",
+        "event_spend": "Unverified",
+        "workload": "Unverified",
+        "decision_maker": "Committee named or inferred but signing authority unknown",
+        "venue_planner": "Unverified",
+        "pre_rfp": "Current sourcing and contracts unverified",
+        "qualified": false
+      }
+    },
+    {
+      "key": "hitop society",
+      "name": "HiTOP Society",
+      "signal_ids": [
+        "63c5a08cda63cec8f704"
+      ],
+      "families": [
+        "board-location"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "63c5a08cda63cec8f704",
+          "title": "HiTOP Society | 2027-2029 future site discussion and committee planning",
+          "url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
+          "source": "Official organization page (ChatGPT research snapshot)",
+          "published": "",
+          "document_date": "2026 committee minutes",
+          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
+          "counterevidence_flags": [],
+          "families": [
+            "board-location"
+          ],
+          "tier": "priority"
+        }
+      ],
+      "priority_count": 1,
+      "watch_count": 0,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "board-location"
+      ],
+      "pre_rfp_research_priority": true,
+      "priority": 62,
+      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
+      "first_question": "Read the newest minutes for decisions made after June 2026. Verify meeting size, actual conference budget, college-host preference and ability to pay an outside source advisor before recommending Robert.",
+      "robert_fit_screen": {
+        "specialty": "SMERF / nonprofit affiliation unverified",
+        "recurring_event": "Check two previous cycles",
+        "event_spend": "Unverified",
+        "workload": "Unverified",
+        "decision_maker": "Committee named or inferred but signing authority unknown",
+        "venue_planner": "Unverified",
+        "pre_rfp": "Current sourcing and contracts unverified",
+        "qualified": false
+      }
+    },
+    {
+      "key": "national association of community development extension professionals",
+      "name": "National Association of Community Development Extension Professionals",
+      "signal_ids": [
+        "e0aa765f1bc390ed8ba6"
+      ],
+      "families": [
+        "location-exploration"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "e0aa765f1bc390ed8ba6",
+          "title": "National Association of Community Development Extension Professionals | 2028 conference host site solicitation for Southern land-grant institutions",
+          "url": "https://www.nacdep.net/2028-site-selection-files",
+          "source": "Official organization page (ChatGPT research snapshot)",
+          "published": "",
+          "document_date": "2026 site selection notice",
+          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
+          "counterevidence_flags": [],
+          "families": [
+            "location-exploration"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "location-exploration"
+      ],
+      "pre_rfp_research_priority": true,
+      "priority": 40,
+      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
+      "first_question": "Check if 2028 site applications remain open; determine whether campus hosts or internal volunteers handle site/logistics, whether Robert could provide independent sourcing, and event-level room and F&B spend.",
+      "robert_fit_screen": {
+        "specialty": "SMERF / nonprofit affiliation unverified",
+        "recurring_event": "Check two previous cycles",
+        "event_spend": "Unverified",
+        "workload": "Unverified",
+        "decision_maker": "Committee named or inferred but signing authority unknown",
+        "venue_planner": "Unverified",
+        "pre_rfp": "Current sourcing and contracts unverified",
+        "qualified": false
+      }
+    },
+    {
+      "key": "association for the study of higher education",
+      "name": "Association for the Study of Higher Education",
+      "signal_ids": [
+        "d06cddf89b4cbbe4e452"
+      ],
+      "families": [
+        "committee-forming"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "d06cddf89b4cbbe4e452",
+          "title": "Association for the Study of Higher Education | 2030-2031 site selection committee begins late 2026",
+          "url": "https://www.ashe.ws/2027-committees",
+          "source": "Official organization page (ChatGPT research snapshot)",
+          "published": "",
+          "document_date": "2026 volunteer call",
+          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
+          "counterevidence_flags": [],
+          "families": [
+            "committee-forming"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "committee-forming"
+      ],
+      "pre_rfp_research_priority": true,
+      "priority": 40,
+      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
+      "first_question": "Determine if ASHE conference attendance and staffing requirements are realistic for Robert alone. Committee begins 2030–31 location review in late 2026/early 2027; verify purchasing process, outside planner incumbency and budget.",
+      "robert_fit_screen": {
+        "specialty": "SMERF / nonprofit affiliation unverified",
+        "recurring_event": "Check two previous cycles",
+        "event_spend": "Unverified",
+        "workload": "Unverified",
+        "decision_maker": "Committee named or inferred but signing authority unknown",
+        "venue_planner": "Unverified",
+        "pre_rfp": "Current sourcing and contracts unverified",
+        "qualified": false
+      }
+    },
+    {
+      "key": "indiana league of municipal clerks and treasurers",
+      "name": "Indiana League of Municipal Clerks and Treasurers",
+      "signal_ids": [
+        "60879cbffa2d378c7d95"
+      ],
+      "families": [
+        "committee-forming"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "60879cbffa2d378c7d95",
+          "title": "Indiana League of Municipal Clerks and Treasurers | 2028 conference site selection committee appointed",
+          "url": "https://aimindiana.org/ilmct-committees/",
+          "source": "Official organization page (ChatGPT research snapshot)",
+          "published": "",
+          "document_date": "Current published committee page",
+          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
+          "counterevidence_flags": [],
+          "families": [
+            "committee-forming"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "committee-forming"
+      ],
+      "pre_rfp_research_priority": true,
+      "priority": 40,
+      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
+      "first_question": "Verify 2028 host hotel/venue selection status, decision deadline, conference scale and whether the existing board/municipal association operations staff can consider outside cost assessment.",
+      "robert_fit_screen": {
+        "specialty": "SMERF / nonprofit affiliation unverified",
+        "recurring_event": "Check two previous cycles",
+        "event_spend": "Unverified",
+        "workload": "Unverified",
+        "decision_maker": "Committee named or inferred but signing authority unknown",
+        "venue_planner": "Unverified",
+        "pre_rfp": "Current sourcing and contracts unverified",
+        "qualified": false
+      }
+    },
+    {
+      "key": "association of leadership programs",
+      "name": "Association of Leadership Programs",
+      "signal_ids": [
+        "2d3bb2c6184475ece9a6"
+      ],
+      "families": [
+        "venue-decision"
+      ],
+      "commitment_flags": [
+        "ALP publicly describes managing end-to-end conference services internally",
+        "Host LOI process is already public; hotel bids scheduled November 2026"
+      ],
+      "evidence": [
+        {
+          "id": "2d3bb2c6184475ece9a6",
+          "title": "Association of Leadership Programs | 2028 host location process, 250+ attendees and lodging scale",
+          "url": "https://www.alpleaders.org/2028_site_selection.php",
+          "source": "Official organization page (ChatGPT research snapshot)",
+          "published": "",
+          "document_date": "2026 site selection process",
+          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
+          "counterevidence_flags": [
+            "ALP publicly describes managing end-to-end conference services internally",
+            "Host LOI process is already public; hotel bids scheduled November 2026"
+          ],
+          "families": [
+            "venue-decision"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "venue-decision"
+      ],
+      "pre_rfp_research_priority": false,
+      "priority": 40,
+      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
+      "first_question": "2028 host LOI process is already underway; hotel bid packets were targeted for November 13, 2026. Verify actual status immediately. Internal end-to-end conference service model is a serious outside-advisor fit concern.",
+      "robert_fit_screen": {
+        "specialty": "SMERF / nonprofit affiliation unverified",
+        "recurring_event": "Check two previous cycles",
+        "event_spend": "Unverified",
+        "workload": "Unverified",
+        "decision_maker": "Committee named or inferred but signing authority unknown",
+        "venue_planner": "Unverified",
+        "pre_rfp": "Current sourcing and contracts unverified",
+        "qualified": false
+      }
     }
   ],
   "rejected_irrelevant_hits": 1014,
@@ -1021,11 +1339,268 @@
       "verified_event": false,
       "verified_opening": false,
       "qualification": "Unverified source watch"
+    },
+    {
+      "id": "ed4e16fb216af61b63cf",
+      "title": "North Carolina Association of Municipal Clerks | 2029 conference site-selection committee with named chair",
+      "summary": "The NCAMC website lists a Site Selection - 2029 committee chaired by Shawne Southard. The stated responsibility is to recommend the Annual Conference site, date and hotel/motel facility, with contracts normally completed two years before the event.",
+      "url": "https://ncamc.nclm.org/leadership/",
+      "source": "Official organization page (ChatGPT research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Original official source reviewed through public web search on 2026-11-08; automated runner recheck pending",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "",
+      "monitor_status": "Research snapshot 2026-11-08, automated live recheck pending",
+      "organization_candidate": "North Carolina Association of Municipal Clerks",
+      "organization_key": "north carolina association of municipal clerks",
+      "review_tier": "priority",
+      "strong_evidence": {
+        "committee-forming": "The NCAMC website lists a Site Selection - 2029 committee chaired by Shawne Southard. The stated responsibility is to recommend the Annual Conference site, date and hotel/motel facility, with contracts normally completed two years before the event."
+      },
+      "early_evidence": {},
+      "types": [
+        "committee-forming"
+      ],
+      "priority": 52,
+      "query_id": "source-curation-2026-11-08",
+      "play": "Smart",
+      "next_action": "2029 has a named committee chaired by Shawne Southard; independently verify site or hotel contract status (two-year planning lead), event attendance, financial scale and whether any outside fee-paid sourcing is permitted.",
+      "flags": [],
+      "source_document_date": "2025-26 leadership listing",
+      "signal_strength": "Manual primary-source research snapshot; current procurement/contract openness not independently established",
+      "signal_evidence": {
+        "committee-forming": "The NCAMC website lists a Site Selection - 2029 committee chaired by Shawne Southard. The stated responsibility is to recommend the Annual Conference site, date and hotel/motel facility, with contracts normally completed two years before the event."
+      },
+      "evidence_gate": "Official public source checked as source snapshot; financial fit and procurement still unverified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "63c5a08cda63cec8f704",
+      "title": "HiTOP Society | 2027-2029 future site discussion and committee planning",
+      "summary": "HiTOP executive committee minutes list future conference planning and site selection for 2027–2029 among forthcoming discussion items. Earlier minutes discuss uncertainty about conference costs and relying on low-budget university space. These are clues, not an open paid engagement.",
+      "url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
+      "source": "Official organization page (ChatGPT research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Original official source reviewed through public web search on 2026-11-08; automated runner recheck pending",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "",
+      "monitor_status": "Research snapshot 2026-11-08, automated live recheck pending",
+      "organization_candidate": "HiTOP Society",
+      "organization_key": "hitop society",
+      "review_tier": "priority",
+      "strong_evidence": {
+        "board-location": "HiTOP executive committee minutes list future conference planning and site selection for 2027–2029 among forthcoming discussion items. Earlier minutes discuss uncertainty about conference costs and relying on low-budget university space. These are clues, not an open paid engagement."
+      },
+      "early_evidence": {},
+      "types": [
+        "board-location"
+      ],
+      "priority": 52,
+      "query_id": "source-curation-2026-11-08",
+      "play": "Smart",
+      "next_action": "Read the newest minutes for decisions made after June 2026. Verify meeting size, actual conference budget, college-host preference and ability to pay an outside source advisor before recommending Robert.",
+      "flags": [],
+      "source_document_date": "2026 committee minutes",
+      "signal_strength": "Manual primary-source research snapshot; current procurement/contract openness not independently established",
+      "signal_evidence": {
+        "board-location": "HiTOP executive committee minutes list future conference planning and site selection for 2027–2029 among forthcoming discussion items. Earlier minutes discuss uncertainty about conference costs and relying on low-budget university space. These are clues, not an open paid engagement."
+      },
+      "evidence_gate": "Official public source checked as source snapshot; financial fit and procurement still unverified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "e0aa765f1bc390ed8ba6",
+      "title": "National Association of Community Development Extension Professionals | 2028 conference host site solicitation for Southern land-grant institutions",
+      "summary": "NACDEP currently seeks a 2028 conference site from land-grant institutions, preferring the Southern region. 2027 Portland was already selected. Host-site applications are not proof of an opportunity for a paid independent planner.",
+      "url": "https://www.nacdep.net/2028-site-selection-files",
+      "source": "Official organization page (ChatGPT research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Original official source reviewed through public web search on 2026-11-08; automated runner recheck pending",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "",
+      "monitor_status": "Research snapshot 2026-11-08, automated live recheck pending",
+      "organization_candidate": "National Association of Community Development Extension Professionals",
+      "organization_key": "national association of community development extension professionals",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "location-exploration": "NACDEP currently seeks a 2028 conference site from land-grant institutions, preferring the Southern region. 2027 Portland was already selected. Host-site applications are not proof of an opportunity for a paid independent planner."
+      },
+      "types": [
+        "location-exploration"
+      ],
+      "priority": 28,
+      "query_id": "source-curation-2026-11-08",
+      "play": "Smart",
+      "next_action": "Check if 2028 site applications remain open; determine whether campus hosts or internal volunteers handle site/logistics, whether Robert could provide independent sourcing, and event-level room and F&B spend.",
+      "flags": [],
+      "source_document_date": "2026 site selection notice",
+      "signal_strength": "Manual primary-source research snapshot; current procurement/contract openness not independently established",
+      "signal_evidence": {
+        "location-exploration": "NACDEP currently seeks a 2028 conference site from land-grant institutions, preferring the Southern region. 2027 Portland was already selected. Host-site applications are not proof of an opportunity for a paid independent planner."
+      },
+      "evidence_gate": "Official public source checked as source snapshot; financial fit and procurement still unverified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "d06cddf89b4cbbe4e452",
+      "title": "Association for the Study of Higher Education | 2030-2031 site selection committee begins late 2026",
+      "summary": "ASHE is recruiting members for its Site Selection Committee, with work expected to start in late 2026/early 2027 reviewing potential locations for its 2030 and 2031 conferences. This may be too far out or complex for Robert.",
+      "url": "https://www.ashe.ws/2027-committees",
+      "source": "Official organization page (ChatGPT research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Original official source reviewed through public web search on 2026-11-08; automated runner recheck pending",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "",
+      "monitor_status": "Research snapshot 2026-11-08, automated live recheck pending",
+      "organization_candidate": "Association for the Study of Higher Education",
+      "organization_key": "association for the study of higher education",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "committee-forming": "ASHE is recruiting members for its Site Selection Committee, with work expected to start in late 2026/early 2027 reviewing potential locations for its 2030 and 2031 conferences. This may be too far out or complex for Robert."
+      },
+      "types": [
+        "committee-forming"
+      ],
+      "priority": 28,
+      "query_id": "source-curation-2026-11-08",
+      "play": "Smart",
+      "next_action": "Determine if ASHE conference attendance and staffing requirements are realistic for Robert alone. Committee begins 2030–31 location review in late 2026/early 2027; verify purchasing process, outside planner incumbency and budget.",
+      "flags": [],
+      "source_document_date": "2026 volunteer call",
+      "signal_strength": "Manual primary-source research snapshot; current procurement/contract openness not independently established",
+      "signal_evidence": {
+        "committee-forming": "ASHE is recruiting members for its Site Selection Committee, with work expected to start in late 2026/early 2027 reviewing potential locations for its 2030 and 2031 conferences. This may be too far out or complex for Robert."
+      },
+      "evidence_gate": "Official public source checked as source snapshot; financial fit and procurement still unverified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "60879cbffa2d378c7d95",
+      "title": "Indiana League of Municipal Clerks and Treasurers | 2028 conference site selection committee appointed",
+      "summary": "ILMCT public committees list a 2028 Conference Site Selection Committee chaired by Terri Budde. It does not state that the venue is unsigned or an independent planner is needed.",
+      "url": "https://aimindiana.org/ilmct-committees/",
+      "source": "Official organization page (ChatGPT research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Original official source reviewed through public web search on 2026-11-08; automated runner recheck pending",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "",
+      "monitor_status": "Research snapshot 2026-11-08, automated live recheck pending",
+      "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
+      "organization_key": "indiana league of municipal clerks and treasurers",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "committee-forming": "ILMCT public committees list a 2028 Conference Site Selection Committee chaired by Terri Budde. It does not state that the venue is unsigned or an independent planner is needed."
+      },
+      "types": [
+        "committee-forming"
+      ],
+      "priority": 28,
+      "query_id": "source-curation-2026-11-08",
+      "play": "Smart",
+      "next_action": "Verify 2028 host hotel/venue selection status, decision deadline, conference scale and whether the existing board/municipal association operations staff can consider outside cost assessment.",
+      "flags": [],
+      "source_document_date": "Current published committee page",
+      "signal_strength": "Manual primary-source research snapshot; current procurement/contract openness not independently established",
+      "signal_evidence": {
+        "committee-forming": "ILMCT public committees list a 2028 Conference Site Selection Committee chaired by Terri Budde. It does not state that the venue is unsigned or an independent planner is needed."
+      },
+      "evidence_gate": "Official public source checked as source snapshot; financial fit and procurement still unverified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "2d3bb2c6184475ece9a6",
+      "title": "Association of Leadership Programs | 2028 host location process, 250+ attendees and lodging scale",
+      "summary": "ALP's 2028 conference host selection page reports 250+ attendees and around 150-160 peak hotel nights, with LOIs before hotel bids. Its organizer says ALP provides end-to-end conference services. Hotel sourcing is likely near or past its earliest buying window.",
+      "url": "https://www.alpleaders.org/2028_site_selection.php",
+      "source": "Official organization page (ChatGPT research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Original official source reviewed through public web search on 2026-11-08; automated runner recheck pending",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "",
+      "monitor_status": "Research snapshot 2026-11-08, automated live recheck pending",
+      "organization_candidate": "Association of Leadership Programs",
+      "organization_key": "association of leadership programs",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "venue-decision": "ALP's 2028 conference host selection page reports 250+ attendees and around 150-160 peak hotel nights, with LOIs before hotel bids. Its organizer says ALP provides end-to-end conference services. Hotel sourcing is likely near or past its earliest buying window."
+      },
+      "types": [
+        "venue-decision"
+      ],
+      "priority": 28,
+      "query_id": "source-curation-2026-11-08",
+      "play": "Smart",
+      "next_action": "2028 host LOI process is already underway; hotel bid packets were targeted for November 13, 2026. Verify actual status immediately. Internal end-to-end conference service model is a serious outside-advisor fit concern.",
+      "flags": [
+        "ALP publicly describes managing end-to-end conference services internally",
+        "Host LOI process is already public; hotel bids scheduled November 2026"
+      ],
+      "source_document_date": "2026 site selection process",
+      "signal_strength": "Manual primary-source research snapshot; current procurement/contract openness not independently established",
+      "signal_evidence": {
+        "venue-decision": "ALP's 2028 conference host selection page reports 250+ attendees and around 150-160 peak hotel nights, with LOIs before hotel bids. Its organizer says ALP provides end-to-end conference services. Hotel sourcing is likely near or past its earliest buying window."
+      },
+      "evidence_gate": "Official public source checked as source snapshot; financial fit and procurement still unverified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
     }
   ],
   "discovery_enrichment": {
     "status": "public-index triage, not buyer qualification",
     "new_this_run": 0,
     "caveat": "Only headlines with explicit full nonprofit names are enriched. Other discoveries require manual organizer identity."
-  }
+  },
+  "curated_research_additions": 6,
+  "curated_research_added_at": "2026-11-08"
 }
