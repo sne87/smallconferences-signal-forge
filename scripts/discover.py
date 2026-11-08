@@ -317,7 +317,8 @@ ROBERT_EARLY_FAMILIES = {
  'event-review': 11, 'location-exploration': 12, 'local-host-support': 11,
  'operating-transition': 10, 'committee-reset': 12, 'economics': 14,
  'attendee-change': 11, 'economics-watch': 8, 'capacity': 10,
- 'strategic-shift': 10,
+ 'strategic-shift': 10, 'future-site-research': 11,
+ 'committee-research': 10, 'financial-research': 10,
 }
 SMERF_FIT = re.compile(
  r'\b(?:nonprofit|non-profit|501\(c\)|charitable|foundation|historical society|'
@@ -524,7 +525,7 @@ def relevance(article,label):
 def next_action(types,flags,play):
     if flags:return 'Check named hotel, planner and room-block commitments first. Is any useful scope still influenceable?'
     if play=='Safe':return 'Verify the actual consultant RFP scope, deadline, bidder eligibility and contracting decision-maker.'
-    if 'venue-decision' in types:return 'Identify which conference cycle is under site review, the venue decision deadline and who can approve an external advisor.'
+    if 'venue-decision' in types or 'future-site-research' in types:return 'Identify which conference cycle is under site review, the venue decision deadline and who can approve an external advisor.'
     if 'capacity' in types or 'committee-reset' in types:return 'Check who owns conference planning after the staffing/committee change and whether outside assistance is allowed.'
     if 'economics' in types:return 'Find the actual conference financial issue (rooms, food, AV, attrition, registration) and the responsible committee.'
     if 'attendee-change' in types:return 'Read the original attendee feedback and determine when the next conference format, location or budget will be decided.'
@@ -693,6 +694,7 @@ def preliminary_fit_gates(group):
     flags=group.get('commitment_flags',[])
     event_clues=bool(families & {'event-cycle','event-review','attendee-change',
                        'committee-forming','location-exploration','board-location',
+                       'future-site-research','committee-research','financial-research',
                        'local-host-support','venue-decision','committee-reset'})
     # A clue can initiate investigation, NEVER satisfy a qualification gate.
     return {
