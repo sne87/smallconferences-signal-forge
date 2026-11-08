@@ -168,6 +168,82 @@
       "baseline_as_of": "2026-11-08",
       "baseline_excerpt": "The association's public conference host history identifies prior and forthcoming college campus hosts, including 2027 Keuka College; 2028 hosting was secured. This is event history, not confirmation of an open contract.",
       "source_document_date": "Conference sites page reviewed 2026-11-08"
+    },
+    {
+      "organization": "North Carolina Association of Municipal Clerks",
+      "url": "https://ncamc.nclm.org/leadership/",
+      "label": "2029 conference site-selection committee with named chair",
+      "needle": "Site Selection - 2029",
+      "family": "committee-forming",
+      "tier": "priority",
+      "next_action": "2029 has a named committee chaired by Shawne Southard; independently verify site or hotel contract status (two-year planning lead), event attendance, financial scale and whether any outside fee-paid sourcing is permitted.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "The NCAMC website lists a Site Selection - 2029 committee chaired by Shawne Southard. The stated responsibility is to recommend the Annual Conference site, date and hotel/motel facility, with contracts normally completed two years before the event.",
+      "source_document_date": "2025-26 leadership listing"
+    },
+    {
+      "organization": "HiTOP Society",
+      "url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
+      "label": "2027-2029 future site discussion and committee planning",
+      "needle": "Future conference planning and site selection (2027–2029)",
+      "family": "board-location",
+      "tier": "priority",
+      "next_action": "Read the newest minutes for decisions made after June 2026. Verify meeting size, actual conference budget, college-host preference and ability to pay an outside source advisor before recommending Robert.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "HiTOP executive committee minutes list future conference planning and site selection for 2027–2029 among forthcoming discussion items. Earlier minutes discuss uncertainty about conference costs and relying on low-budget university space. These are clues, not an open paid engagement.",
+      "source_document_date": "2026 committee minutes"
+    },
+    {
+      "organization": "National Association of Community Development Extension Professionals",
+      "url": "https://www.nacdep.net/2028-site-selection-files",
+      "label": "2028 conference host site solicitation for Southern land-grant institutions",
+      "needle": "NACDEP is currently seeking a site for its 2028 conference",
+      "family": "location-exploration",
+      "tier": "watch",
+      "next_action": "Check if 2028 site applications remain open; determine whether campus hosts or internal volunteers handle site/logistics, whether Robert could provide independent sourcing, and event-level room and F&B spend.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "NACDEP currently seeks a 2028 conference site from land-grant institutions, preferring the Southern region. 2027 Portland was already selected. Host-site applications are not proof of an opportunity for a paid independent planner.",
+      "source_document_date": "2026 site selection notice"
+    },
+    {
+      "organization": "Association for the Study of Higher Education",
+      "url": "https://www.ashe.ws/2027-committees",
+      "label": "2030-2031 site selection committee begins late 2026",
+      "needle": "Site Selection Committee",
+      "family": "committee-forming",
+      "tier": "watch",
+      "next_action": "Determine if ASHE conference attendance and staffing requirements are realistic for Robert alone. Committee begins 2030–31 location review in late 2026/early 2027; verify purchasing process, outside planner incumbency and budget.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "ASHE is recruiting members for its Site Selection Committee, with work expected to start in late 2026/early 2027 reviewing potential locations for its 2030 and 2031 conferences. This may be too far out or complex for Robert.",
+      "source_document_date": "2026 volunteer call"
+    },
+    {
+      "organization": "Indiana League of Municipal Clerks and Treasurers",
+      "url": "https://aimindiana.org/ilmct-committees/",
+      "label": "2028 conference site selection committee appointed",
+      "needle": "2028 Conference Site Selection Committee",
+      "family": "committee-forming",
+      "tier": "watch",
+      "next_action": "Verify 2028 host hotel/venue selection status, decision deadline, conference scale and whether the existing board/municipal association operations staff can consider outside cost assessment.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "ILMCT public committees list a 2028 Conference Site Selection Committee chaired by Terri Budde. It does not state that the venue is unsigned or an independent planner is needed.",
+      "source_document_date": "Current published committee page"
+    },
+    {
+      "organization": "Association of Leadership Programs",
+      "url": "https://www.alpleaders.org/2028_site_selection.php",
+      "label": "2028 host location process, 250+ attendees and lodging scale",
+      "needle": "At this stage, please refrain from soliciting formal bids",
+      "family": "venue-decision",
+      "tier": "watch",
+      "next_action": "2028 host LOI process is already underway; hotel bid packets were targeted for November 13, 2026. Verify actual status immediately. Internal end-to-end conference service model is a serious outside-advisor fit concern.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "ALP's 2028 conference host selection page reports 250+ attendees and around 150-160 peak hotel nights, with LOIs before hotel bids. Its organizer says ALP provides end-to-end conference services. Hotel sourcing is likely near or past its earliest buying window.",
+      "source_document_date": "2026 site selection process",
+      "counterevidence_flags": [
+        "ALP publicly describes managing end-to-end conference services internally",
+        "Host LOI process is already public; hotel bids scheduled November 2026"
+      ]
     }
   ]
 }
