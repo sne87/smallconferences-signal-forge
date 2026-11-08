@@ -10,6 +10,7 @@ on:
     paths:
       - 'index.html'
       - 'scripts/**'
+      - 'data/briefs.json'
       - 'watchlist.json'
       - 'watch_pages.json'
       - '.github/workflows/scan-and-publish.yml'
