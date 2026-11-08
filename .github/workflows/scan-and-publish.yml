@@ -1,9 +1,9 @@
 name: Scan public signals and publish Signal Forge
 on:
   schedule:
-    # Four public-index scans daily, approximately every six hours.
+    # Six public-index scans daily, approximately every four hours.
     # UTC scheduling means local Central times shift during daylight saving time.
-    - cron: '15 0,6,12,18 * * *'
+    - cron: '15 0,4,8,12,16,20 * * *'
   workflow_dispatch:
   push:
     branches: [main]
