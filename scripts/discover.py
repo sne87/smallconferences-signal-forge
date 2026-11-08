@@ -6,7 +6,7 @@ retained as WATCH; specific purchasing or operational changes are PRIORITY.
 Never infer that an unsigned contract, external planning need, or buyer exists.
 """
 from __future__ import annotations
-import hashlib, html, json, re, sys, time, urllib.parse, urllib.request
+import hashlib, html, json, os, re, sys, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from email.utils import parsedate_to_datetime
@@ -745,7 +745,9 @@ def run():
             seen[curr['id']]=curr
         else:dropped_previous+=1
     fetched=0;failed=[];fresh=0;rejected=0;social_attempted=0;social_found=0
-    for i,(label,query) in enumerate(QUERIES):
+    light=os.environ.get('SF_LIGHT_SCAN','false').lower()=='true'
+    selected=[(i,pair) for i,pair in enumerate(QUERIES) if not light or i % 6 == NOW.hour % 6]
+    for i,(label,query) in selected:
         engines=['google']
         if i in (0,2,4,6,8):engines.append('bing')
         # Association board minutes, member surveys and official notices often
@@ -768,7 +770,11 @@ def run():
             except Exception as ex:
                 failed.append(f'{label} ({engine}): {type(ex).__name__}: {str(ex)[:100]}')
         time.sleep(.25)
-    for label,query in social_searches():
+    social_queries=social_searches()
+    if light:
+        social_queries=social_queries[(NOW.hour * 7) % max(1,len(social_queries)):] + social_queries[:(NOW.hour * 7) % max(1,len(social_queries))]
+        social_queries=social_queries[:7]
+    for label,query in social_queries:
         social_attempted+=1
         try:
             articles=fetch_rss(scan_url(query,'web'));fetched+=1
@@ -818,15 +824,15 @@ def run():
     organizations=organization_stacks(kept)
     old_org_keys={x.get('organization_key') for x in previous if x.get('organization_key')}
     new_organizations=[g['name'] for g in organizations if g.get('key') not in old_org_keys]
-    out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'4.2-robert-smerf-pre-rfp',
+    out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'5.0-hourly-robert-pre-rfp', 'scan_mode':'light' if light else 'deep',
          'purpose':'Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.',
          'scan_sources_ok':fetched,'official_pages_checked':watched_ok,
          'official_pages_monitored':len(watched),'official_watch_errors':watch_errors,
          'scan_sources_failed':len(failed),
-         'scan_queries':len(QUERIES)+social_attempted,'social_index_queries':social_attempted,
+         'scan_queries':len(selected)+social_attempted,'social_index_queries':social_attempted,
          'social_index_candidates_seen':social_found,
          'social_by_platform':{p:sum(1 for x in kept if x.get('platform')==p) for p,_ in SOCIAL_DOMAINS},
-         'sources_attempted':len(QUERIES)+5+sum(i%3==1 for i in range(len(QUERIES)))+social_attempted,
+         'sources_attempted':len(selected)+sum(i in (0,2,4,6,8) for i,_ in selected)+sum(i%3==1 for i,_ in selected)+social_attempted+len(watched),
          'coverage_warning':'Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.',
          'new_discoveries':fresh,'new_organizations':new_organizations,
          'new_organizations_count':len(new_organizations),
