@@ -1,19 +1,21 @@
 {
-  "generated_at": "2026-11-08T22:48:37+00:00",
+  "generated_at": "2026-11-08T22:53:34+00:00",
   "scanner_version": "5.0-hourly-robert-pre-rfp",
   "scan_mode": "deep",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
-  "scan_sources_ok": 178,
-  "official_pages_checked": 7,
-  "official_pages_monitored": 20,
+  "scan_sources_ok": 177,
+  "official_pages_checked": 11,
+  "official_pages_monitored": 18,
   "official_watch_errors": [
+    "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
+    "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed"
   ],
-  "scan_sources_failed": 5,
+  "scan_sources_failed": 8,
   "scan_queries": 141,
   "social_index_queries": 45,
   "social_index_candidates_seen": 0,
@@ -24,11 +26,18 @@
     "x": 0,
     "reddit": 0
   },
-  "sources_attempted": 190,
+  "sources_attempted": 196,
   "coverage_warning": "Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.",
-  "new_discoveries": 0,
-  "new_organizations": [],
-  "new_organizations_count": 0,
+  "new_discoveries": 6,
+  "new_organizations": [
+    "North Carolina Association of Municipal Clerks",
+    "HiTOP Society",
+    "National Association of Community Development Extension Professionals",
+    "Association for the Study of Higher Education",
+    "Indiana League of Municipal Clerks and Treasurers",
+    "Association of Leadership Programs"
+  ],
+  "new_organizations_count": 6,
   "review_priority_count": 3,
   "review_watch_count": 15,
   "stacked_organizations": 11,
@@ -191,10 +200,10 @@
           "id": "d2c40d9ffb0bc10956e0",
           "title": "Arkansas Education Association | Summer 2027 conference calendar change",
           "url": "https://www.aeaonline.org/teach",
-          "source": "Official association page (monitored)",
+          "source": "Official association page (research snapshot)",
           "published": "",
           "document_date": "",
-          "freshness": "Official source page fetched during this scan",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
           "counterevidence_flags": [],
           "families": [
             "disruption"
@@ -205,10 +214,10 @@
           "id": "53d27bbb760d30f5643c",
           "title": "Arkansas Education Association | New executive director and program-operations leadership",
           "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-          "source": "Official association page (monitored)",
+          "source": "Official association page (research snapshot)",
           "published": "",
           "document_date": "",
-          "freshness": "Official source page fetched during this scan",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
           "counterevidence_flags": [],
           "families": [
             "capacity"
@@ -242,6 +251,276 @@
       "pre_rfp_research_priority": true,
       "priority": 61,
       "stack_stage": "multiple evidence items, no verified buying window",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "north carolina association of municipal clerks",
+      "name": "North Carolina Association of Municipal Clerks",
+      "signal_ids": [
+        "ed4e16fb216af61b63cf"
+      ],
+      "families": [
+        "committee-forming"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "ed4e16fb216af61b63cf",
+          "title": "North Carolina Association of Municipal Clerks | 2029 conference site-selection committee with named chair",
+          "url": "https://ncamc.nclm.org/leadership/",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2025-26 leadership listing",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "committee-forming"
+          ],
+          "tier": "priority"
+        }
+      ],
+      "priority_count": 1,
+      "watch_count": 0,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "committee-forming"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": true,
+      "priority": 58,
+      "stack_stage": "single-source clue",
+      "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
+    },
+    {
+      "key": "hitop society",
+      "name": "HiTOP Society",
+      "signal_ids": [
+        "63c5a08cda63cec8f704"
+      ],
+      "families": [
+        "board-location"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "63c5a08cda63cec8f704",
+          "title": "HiTOP Society | 2027-2029 future site discussion and committee planning",
+          "url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2026 committee minutes",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "board-location"
+          ],
+          "tier": "priority"
+        }
+      ],
+      "priority_count": 1,
+      "watch_count": 0,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "board-location"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": true,
+      "priority": 58,
+      "stack_stage": "single-source clue",
+      "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
+    },
+    {
+      "key": "national association of community development extension professionals",
+      "name": "National Association of Community Development Extension Professionals",
+      "signal_ids": [
+        "e0aa765f1bc390ed8ba6"
+      ],
+      "families": [
+        "location-exploration"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "e0aa765f1bc390ed8ba6",
+          "title": "National Association of Community Development Extension Professionals | 2028 conference host site solicitation for Southern land-grant institutions",
+          "url": "https://www.nacdep.net/2028-site-selection-files",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2026 site selection notice",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "location-exploration"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "location-exploration"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": true,
+      "priority": 53,
+      "stack_stage": "single-source clue",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "association for the study of higher education",
+      "name": "Association for the Study of Higher Education",
+      "signal_ids": [
+        "d06cddf89b4cbbe4e452"
+      ],
+      "families": [
+        "committee-forming"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "d06cddf89b4cbbe4e452",
+          "title": "Association for the Study of Higher Education | 2030-2031 site selection committee begins late 2026",
+          "url": "https://www.ashe.ws/2027-committees",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2026 volunteer call",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "committee-forming"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "committee-forming"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": true,
+      "priority": 53,
+      "stack_stage": "single-source clue",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "indiana league of municipal clerks and treasurers",
+      "name": "Indiana League of Municipal Clerks and Treasurers",
+      "signal_ids": [
+        "60879cbffa2d378c7d95"
+      ],
+      "families": [
+        "committee-forming"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "60879cbffa2d378c7d95",
+          "title": "Indiana League of Municipal Clerks and Treasurers | 2028 conference site selection committee appointed",
+          "url": "https://aimindiana.org/ilmct-committees/",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "Current published committee page",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "committee-forming"
+          ],
+          "tier": "watch"
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "committee-forming"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": true,
+      "priority": 53,
+      "stack_stage": "single-source clue",
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
@@ -426,266 +705,6 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
-      "key": "north carolina association of municipal clerks",
-      "name": "North Carolina Association of Municipal Clerks",
-      "signal_ids": [
-        "ed4e16fb216af61b63cf"
-      ],
-      "families": [
-        "committee-forming"
-      ],
-      "commitment_flags": [],
-      "evidence": [
-        {
-          "id": "ed4e16fb216af61b63cf",
-          "title": "North Carolina Association of Municipal Clerks | 2029 conference site-selection committee with named chair",
-          "url": "https://ncamc.nclm.org/leadership/",
-          "source": "Official organization page (ChatGPT research snapshot)",
-          "published": "",
-          "document_date": "2025-26 leadership listing",
-          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
-          "counterevidence_flags": [],
-          "families": [
-            "committee-forming"
-          ],
-          "tier": "priority"
-        }
-      ],
-      "priority_count": 1,
-      "watch_count": 0,
-      "most_recent": "2026-11-08",
-      "play": "Smart",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-08",
-      "mentions": 1,
-      "distinct_sources": 1,
-      "early_signal_families": [
-        "committee-forming"
-      ],
-      "pre_rfp_research_priority": true,
-      "priority": 62,
-      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
-      "first_question": "2029 has a named committee chaired by Shawne Southard; independently verify site or hotel contract status (two-year planning lead), event attendance, financial scale and whether any outside fee-paid sourcing is permitted.",
-      "robert_fit_screen": {
-        "specialty": "SMERF / nonprofit affiliation unverified",
-        "recurring_event": "Check two previous cycles",
-        "event_spend": "Unverified",
-        "workload": "Unverified",
-        "decision_maker": "Committee named or inferred but signing authority unknown",
-        "venue_planner": "Unverified",
-        "pre_rfp": "Current sourcing and contracts unverified",
-        "qualified": false
-      }
-    },
-    {
-      "key": "hitop society",
-      "name": "HiTOP Society",
-      "signal_ids": [
-        "63c5a08cda63cec8f704"
-      ],
-      "families": [
-        "board-location"
-      ],
-      "commitment_flags": [],
-      "evidence": [
-        {
-          "id": "63c5a08cda63cec8f704",
-          "title": "HiTOP Society | 2027-2029 future site discussion and committee planning",
-          "url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
-          "source": "Official organization page (ChatGPT research snapshot)",
-          "published": "",
-          "document_date": "2026 committee minutes",
-          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
-          "counterevidence_flags": [],
-          "families": [
-            "board-location"
-          ],
-          "tier": "priority"
-        }
-      ],
-      "priority_count": 1,
-      "watch_count": 0,
-      "most_recent": "2026-11-08",
-      "play": "Smart",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-08",
-      "mentions": 1,
-      "distinct_sources": 1,
-      "early_signal_families": [
-        "board-location"
-      ],
-      "pre_rfp_research_priority": true,
-      "priority": 62,
-      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
-      "first_question": "Read the newest minutes for decisions made after June 2026. Verify meeting size, actual conference budget, college-host preference and ability to pay an outside source advisor before recommending Robert.",
-      "robert_fit_screen": {
-        "specialty": "SMERF / nonprofit affiliation unverified",
-        "recurring_event": "Check two previous cycles",
-        "event_spend": "Unverified",
-        "workload": "Unverified",
-        "decision_maker": "Committee named or inferred but signing authority unknown",
-        "venue_planner": "Unverified",
-        "pre_rfp": "Current sourcing and contracts unverified",
-        "qualified": false
-      }
-    },
-    {
-      "key": "national association of community development extension professionals",
-      "name": "National Association of Community Development Extension Professionals",
-      "signal_ids": [
-        "e0aa765f1bc390ed8ba6"
-      ],
-      "families": [
-        "location-exploration"
-      ],
-      "commitment_flags": [],
-      "evidence": [
-        {
-          "id": "e0aa765f1bc390ed8ba6",
-          "title": "National Association of Community Development Extension Professionals | 2028 conference host site solicitation for Southern land-grant institutions",
-          "url": "https://www.nacdep.net/2028-site-selection-files",
-          "source": "Official organization page (ChatGPT research snapshot)",
-          "published": "",
-          "document_date": "2026 site selection notice",
-          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
-          "counterevidence_flags": [],
-          "families": [
-            "location-exploration"
-          ],
-          "tier": "watch"
-        }
-      ],
-      "priority_count": 0,
-      "watch_count": 1,
-      "most_recent": "2026-11-08",
-      "play": "Smart",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-08",
-      "mentions": 1,
-      "distinct_sources": 1,
-      "early_signal_families": [
-        "location-exploration"
-      ],
-      "pre_rfp_research_priority": true,
-      "priority": 40,
-      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
-      "first_question": "Check if 2028 site applications remain open; determine whether campus hosts or internal volunteers handle site/logistics, whether Robert could provide independent sourcing, and event-level room and F&B spend.",
-      "robert_fit_screen": {
-        "specialty": "SMERF / nonprofit affiliation unverified",
-        "recurring_event": "Check two previous cycles",
-        "event_spend": "Unverified",
-        "workload": "Unverified",
-        "decision_maker": "Committee named or inferred but signing authority unknown",
-        "venue_planner": "Unverified",
-        "pre_rfp": "Current sourcing and contracts unverified",
-        "qualified": false
-      }
-    },
-    {
-      "key": "association for the study of higher education",
-      "name": "Association for the Study of Higher Education",
-      "signal_ids": [
-        "d06cddf89b4cbbe4e452"
-      ],
-      "families": [
-        "committee-forming"
-      ],
-      "commitment_flags": [],
-      "evidence": [
-        {
-          "id": "d06cddf89b4cbbe4e452",
-          "title": "Association for the Study of Higher Education | 2030-2031 site selection committee begins late 2026",
-          "url": "https://www.ashe.ws/2027-committees",
-          "source": "Official organization page (ChatGPT research snapshot)",
-          "published": "",
-          "document_date": "2026 volunteer call",
-          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
-          "counterevidence_flags": [],
-          "families": [
-            "committee-forming"
-          ],
-          "tier": "watch"
-        }
-      ],
-      "priority_count": 0,
-      "watch_count": 1,
-      "most_recent": "2026-11-08",
-      "play": "Smart",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-08",
-      "mentions": 1,
-      "distinct_sources": 1,
-      "early_signal_families": [
-        "committee-forming"
-      ],
-      "pre_rfp_research_priority": true,
-      "priority": 40,
-      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
-      "first_question": "Determine if ASHE conference attendance and staffing requirements are realistic for Robert alone. Committee begins 2030–31 location review in late 2026/early 2027; verify purchasing process, outside planner incumbency and budget.",
-      "robert_fit_screen": {
-        "specialty": "SMERF / nonprofit affiliation unverified",
-        "recurring_event": "Check two previous cycles",
-        "event_spend": "Unverified",
-        "workload": "Unverified",
-        "decision_maker": "Committee named or inferred but signing authority unknown",
-        "venue_planner": "Unverified",
-        "pre_rfp": "Current sourcing and contracts unverified",
-        "qualified": false
-      }
-    },
-    {
-      "key": "indiana league of municipal clerks and treasurers",
-      "name": "Indiana League of Municipal Clerks and Treasurers",
-      "signal_ids": [
-        "60879cbffa2d378c7d95"
-      ],
-      "families": [
-        "committee-forming"
-      ],
-      "commitment_flags": [],
-      "evidence": [
-        {
-          "id": "60879cbffa2d378c7d95",
-          "title": "Indiana League of Municipal Clerks and Treasurers | 2028 conference site selection committee appointed",
-          "url": "https://aimindiana.org/ilmct-committees/",
-          "source": "Official organization page (ChatGPT research snapshot)",
-          "published": "",
-          "document_date": "Current published committee page",
-          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
-          "counterevidence_flags": [],
-          "families": [
-            "committee-forming"
-          ],
-          "tier": "watch"
-        }
-      ],
-      "priority_count": 0,
-      "watch_count": 1,
-      "most_recent": "2026-11-08",
-      "play": "Smart",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-08",
-      "mentions": 1,
-      "distinct_sources": 1,
-      "early_signal_families": [
-        "committee-forming"
-      ],
-      "pre_rfp_research_priority": true,
-      "priority": 40,
-      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
-      "first_question": "Verify 2028 host hotel/venue selection status, decision deadline, conference scale and whether the existing board/municipal association operations staff can consider outside cost assessment.",
-      "robert_fit_screen": {
-        "specialty": "SMERF / nonprofit affiliation unverified",
-        "recurring_event": "Check two previous cycles",
-        "event_spend": "Unverified",
-        "workload": "Unverified",
-        "decision_maker": "Committee named or inferred but signing authority unknown",
-        "venue_planner": "Unverified",
-        "pre_rfp": "Current sourcing and contracts unverified",
-        "qualified": false
-      }
-    },
-    {
       "key": "association of leadership programs",
       "name": "Association of Leadership Programs",
       "signal_ids": [
@@ -703,10 +722,10 @@
           "id": "2d3bb2c6184475ece9a6",
           "title": "Association of Leadership Programs | 2028 host location process, 250+ attendees and lodging scale",
           "url": "https://www.alpleaders.org/2028_site_selection.php",
-          "source": "Official organization page (ChatGPT research snapshot)",
+          "source": "Official association page (monitored)",
           "published": "",
           "document_date": "2026 site selection process",
-          "freshness": "Research snapshot 2026-11-08, automated live recheck pending",
+          "freshness": "Official source page fetched during this scan",
           "counterevidence_flags": [
             "ALP publicly describes managing end-to-end conference services internally",
             "Host LOI process is already public; hotel bids scheduled November 2026"
@@ -725,35 +744,323 @@
       "first_detected": "2026-11-08",
       "mentions": 1,
       "distinct_sources": 1,
-      "early_signal_families": [
-        "venue-decision"
-      ],
-      "pre_rfp_research_priority": false,
-      "priority": 40,
-      "stack_stage": "one source-backed early clue, pre-RFP openness unverified",
-      "first_question": "2028 host LOI process is already underway; hotel bid packets were targeted for November 13, 2026. Verify actual status immediately. Internal end-to-end conference service model is a serious outside-advisor fit concern.",
+      "early_signal_families": [],
       "robert_fit_screen": {
-        "specialty": "SMERF / nonprofit affiliation unverified",
-        "recurring_event": "Check two previous cycles",
-        "event_spend": "Unverified",
-        "workload": "Unverified",
-        "decision_maker": "Committee named or inferred but signing authority unknown",
-        "venue_planner": "Unverified",
-        "pre_rfp": "Current sourcing and contracts unverified",
-        "qualified": false
-      }
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Potential commitment evidence present",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": false,
+      "priority": 25,
+      "stack_stage": "single-source clue",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 1014,
+  "rejected_irrelevant_hits": 1061,
   "previous_noise_removed": 0,
   "errors": [
+    "planner-rfp (bing): ParseError: not well-formed (invalid token): line 1, column 41",
+    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
+    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed"
   ],
   "signals": [
+    {
+      "id": "ed4e16fb216af61b63cf",
+      "title": "North Carolina Association of Municipal Clerks | 2029 conference site-selection committee with named chair",
+      "summary": "on Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Cita",
+      "url": "https://ncamc.nclm.org/leadership/",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "2026-11-08T22:53:34+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "North Carolina Association of Municipal Clerks",
+      "organization_key": "north carolina association of municipal clerks",
+      "review_tier": "priority",
+      "strong_evidence": {
+        "committee-forming": "on Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Cita"
+      },
+      "early_evidence": {},
+      "types": [
+        "committee-forming"
+      ],
+      "priority": 61,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "2029 has a named committee chaired by Shawne Southard; independently verify site or hotel contract status (two-year planning lead), event attendance, financial scale and whether any outside fee-paid sourcing is permitted.",
+      "flags": [],
+      "source_document_date": "2025-26 leadership listing",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "committee-forming": "on Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Cita"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "63c5a08cda63cec8f704",
+      "title": "HiTOP Society | 2027-2029 future site discussion and committee planning",
+      "summary": "- Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CM",
+      "url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "2026-11-08T22:53:34+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "HiTOP Society",
+      "organization_key": "hitop society",
+      "review_tier": "priority",
+      "strong_evidence": {
+        "board-location": "- Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CM"
+      },
+      "early_evidence": {},
+      "types": [
+        "board-location"
+      ],
+      "priority": 61,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Read the newest minutes for decisions made after June 2026. Verify meeting size, actual conference budget, college-host preference and ability to pay an outside source advisor before recommending Robert.",
+      "flags": [],
+      "source_document_date": "2026 committee minutes",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "board-location": "- Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CM"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "HiTOP Society",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-08T22:55:02+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "source-unavailable",
+          "error": "HTTPError",
+          "revenue": null
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22HiTOP%20Society%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22HiTOP%20Society%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22HiTOP%20Society%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
+    },
+    {
+      "id": "e0aa765f1bc390ed8ba6",
+      "title": "National Association of Community Development Extension Professionals | 2028 conference host site solicitation for Southern land-grant institutions",
+      "summary": "conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past ",
+      "url": "https://www.nacdep.net/2028-site-selection-files",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "2026-11-08T22:53:34+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "National Association of Community Development Extension Professionals",
+      "organization_key": "national association of community development extension professionals",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "location-exploration": "conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past "
+      },
+      "types": [
+        "location-exploration"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Check if 2028 site applications remain open; determine whether campus hosts or internal volunteers handle site/logistics, whether Robert could provide independent sourcing, and event-level room and F&B spend.",
+      "flags": [],
+      "source_document_date": "2026 site selection notice",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "location-exploration": "conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past "
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "d06cddf89b4cbbe4e452",
+      "title": "Association for the Study of Higher Education | 2030-2031 site selection committee begins late 2026",
+      "summary": "experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The ",
+      "url": "https://www.ashe.ws/2027-committees",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "2026-11-08T22:53:34+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Association for the Study of Higher Education",
+      "organization_key": "association for the study of higher education",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "committee-forming": "experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The "
+      },
+      "types": [
+        "committee-forming"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Determine if ASHE conference attendance and staffing requirements are realistic for Robert alone. Committee begins 2030–31 location review in late 2026/early 2027; verify purchasing process, outside planner incumbency and budget.",
+      "flags": [],
+      "source_document_date": "2026 volunteer call",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "committee-forming": "experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The "
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "60879cbffa2d378c7d95",
+      "title": "Indiana League of Municipal Clerks and Treasurers | 2028 conference site selection committee appointed",
+      "summary": "rian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall b",
+      "url": "https://aimindiana.org/ilmct-committees/",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "2026-11-08T22:53:34+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
+      "organization_key": "indiana league of municipal clerks and treasurers",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "committee-forming": "rian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall b"
+      },
+      "types": [
+        "committee-forming"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Verify 2028 host hotel/venue selection status, decision deadline, conference scale and whether the existing board/municipal association operations staff can consider outside cost assessment.",
+      "flags": [],
+      "source_document_date": "Current published committee page",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "committee-forming": "rian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall b"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "2d3bb2c6184475ece9a6",
+      "title": "Association of Leadership Programs | 2028 host location process, 250+ attendees and lodging scale",
+      "summary": "of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred",
+      "url": "https://www.alpleaders.org/2028_site_selection.php",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "2026-11-08T22:53:34+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Association of Leadership Programs",
+      "organization_key": "association of leadership programs",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "venue-decision": "of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred"
+      },
+      "types": [
+        "venue-decision"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "2028 host LOI process is already underway; hotel bid packets were targeted for November 13, 2026. Verify actual status immediately. Internal end-to-end conference service model is a serious outside-advisor fit concern.",
+      "flags": [
+        "ALP publicly describes managing end-to-end conference services internally",
+        "Host LOI process is already public; hotel bids scheduled November 2026"
+      ],
+      "source_document_date": "2026 site selection process",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "venue-decision": "of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
     {
       "id": "af1518344eca1a7b1f04",
       "title": "New York State Association of Professional Land Surveyors | 2029 hotel proposals under review",
@@ -797,86 +1104,6 @@
       "qualification": "Unverified source watch"
     },
     {
-      "id": "d2c40d9ffb0bc10956e0",
-      "title": "Arkansas Education Association | Summer 2027 conference calendar change",
-      "summary": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b",
-      "url": "https://www.aeaonline.org/teach",
-      "source": "Official association page (monitored)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:48:37+00:00",
-      "monitor_status": "Official source page fetched during this scan",
-      "organization_candidate": "Arkansas Education Association",
-      "organization_key": "arkansas education association",
-      "review_tier": "watch",
-      "strong_evidence": {},
-      "early_evidence": {
-        "disruption": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b"
-      },
-      "types": [
-        "disruption"
-      ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
-      "play": "Smart",
-      "next_action": "Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
-      "flags": [],
-      "source_document_date": "",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
-      "signal_evidence": {
-        "disruption": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b"
-      },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch",
-      "research_assist": {
-        "organization_name_candidate": "Arkansas Education Association",
-        "status": "unverified organizer",
-        "checked_at": "2026-11-08T22:46:57+00:00",
-        "decision_window": "unknown",
-        "decision_maker": "unknown",
-        "planner_venue_status": "unknown",
-        "financial": {
-          "status": "provisional-identity",
-          "match": "unique exact name match, EIN confirmation required",
-          "ein": "710004515",
-          "legal_name": "Arkansas Education Association",
-          "fiscal_year": 2023,
-          "revenue": 2760676,
-          "fit": "within",
-          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
-          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
-          "revenue_range": "in-range",
-          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
-        },
-        "research": {
-          "historical_event_mentions": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          },
-          "planner_and_hotel_counterchecks": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          },
-          "decision_and_leadership_clues": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          }
-        }
-      }
-    },
-    {
       "id": "b6bf4a5ddd897e69bd79",
       "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
       "summary": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most",
@@ -890,7 +1117,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:48:37+00:00",
+      "last_checked": "2026-11-08T22:53:34+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -919,86 +1146,6 @@
       "qualification": "Unverified source watch"
     },
     {
-      "id": "53d27bbb760d30f5643c",
-      "title": "Arkansas Education Association | New executive director and program-operations leadership",
-      "summary": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona",
-      "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-      "source": "Official association page (monitored)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:48:37+00:00",
-      "monitor_status": "Official source page fetched during this scan",
-      "organization_candidate": "Arkansas Education Association",
-      "organization_key": "arkansas education association",
-      "review_tier": "watch",
-      "strong_evidence": {},
-      "early_evidence": {
-        "capacity": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona"
-      },
-      "types": [
-        "capacity"
-      ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
-      "play": "Smart",
-      "next_action": "Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
-      "flags": [],
-      "source_document_date": "",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
-      "signal_evidence": {
-        "capacity": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona"
-      },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch",
-      "research_assist": {
-        "organization_name_candidate": "Arkansas Education Association",
-        "status": "unverified organizer",
-        "checked_at": "2026-11-08T22:46:59+00:00",
-        "decision_window": "unknown",
-        "decision_maker": "unknown",
-        "planner_venue_status": "unknown",
-        "financial": {
-          "status": "provisional-identity",
-          "match": "unique exact name match, EIN confirmation required",
-          "ein": "710004515",
-          "legal_name": "Arkansas Education Association",
-          "fiscal_year": 2023,
-          "revenue": 2760676,
-          "fit": "within",
-          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
-          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
-          "revenue_range": "in-range",
-          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
-        },
-        "research": {
-          "historical_event_mentions": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          },
-          "planner_and_hotel_counterchecks": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          },
-          "decision_and_leadership_clues": {
-            "results": [],
-            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
-            "status": "indexed clues only, no original-source confirmation"
-          }
-        }
-      }
-    },
-    {
       "id": "00a7a89cdd60981d6e2d",
       "title": "Nonprofit Association of Oregon | 2027 conference cycle and program decision milestones",
       "summary": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p",
@@ -1012,7 +1159,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:48:37+00:00",
+      "last_checked": "2026-11-08T22:53:34+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -1054,7 +1201,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:48:37+00:00",
+      "last_checked": "2026-11-08T22:53:34+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -1096,7 +1243,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:48:37+00:00",
+      "last_checked": "2026-11-08T22:53:34+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -1140,7 +1287,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:48:37+00:00",
+      "last_checked": "2026-11-08T22:53:34+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -1167,6 +1314,166 @@
       "verified_event": false,
       "verified_opening": false,
       "qualification": "Unverified source watch"
+    },
+    {
+      "id": "d2c40d9ffb0bc10956e0",
+      "title": "Arkansas Education Association | Summer 2027 conference calendar change",
+      "summary": "The Conference is currently being shifted to Summer 2027.",
+      "url": "https://www.aeaonline.org/teach",
+      "source": "Official association page (research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-08T22:48:37+00:00",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "organization_candidate": "Arkansas Education Association",
+      "organization_key": "arkansas education association",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "disruption": "The Conference is currently being shifted to Summer 2027."
+      },
+      "types": [
+        "disruption"
+      ],
+      "priority": 30,
+      "query_id": "official-page-baseline",
+      "play": "Smart",
+      "next_action": "Recheck original source because automated access failed. Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
+      "flags": [],
+      "source_document_date": "",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_evidence": {
+        "disruption": "The Conference is currently being shifted to Summer 2027."
+      },
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Arkansas Education Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-08T22:55:03+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "710004515",
+          "legal_name": "Arkansas Education Association",
+          "fiscal_year": 2023,
+          "revenue": 2760676,
+          "fit": "within",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "in-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
+    },
+    {
+      "id": "53d27bbb760d30f5643c",
+      "title": "Arkansas Education Association | New executive director and program-operations leadership",
+      "summary": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
+      "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
+      "source": "Official association page (research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-08T22:48:37+00:00",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "organization_candidate": "Arkansas Education Association",
+      "organization_key": "arkansas education association",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
+      },
+      "types": [
+        "capacity"
+      ],
+      "priority": 30,
+      "query_id": "official-page-baseline",
+      "play": "Smart",
+      "next_action": "Recheck original source because automated access failed. Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
+      "flags": [],
+      "source_document_date": "",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_evidence": {
+        "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
+      },
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Arkansas Education Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-08T22:55:05+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "710004515",
+          "legal_name": "Arkansas Education Association",
+          "fiscal_year": 2023,
+          "revenue": 2760676,
+          "fit": "within",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "in-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
     },
     {
       "id": "bdda60c722506011eca5",
@@ -1598,7 +1905,7 @@
   ],
   "discovery_enrichment": {
     "status": "public-index triage, not buyer qualification",
-    "new_this_run": 0,
+    "new_this_run": 3,
     "caveat": "Only headlines with explicit full nonprofit names are enriched. Other discoveries require manual organizer identity."
   },
   "curated_research_additions": 6,
