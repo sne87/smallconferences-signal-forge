@@ -10,7 +10,6 @@ on:
     paths:
       - 'index.html'
       - 'scripts/**'
-      - 'data/briefs.json'
       - 'watchlist.json'
       - 'watch_pages.json'
       - '.github/workflows/scan-and-publish.yml'
@@ -59,7 +58,7 @@ jobs:
       - name: Create source-linked research briefs
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-3.5-flash-lite
+          GEMINI_MODEL: gemini-2.5-flash-lite
           SF_FULL_SCAN: ${{ steps.mode.outputs.full }}
         run: python scripts/briefs.py
       - name: Save public feed to repository
