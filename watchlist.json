@@ -1,6 +1,11 @@
 {
   "targets": [
     {
+      "name": "New York State Association for College Admission Counseling",
+      "state": "NY",
+      "ein": "300170683"
+    },
+    {
       "name": "Arkansas Education Association",
       "state": "AR",
       "ein": ""
