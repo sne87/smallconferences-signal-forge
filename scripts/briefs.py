@@ -116,6 +116,7 @@ def main():
         ]
         reports.append({
             "key":org["key"],"name":org["name"],"fingerprint":fingerprint,
+            "first_detected":org.get("first_detected",""),
             "source_count":len(evidence),"independent_publishers":org.get("distinct_sources",0),
             "source_evidence":evidence,"financial":financial,
             "signal_families":org.get("families",[]),
