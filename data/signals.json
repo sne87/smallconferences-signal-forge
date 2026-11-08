@@ -1,21 +1,19 @@
 {
-  "generated_at": "2026-11-08T22:59:33+00:00",
+  "generated_at": "2026-11-08T23:02:23+00:00",
   "scanner_version": "5.0-hourly-robert-pre-rfp",
   "scan_mode": "deep",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
   "scan_sources_ok": 178,
-  "official_pages_checked": 11,
+  "official_pages_checked": 13,
   "official_pages_monitored": 18,
   "official_watch_errors": [
-    "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
-    "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed"
   ],
-  "scan_sources_failed": 7,
+  "scan_sources_failed": 5,
   "scan_queries": 141,
   "social_index_queries": 45,
   "social_index_candidates_seen": 0,
@@ -31,6 +29,9 @@
   "new_discoveries": 0,
   "new_organizations": [],
   "new_organizations_count": 0,
+  "new_source_watch_organizations": [],
+  "new_source_watch_count": 0,
+  "curated_research_additions": 6,
   "review_priority_count": 3,
   "review_watch_count": 15,
   "stacked_organizations": 11,
@@ -193,10 +194,10 @@
           "id": "d2c40d9ffb0bc10956e0",
           "title": "Arkansas Education Association | Summer 2027 conference calendar change",
           "url": "https://www.aeaonline.org/teach",
-          "source": "Official association page (research snapshot)",
+          "source": "Official association page (monitored)",
           "published": "",
           "document_date": "",
-          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "freshness": "Official source page fetched during this scan",
           "counterevidence_flags": [],
           "families": [
             "disruption"
@@ -207,10 +208,10 @@
           "id": "53d27bbb760d30f5643c",
           "title": "Arkansas Education Association | New executive director and program-operations leadership",
           "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-          "source": "Official association page (research snapshot)",
+          "source": "Official association page (monitored)",
           "published": "",
           "document_date": "",
-          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "freshness": "Official source page fetched during this scan",
           "counterevidence_flags": [],
           "families": [
             "capacity"
@@ -756,12 +757,10 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 959,
+  "rejected_irrelevant_hits": 963,
   "previous_noise_removed": 0,
   "errors": [
-    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
@@ -782,7 +781,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T22:59:33+00:00",
+      "last_checked": "2026-11-08T23:02:23+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "North Carolina Association of Municipal Clerks",
       "organization_key": "north carolina association of municipal clerks",
@@ -824,7 +823,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T22:59:33+00:00",
+      "last_checked": "2026-11-08T23:02:23+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "HiTOP Society",
       "organization_key": "hitop society",
@@ -896,7 +895,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T22:59:33+00:00",
+      "last_checked": "2026-11-08T23:02:23+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "National Association of Community Development Extension Professionals",
       "organization_key": "national association of community development extension professionals",
@@ -938,7 +937,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T22:59:33+00:00",
+      "last_checked": "2026-11-08T23:02:23+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association for the Study of Higher Education",
       "organization_key": "association for the study of higher education",
@@ -980,7 +979,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T22:59:33+00:00",
+      "last_checked": "2026-11-08T23:02:23+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
       "organization_key": "indiana league of municipal clerks and treasurers",
@@ -1022,7 +1021,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-08T22:59:33+00:00",
+      "last_checked": "2026-11-08T23:02:23+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Leadership Programs",
       "organization_key": "association of leadership programs",
@@ -1096,254 +1095,42 @@
       "qualification": "Unverified source watch"
     },
     {
-      "id": "b6bf4a5ddd897e69bd79",
-      "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
-      "summary": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most",
-      "url": "https://nonprofitoregon.org/conference-notification-form/",
-      "source": "Official association page (monitored)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:59:33+00:00",
-      "monitor_status": "Official source page fetched during this scan",
-      "organization_candidate": "Nonprofit Association of Oregon",
-      "organization_key": "nonprofit association of oregon",
-      "review_tier": "watch",
-      "strong_evidence": {},
-      "early_evidence": {
-        "attendee-change": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most"
-      },
-      "types": [
-        "attendee-change"
-      ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
-      "play": "Smart",
-      "next_action": "Determine whether feedback from the latest Nonprofit Impact Conference is being used to change fall 2027 event planning. Confirm internal event staff and hotel agreements.",
-      "flags": [],
-      "source_document_date": "",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
-      "signal_evidence": {
-        "attendee-change": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most"
-      },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch"
-    },
-    {
-      "id": "00a7a89cdd60981d6e2d",
-      "title": "Nonprofit Association of Oregon | 2027 conference cycle and program decision milestones",
-      "summary": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p",
-      "url": "https://nonprofitoregon.org/events-trainings/speaking-opportunities/",
-      "source": "Official association page (monitored)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:59:33+00:00",
-      "monitor_status": "Official source page fetched during this scan",
-      "organization_candidate": "Nonprofit Association of Oregon",
-      "organization_key": "nonprofit association of oregon",
-      "review_tier": "watch",
-      "strong_evidence": {},
-      "early_evidence": {
-        "event-review": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p"
-      },
-      "types": [
-        "event-review"
-      ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
-      "play": "Smart",
-      "next_action": "Map the 2027 Nonprofit Impact Conference supplier decision cycle; the posted proposal dates are for speakers, not event management. Check whether event operations are internally staffed.",
-      "flags": [],
-      "source_document_date": "",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
-      "signal_evidence": {
-        "event-review": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p"
-      },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch"
-    },
-    {
-      "id": "47a9b187f0d9f5e341b3",
-      "title": "Association of Local Government Auditors | FY2025 $1.10M revenue supports financial fit",
-      "summary": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue",
-      "url": "https://projects.propublica.org/nonprofits/organizations/232539807",
-      "source": "Official association page (monitored)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:59:33+00:00",
-      "monitor_status": "Official source page fetched during this scan",
-      "organization_candidate": "Association of Local Government Auditors",
-      "organization_key": "association of local government auditors",
-      "review_tier": "watch",
-      "strong_evidence": {},
-      "early_evidence": {
-        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue"
-      },
-      "types": [
-        "verified-financial-fit"
-      ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
-      "play": "Smart",
-      "next_action": "Use the filed FY2025 Form 990 and audited statements to distinguish total nonprofit revenue, $615,052 conference revenue and $454,130 conference expenses. Conference margin is not an assumed savings opportunity.",
-      "flags": [],
-      "source_document_date": "FY2025",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
-      "signal_evidence": {
-        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue"
-      },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch"
-    },
-    {
-      "id": "bc3681e0bb15dc2c6cd3",
-      "title": "Council of Academic Programs in Communication Sciences and Disorders | 2027 annual conference subsidized; host hotel publicly named",
-      "summary": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration ",
-      "url": "https://www.capcsd.org/annual-conference/",
-      "source": "Official association page (monitored)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:59:33+00:00",
-      "monitor_status": "Official source page fetched during this scan",
-      "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
-      "organization_key": "council of academic programs in communication sciences and disorders",
-      "review_tier": "watch",
-      "strong_evidence": {},
-      "early_evidence": {
-        "event-economics": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration "
-      },
-      "types": [
-        "event-economics"
-      ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
-      "play": "Smart",
-      "next_action": "Do not pitch 2027 venue sourcing: Atlanta Marriott Marquis is already named. Find the 2028 venue-planning cycle and whether full-service support is open; check current director of professional development and board approval.",
-      "flags": [
-        "2027 host hotel already publicly named"
-      ],
-      "source_document_date": "2027 event notice",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
-      "signal_evidence": {
-        "event-economics": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration "
-      },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch"
-    },
-    {
-      "id": "5495355894dd1bae53e6",
-      "title": "Council of Academic Programs in Communication Sciences and Disorders | FY2025 $1.93M revenue verifies financial range",
-      "summary": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev",
-      "url": "https://projects.propublica.org/nonprofits/organizations/630784938",
-      "source": "Official association page (monitored)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:59:33+00:00",
-      "monitor_status": "Official source page fetched during this scan",
-      "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
-      "organization_key": "council of academic programs in communication sciences and disorders",
-      "review_tier": "watch",
-      "strong_evidence": {},
-      "early_evidence": {
-        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev"
-      },
-      "types": [
-        "verified-financial-fit"
-      ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
-      "play": "Smart",
-      "next_action": "Confirm legal identity and EIN 63-0784938; ProPublica displays an older legal name. FY2025 total revenue is not conference spend.",
-      "flags": [],
-      "source_document_date": "FY2025",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
-      "signal_evidence": {
-        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev"
-      },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch"
-    },
-    {
       "id": "d2c40d9ffb0bc10956e0",
       "title": "Arkansas Education Association | Summer 2027 conference calendar change",
-      "summary": "The Conference is currently being shifted to Summer 2027.",
+      "summary": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b",
       "url": "https://www.aeaonline.org/teach",
-      "source": "Official association page (research snapshot)",
+      "source": "Official association page (monitored)",
       "published": "",
       "indexed_date": "",
-      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
       "origin": "official_watch",
       "platform": "",
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:48:37+00:00",
-      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "last_checked": "2026-11-08T23:02:23+00:00",
+      "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Arkansas Education Association",
       "organization_key": "arkansas education association",
       "review_tier": "watch",
       "strong_evidence": {},
       "early_evidence": {
-        "disruption": "The Conference is currently being shifted to Summer 2027."
+        "disruption": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b"
       },
       "types": [
         "disruption"
       ],
-      "priority": 30,
-      "query_id": "official-page-baseline",
+      "priority": 36,
+      "query_id": "official-page-monitor",
       "play": "Smart",
-      "next_action": "Recheck original source because automated access failed. Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
+      "next_action": "Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
       "flags": [],
       "source_document_date": "",
-      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "disruption": "The Conference is currently being shifted to Summer 2027."
+        "disruption": "ize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to b"
       },
-      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
@@ -1388,42 +1175,84 @@
       }
     },
     {
-      "id": "53d27bbb760d30f5643c",
-      "title": "Arkansas Education Association | New executive director and program-operations leadership",
-      "summary": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
-      "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-      "source": "Official association page (research snapshot)",
+      "id": "b6bf4a5ddd897e69bd79",
+      "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
+      "summary": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most",
+      "url": "https://nonprofitoregon.org/conference-notification-form/",
+      "source": "Official association page (monitored)",
       "published": "",
       "indexed_date": "",
-      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
       "origin": "official_watch",
       "platform": "",
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T22:48:37+00:00",
-      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+      "last_checked": "2026-11-08T23:02:23+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Nonprofit Association of Oregon",
+      "organization_key": "nonprofit association of oregon",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "attendee-change": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most"
+      },
+      "types": [
+        "attendee-change"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Determine whether feedback from the latest Nonprofit Impact Conference is being used to change fall 2027 event planning. Confirm internal event staff and hotel agreements.",
+      "flags": [],
+      "source_document_date": "",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "attendee-change": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "53d27bbb760d30f5643c",
+      "title": "Arkansas Education Association | New executive director and program-operations leadership",
+      "summary": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona",
+      "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-08T23:02:23+00:00",
+      "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Arkansas Education Association",
       "organization_key": "arkansas education association",
       "review_tier": "watch",
       "strong_evidence": {},
       "early_evidence": {
-        "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
+        "capacity": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona"
       },
       "types": [
         "capacity"
       ],
-      "priority": 30,
-      "query_id": "official-page-baseline",
+      "priority": 36,
+      "query_id": "official-page-monitor",
       "play": "Smart",
-      "next_action": "Recheck original source because automated access failed. Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
+      "next_action": "Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
       "flags": [],
       "source_document_date": "",
-      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
+        "capacity": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professiona"
       },
-      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
@@ -1466,6 +1295,176 @@
           }
         }
       }
+    },
+    {
+      "id": "00a7a89cdd60981d6e2d",
+      "title": "Nonprofit Association of Oregon | 2027 conference cycle and program decision milestones",
+      "summary": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p",
+      "url": "https://nonprofitoregon.org/events-trainings/speaking-opportunities/",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-08T23:02:23+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Nonprofit Association of Oregon",
+      "organization_key": "nonprofit association of oregon",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "event-review": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p"
+      },
+      "types": [
+        "event-review"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Map the 2027 Nonprofit Impact Conference supplier decision cycle; the posted proposal dates are for speakers, not event management. Check whether event operations are internally staffed.",
+      "flags": [],
+      "source_document_date": "",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "event-review": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "47a9b187f0d9f5e341b3",
+      "title": "Association of Local Government Auditors | FY2025 $1.10M revenue supports financial fit",
+      "summary": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue",
+      "url": "https://projects.propublica.org/nonprofits/organizations/232539807",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-08T23:02:23+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Association of Local Government Auditors",
+      "organization_key": "association of local government auditors",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue"
+      },
+      "types": [
+        "verified-financial-fit"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Use the filed FY2025 Form 990 and audited statements to distinguish total nonprofit revenue, $615,052 conference revenue and $454,130 conference expenses. Conference margin is not an assumed savings opportunity.",
+      "flags": [],
+      "source_document_date": "FY2025",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "bc3681e0bb15dc2c6cd3",
+      "title": "Council of Academic Programs in Communication Sciences and Disorders | 2027 annual conference subsidized; host hotel publicly named",
+      "summary": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration ",
+      "url": "https://www.capcsd.org/annual-conference/",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-08T23:02:23+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
+      "organization_key": "council of academic programs in communication sciences and disorders",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "event-economics": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration "
+      },
+      "types": [
+        "event-economics"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Do not pitch 2027 venue sourcing: Atlanta Marriott Marquis is already named. Find the 2028 venue-planning cycle and whether full-service support is open; check current director of professional development and board approval.",
+      "flags": [
+        "2027 host hotel already publicly named"
+      ],
+      "source_document_date": "2027 event notice",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "event-economics": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration "
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "5495355894dd1bae53e6",
+      "title": "Council of Academic Programs in Communication Sciences and Disorders | FY2025 $1.93M revenue verifies financial range",
+      "summary": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev",
+      "url": "https://projects.propublica.org/nonprofits/organizations/630784938",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-08; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-08T23:02:23+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
+      "organization_key": "council of academic programs in communication sciences and disorders",
+      "review_tier": "watch",
+      "strong_evidence": {},
+      "early_evidence": {
+        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev"
+      },
+      "types": [
+        "verified-financial-fit"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Confirm legal identity and EIN 63-0784938; ProPublica displays an older legal name. FY2025 total revenue is not conference spend.",
+      "flags": [],
+      "source_document_date": "FY2025",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
     },
     {
       "id": "bdda60c722506011eca5",
@@ -1642,7 +1641,7 @@
   ],
   "discovery_enrichment": {
     "status": "public-index triage, not buyer qualification",
-    "new_this_run": 3,
+    "new_this_run": 0,
     "caveat": "Only headlines with explicit full nonprofit names are enriched. Other discoveries require manual organizer identity."
   }
 }
