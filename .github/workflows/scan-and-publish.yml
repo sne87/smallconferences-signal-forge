@@ -10,7 +10,6 @@ on:
     paths:
       - 'index.html'
       - 'scripts/**'
-      - 'data/briefs.json'
       - 'watchlist.json'
       - 'watch_pages.json'
       - '.github/workflows/scan-and-publish.yml'
@@ -68,6 +67,11 @@ jobs:
           set -euo pipefail
           git config user.name "signal-forge-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Fetch the latest ChatGPT-written public summaries before committing.
+          # The checkout may predate a user or scheduled ChatGPT GitHub edit.
+          git fetch origin main
+          git show origin/main:data/briefs.json > /tmp/signal-forge-remote-briefs.json || true
+          python scripts/merge_public_ai.py /tmp/signal-forge-remote-briefs.json
           git add data/signals.json data/intelligence.json data/briefs.json
           if git diff --cached --quiet; then
             echo "No new public feed changes to commit."
@@ -81,7 +85,11 @@ jobs:
             fi
             echo "Repository changed during scan; rebasing (attempt ${attempt}/5)."
             git fetch origin main
+            git show origin/main:data/briefs.json > /tmp/signal-forge-remote-briefs.json || true
             git -c rebase.autoStash=true rebase -X theirs origin/main
+            python scripts/merge_public_ai.py /tmp/signal-forge-remote-briefs.json
+            git add data/briefs.json
+            if ! git diff --cached --quiet; then git -c core.editor=true commit --amend --no-edit; fi
             sleep "${attempt}"
           done
           echo "Could not publish discovery feed after 5 retries" >&2
