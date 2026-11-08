@@ -45,8 +45,8 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most Additional separate clue:  TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p",
-      "ai_summary": "",
-      "ai_status": "not_configured",
+      "ai_summary": "The association’s public conference-input form invites feedback about previous conferences, while its speaking-opportunities page identifies a Fall 2027 Nonprofit Impact Conference. Together these are credible signals of an upcoming programming cycle and possible experience redesign, not evidence of a venue or planner search. A preliminary 2023 Form 990 match shows approximately $2.29 million in organizational revenue, but the legal entity/EIN and event-specific spend must be verified. Crucially, the published proposal windows concern speakers and sessions, not venue sourcing. Next: identify the 2027 conference operations owner, previous two venue contracts, expected room nights, whether hotel/venue decisions are already assigned, and whether a fee-paid outside cost assessment would be considered.",
+      "ai_status": "chatgpt_manual_review_2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
         "Verify two past conference cycles, expected next event and manageable scope",
@@ -56,7 +56,9 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source": "ChatGPT source-constrained synthesis, manually saved through connected GitHub; not independently verified",
+      "ai_reviewed_at": "2026-11-08"
     },
     {
       "key": "new york state association of professional land surveyors",
@@ -98,8 +100,8 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference. Additional separate clue: The NYSAPLS executive board reviewed its financial position in July 2026, noting declining revenue from educational programs and rising expenses, while discussing future annual conference locations.",
-      "ai_summary": "",
-      "ai_status": "not_configured",
+      "ai_summary": "A September 2026 research snapshot says the conference committee reviewed 2029 hotel proposals from Turning Stone and Resorts World Catskills, and a July board update discusses revenue and expense pressure. This is a concrete venue-evaluation and cost-management signal, but proposal review may mean the association has already entered formal sourcing or negotiations. The saved pages were not revalidated in the most recent automated scan, so neither proposal status nor an open advisor opportunity is established today. Research should establish whether a 2029 selection or vendor agreement has been executed, who chairs the selection process, whether independent negotiation support could be added without interfering with existing bids, and whether event economics and Robert’s solo capacity make the engagement viable.",
+      "ai_status": "chatgpt_manual_review_2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
         "Verify two past conference cycles, expected next event and manageable scope",
@@ -109,7 +111,9 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source": "ChatGPT source-constrained synthesis, manually saved through connected GitHub; not independently verified",
+      "ai_reviewed_at": "2026-11-08"
     },
     {
       "key": "arkansas education association",
@@ -151,8 +155,8 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "The Conference is currently being shifted to Summer 2027. Additional separate clue: The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
-      "ai_summary": "",
-      "ai_status": "not_configured",
+      "ai_summary": "A November 2026 public-source snapshot indicates an association conference is shifting to Summer 2027, and an earlier announcement names a new executive director, Renee Johnson. A preliminary Form 990 match reports about $2.76 million in FY2023 organizational revenue, subject to identity confirmation. A date change and leadership transition warrant research, but do not show that the conference venue, hotel contracts, or planning vendors are uncommitted. The cited conference page was not revalidated in the latest automated scan. Next: verify which exact event is moving, its two prior cycles, current 2027 site and hotel arrangements, budget owner, attendance and room-night demand, and whether any unassigned work matches Robert’s venue sourcing and cost-review model.",
+      "ai_status": "chatgpt_manual_review_2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
         "Verify two past conference cycles, expected next event and manageable scope",
@@ -162,7 +166,9 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source": "ChatGPT source-constrained synthesis, manually saved through connected GitHub; not independently verified",
+      "ai_reviewed_at": "2026-11-08"
     },
     {
       "key": "council of academic programs in communication sciences and disorders",
@@ -213,8 +219,8 @@
       ],
       "suggested_bucket": "conflict-check",
       "evidence_digest": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration  Additional separate clue: nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev",
-      "ai_summary": "",
-      "ai_status": "not_configured",
+      "ai_summary": "The association’s official 2027 conference page identifies Atlanta Marriott Marquis as the venue and says registration is subsidized below the association’s actual per-person cost. A 2025 financial filing shows approximately $1.93 million in total organizational revenue, while February 2025 board-minutes excerpts discuss conference cost reduction and city tiers. The financial discussion is relatively old, and the 2027 venue is already publicly named: 2027 hotel sourcing should not be presented as open. Research the 2028–2029 selection timetable, whether the board’s cost initiatives remain active, the role of internal meetings staff or a retained planner, event-level hotel/F&B/AV spend, and whether Robert could perform an independent savings review for a future uncommitted cycle.",
+      "ai_status": "chatgpt_manual_review_2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
         "Verify two past conference cycles, expected next event and manageable scope",
@@ -224,7 +230,9 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source": "ChatGPT source-constrained synthesis, manually saved through connected GitHub; not independently verified",
+      "ai_reviewed_at": "2026-11-08"
     },
     {
       "key": "association of local government auditors",
@@ -278,8 +286,8 @@
       ],
       "suggested_bucket": "conflict-check",
       "evidence_digest": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue Additional separate clue: ALGA's board approves conference sites three years ahead. As of February 2026, 2026 Cleveland, 2027 Denver and 2028 St. Louis were selected; 2029 status was not established by this source.",
-      "ai_summary": "",
-      "ai_status": "not_configured",
+      "ai_summary": "Public site-selection materials describe a board vote about three years ahead of the annual conference. The 2026–2028 host cities were already selected in a February 2026 research snapshot, and a public conference page advertises the 2027 Denver event. Its FY2025 Form 990 shows approximately $1.10 million in total revenue, but that alone does not establish conference expenditure or the ability to hire outside support. The best possible entry is 2029 or a later cycle, only if the board has not already selected or contracted its site. Confirm current 2029 vote status, who runs the Site Selection Subcommittee, whether internal committees or incumbent planners control sourcing, and whether Robert could improve costs or negotiations without duplicating existing work.",
+      "ai_status": "chatgpt_manual_review_2026-11-08",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
         "Verify two past conference cycles, expected next event and manageable scope",
@@ -289,7 +297,10 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source": "ChatGPT source-constrained synthesis, manually saved through connected GitHub; not independently verified",
+      "ai_reviewed_at": "2026-11-08"
     }
-  ]
+  ],
+  "chatgpt_manual_summary_count": 5
 }
