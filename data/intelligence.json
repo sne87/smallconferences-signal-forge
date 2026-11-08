@@ -1,11 +1,46 @@
 {
-  "generated_at": "2026-11-08T22:32:36+00:00",
+  "generated_at": "2026-11-08T22:35:33+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
   "fiscal_source": "https://projects.propublica.org/nonprofits/api/",
   "readme": "A search-index match is a lead for source review; source index dates are not original post dates. Revenue is not event spend.",
   "targets": [
+    {
+      "name": "New York State Association for College Admission Counseling",
+      "state": "NY",
+      "input_ein": "300170683",
+      "financial": {
+        "status": "identity-review",
+        "match": "legal name mismatch, investigate alias or chapter",
+        "ein": "300170683",
+        "legal_name": "New York State Association For College Admission Counseling Inc",
+        "fiscal_year": null,
+        "revenue": null,
+        "fit": "unknown",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/300170683.json",
+        "caveat": "Form 990 revenue is organization revenue, not conference spend."
+      },
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "Rothstein Named President-Elect of New York State Association for College Admission Counseling - Hofstra University News",
+          "summary": "Rothstein Named President-Elect of New York State Association for College Admission Counseling Hofstra University News",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZHkweERFQ1ZFYi1PNXVwUFNVcVJlb3ppRFlfeWU5S2hpeUN5bnpEaGJMTWNqcTBmX3Uzc1l4b1FoWDdPT291QzlkRER3Qy1CTG1mQXhhLXVMV09BcTdpbENVWnhCakJMSVVtR2h0NGI5dmU0VkQ2OG5uNzJOQnJpSy02M01hLW5iRktFbXVTZEZjYzRpY2RyNGN5c1ZVLWRSZk9LbDg2a3F0YWJVZzlRUVpCb3p3TllQSnhaOF83bFAwbFFQa0I3NXJqNA?oc=5",
+          "index_date": "2026-08-04",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
+      "checks": [],
+      "historical_years": [
+        2025
+      ],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
     {
       "name": "Arkansas Education Association",
       "state": "AR",
@@ -435,52 +470,6 @@
       "historical_years": [
         2025
       ],
-      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [],
-      "status": "investigation-only"
-    },
-    {
-      "name": "Minnesota Council of Nonprofits",
-      "state": "MN",
-      "input_ein": "",
-      "financial": {
-        "status": "identity-review",
-        "match": "unresolved",
-        "ein": "",
-        "legal_name": "",
-        "fiscal_year": null,
-        "revenue": null,
-        "fit": "unknown",
-        "source_url": null,
-        "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
-        "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Minnesota%20Council%20of%20Nonprofits&state%5Bid%5D=MN"
-      },
-      "sources": [
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Minnesota Council of Nonprofits is unionizing - The NewsGuild - CWA",
-          "summary": "Minnesota Council of Nonprofits is unionizing The NewsGuild - CWA",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9tWjlSQzJWdkp4QzJjMTJfbzBhY0hGdU5fb3dkUzdpT0lEMWV0aWlualFxZDhEanJlOGVlRERQZDlxRnRVampDblZ0WlExLWlGYllsanFnMkp5bnpYeFpqMHhCc0lEVUQ3enZVQzlERW41QVNzcVdr?oc=5",
-          "index_date": "2021-03-15",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Minnesota Council of Nonprofits appoints new executive director - The Business Journals",
-          "summary": "Minnesota Council of Nonprofits appoints new executive director The Business Journals",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbWg2dE1zc0xjUDI4MUZ3cUk0d1ZKaU1qdXR4bW1iRFZMMldjNnR4MjUzRUZYOWFqVzBkYzM1UGNxVUxZdmNXMEUwRWozUUs0aVNvMTBUbkhMdTl6TzdFZTlscHpGd2ViYkpYMmFnbXFoYU1VdWpyLWQxcTFnU0Q4cFBjbkhCa3JWTDRnUlU3dElxdjUzY1dQekZwbWt3S2RORVY0OVVmMTNobHpN?oc=5",
-          "index_date": "2021-07-08",
-          "clues": [
-            "decision-role"
-          ],
-          "date_warning": "Original source date and event date unverified."
-        }
-      ],
-      "checks": [],
-      "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [],
       "status": "investigation-only"

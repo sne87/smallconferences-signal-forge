@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T22:33:53+00:00",
+  "generated_at": "2026-11-08T22:36:48+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -9,6 +9,7 @@
       "key": "nonprofit association of oregon",
       "name": "Nonprofit Association of Oregon",
       "fingerprint": "413e00074c40ad289955",
+      "first_detected": "2026-11-06",
       "source_count": 2,
       "independent_publishers": 1,
       "source_evidence": [
@@ -61,6 +62,7 @@
       "key": "new york state association of professional land surveyors",
       "name": "New York State Association of Professional Land Surveyors",
       "fingerprint": "be6fdff46a21bc42348c",
+      "first_detected": "2026-11-06",
       "source_count": 2,
       "independent_publishers": 1,
       "source_evidence": [
@@ -113,6 +115,7 @@
       "key": "arkansas education association",
       "name": "Arkansas Education Association",
       "fingerprint": "2ef5f002cca8fd1c7357",
+      "first_detected": "2026-11-06",
       "source_count": 2,
       "independent_publishers": 1,
       "source_evidence": [
@@ -165,6 +168,7 @@
       "key": "council of academic programs in communication sciences and disorders",
       "name": "Council of Academic Programs in Communication Sciences and Disorders",
       "fingerprint": "6df4081687fff4e701ba",
+      "first_detected": "2026-11-06",
       "source_count": 3,
       "independent_publishers": 2,
       "source_evidence": [
@@ -226,6 +230,7 @@
       "key": "association of local government auditors",
       "name": "Association of Local Government Auditors",
       "fingerprint": "5dd43ac2de10aecb0ef3",
+      "first_detected": "2026-11-06",
       "source_count": 3,
       "independent_publishers": 2,
       "source_evidence": [
