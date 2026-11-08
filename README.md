@@ -1,6 +1,6 @@
 # Signal Forge, Robert Kraus Early-Opportunity Intelligence
 
-**Free personal research tool. No Google Sheets, paid APIs, credentials, or paid subscriptions.**
+**Free-first personal research tool. No Google Sheets or mandatory paid subscriptions; optional AI research requires your own API key and is subject to provider free-tier limits.**
 
 This project contains:
 
@@ -158,3 +158,13 @@ If a scan finds no newly indexed clues, that does not mean the target market has
 `watch_pages.json` lists public, curator-chosen URLs. The scheduled runner checks whether a specific, already observed passage remains on each page. It records the check date and shows those results as **Monitored source watches**, not as newly won purchasing intent. Examples include AEA's summer 2027 schedule change and AHEPPP's 2027 committee recruitment. Public indexed clues and these monitored pages combine into exact-name organization stacks without conflating separate chapters. If a page is unavailable, the app records the source-check failure; previously checked watches may be shown as stale for up to 30 days, not newly verified.
 
 You can add URLs and passages by editing `watch_pages.json` in GitHub. This is not a scraper for private Facebook or LinkedIn posts. Do not add private notes, personal contact data, or privileged documents: the GitHub repository and generated feed are public.
+
+## Version 5.0, November 8, 2026: hourly Robert-only pre-RFP research desk
+
+- **Hourly background scans:** GitHub Actions is scheduled at minute 23 UTC of every hour, best effort. Light scans rotate subsets of targeted queries. Every fourth hour (00, 04, 08, 12, 16, 20 UTC) plus manual or code-triggered runs scans the broader collection and refreshes deeper organization research. GitHub schedule runs can be delayed, skipped, or disabled, and public indexes can fail or block access. This is not continuous social-media monitoring.
+- **Research buckets:** New Discoveries, Research Next, Early Window Watch, Conflict / Blocked Review, and Robert Ready. Public discoveries are only provisional; private saved leads move automatically as you complete twelve evidence-backed verification gates. Robert Ready always requires all twelve supported gates and your explicit approval.
+- **Automated public brief feed:** scripts/briefs.py generates data/briefs.json with source URLs, signal families, financial clues where found, uncertainties and the next verification tasks. This process does not invent budgets, contracts or dates.
+- **Optional AI summaries:** Add GEMINI_API_KEY as a GitHub Actions repository secret to enable a capped Gemini Flash Lite synthesis of *existing public snippets*. Three new/changed organization summaries maximum per deep scan. Without a key, the app remains useful with non-AI research digests. Check Google's current free tier and quota before adding a key, as terms and model availability can change. The secret is never written to the public feed. Gemini summary quality depends on indexed source excerpts and is not independent verification.
+- **Privacy:** The public repo and hosted briefs are visible to others. Your answers, approval decisions, private contacts and evidence notes are kept in browser local storage, not uploaded. Export backups frequently. The GitHub runner cannot see your manual browser reviews or alter them.
+- **Known limitation:** New organizations are discovered from index-accessible sources; names that cannot be extracted from headlines and pages may be missed. The feed never proves an open RFP window. Actual purchasing authority, current vendor contracts, event-specific expenditures and outside planner openness must be verified manually.
+- **Updated host setup:** GitHub Pages must still be enabled with Actions as its source. The workflow must be enabled and allowed to write repository contents. View the Actions page to confirm scans and deployments succeed. Later README sections describing older scan frequencies are superseded by this version.
