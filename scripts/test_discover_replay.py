@@ -35,7 +35,7 @@ class ReplayTest(unittest.TestCase):
         from unittest.mock import patch
         article={
             'title':'Midstate Association 2028 annual conference',
-            'summary':'Annual registration announcement with no site or budget decisions.',
+            'summary':'Routine registration and agenda information for attendees.',
             'url':'https://example.org/midstate-conference-2028',
             'source':'Midstate Association',
             'published':datetime.now(timezone.utc).date().isoformat(),
