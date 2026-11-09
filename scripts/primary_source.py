@@ -88,6 +88,13 @@ VENUE_SCOPE=re.compile(r'\b(site selection|host site|host city|site voting|confe
 DECISION=re.compile(r'\b(review|reviewing|committee|seeking|select|selection|recommend|vote|application|apply|consider|proposal|contract|invite|host|new|upcoming|future|planning|decid)\w*',re.I)
 FUTURE=re.compile(r'\b(?:2027|2028|2029|2030|2031)\b')
 PROOF_CEILING=1000
+# Whitelisted official domains only. The organization identity is a research
+# candidate, not proof of conference ownership or tax EIN.
+OFFICIAL_SOURCE_ORGANIZERS={
+    'msera.org':'Mid-South Educational Research Association',
+    'ncamc.nclm.org':'North Carolina Association of Municipal Clerks',
+    'algaonline.org':'Association of Local Government Auditors',
+}
 EXCLUDED_DOMAINS=('news.google.com','bing.com','linkedin.com','facebook.com','x.com','reddit.com','youtube.com',
     'wikipedia.org','eventbrite.com','medium.com','10times.com','allevents.in','instagram.com')
 def host(url):
@@ -175,7 +182,8 @@ def fetch_source_passage(url,timeout=8):
         matches.sort(key=lambda x:(x[0],-x[1]),reverse=True)
         _,page_num,excerpt=matches[0]
         return {'excerpt':excerpt,'site_title':'Public conference governance PDF',
-                'site_name':'','source_type':'pdf','source_page_number':page_num,
+                'site_name':OFFICIAL_SOURCE_ORGANIZERS.get(host(url),''),
+                'source_type':'pdf','source_page_number':page_num,
                 'checked_on':datetime.now(timezone.utc).date().isoformat()}
     if 'html' not in content_type:raise ValueError('not_html_or_pdf')
     parser=SourceText()
@@ -203,4 +211,5 @@ def enrich_index_hit(article,timeout=8):
     enriched['source_page_excerpt']=proof['excerpt']
     enriched['source_type']=proof.get('source_type','html')
     enriched['source_page_number']=proof.get('source_page_number')
+    enriched['official_source_organizer_candidate']=proof.get('site_name','')
     return enriched
