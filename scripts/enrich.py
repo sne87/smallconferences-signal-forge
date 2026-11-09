@@ -180,7 +180,9 @@ def analyze(target):
         result['next_step']='Outside the preferred $500K-$7M revenue band. Reconsider only with evidence of strong event-specific spend and external planning need.'
         result['status']='financial-out-of-band'
         return result
-    for tag,query,base_year in SCANS:
+    scans=(SCANS if result['financial'].get('fit')=='within' else
+           [scan for scan in SCANS if scan[0]=='early-decision' or (scan[0]=='upcoming-event' and scan[2] in (2027,2028))])
+    for tag,query,base_year in scans:
         year=NOW.year+(base_year-2026) if base_year is not None else None
         try:
             found=rss_search(target['name'],tag,query,year)
