@@ -35,10 +35,11 @@ jobs:
           python-version: '3.12'
       - name: Test replay filters and syntax
         run: |
-          python -m py_compile scripts/discover.py scripts/daily_target.py scripts/primary_source.py scripts/social_monitor.py scripts/merge_public_social.py scripts/merge_public_ai.py scripts/briefs.py
+          python -m py_compile scripts/discover.py scripts/daily_target.py scripts/opportunity_gate.py scripts/primary_source.py scripts/social_monitor.py scripts/merge_public_social.py scripts/merge_public_ai.py scripts/briefs.py
           python scripts/test_discover_replay.py
           python scripts/test_daily_target.py
           python scripts/test_multilane_discovery.py
+          python scripts/test_opportunity_gate.py
       - name: Choose lightweight vs deep scan
         id: mode
         shell: bash
