@@ -36,6 +36,14 @@ class OpportunityGateTests(unittest.TestCase):
     def test_extract_bid_deadline_not_event_date(self):
         r=assess('Annual conference July 10-12, 2028. Hosting applications are due December 4, 2026.',TODAY)
         self.assertEqual(r['deadline'],'2026-12-04')
+    def test_program_committee_only_goes_to_watch(self):
+        r=assess('Housing Oregon 2027 conference planning committee volunteers recruit speakers and sponsors.',TODAY)
+        self.assertEqual(r['stage'],'planning_change_watch')
+        self.assertFalse(r['pre_rfp_research_candidate'])
+    def test_calendar_shift_not_proof_of_open_site(self):
+        r=assess('AEA annual conference being shifted to summer 2027.',TODAY)
+        self.assertEqual(r['stage'],'planning_change_watch')
+        self.assertFalse(r['open_contract_verified'])
     def test_no_invented_opening_from_unknown_venue(self):
         r=assess('Our 2027 annual conference will be held in the summer. Venue to be announced.',TODAY)
         self.assertFalse(r['open_contract_verified'])
