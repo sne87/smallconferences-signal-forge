@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T04:21:48+00:00",
+  "generated_at": "2026-11-09T04:25:22+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -356,16 +356,6 @@
       "sources": [
         {
           "category": "event-history",
-          "query_year": 2025,
-          "title": "Professor Sarah Hyde to address Southeast Louisiana Historical Association Meeting - The Advocate",
-          "summary": "Professor Sarah Hyde to address Southeast Louisiana Historical Association Meeting The Advocate",
-          "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNb2VWMnJsOFkyT1MyVzl0aXJjTjUtWGtxS3dKTUVsX3lhTVpSWG8wNTZCOWJKa24zX3N1TXZrWkc4OUxsZV9hX1ZDNlIzUEp0eC1rUC12VDdna2p6U2NBUkN2TGoxcGVTVVlCbUJ4czZ1Z1hYQ0ljTlhfeFJrTnd2RVFrRlZMcFdjbG56aWRzek9ZeGpNajQ1cThSMGZZYkhtaFlrbDdnWkxJTDdLNWJkZTB1MEwtX1BSNmQ3eWpkQ1JFOUJycXdpT0xJZ3p4cHRDRjI5akY5bkJSUE8zWWhqU3Q3cmZReERYMHV4Q3k1NWVNQ0hqclhBbGNSc0wwa0QxRDB4Q2x6U0NUc1VDOW1rZUlXS1NHaVBvcnVNb2pwYzV4dXVwNVZZWlZrTWg3bUp4VzNFeHVR?oc=5",
-          "index_date": "2017-03-29",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "event-history",
           "query_year": 2026,
           "title": "Louisiana Tech history student wins Louisiana Historical Association Rankin Prize - KTVE – myarklamiss.com – Your ArkLaMiss News Source",
           "summary": "Louisiana Tech history student wins Louisiana Historical Association Rankin Prize KTVE – myarklamiss.com – Your ArkLaMiss News Source",
@@ -373,12 +363,21 @@
           "index_date": "2016-03-29",
           "clues": [],
           "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "event-history",
+          "query_year": 2026,
+          "title": "Professor Sarah Hyde to address Southeast Louisiana Historical Association Meeting - The Advocate",
+          "summary": "Professor Sarah Hyde to address Southeast Louisiana Historical Association Meeting The Advocate",
+          "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNb2VWMnJsOFkyT1MyVzl0aXJjTjUtWGtxS3dKTUVsX3lhTVpSWG8wNTZCOWJKa24zX3N1TXZrWkc4OUxsZV9hX1ZDNlIzUEp0eC1rUC12VDdna2p6U2NBUkN2TGoxcGVTVVlCbUJ4czZ1Z1hYQ0ljTlhfeFJrTnd2RVFrRlZMcFdjbG56aWRzek9ZeGpNajQ1cThSMGZZYkhtaFlrbDdnWkxJTDdLNWJkZTB1MEwtX1BSNmQ3eWpkQ1JFOUJycXdpT0xJZ3p4cHRDRjI5akY5bkJSUE8zWWhqU3Q3cmZReERYMHV4Q3k1NWVNQ0hqclhBbGNSc0wwa0QxRDB4Q2x6U0NUc1VDOW1rZUlXS1NHaVBvcnVNb2pwYzV4dXVwNVZZWlZrTWg3bUp4VzNFeHVR?oc=5",
+          "index_date": "2017-03-29",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
         }
       ],
       "checks": [],
       "historical_years": [
-        2026,
-        2025
+        2026
       ],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [],

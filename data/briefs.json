@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T04:22:58+00:00",
+  "generated_at": "2026-11-09T04:26:40+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -462,6 +462,86 @@
       "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
+      "key": "united states association of prides",
+      "name": "United States Association of Prides",
+      "fingerprint": "104277971b5e6493e7f3",
+      "first_detected": "2026-11-09",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "United States Association of Prides | 2028-2030 member host proposal process, roughly 200 attendees",
+          "url": "https://www.usaprides.org/conference/rfp",
+          "source": "Official association page (monitored)",
+          "reported_date": "",
+          "note": " a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last ",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {},
+      "signal_families": [
+        "location-exploration"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "early-watch",
+      "evidence_digest": " a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last ",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "university research managers association",
+      "name": "University Research Managers Association",
+      "fingerprint": "8e33536901e51520e2bd",
+      "first_detected": "2026-11-09",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "University Research Managers Association | 2028 host selection December 2026; hotel reservations January-June 2027",
+          "url": "https://urma.org/conferences/hosting-an-urma-conference/",
+          "source": "Official association page (monitored)",
+          "reported_date": "",
+          "note": " by the board! 2027 January-June: Confirm conference dates. Reserve hotel and conference rooms. Start thinking about time slots, possible speakers, a reception, and a field trip. June: Announce 2028 host ",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {},
+      "signal_families": [
+        "location-exploration"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "early-watch",
+      "evidence_digest": " by the board! 2027 January-June: Confirm conference dates. Reserve hotel and conference rooms. Start thinking about time slots, possible speakers, a reception, and a field trip. June: Announce 2028 host ",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
       "key": "national association of community development extension professionals",
       "name": "National Association of Community Development Extension Professionals",
       "fingerprint": "5983ad168bbce3adc7b7",
@@ -490,6 +570,126 @@
       "ai_status": "chatgpt_scheduled",
       "ai_source": "ChatGPT scheduled, source-limited synthesis",
       "ai_reviewed_at": "2026-11-09",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "international neuroethics society",
+      "name": "International Neuroethics Society",
+      "fingerprint": "a416e9545085fd3f03bb",
+      "first_detected": "2026-11-08",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "International Neuroethics Society | November 2026 host invitation expected for 2028-2029; 175 person meeting",
+          "url": "https://neuroethicssociety.org/meeting/neuroethics-2027/",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "",
+          "note": "The call for host proposals for future Neuroethics conferences in 2028 and 2029 will be announced in November.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {},
+      "signal_families": [
+        "location-exploration"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "early-watch",
+      "evidence_digest": "The call for host proposals for future Neuroethics conferences in 2028 and 2029 will be announced in November.",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "archivists for congregations of women religious",
+      "name": "Archivists for Congregations of Women Religious",
+      "fingerprint": "f1594239dd5fb24317e4",
+      "first_detected": "2026-11-08",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "Archivists for Congregations of Women Religious | 2028 triennial conference planning and volunteer committee",
+          "url": "https://archivistsacwr.org/news/",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "",
+          "note": "Planning for 2028 is underway and volunteers are being recruited for the Triennial Conference Planning Committee.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {},
+      "signal_families": [
+        "committee-forming"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "early-watch",
+      "evidence_digest": "Planning for 2028 is underway and volunteers are being recruited for the Triennial Conference Planning Committee.",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "catholic media association",
+      "name": "Catholic Media Association",
+      "fingerprint": "dfe0d43865a585e11a21",
+      "first_detected": "2026-11-08",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "Catholic Media Association | Invitation for future diocesan conference hosts 2028-2030",
+          "url": "https://www.catholicmediaassociation.org/host-a-conference",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "",
+          "note": "Now accepting invitations for June 2028, 2029 and 2030.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {},
+      "signal_families": [
+        "location-exploration"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "early-watch",
+      "evidence_digest": "Now accepting invitations for June 2028, 2029 and 2030.",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
         "Verify two past conference cycles, expected next event and manageable scope",
