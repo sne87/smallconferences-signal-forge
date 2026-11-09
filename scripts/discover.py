@@ -177,6 +177,36 @@ QUERIES += [
  ('window-event-redesign', '"2027" "annual conference" "planning committee" "redesign"'),
  ('window-board-budget', '"2027" "conference" "board minutes" "hotel"'),
 ]
+# A deliberately balanced discovery portfolio. A niche meeting planner does
+# not benefit from 200 generic association-news RSS requests every deep run.
+# Site, governance, contract and economic decisions get the largest budget;
+# secondary topics still rotate, so less-obvious signals are not abandoned.
+MANDATORY_LABELS={
+ 'site-committee','venue-evaluation','committee-formation','board-event-review',
+ 'contract-renewal','hotel-renovation','schedule-change',
+ 'future-site','site-selection','conference-budget','association-site-options',
+ 'association-committee-minutes','association-host-interest',
+ 'board-scheduled-location','conference-host-lead','future-meetings-board',
+ 'venue-comparison-board','future-location-members','board-venue-discussion',
+ 'conference-contract-renewal','conference-debrief-future'
+}
+QUERY_EXCLUDE=re.compile(
+ r'\b(?:budget conference committee|legislative conference committee|'
+ r'congressional conference committee|senate budget bill|house budget conference|'
+ r'state legislature conference committee)\b',re.I)
+def choose_searches(light=False):
+    mandatory=[(i,p) for i,p in enumerate(QUERIES)
+               if p[0].startswith('window-') or p[0] in MANDATORY_LABELS]
+    secondary=[(i,p) for i,p in enumerate(QUERIES)
+               if not(p[0].startswith('window-') or p[0] in MANDATORY_LABELS)]
+    # Deep scans examine a rotating 32 additional targeted angles, lighter
+    # scans examine 8. Both keep every must-see site/venue lane active.
+    count=8 if light else 32
+    offset=(NOW.toordinal()*7+NOW.hour*11)%max(1,len(secondary))
+    chosen=mandatory+[secondary[(offset+j)%len(secondary)]
+                        for j in range(min(count,len(secondary)))]
+    return list(dict((i,p) for i,p in chosen).items())
+
 CATCHUP_PER_RUN=6
 
 # Lower-friction public-index queries for regional organizers. These still pass
@@ -549,6 +579,7 @@ def relevance(article,label):
     if not title or not url.startswith(('https://','http://')):return reject('no_http_title')
     h=host_name(url)
     if any(h==x or h.endswith('.'+x) for x in EXCLUDED_HOSTS):return reject('excluded_host')
+    if QUERY_EXCLUDE.search(title):return reject('legislative_committee_not_meeting_event')
     if GENERIC_BLOG.search(title) or HARD_NEGATIVE.search(title) or CLOSED_LOCATION.search(title):return reject('blog_or_completed_site')
     txt=event_context(title,summary)
     if not EVENT_REGEX.search(txt):return reject('no_event_reference')
@@ -988,7 +1019,7 @@ def run():
     primary_pages_with_planning_evidence=0;primary_discovery_accepted=0
     primary_errors=[]
     light=os.environ.get('SF_LIGHT_SCAN','false').lower()=='true'
-    selected=[(i,pair) for i,pair in enumerate(QUERIES) if not light or i % 6 == NOW.hour % 6 or pair[0].startswith('window-')]
+    selected=choose_searches(light)
     extra_count=0
     if catchup_active:
         # Rotate six additional nonprofit/SMERF planning searches per run.
