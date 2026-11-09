@@ -110,6 +110,7 @@ jobs:
           cp data/rejected_candidates.json dist/data/rejected_candidates.json
           cp data/discovery_history.json dist/data/discovery_history.json
           cp data/social_watch.json dist/data/social_watch.json
+          cp data/people_watch.json dist/data/people_watch.json
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload site artifact
