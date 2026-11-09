@@ -15,7 +15,7 @@ from pathlib import Path
 from daily_target import read_history, today_progress, update_history, write_history
 from primary_source import selected_queries as primary_queries, enrich_index_hit, plausible_direct_page
 from social_monitor import (social_searches as targeted_social_searches,
-    platform_for_url, watch_record as public_social_record,
+    read_role_targets, platform_for_url, watch_record as public_social_record,
     combine_records as combine_social_records, read_archive as read_social_archive,
     save_archive as save_social_archive)
 
@@ -998,7 +998,8 @@ def run():
     # plus high-signal conference-site terminology. Only PUBLIC direct post URLs
     # are treated as social posts; person and company profiles are not.
     named_social_orgs=WATCHLIST_NAMES+[x.get('organization_candidate','') for x in previous]
-    social_queries=targeted_social_searches(NOW,light,named_social_orgs)
+    role_targets=read_role_targets()
+    social_queries=targeted_social_searches(NOW,light,named_social_orgs,role_targets)
     for label,query in social_queries:
         social_attempted+=1
         try:
@@ -1084,6 +1085,7 @@ def run():
          'official_pages_monitored':len(watched),'official_watch_errors':watch_errors,
          'scan_sources_failed':len(failed),
          'scan_queries':len(selected)+social_attempted,'social_index_queries':social_attempted,
+         'named_public_role_targets':len(role_targets),
          'social_index_hits_seen':social_index_hits,
          'social_direct_post_urls_seen':direct_social_post_hits,
          'social_public_posts_archived':len(social_archive),
