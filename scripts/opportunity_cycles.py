@@ -54,7 +54,7 @@ def assess_cycles(text, today=None):
             # Tax-filing and fiscal years are not necessarily conference years.
             # Do not turn a statement about 2029 financials and a 2026 event
             # into a phantom 2029 meeting.
-            if re.search(r'\\b'+re.escape(yr)+r'\\s+(?:financials?|fiscal|tax|revenue|filing|Form 990)\\b',sentence,re.I) and not re.search(r'\\b(?:conference|annual meeting|venue|site)\\s+(?:in|for|of)?\\s*'+re.escape(yr)+r'\\b',sentence,re.I):
+            if re.search(r'\b'+re.escape(yr)+r'\s+(?:financials?|fiscal|tax|revenue|filing|Form 990)\b',sentence,re.I) and not re.search(r'\b(?:conference|annual meeting|venue|site)\s+(?:in|for|of)?\s*'+re.escape(yr)+r'\b',sentence,re.I):
                 continue
             # Keep source passage and year traceability, not a fabricated
             # future decision deadline.
