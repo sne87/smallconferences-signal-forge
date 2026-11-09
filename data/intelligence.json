@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T06:27:07+00:00",
+  "generated_at": "2026-11-09T06:38:13+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -21,20 +21,24 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/300170683.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [],
-      "checks": [],
-      "historical_years": [],
-      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "Rothstein Named President-Elect of New York State Association for College Admission Counseling - Hofstra University News",
+          "summary": "Rothstein Named President-Elect of New York State Association for College Admission Counseling Hofstra University News",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZHkweERFQ1ZFYi1PNXVwUFNVcVJlb3ppRFlfeWU5S2hpeUN5bnpEaGJMTWNqcTBmX3Uzc1l4b1FoWDdPT291QzlkRER3Qy1CTG1mQXhhLXVMV09BcTdpbENVWnhCakJMSVVtR2h0NGI5dmU0VkQ2OG5uNzJOQnJpSy02M01hLW5iRktFbXVTZEZjYzRpY2RyNGN5c1ZVLWRSZk9LbDg2a3F0YWJVZzlRUVpCb3p3TllQSnhaOF83bFAwbFFQa0I3NXJqNA?oc=5",
+          "index_date": "2026-08-04",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
       ],
+      "checks": [],
+      "historical_years": [
+        2025
+      ],
+      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -56,16 +60,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -87,16 +82,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -119,11 +105,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -146,11 +128,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -169,10 +147,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -192,10 +167,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -241,11 +213,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -290,11 +258,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -313,10 +277,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -402,10 +363,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -446,20 +404,24 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/621036411.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
       },
-      "sources": [],
-      "checks": [],
-      "historical_years": [],
-      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "Cempa Community Care's Shannon Burger Wins Executive Leadership Award From The Tennessee Primary Care Association - Chattanoogan.com Breaking News",
+          "summary": "Cempa Community Care's Shannon Burger Wins Executive Leadership Award From The Tennessee Primary Care Association Chattanoogan.com Breaking News",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQU1JMUVhPTkZxaHplSTZCSzhmVXVuRy14WGt1T2JkLVdsUEhqdTJmOXNwTm14RXZjdmhMdy1DQzBtUmJST0pET2FUTzhiaVJkc1ktR215a0pkcWZfVEFZUE9EWjdWRzZxQk5scERQWl9zRlRkTDZkQm1mUWM3bGhsN3lEZTEzaTRwWFFzNURxNUJDY2c?oc=5",
+          "index_date": "2023-10-12",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
       ],
+      "checks": [],
+      "historical_years": [
+        2025
+      ],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -482,11 +444,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -530,11 +488,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -557,11 +511,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -580,10 +530,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -607,11 +554,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -630,10 +573,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -675,10 +615,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -701,11 +638,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -724,10 +657,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -751,11 +681,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -774,15 +700,22 @@
         "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
         "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Louisiana%20Travel%20Association&state%5Bid%5D=LA"
       },
-      "sources": [],
+      "sources": [
+        {
+          "category": "upcoming-event",
+          "query_year": 2027,
+          "title": "Visit Lake Charles Celebrates Louisiana Travel Association Awards, Graduations - visitlakecharles.org",
+          "summary": "Visit Lake Charles Celebrates Louisiana Travel Association Awards, Graduations visitlakecharles.org",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNam0zSWNiWEpPNlNyaHEzSEFtRzU2aDlWRmFDT3N3MFRPOUNPZXZDd0l2VnVycThVTXhycGpBZUsweEpSSGo4NW9mRHlwNUpoWWJFcjhtUTA0dFFpaG1yQlU4cmJ0aFdpU3dpVE1ic25GNWlhdTBTTlEtX0haa21uZ2U1T2hyNEx4dGhpeXJrVy00OThRblNTQzJWeWF1QnNrdjBTQzJFdXhINGpUdTBJalQ4Q2dCYzNtZ3h0Y0lldXFJa0E?oc=5",
+          "index_date": "2026-01-23",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -805,11 +738,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -831,11 +760,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -854,10 +779,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -880,16 +802,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -912,11 +825,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -938,16 +847,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -969,16 +869,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -996,20 +887,36 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/42688900.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [],
-      "checks": [],
-      "historical_years": [],
-      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "New England Museum Association honors Yerdon - Seacoastonline.com",
+          "summary": "New England Museum Association honors Yerdon Seacoastonline.com",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcldaeDZoRHRRTlNQVmpYcGdUTWlJS093V2lwTXVOemxZLUM1N21qVGtVejBVYnBid3cxcHdOMEM3M0NXTDRjTlE0TjBZSGZiakpleHpjT1RhUGY0bzVzZk92ektiRkR2RzkyamZ0WVNfMjFSa2szZHBGMjhITnVoY1FrWnBwSVVUZ3ZldU9RMHVubUstTkdTN0tOazBQbmlOcUE2Z2ZkbjhnZjND?oc=5",
+          "index_date": "2018-11-27",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Dan Yaeger is new executive director of New England Museum Association - Wicked Local",
+          "summary": "Dan Yaeger is new executive director of New England Museum Association Wicked Local",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc0doSnctVWoyWGlTcHNaOUFHSjVKV1g0QlJXNjhaUlNrRnFJNHVldmhRdDI1NUM1NzlyaHJxdGpoczRva0lLOGxmY2hPN3pjZS1pUmF2MkNzX0VISnN2TG90b3ZZTVlpdGNOdmJhWTVkd0t6NHZfRHpCYnpOYmtkM0hLWnh6blJzWUl4cnJzV3NZZTFmSGdBZ1IzS1djRzVURTZEdmxSZjY?oc=5",
+          "index_date": "2010-04-02",
+          "clues": [
+            "decision-role"
+          ],
+          "date_warning": "Original source date and event date unverified."
+        }
       ],
+      "checks": [],
+      "historical_years": [
+        2025
+      ],
+      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1049,20 +956,32 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/311609577.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [],
+      "sources": [
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Association of African American Museums Names Vedet Coleman-Robinson President and CEO - Black Art In America™ Gallery & Gardens",
+          "summary": "Association of African American Museums Names Vedet Coleman-Robinson President and CEO Black Art In America™ Gallery & Gardens",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeWlNX0FxNmpzWlgya1o0SDk4emt4T0dsLTJvQ3F5MVZOTmQ2anBkT2MzMWVLS24ya2h5bEV5Mmpmb3VWU2JEZjEyM3hEMXhmc3ZfT3FGT0xMd0FuWUp2NjdwRHQzWklZZlowVHFzT2loN3FveUdXZU0wNjRReHZBNnZBZjI3ejdpMHAxOXBEaGpJTVVCcHdRWXVaY3JIelZmMnREejdJRXJtdFFyR1VYemJ0UkJmdFVoYkR3SEIzZTJzWGJTSHNTeTdpOA?oc=5",
+          "index_date": "2024-03-26",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Association of African American Museums and the Howard University School of Business Establish a New Advanced Executive Training Partnership - The Dig at Howard University",
+          "summary": "Association of African American Museums and the Howard University School of Business Establish a New Advanced Executive Training Partnership The Dig at Howard University",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWVZYaTFsdWotdW5sZVhTdlFtbEY1Q0pRQWg1R1lJczgzQUlvQ2F3TWNCUGZlRXFjU1ZWbXBJei1aSDZWTFY3eEsyQW05cm9GTzVvRXlTYThtNHpYamt0azRFNFQ4TU1oaGxHWUp3VUFZdzRicFRLYjRuaF9ZLU85WTNoUGUyTUZfdU5VS1pjaGNnVUZjMENicW9UUTFBSDg0YzAwaV94M2RVWnQ3RjhqZXVQUTl3WDRMTFlRWWVIQy1DaHhEcmdvYlBLOWJLQi16?oc=5",
+          "index_date": "2022-04-21",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1084,11 +1003,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1110,16 +1025,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1141,11 +1047,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1163,20 +1065,22 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/596140583.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [],
+      "sources": [
+        {
+          "category": "venue-commitment",
+          "query_year": null,
+          "title": "Communication Alumna Recognized by Florida Society of Association Executives - Florida State University",
+          "summary": "Communication Alumna Recognized by Florida Society of Association Executives Florida State University",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNYnNZS3YyelhjQW1ockJXR1pRQkxVa3JvU2JtTkpyak1IdXBmYWhFSjYxOFZzV2EydDVpSGxGTEZwMldZQlBLTnZhV0Z4bTFRMFdJcVF0dU5rN095alJtZFFmNzZ3ODN4aS1GYnBlQ25WZ2JDNkFnalp5MFU1NXdJTkl5SE0za010TWtuN2VtU3Y1bEt2MWhDd3hIV0tMa1czNEpxTXBOcDIwOVVnT2NlRm9PVS15Tk56bW1QTjhITklWUlA4?oc=5",
+          "index_date": "2020-09-09",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1195,10 +1099,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },

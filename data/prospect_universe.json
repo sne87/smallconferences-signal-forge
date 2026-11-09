@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T06:28:34+00:00",
+  "generated_at": "2026-11-09T06:39:41+00:00",
   "purpose": "Broad official-directory organizer universe; not qualified leads or confirmed future contracts.",
   "organizers": [
     {
@@ -610,7 +610,19 @@
       "qualified": false,
       "robert_ready": false,
       "existing_watchlist": true,
-      "next_verification": "Verify correct EIN and annual revenue, 2 conference cycles, the NEXT sourcing decision, hotel/room-block scale and signed/incumbent commitments."
+      "next_verification": "Verify correct EIN and annual revenue, 2 conference cycles, the NEXT sourcing decision, hotel/room-block scale and signed/incumbent commitments.",
+      "financial": {
+        "status": "identity-review",
+        "match": "unresolved",
+        "ein": "",
+        "legal_name": "",
+        "fiscal_year": null,
+        "revenue": null,
+        "fit": "unknown",
+        "source_url": null,
+        "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
+        "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=International%20Association%20for%20College%20Admission%20Counseling"
+      }
     },
     {
       "name": "Colorado PRIMA",
@@ -629,7 +641,19 @@
       "qualified": false,
       "robert_ready": false,
       "existing_watchlist": false,
-      "next_verification": "Verify correct EIN and annual revenue, 2 conference cycles, the NEXT sourcing decision, hotel/room-block scale and signed/incumbent commitments."
+      "next_verification": "Verify correct EIN and annual revenue, 2 conference cycles, the NEXT sourcing decision, hotel/room-block scale and signed/incumbent commitments.",
+      "financial": {
+        "status": "identity-review",
+        "match": "unresolved",
+        "ein": "",
+        "legal_name": "",
+        "fiscal_year": null,
+        "revenue": null,
+        "fit": "unknown",
+        "source_url": null,
+        "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
+        "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Colorado%20PRIMA"
+      }
     },
     {
       "name": "Oregon PRIMA",
