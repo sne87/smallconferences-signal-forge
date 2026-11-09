@@ -9,6 +9,15 @@ SITE_COMMITTED = re.compile(r'\b(?:venue (?:has been |is )?(?:booked|selected|co
 HOST_BID = re.compile(r'\b(?:call for (?:conference )?(?:hosts?|host cities|host communities|host sites)|(?:accepting|inviting|seeking|requesting) (?:applications|proposals|invitations|letters of intent|host (?:cities|sites|communities|institutions))\b.{0,130}\b(?:host|site|location|conference|convention)|(?:host|site)\b.{0,65}\b(?:bids?|proposals?|applications|letters of intent))\b', re.I)
 VENUE_BID = re.compile(r'\b(?:venue|hotel|conference site|meeting site|host city)\b.{0,85}\b(?:rfp|bids?|proposals? (?:due|requested|under review)|soliciting quotes)|\b(?:request for proposals|request for bids)\b.{0,85}\b(?:venues?|hotels?|meeting (?:site|space)|conference location)\b', re.I)
 EARLY_CHANGE = re.compile(r'\b(?:site selection committee|(?:conference|annual meeting|convention)\b.{0,70}(?:planning committee|(?:location|venue|hotel|site|budget) (?:review|discussion|options|consideration)|committee (?:formed|forming|recruiting)|moving to (?:spring|summer|fall|winter)|being shifted to (?:spring|summer|fall|winter)|costs? (?:rising|under review|increasing)|new (?:date|format)))\b', re.I)
+# Program/speaker committees, feedback requests, and simple calendar shifts are
+# useful watch clues. Only explicit location/venue/site decisions enter pre-RFP.
+SOURCE_SITE_REVIEW = re.compile(
+    r'\b(?:site selection committee|future (?:conference )?(?:sites|locations|venues)|'
+    r'(?:conference|convention|annual meeting)\b.{0,100}'
+    r'(?:venue options|hotel options|site options|location options|site selection|'
+    r'location review|venue evaluation|hotel selection|locations? under consideration)|'
+    r'(?:board|executive committee|site committee)\b.{0,100}'
+    r'(?:conference site|future conference location|venue selection|hotel contracts?))\b',re.I)
 HOTEL_SCOPE = re.compile(r'\b(?:hotel|lodging|room blocks?|food and beverage|venue|meeting space|site selection|host city|conference center|resort)\b', re.I)
 DEADLINE = re.compile(r'\b(?:proposals?|applications?|bids?|letters? of intent|submissions?)(?:\s+\w+){0,4}\s+(?:due|close|deadline|must be received by)\s*(?:on|by|is|:)?\s*([A-Z][a-z]+\s+\d{1,2}(?:st|nd|rd|th)?[,]?\s+20\d{2}|\d{1,2}[/-]\d{1,2}[/-]20\d{2})', re.I)
 DATE_FALLBACK = re.compile(r'\b(?:application|proposal|submission|host(?:ing)? bid) deadline\s*[:\-]?\s*([A-Z][a-z]+\s+\d{1,2}(?:st|nd|rd|th)?[,]?\s+20\d{2})', re.I)
@@ -34,6 +43,7 @@ def assess(text, today=None):
     host_bid=bool(HOST_BID.search(text))
     venue_bid=bool(VENUE_BID.search(text))
     early=bool(EARLY_CHANGE.search(text))
+    site_review=bool(SOURCE_SITE_REVIEW.search(text))
     virtual=bool(VIRTUAL_ONLY.search(text))
     flags=[]
     if virtual: flags.append('Virtual-only event may lack hotel scope')
@@ -56,9 +66,12 @@ def assess(text, today=None):
     elif speaker and not early:
         stage='programming_only'
         action='Find independent venue/finance/site evidence; speaker calls are not hotel sourcing.'
-    elif early and future:
+    elif site_review and future:
         stage='possible_pre_rfp'
         action='Confirm which future venue or event budget decision remains uncommitted and who can approve help.'
+    elif early and future:
+        stage='planning_change_watch'
+        action='A committee or timing change is real, but determine whether it changes hotel or planner sourcing.'
     else:
         stage='watch_only'
         action='Find original, dated evidence of a specific future planning or cost decision.'
