@@ -17,7 +17,7 @@ def norm(s):return re.sub(r"[^a-z0-9]+"," ",str(s or "").lower()).strip()
 def finance_lookup(name, known):
     """Find EIN candidates, never assert entity identity from a fuzzy match."""
     result={"status":"unverified","revenue_status":"unverified","candidates":[]}
-    ein=re.search(r"/organizations/(\\d{8,9})(?:\\.json)?",str(known.get("source_url") or ""))
+    ein=re.search(r"/organizations/(\d{8,9})(?:\.json)?",str(known.get("source_url") or ""))
     if ein:
         result["known_ein_source"]=known["source_url"]
         try:
