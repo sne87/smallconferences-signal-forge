@@ -5,6 +5,7 @@ on:
     paths:
       - 'qualification.html'
       - '.github/workflows/publish-qualification.yml'
+      - 'scripts/qualification_research.py'
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,12 +22,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Generate qualification packets from free public data
+        run: python scripts/qualification_research.py
       - name: Prepare complete static site
         run: |
           set -euo pipefail
           mkdir -p dist/data
           cp index.html qualification.html dist/
-          cp data/signals.json data/intelligence.json data/briefs.json data/prospect_universe.json data/rejected_candidates.json data/discovery_history.json data/social_watch.json data/people_watch.json dist/data/
+          cp data/signals.json data/intelligence.json data/briefs.json data/prospect_universe.json data/rejected_candidates.json data/discovery_history.json data/social_watch.json data/people_watch.json data/qualification_packets.json dist/data/
           test -s dist/qualification.html
           test -s dist/data/briefs.json
       - uses: actions/configure-pages@v5
