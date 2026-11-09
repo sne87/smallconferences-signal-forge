@@ -15,7 +15,13 @@
       "source_url": "https://www.msera.org/",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": false
+      "source_rechecked_this_run": true,
+      "independent_source_review": {
+        "verified_source": "https://www.msera.org/_files/ugd/90ff5d_d5ca989918fb46bb82163a0026f5d727.pdf",
+        "finding": "Spring 2026 board minutes directed Future Sites Committee to bring RFPs for 2028 and 2029 annual meetings to the Fall 2026 board meeting.",
+        "caution": "As of November 2026 the Fall 2026 vote may have happened. Formal RFP process may already be underway; not a verified pre-RFP opportunity.",
+        "date": "2026-03-02"
+      }
     },
     {
       "rank": 2,
@@ -28,7 +34,13 @@
       "source_url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": true
+      "source_rechecked_this_run": true,
+      "independent_source_review": {
+        "verified_source": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
+        "finding": "June 23, 2026 minutes tasked Chris Conway with 2027–2029 host proposals, budgets and feasibility; June discussion described local hosting and cost concerns. The 2026 conference cost estimate previously reached $36K including $18K in planning services.",
+        "caution": "Organization appears highly cost-sensitive; its preferred university/local-host model may leave little room for Robert's fee. End-of-summer location selection target may have passed.",
+        "date": "2026-06-23"
+      }
     },
     {
       "rank": 3,
@@ -41,7 +53,13 @@
       "source_url": "https://www.nysapls.org/",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": false
+      "source_rechecked_this_run": true,
+      "independent_source_review": {
+        "verified_source": "https://www.nysapls.org/news/735249/HQ-Update-September-2026.htm",
+        "finding": "September 2026 HQ update says committee reviewed 2029 venue proposals from Turning Stone and Resorts World Catskills, negotiating concessions, lodging, meeting space and AV.",
+        "caution": "Already in a hotel proposal/negotiation process. Not a pre-RFP lead for 2029 unless remaining services are separately influenceable.",
+        "date": "2026-09"
+      }
     },
     {
       "rank": 4,
@@ -54,7 +72,13 @@
       "source_url": "https://aimindiana.org/",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": false
+      "source_rechecked_this_run": true,
+      "independent_source_review": {
+        "verified_source": "https://aimindiana.org/ilmct-committees/",
+        "finding": "Official committee page lists 2028 Conference Site Selection Committee chaired by Terri Budde; 2027 annual conference committee works with a service provider.",
+        "caution": "Existing service provider may be an incumbent. Must determine who it is and whether 2028 selection is still influenceable.",
+        "date": "undated current committee page"
+      }
     },
     {
       "rank": 5,
