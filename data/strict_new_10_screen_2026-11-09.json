@@ -1,0 +1,144 @@
+{
+  "created_at": "2026-11-09",
+  "screened_count": 10,
+  "retained_count": 1,
+  "approved_count": 0,
+  "method": "Only keep organizations with specific sourced future event, plausible hotel economics, solo-sized scope, and a potentially influenceable decision. Retained means research priority, not qualified.",
+  "screened": [
+    {
+      "id": "SCREEN01",
+      "name": "Association for University Business and Economic Research",
+      "source_url": "https://auber.org/conferences/host-rfp/",
+      "screening_decision": "Keep for deeper verification",
+      "evidence": "2028 100-150 plenary, hotel sleeping rooms, meals and exhibit space; 2027 already at AC Hotel Las Vegas",
+      "risk": "Host institution process, board vote prior fall business meeting, no proof independent sourcing open",
+      "decision_path": "Vanessa Fry, AUBER President",
+      "supporting_url": "https://auber.org/conferences/",
+      "ready_for_approval": false,
+      "approved": false
+    },
+    {
+      "id": "SCREEN02",
+      "name": "Nebraska Recreation and Parks Association",
+      "source_url": "https://nerpa.wildapricot.org/Site-Selection",
+      "screening_decision": "Reject for now",
+      "evidence": "2027 three-day conference, city and hotel selection process",
+      "risk": "April 20 2026 bids and September selection deadline already passed",
+      "decision_path": "Executive Board",
+      "supporting_url": "",
+      "ready_for_approval": false,
+      "approved": false
+    },
+    {
+      "id": "SCREEN03",
+      "name": "Association for Tropical Biology and Conservation",
+      "source_url": "https://tropicalbiology.org/blog/2025/10/16/call-for-proposals-host-the-atbc-global-conference-in-2027-2028-or-2029/",
+      "screening_decision": "Reject for now",
+      "evidence": "2029 conference host bid due December 1 2026",
+      "risk": "International Global South host priorities and large event outside Robert's U.S. solo scope",
+      "decision_path": "Conferences Committee",
+      "supporting_url": "",
+      "ready_for_approval": false,
+      "approved": false
+    },
+    {
+      "id": "SCREEN04",
+      "name": "Association of University Anesthesiologists",
+      "source_url": "https://www.auahq.org/call-for-host-institutions",
+      "screening_decision": "Reject for now",
+      "evidence": "2028 university-host annual meeting with hotel proposals",
+      "risk": "October 7 2025 host deadline already elapsed; AUA office handles formal proposals",
+      "decision_path": "Andrew Bronson, Executive Director",
+      "supporting_url": "",
+      "ready_for_approval": false,
+      "approved": false
+    },
+    {
+      "id": "SCREEN05",
+      "name": "Ohio City/County Management Association",
+      "source_url": "https://www.ocmaohio.org/ohio-communities-invited-to-submit-proposals-for-2028-ocma-conference/",
+      "screening_decision": "Reject for now",
+      "evidence": "2028 three-day 300+ attendee conference with 75+ rooms/night",
+      "risk": "June 30 2026 host deadline, July site visits, August board decision already passed",
+      "decision_path": "OCMA board",
+      "supporting_url": "",
+      "ready_for_approval": false,
+      "approved": false
+    },
+    {
+      "id": "SCREEN06",
+      "name": "Move United",
+      "source_url": "https://www.playeasy.com/rfps/01a010cc-5f71-73a1-80bd-12143226f0dd",
+      "screening_decision": "Reject for now",
+      "evidence": "2028 education conference 600 participants, 140 rooms/night",
+      "risk": "August 31 2026 bid deadline passed; size and host complexity",
+      "decision_path": "Cayla Hammaker, Senior Education Manager",
+      "supporting_url": "",
+      "ready_for_approval": false,
+      "approved": false
+    },
+    {
+      "id": "SCREEN07",
+      "name": "National University Business Services and College Business Services (NUBS/CUBS)",
+      "source_url": "https://eller.arizona.edu/nubs-cubs",
+      "screening_decision": "Reject for now",
+      "evidence": "2029 university host proposals invited",
+      "risk": "University funds and executes event; 2027 and 2028 host campuses already selected",
+      "decision_path": "Anne Pagel",
+      "supporting_url": "",
+      "ready_for_approval": false,
+      "approved": false
+    },
+    {
+      "id": "SCREEN08",
+      "name": "United States Association for Small Business and Entrepreneurship",
+      "source_url": "https://www.usasbe.org/host-usasbe-2026-or-2027%21",
+      "screening_decision": "Reject for now",
+      "evidence": "Hotel/conference-center events and institutional hosts",
+      "risk": "Page concerns 2026-2027 and does not establish future open sourcing",
+      "decision_path": "USASBE host sponsorship committee",
+      "supporting_url": "",
+      "ready_for_approval": false,
+      "approved": false
+    },
+    {
+      "id": "SCREEN09",
+      "name": "Association of State and Territorial Health Officials",
+      "source_url": "https://www.astho.org/",
+      "screening_decision": "Reject: insufficient evidence",
+      "evidence": "Known professional association with potential annual meetings",
+      "risk": "No verified 2028/2029 open hotel decision, event size or Robert solo fit from this search",
+      "decision_path": "Unknown",
+      "supporting_url": "",
+      "ready_for_approval": false,
+      "approved": false
+    },
+    {
+      "id": "SCREEN10",
+      "name": "National Association of County and City Health Officials",
+      "source_url": "https://www.naccho.org/",
+      "screening_decision": "Reject: insufficient evidence",
+      "evidence": "Known professional association with recurring conference programming",
+      "risk": "No verified pre-RFP decision or manageable outside-advisor scope from this search",
+      "decision_path": "Unknown",
+      "supporting_url": "",
+      "ready_for_approval": false,
+      "approved": false
+    }
+  ],
+  "retained": [
+    {
+      "name": "Association for University Business and Economic Research",
+      "source_url": "https://auber.org/conferences/host-rfp/",
+      "status": "Research priority only, not yet qualified",
+      "next_checks": [
+        "2028 host still undecided?",
+        "Who controls hotel contract?",
+        "Outside advisor permissible?",
+        "Room nights and historical F&B spend?",
+        "Incumbent planner?",
+        "EIN and revenue?"
+      ]
+    }
+  ]
+}
