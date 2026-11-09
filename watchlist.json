@@ -8,12 +8,12 @@
     {
       "name": "Arkansas Education Association",
       "state": "AR",
-      "ein": ""
+      "ein": "710004515"
     },
     {
       "name": "Nonprofit Association of Oregon",
       "state": "OR",
-      "ein": ""
+      "ein": "930685385"
     },
     {
       "name": "New York State Association of Professional Land Surveyors",
@@ -219,6 +219,11 @@
       "name": "Council of Academic Programs in Communication Sciences and Disorders",
       "state": "",
       "ein": "630784938"
+    },
+    {
+      "name": "Florida Society of Association Executives",
+      "state": "FL",
+      "ein": "596140583"
     }
   ]
 }
