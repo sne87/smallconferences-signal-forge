@@ -2012,7 +2012,7 @@
       "source_note": "2028 site-selection committee and host proposals; 2026 deadline passed",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Conflict check",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2021,7 +2021,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "Official ABFM 2028 host proposals due August 31, 2026, with hotel block, travel and budget requirements.",
+        "source_url": "https://abfm.org/reminder-proposals-to-host-abfms-2028-annual-conference-are-due-august-31st/",
+        "counterevidence": "Host bidding deadline passed; no evidence paid external sourcing is open.",
+        "decision_path": "Whitney Afonso; Conference Site Selection Committee",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "Whitney Afonso; Conference Site Selection Committee",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "Host bidding deadline passed; no evidence paid external sourcing is open.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R052",
@@ -2031,7 +2051,7 @@
       "source_note": "2027 conference planning chair and committee recruitment",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Research watch",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2040,7 +2060,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "AHEPPP lists a conference planning team; no verified 2027 hotel sourcing opening from indexed source.",
+        "source_url": "https://www.aheppp.org/conference-team",
+        "counterevidence": "Committee membership is not proof unawarded hotel.",
+        "decision_path": "Conference team",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "Conference team",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "Committee membership is not proof unawarded hotel.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R053",
@@ -2050,7 +2090,7 @@
       "source_note": "2027 planning committee; Canadian co-chair; venue timing unknown",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Research watch",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2059,7 +2099,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "International Ombuds Association has a conference planning committee; 2027 contracts and scope not verified.",
+        "source_url": "https://www.ioaconference.org/planning-committee",
+        "counterevidence": "No documented open sourcing decision.",
+        "decision_path": "Conference planning committee",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "Conference planning committee",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "No documented open sourcing decision.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R054",
@@ -2069,7 +2129,7 @@
       "source_note": "2029 host proposals, campus-hosted and international venue model",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Host model concern",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2078,7 +2138,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "2029 International ACAC host applications open; 2027 and 2028 host universities already named.",
+        "source_url": "https://www.internationalacac.org/annual-conference/hosting/",
+        "counterevidence": "University host model and international location may not fit Robert's solo hotel offer.",
+        "decision_path": "Margaret Andrade",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "Margaret Andrade",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "University host model and international location may not fit Robert's solo hotel offer.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R055",
@@ -2088,7 +2168,7 @@
       "source_note": "2029 host-city bid deadline passed September 2026",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Conflict check",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2097,7 +2177,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "Texas City Management Association 2029 annual conference host-city bid notice published.",
+        "source_url": "https://www.tcma.org/430/2029-Annual-Conference-Request-for-Bids",
+        "counterevidence": "Host city bids not necessarily independent sourcing; deadline and incumbent need verification.",
+        "decision_path": "TCMA annual conference staff",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "TCMA annual conference staff",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "Host city bids not necessarily independent sourcing; deadline and incumbent need verification.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R056",
@@ -2107,7 +2207,7 @@
       "source_note": "2029 next available venue/hotel RFP cycle",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Research next",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2116,7 +2216,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "OWAA says 2029 next available bid cycle, April 1 proposal deadline, hotel and venue forms, three peak nights.",
+        "source_url": "https://owaa.org/rfps/",
+        "counterevidence": "Established internal bid process, outside-advisor need unverified.",
+        "decision_path": "OWAA conference team",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "OWAA conference team",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "Established internal bid process, outside-advisor need unverified.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R057",
@@ -2126,7 +2246,7 @@
       "source_note": "2028–2030 university-hosted conference invitations",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Host model concern",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2135,7 +2255,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "Immersive Learning Research Network invites 2028–2030 university host institutions.",
+        "source_url": "https://www.immersivelrn.org/initiatives/ilrn-annual-conference-hosting/",
+        "counterevidence": "Campus host model and possibly international scope.",
+        "decision_path": "Conference host committee",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "Conference host committee",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "Campus host model and possibly international scope.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R058",
@@ -2145,7 +2285,7 @@
       "source_note": "2028 site selection deadline passed spring 2026",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Conflict check",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2154,7 +2294,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "International Association of Special Education has a 2028 site selection process; decision timing needs fresh verification.",
+        "source_url": "https://www.iase.org/about-1",
+        "counterevidence": "No supported open paid sourcing scope.",
+        "decision_path": "Association conference committee",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "Association conference committee",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "No supported open paid sourcing scope.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R059",
@@ -2164,7 +2324,7 @@
       "source_note": "2027 planning committee, large Las Vegas event likely unsuitable",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Low solo fit",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2173,7 +2333,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "National Association of Colleges and Employers runs a large conference and planning committee.",
+        "source_url": "https://www.naceweb.org/Committees/CommitteeInformation.aspx?ID=458",
+        "counterevidence": "Potentially too large for solo planning; venue commitments unknown.",
+        "decision_path": "NACE conference committee",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "NACE conference committee",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "Potentially too large for solo planning; venue commitments unknown.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R060",
@@ -2183,7 +2363,7 @@
       "source_note": "2027 conference planning committee and call for papers",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Research watch",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2192,7 +2372,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "AAIDD 2027 annual conference call for papers is published.",
+        "source_url": "https://aaidd.org/education/annual-conference/2027-call-for-papers",
+        "counterevidence": "Call for papers is not evidence of venue availability.",
+        "decision_path": "AAIDD events staff",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "AAIDD events staff",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "Call for papers is not evidence of venue availability.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     },
     {
       "id": "R061",
@@ -2202,7 +2402,7 @@
       "source_note": "2028 and 2029 host proposals; often international",
       "event_year": "2027–2030",
       "research_bucket": "new-source-lead",
-      "qualification_status": "Unverified candidate",
+      "qualification_status": "Host model concern",
       "qualified": false,
       "approved": false,
       "decision_owner": "Unverified",
@@ -2211,7 +2411,27 @@
       "solo_fit": "Unverified",
       "next_action": "Host RFP or planning committee is NOT proof of an open external advisor contract",
       "reviewed_at": "",
-      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only"
+      "risk": "No evidence of open sourcing unless explicitly supported; source is a discovery lead only",
+      "current_research": {
+        "finding": "Business Association of Latin American Studies lists conferences and 2028/2029 host discussions.",
+        "source_url": "https://balas.org/Conferences",
+        "counterevidence": "International host model and external sourcing need unverified.",
+        "decision_path": "BALAS conference committee",
+        "next_step": "Verify exact event year, venue/planner contracts, room nights, organizer EIN and fee-paid advisor opportunity.",
+        "checked_on": "2026-11-09",
+        "checks": {
+          "organizer_fit": "Not fully verified",
+          "revenue": "Not verified",
+          "event_history": "Not fully verified",
+          "scope": "Not verified",
+          "decision_authority": "BALAS conference committee",
+          "decision_ahead": "Not confirmed open",
+          "venue_planner": "International host model and external sourcing need unverified.",
+          "outside_advisor": "Not verified"
+        },
+        "ready_for_approval": false,
+        "approved": false
+      }
     }
   ]
 }
