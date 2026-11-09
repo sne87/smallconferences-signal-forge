@@ -13,6 +13,11 @@ from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from daily_target import read_history, today_progress, update_history, write_history
+from primary_source import selected_queries as primary_queries, enrich_index_hit, plausible_direct_page
+from social_monitor import (social_searches as targeted_social_searches,
+    platform_for_url, watch_record as public_social_record,
+    combine_records as combine_social_records, read_archive as read_social_archive,
+    save_archive as save_social_archive)
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'data' / 'signals.json'
@@ -281,7 +286,13 @@ def read_watchlist_names():
         return [v['name'].strip() for v in source.get('targets',[]) if isinstance(v,dict) and v.get('name')]
     except (OSError,ValueError,KeyError):return []
 
-WATCHLIST_NAMES=read_watchlist_names()
+def read_source_organizers():
+    try:
+        source=json.loads((ROOT/'watch_pages.json').read_text(encoding='utf-8'))
+        return [x.get('organization','') for x in source.get('sources',[]) if x.get('organization')]
+    except (OSError,ValueError,TypeError):return []
+
+WATCHLIST_NAMES=list(dict.fromkeys(read_watchlist_names()+read_source_organizers()))
 
 # U.S.-specific foreign-place terms used as cautious exclusions, not as proof of
 # geography when absent. A source could still require human confirmation.
@@ -463,19 +474,13 @@ def host_name(url):
     return h.lower().removeprefix('www.')
 
 def source_platform(article,label):
-    """Return actual platform only when the source or URL supports the claim."""
-    try:
-        expected=label.split('-')[1] if label.startswith('social-') else ''
-        h=host_name(article.get('url',''))
-        source=article.get('source','').strip().lower()
-        for platform,hosts in SOCIAL_HOSTS.items():
-            if any(h==domain or h.endswith('.'+domain) for domain in hosts):
-                return platform
-            if h=='news.google.com' and platform in source:
-                return platform
-        if expected:return None  # Bing ignores site: sometimes; do not mislabel.
-        return ''
-    except Exception:return None
+    """Only direct public SOCIAL POST links count as posts.
+
+    LinkedIn jobs, profile pages or organization pages may contain valuable
+    public research but are not themselves evidence of a published post.
+    """
+    return platform_for_url(article.get('url',''))
+
 
 def event_context(title,summary):
     return (title+' '+summary).strip()
@@ -902,6 +907,12 @@ def run():
     # relevant older indexed snippets without losing the original audit trail.
     checked_rejected,archive_recovered=replay_archived(prior_rejections,seen)
     fetched=0;failed=[];fresh=0;rejected=0;social_attempted=0;social_found=0
+    social_index_hits=0;direct_social_post_hits=0;social_rejected={}
+    prior_social=read_social_archive()
+    social_samples=[]
+    primary_sources_attempted=0;primary_pages_checked=0
+    primary_pages_with_planning_evidence=0;primary_discovery_accepted=0
+    primary_errors=[]
     light=os.environ.get('SF_LIGHT_SCAN','false').lower()=='true'
     selected=[(i,pair) for i,pair in enumerate(QUERIES) if not light or i % 6 == NOW.hour % 6]
     extra_count=0
@@ -938,19 +949,74 @@ def run():
             except Exception as ex:
                 failed.append(f'{label} ({engine}): {type(ex).__name__}: {str(ex)[:100]}')
         time.sleep(.25)
-    social_queries=list(social_searches())
-    if light:
-        social_queries=social_queries[(NOW.hour * 7) % max(1,len(social_queries)):] + social_queries[:(NOW.hour * 7) % max(1,len(social_queries))]
-        social_queries=social_queries[:7]
+    # Official-association search lane: locate pages overlooked by news RSS
+    # and confirm a SOURCE PASSAGE about a future venue/host-site decision.
+    # Bounded because every direct page costs time and some websites block bots.
+    source_queries=primary_queries(NOW,light,catchup_active)
+    direct_page_cap=4 if light else 10
+    tried_urls=set()
+    for query_id,query in source_queries:
+        try:
+            articles=fetch_rss(scan_url(query,'web'),timeout=11);fetched+=1
+            for a in articles[:14]:
+                url=a.get('url','')
+                if len(tried_urls)>=direct_page_cap:break
+                if url in tried_urls or not plausible_direct_page(a):continue
+                if url in {x.get('url') for x in previous if x.get('source_page_checked') and x.get('detected')==NOW.date().isoformat()}:
+                    continue
+                tried_urls.add(url);primary_sources_attempted+=1
+                try:
+                    proof=enrich_index_hit(a,timeout=7)
+                    primary_pages_checked+=1
+                    if not proof:continue
+                    primary_pages_with_planning_evidence+=1
+                    item=as_candidate(proof,query_id)
+                    if item is None:
+                        archive_rejected_item(near_misses,proof,LAST_REJECTION_REASON,query_id,'public-web-direct')
+                        continue
+                    item['source_page_checked']=True
+                    item['source_page_checked_on']=proof['source_page_checked_on']
+                    item['source_page_excerpt']=proof['source_page_excerpt'][:650]
+                    item['date_basis']='Direct official webpage fetched on '+proof['source_page_checked_on']+'; original post/publication date unverified'
+                    # Direct org-owned content is a stronger discovery source
+                    # but NOT a verified uncommitted contract or buyer.
+                    item['evidence_gate']='Direct source webpage contains a future conference venue/host planning passage; actual spending and buying openness unknown'
+                    if item['id'] not in seen:
+                        item['first_detected']=item['detected']
+                        seen[item['id']]=item
+                        primary_discovery_accepted+=1
+                    else:
+                        old=seen[item['id']]
+                        if not old.get('source_page_checked'):seen[item['id']].update(item)
+                except Exception as ex:
+                    primary_errors.append(query_id+': '+type(ex).__name__+' '+str(ex)[:65])
+        except Exception as ex:
+            primary_errors.append(query_id+' index: '+type(ex).__name__+' '+str(ex)[:65])
+        time.sleep(.15)
+
+    # Social discovery: rotate queries referencing exact known association names
+    # plus high-signal conference-site terminology. Only PUBLIC direct post URLs
+    # are treated as social posts; person and company profiles are not.
+    named_social_orgs=WATCHLIST_NAMES+[x.get('organization_candidate','') for x in previous]
+    social_queries=targeted_social_searches(NOW,light,named_social_orgs)
     for label,query in social_queries:
         social_attempted+=1
         try:
-            articles=fetch_rss(scan_url(query,'web'));fetched+=1
+            articles=fetch_rss(scan_url(query,'web'),timeout=11);fetched+=1
+            social_index_hits+=len(articles[:20])
             for a in articles[:20]:
+                platform=platform_for_url(a.get('url',''))
+                if not platform:
+                    social_rejected['not_direct_social_post']=social_rejected.get('not_direct_social_post',0)+1
+                    continue
+                direct_social_post_hits+=1
+                w=public_social_record(a,label,named_social_orgs,NOW)
+                if w:social_samples.append(w)
                 item=as_candidate(a,label)
                 if item is None:
-                    rejected+=1
+                    social_rejected[LAST_REJECTION_REASON]=social_rejected.get(LAST_REJECTION_REASON,0)+1
                     archive_rejected_item(near_misses,a,LAST_REJECTION_REASON,label,'public-web-index')
+                    rejected+=1
                     continue
                 social_found+=1
                 if item['id'] in seen:
@@ -961,8 +1027,13 @@ def run():
                     item['first_detected']=item['detected']
                     seen[item['id']]=item;fresh+=1
         except Exception as ex:
-            failed.append(f'{label} (public index): {type(ex).__name__}: {str(ex)[:100]}')
-        time.sleep(.2)
+            failed.append(f'{label} (public social index): {type(ex).__name__}: {str(ex)[:100]}')
+        time.sleep(.12)
+    # Public posts that mention people are kept in a separate research-only
+    # lane. Roles and current employment are NEVER inferred from reposts.
+    social_archive=combine_social_records(prior_social,social_samples,NOW)
+    save_social_archive(social_archive,NOW,social_attempted,social_index_hits,
+                        sum(social_rejected.values()),failed)
     watched,watched_ok,watch_errors=official_watches(previous)
     for item in watched:
         if item['id'] in seen:
@@ -1013,10 +1084,20 @@ def run():
          'official_pages_monitored':len(watched),'official_watch_errors':watch_errors,
          'scan_sources_failed':len(failed),
          'scan_queries':len(selected)+social_attempted,'social_index_queries':social_attempted,
+         'social_index_hits_seen':social_index_hits,
+         'social_direct_post_urls_seen':direct_social_post_hits,
+         'social_public_posts_archived':len(social_archive),
+         'social_rejected_by_reason':social_rejected,
          'social_index_candidates_seen':social_found,
+         'primary_source_search_queries':len(source_queries),
+         'primary_source_pages_attempted':primary_sources_attempted,
+         'primary_source_pages_checked':primary_pages_checked,
+         'primary_source_planning_passages':primary_pages_with_planning_evidence,
+         'primary_source_research_candidates_added':primary_discovery_accepted,
+         'primary_source_errors':primary_errors[:10],
          'social_by_platform':{p:sum(1 for x in kept if x.get('platform')==p) for p,_ in SOCIAL_DOMAINS},
-         'sources_attempted':len(selected)+sum(i in (0,2,4,6,8) for i,_ in selected)+sum(i%3==1 for i,_ in selected)+social_attempted+len(watched),
-         'coverage_warning':'Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.',
+         'sources_attempted':len(selected)+sum(i in (0,2,4,6,8) for i,_ in selected)+sum(i%3==1 for i,_ in selected)+social_attempted+len(source_queries)+primary_sources_attempted+len(watched),
+         'coverage_warning':'Public RSS/news, direct association website excerpts and public indexed social post links. Social indexing is incomplete and employee affiliation/decision role unverified. Original publish dates of web excerpts may be unknown. None proves open hotel sourcing.',
          'daily_goal':daily_goal,'new_discoveries':fresh_indexed,'new_organizations':new_organizations,
          'new_organizations_count':len(new_organizations),
          'new_source_watch_organizations':new_source_watch_organizations,
