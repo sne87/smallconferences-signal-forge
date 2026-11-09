@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:32:51+00:00",
+  "generated_at": "2026-11-09T05:50:45+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -43,8 +43,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "c93c3a37cc4ce9d1da02"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "national association of community development extension professionals",
@@ -84,8 +83,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "5983ad168bbce3adc7b7"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "association for the study of higher education",
@@ -130,8 +128,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "9ea92b9b0e6c9a339e14"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "indiana league of municipal clerks and treasurers",
@@ -171,8 +168,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "e07adc850eea11b6bc3e"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "council of academic programs in communication sciences and disorders",
@@ -241,8 +237,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "f44fc92b26cc27d01745"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "association of local government auditors",
@@ -314,8 +309,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "9838513518e90543d18b"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "nonprofit association of oregon",
@@ -370,8 +364,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "4af7e99b77158b682541"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "new york state association of professional land surveyors",
@@ -521,8 +514,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "f51820049119715c79ce"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "united states association of prides",
@@ -1055,8 +1047,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "461444b99c396eab4bbe"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     }
   ]
 }

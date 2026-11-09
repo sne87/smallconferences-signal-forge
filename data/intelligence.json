@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:31:07+00:00",
+  "generated_at": "2026-11-09T05:48:50+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -1122,7 +1122,9 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [],
+      "errors": [
+        "early-decision: HTTPError"
+      ],
       "status": "investigation-only"
     },
     {
@@ -1144,7 +1146,10 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [],
+      "errors": [
+        "decision-path: HTTPError",
+        "early-decision: HTTPError"
+      ],
       "status": "investigation-only"
     }
   ]
