@@ -14,7 +14,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from daily_target import read_history, today_progress, update_history, write_history
 from opportunity_gate import assess as assess_opportunity
-from primary_source import selected_queries as primary_queries, enrich_index_hit, plausible_direct_page
+from primary_source import selected_queries as primary_queries, enrich_index_hit, plausible_direct_page, read_public_pdf
 from social_monitor import (social_searches as targeted_social_searches,
     read_role_targets, platform_for_url, watch_record as public_social_record,
     combine_records as combine_social_records, read_archive as read_social_archive,
@@ -655,17 +655,22 @@ def official_watches(old_items):
     except (ValueError,OSError):pages=[]
     old_by_id={v.get('id'):v for v in old_items}
     result=[];checks=0;failed=[]
-    for spec in pages[:25]:
+    for spec in pages[:30]:
         url=spec.get('url','');org=spec.get('organization','');needle=spec.get('needle','')
         if not url.startswith('https://') or not org or len(needle)<10:continue
         try:
             req=urllib.request.Request(url,headers={'User-Agent':HEADERS['User-Agent'],'Accept':'text/html,*/*'})
             with urllib.request.urlopen(req,timeout=10) as res:
-                if 'application/pdf' in res.headers.get('Content-Type','').lower():
-                    raise ValueError('PDF source requires visual review, preserving dated research snapshot only')
-                raw_html=res.read(800_000).decode('utf-8','replace')
-            parser=PageText();parser.feed(raw_html)
-            page=re.sub(r'\s+',' ',' '.join(parser.text)).strip()
+                is_pdf='application/pdf' in res.headers.get('Content-Type','').lower() or url.lower().endswith('.pdf')
+                payload=res.read(2_000_001 if is_pdf else 800_000)
+            if is_pdf:
+                if len(payload)>2_000_000:raise ValueError('source_too_large')
+                sections=read_public_pdf(payload)
+                if not sections:raise ValueError('pdf_has_no_extractable_text')
+                page=re.sub(r'\s+',' ',' '.join(t for n,t in sections)).strip()
+            else:
+                parser=PageText();parser.feed(payload.decode('utf-8','replace'))
+                page=re.sub(r'\s+',' ',' '.join(parser.text)).strip()
             needle_norm=re.sub(r'\s+',' ',needle).strip()
             # An exact known public passage must still exist. If not, escalate
             # for manual review and do not pretend this source is current.
