@@ -59,6 +59,14 @@ def as_date(s):
 def norm(s):
     return re.sub(r'[^a-z0-9]','',str(s or '').lower())
 
+def normlegal(s):
+    # Suppress only legal-form suffixes. Preserve every substantive
+    # organization name word, state and supplied EIN checks.
+    words=re.sub(r'[^a-z0-9]+',' ',str(s or '').lower()).split()
+    while words and words[-1] in ('inc','incorporated','corp','corporation'):
+        words.pop()
+    return ''.join(words)
+
 def load_targets():
     try: data=json.loads(WATCHLIST.read_text(encoding='utf8'))
     except (OSError,ValueError): return []
@@ -103,7 +111,7 @@ def financial(target):
     filing=get_json(url)
     org=filing.get('organization') or {}
     legal=clean(org.get('name'))
-    if legal and norm(legal)!=norm(name):
+    if legal and normlegal(legal)!=normlegal(name):
         # No false automatic match: legal alias is possible, but needs a human.
         result['status']='identity-review'
         result['match']='legal name mismatch, investigate alias or chapter'
