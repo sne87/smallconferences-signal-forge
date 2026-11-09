@@ -7,6 +7,9 @@ on:
       - 'scripts/test_discover_replay.py'
       - 'scripts/daily_target.py'
       - 'scripts/test_daily_target.py'
+      - 'scripts/primary_source.py'
+      - 'scripts/social_monitor.py'
+      - 'scripts/test_multilane_discovery.py'
       - '.github/workflows/test-replay.yml'
   workflow_dispatch:
 permissions:
@@ -22,6 +25,7 @@ jobs:
           python-version: '3.12'
       - name: Compile and test without network
         run: |
-          python -m py_compile scripts/discover.py scripts/daily_target.py
+          python -m py_compile scripts/discover.py scripts/daily_target.py scripts/primary_source.py scripts/social_monitor.py
           python scripts/test_discover_replay.py
           python scripts/test_daily_target.py
+          python scripts/test_multilane_discovery.py
