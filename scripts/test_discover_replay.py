@@ -29,6 +29,35 @@ class ReplayTest(unittest.TestCase):
         first=next(iter(seen.values()))
         self.assertTrue(first['replay_recovered'])
         self.assertFalse(first['verified_opening'])
+    def test_full_scan_writes_rejection_archive_with_mocked_indexes(self):
+        import tempfile
+        from pathlib import Path
+        from unittest.mock import patch
+        article={
+            'title':'Midstate Association 2028 annual conference',
+            'summary':'Annual registration announcement with no site or budget decisions.',
+            'url':'https://example.org/midstate-conference-2028',
+            'source':'Midstate Association',
+            'published':datetime.now(timezone.utc).date().isoformat(),
+        }
+        with tempfile.TemporaryDirectory() as path:
+            feed=Path(path)/'signals.json'
+            archive=Path(path)/'rejected_candidates.json'
+            with patch.object(d,'DEST',feed),patch.object(d,'REJECTION_ARCHIVE',archive),\
+                patch.object(d,'QUERIES',[('generic-announcement','conference')]),\
+                patch.object(d,'fetch_rss',return_value=[article]),\
+                patch.object(d,'official_watches',return_value=([],0,[])),\
+                patch.object(d,'social_searches',return_value=iter([])),\
+                patch.object(d.time,'sleep',return_value=None),\
+                patch.dict(d.os.environ,{'SF_LIGHT_SCAN':'false'}):
+                result=d.run()
+            self.assertEqual(result,0)
+            self.assertTrue(archive.exists())
+            payload=d.json.loads(archive.read_text(encoding='utf-8'))
+            self.assertEqual(payload['count'],1)
+            self.assertEqual(payload['items'][0]['review_status'],'unqualified_near_miss')
+            self.assertEqual(d.json.loads(feed.read_text())['rejection_audit']['archived_near_misses'],1)
+
     def test_does_not_recover_keyword_only_blog(self):
         x=self.example()
         x['title']='Conference Planning Tips: The Annual Conference Guide'
