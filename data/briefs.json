@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T04:43:03+00:00",
+  "generated_at": "2026-11-09T04:52:38+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -324,8 +324,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "413e00074c40ad289955"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "new york state association of professional land surveyors",
@@ -435,8 +434,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "2ef5f002cca8fd1c7357"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "north carolina association of municipal clerks",
