@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-09T05:47:38+00:00",
+  "generated_at": "2026-11-09T05:51:10+00:00",
   "scanner_version": "5.1-opportunity-stage-first",
   "scan_mode": "deep",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
-  "scan_sources_ok": 119,
+  "scan_sources_ok": 48,
   "official_pages_checked": 17,
   "official_pages_monitored": 29,
   "official_watch_errors": [
@@ -20,7 +20,7 @@
     "Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat",
     "Oregon PRIMA Chapter: HTTPError HTTP Error 403: Forbidden"
   ],
-  "scan_sources_failed": 12,
+  "scan_sources_failed": 83,
   "scan_queries": 85,
   "social_index_queries": 14,
   "named_public_role_targets": 6,
@@ -37,8 +37,8 @@
   "primary_source_planning_passages": 0,
   "primary_source_research_candidates_added": 0,
   "primary_source_errors": [
-    "minutes-budget-review: HTTPError HTTP Error 403: Forbidden",
-    "minutes-conference-redesign: HTTPError HTTP Error 403: Forbidden"
+    "minutes-site-review: HTTPError HTTP Error 403: Forbidden",
+    "minutes-budget-review: HTTPError HTTP Error 403: Forbidden"
   ],
   "social_by_platform": {
     "linkedin": 0,
@@ -2261,33 +2261,35 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 376,
+  "rejected_irrelevant_hits": 240,
   "previous_noise_removed": 0,
   "rejection_reasons": {
-    "no_event_reference": 232,
-    "organizer_name_missing": 130,
+    "no_event_reference": 127,
+    "organizer_name_missing": 107,
     "excluded_host": 83,
-    "no_actionable_change_evidence": 29,
-    "foreign_reference": 7,
-    "blog_or_completed_site": 6,
+    "no_actionable_change_evidence": 23,
+    "blog_or_completed_site": 11,
     "speaker_program_not_venue": 1,
     "legislative_committee_not_meeting_event": 1,
     "stale_or_future_index_date": 1,
     "not_in_person_site_opportunity": 1
   },
   "errors": [
-    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
-    "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
-    "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed",
-    "official watch: International Neuroethics Society: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Archivists for Congregations of Women Religious: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Catholic Media Association: ValueError expected source passage absent or changed",
-    "official watch: Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat",
-    "official watch: Oregon PRIMA Chapter: HTTPError HTTP Error 403: Forbidden"
+    "venue-evaluation (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "site-committee (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "committee-formation (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "board-event-review (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "contract-renewal (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "hotel-renovation (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "schedule-change (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "future-site (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "site-selection (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "conference-budget (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "association-site-options (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "association-committee-minutes (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "association-host-interest (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "board-scheduled-location (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "conference-host-lead (google): HTTPError: HTTP Error 503: Service Unavailable"
   ],
   "signals": [
     {
@@ -2304,7 +2306,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Mid-South Educational Research Association",
       "organization_key": "mid south educational research association",
@@ -2430,7 +2432,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "United States Association of Prides",
       "organization_key": "united states association of prides",
@@ -2522,7 +2524,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "University Research Managers Association",
       "organization_key": "university research managers association",
@@ -2614,7 +2616,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Southern Association for College Admission Counseling",
       "organization_key": "southern association for college admission counseling",
@@ -2679,7 +2681,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Society for Historians of American Foreign Relations",
       "organization_key": "society for historians of american foreign relations",
@@ -2729,7 +2731,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "networkED",
       "organization_key": "networked",
@@ -2775,7 +2777,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "North Carolina Association of Municipal Clerks",
       "organization_key": "north carolina association of municipal clerks",
@@ -2837,7 +2839,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "HiTOP Society",
       "organization_key": "hitop society",
@@ -2944,7 +2946,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "National Association of Community Development Extension Professionals",
       "organization_key": "national association of community development extension professionals",
@@ -3022,7 +3024,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association for the Study of Higher Education",
       "organization_key": "association for the study of higher education",
@@ -3084,7 +3086,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
       "organization_key": "indiana league of municipal clerks and treasurers",
@@ -3161,7 +3163,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Leadership Programs",
       "organization_key": "association of leadership programs",
@@ -3244,7 +3246,7 @@
       "research_assist": {
         "organization_name_candidate": "International Neuroethics Society",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T05:48:45+00:00",
+        "checked_at": "2026-11-09T06:00:57+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -3265,17 +3267,17 @@
           "historical_event_mentions": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22International%20Neuroethics%20Society%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           },
           "planner_and_hotel_counterchecks": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22International%20Neuroethics%20Society%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           },
           "decision_and_leadership_clues": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22International%20Neuroethics%20Society%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           }
         }
       }
@@ -3390,7 +3392,7 @@
       "research_assist": {
         "organization_name_candidate": "Catholic Media Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T05:48:47+00:00",
+        "checked_at": "2026-11-09T06:01:21+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -3410,49 +3412,19 @@
         },
         "research": {
           "historical_event_mentions": {
-            "results": [
-              {
-                "title": "Jesuit Conference Communications Team Wins 14 Catholic Media Association Awards - Jesuits.org",
-                "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRERISDI1SGw3N1hLNVpveFNSa3psUzZVUzVBdjJRM01aN2ZXU2hsY1hpN09ySGZzaFZjYVJWMU5LdXlFeXhnc2F3R0dOQ1VVREI3cTFIVUdvaXNJZjJYTmlzS0s0QzdGSkxFT09oZmtrcmxJa1FjMjJFWFE3b0N5Q3p6TjBZWmJ2Nlo4UFN4aUNFSUx4SHhMLXFXTEMtcTBta2o2UHFkLWMwYm9qazZnanBOT0c?oc=5",
-                "index_date": "2026-06-22",
-                "excerpt": "Jesuit Conference Communications Team Wins 14 Catholic Media Association Awards Jesuits.org",
-                "event_year_mentions": []
-              },
-              {
-                "title": "Diocese Claims 24 Awards from Catholic Media Association, Including Editor, Writer, and Photographer of the Year - Today's Catholic",
-                "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZVR3b1U1UURWZ3BGZzRnY3M1S0JRZ3d3ZzRMYmNxazVoQzhvWTZmQ3ZHaDFnMDkwamdmOHM1bkdfUkZvU0labzFUYU5od3FjcU9ITk1kOWNmZDJfZ3RjMU03SVJlMWVERy1KT2xpeFhDMWlDZFVNRlVYMWRSSXFJbTUwcnluRS1yYUxRNXM2enNuWldFM2lSdjlxcTRIaXZ2bC1lQlFqa3NqVlU3T09RSklVQQ?oc=5",
-                "index_date": "2025-07-01",
-                "excerpt": "Diocese Claims 24 Awards from Catholic Media Association, Including Editor, Writer, and Photographer of the Year Today's Catholic",
-                "event_year_mentions": []
-              }
-            ],
+            "results": [],
             "search_url": "https://www.google.com/search?q=%22Catholic%20Media%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           },
           "planner_and_hotel_counterchecks": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22Catholic%20Media%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           },
           "decision_and_leadership_clues": {
-            "results": [
-              {
-                "title": "The Good Newsroom's Executive Editor Elected to Catholic Media Association's Board of Directors - The Good Newsroom",
-                "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMWhOUm5FcjFER040OXdxVW8yX0N6amZDSWdKVTZoWW9fVjFKSmZOYmdOcGtneVRqNFFsYlBaZm8tcF83NXVyYzhPcnEyWUlHX3picVc1Qmo4Ym0xOG5Ta19iaU5tMDdpQUJVVy0yWlFpOVhaMzBJX2NZQXRIUVprblNNbDVKQlBMT3ZfUElPNjk2NXFwTk12bnRia2FSVXBsbGp6cml1NlV4YUh1bWliQ3Y3ZUlHamJ2X3Z3Z3duOA?oc=5",
-                "index_date": "2026-09-23",
-                "excerpt": "The Good Newsroom's Executive Editor Elected to Catholic Media Association's Board of Directors The Good Newsroom",
-                "event_year_mentions": []
-              },
-              {
-                "title": "Diocese Claims 24 Awards from Catholic Media Association, Including Editor, Writer, and Photographer of the Year - Today's Catholic",
-                "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZVR3b1U1UURWZ3BGZzRnY3M1S0JRZ3d3ZzRMYmNxazVoQzhvWTZmQ3ZHaDFnMDkwamdmOHM1bkdfUkZvU0labzFUYU5od3FjcU9ITk1kOWNmZDJfZ3RjMU03SVJlMWVERy1KT2xpeFhDMWlDZFVNRlVYMWRSSXFJbTUwcnluRS1yYUxRNXM2enNuWldFM2lSdjlxcTRIaXZ2bC1lQlFqa3NqVlU3T09RSklVQQ?oc=5",
-                "index_date": "2025-07-01",
-                "excerpt": "Diocese Claims 24 Awards from Catholic Media Association, Including Editor, Writer, and Photographer of the Year Today's Catholic",
-                "event_year_mentions": []
-              }
-            ],
+            "results": [],
             "search_url": "https://www.google.com/search?q=%22Catholic%20Media%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           }
         }
       }
@@ -3662,7 +3634,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -3708,7 +3680,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -3772,7 +3744,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -3818,7 +3790,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -3882,7 +3854,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:47:38+00:00",
+      "last_checked": "2026-11-09T05:51:10+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -3978,7 +3950,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T05:48:48+00:00",
+        "checked_at": "2026-11-09T06:01:43+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -3999,17 +3971,17 @@
           "historical_event_mentions": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           },
           "planner_and_hotel_counterchecks": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           },
           "decision_and_leadership_clues": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           }
         }
       }
@@ -4062,7 +4034,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T05:48:50+00:00",
+        "checked_at": "2026-11-09T06:02:08+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -4083,17 +4055,17 @@
           "historical_event_mentions": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           },
           "planner_and_hotel_counterchecks": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           },
           "decision_and_leadership_clues": {
             "results": [],
             "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
-            "status": "indexed clues only, no original-source confirmation"
+            "status": "lookup unavailable: HTTPError"
           }
         }
       }
@@ -4304,7 +4276,7 @@
     }
   ],
   "rejection_audit": {
-    "archived_near_misses": 115,
+    "archived_near_misses": 116,
     "replayed_this_run": 115,
     "recovered_this_run": 0,
     "historical_rejections_available": false,

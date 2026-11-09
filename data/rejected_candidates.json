@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-09T05:47:38+00:00",
+  "generated_at": "2026-11-09T05:51:10+00:00",
   "purpose": "Auditable near-miss INDEXED RESULTS, not leads; automatically re-screened when discovery criteria change.",
   "historical_warning": "Before this feature, discarded indexed items were NOT stored. Replaying earlier misses requires running the public searches again.",
-  "count": 115,
+  "count": 116,
   "replayed_this_run": 115,
   "recovered_this_run": 0,
   "items": [
@@ -1394,6 +1394,21 @@
       "source": "Public news index",
       "published": "2026-11-07",
       "query_id": "regional-new-chair",
+      "engine": "web",
+      "reason": "organizer_name_missing",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "review_status": "unqualified_near_miss",
+      "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
+    },
+    {
+      "id": "723eabd0fd0cfbc49134",
+      "url": "https://help.hbomax.com/tnt-sports",
+      "title": "HBO Max | With TNT Sports, you can watch live sports events on HBO Max.",
+      "summary": "TNT Sports on HBO Max TNT Sports (UK only) brings you this season's UEFA Champions League, Europa & Conference League, exclusive Premier League games; plus FA Cup, Rugby, MotoGP, UFC, Golf, Cricket, Snooker, Tennis, Cycling, the legendary 24 hours of Le Mans & more in 2026/27.",
+      "source": "Public news index",
+      "published": "2026-11-08",
+      "query_id": "window-hotel-review",
       "engine": "web",
       "reason": "organizer_name_missing",
       "first_seen": "2026-11-09",

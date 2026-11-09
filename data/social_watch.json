@@ -1,16 +1,29 @@
 {
-  "generated_at": "2026-11-09T05:47:38+00:00",
+  "generated_at": "2026-11-09T05:51:10+00:00",
   "source": "public web-indexed social URLs only",
   "social_queries_attempted": 14,
   "indexed_social_urls_returned": 140,
   "public_posts_retained": 0,
   "rejected_social_index_hits": 140,
-  "errors": [],
+  "errors": [
+    "venue-evaluation (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "site-committee (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "committee-formation (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "board-event-review (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "contract-renewal (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "hotel-renovation (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "schedule-change (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "future-site (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "site-selection (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "conference-budget (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "association-site-options (google): HTTPError: HTTP Error 503: Service Unavailable",
+    "association-committee-minutes (google): HTTPError: HTTP Error 503: Service Unavailable"
+  ],
   "notices": [
     "Public posts may be omitted by search-engine indexes. No API login or private group access is used.",
     "Public post or commenter is not automatically an employee, buyer or event-planning decision maker.",
     "A committee planning the conference program is different from selecting hotels or hiring a planner."
   ],
   "items": [],
-  "latest_external_reconciliation": "2026-11-09T05:29:51+00:00"
+  "latest_external_reconciliation": "2026-11-09T05:47:38+00:00"
 }
