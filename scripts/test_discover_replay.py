@@ -46,6 +46,8 @@ class ReplayTest(unittest.TestCase):
             with patch.object(d,'DEST',feed),patch.object(d,'REJECTION_ARCHIVE',archive),\
                 patch.object(d,'QUERIES',[('generic-announcement','conference')]),\
                 patch.object(d,'fetch_rss',return_value=[article]),\
+                patch.object(d,'read_history',return_value=None),\
+                patch.object(d,'write_history',return_value=None),\
                 patch.object(d,'official_watches',return_value=([],0,[])),\
                 patch.object(d,'social_searches',return_value=iter([])),\
                 patch.object(d.time,'sleep',return_value=None),\
