@@ -49,7 +49,10 @@ class ReplayTest(unittest.TestCase):
                 patch.object(d,'read_history',return_value=None),\
                 patch.object(d,'write_history',return_value=None),\
                 patch.object(d,'official_watches',return_value=([],0,[])),\
-                patch.object(d,'social_searches',return_value=iter([])),\
+                patch.object(d,'targeted_social_searches',return_value=[]),\
+                patch.object(d,'primary_queries',return_value=[]),\
+                patch.object(d,'read_social_archive',return_value=[]),\
+                patch.object(d,'save_social_archive',return_value={}),\
                 patch.object(d.time,'sleep',return_value=None),\
                 patch.dict(d.os.environ,{'SF_LIGHT_SCAN':'false'}):
                 result=d.run()
