@@ -119,10 +119,12 @@ def main():
         # source-level classifier correctly identified an active host bid.
         procurement_stages = {'host_bid_in_progress', 'venue_rfp_or_bidding', 'bid_deadline_passed'}
         if procurement_stages.intersection(org.get("window_stages", [])):
+            # Organization-wide stages do not identify which year is bidding.
+            # Keep future years visible for research, but never label them
+            # approach-ready until the conflicting cycle is resolved.
             screening = dict(screening, approach_ready=False,
-                             eligible_event_years=[],
-                             status='future_watch_or_skip',
-                             warning='Active host/venue procurement signal. Verify a separate future cycle before outreach.')
+                             status='research_further' if screening['eligible_event_years'] else 'future_watch_or_skip',
+                             warning='Host/venue procurement found in this organization. Confirm the exact event year and separate any future unawarded cycle before outreach.')
         if org.get("commitment_flags"):
             suggested="conflict-check"
         elif screening["status"] == "research_further" and org.get("distinct_sources",0)>=2:
