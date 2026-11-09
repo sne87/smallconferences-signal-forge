@@ -14,6 +14,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+from opportunity_cycles import outreach_screen
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"data"/"briefs.json"
@@ -108,9 +109,17 @@ def main():
             ai_calls+=1
             ai_text,ai_status=model_summary(org["name"],evidence,financial)
             time.sleep(1)
-        if org.get("commitment_flags"):suggested="conflict-check"
-        elif org.get("pre_rfp_research_priority") and org.get("distinct_sources",0)>=2:suggested="research-next"
-        else:suggested="early-watch"
+        # A research score is not permission to approach. Screen actual
+        # event-year decisions and preserve every unresolved check.
+        cycles = [decision for item in org.get("evidence", [])
+                  for decision in item.get("cycle_decisions", [])]
+        screening = outreach_screen(cycles)
+        if org.get("commitment_flags"):
+            suggested="conflict-check"
+        elif screening["status"] == "research_further" and org.get("distinct_sources",0)>=2:
+            suggested="research-next"
+        else:
+            suggested="early-watch"
         missing=[
             "Confirm organizer and correct legal entity/EIN",
             "Verify two past conference cycles, expected next event and manageable scope",
@@ -127,6 +136,7 @@ def main():
             "signal_families":org.get("families",[]),
             "commitment_flags":org.get("commitment_flags",[]),
             "suggested_bucket":suggested,
+            "pre_rfp_outreach_screen":screening,
             "evidence_digest":summary,
             "ai_summary":ai_text,"ai_status":ai_status,
             "ai_source":previous_item.get("ai_source","") if ai_text else "",
