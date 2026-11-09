@@ -12,6 +12,7 @@ from html.parser import HTMLParser
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from daily_target import read_history, today_progress, update_history, write_history
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'data' / 'signals.json'
@@ -127,6 +128,35 @@ QUERIES += [
  ('conference-debrief-future', '"association" "conference" "debrief" "future"'),
  ('committee-room-blocks', '"association" "2028" "hotel block" "planning committee"'),
 ]
+
+# Additional rotating search angles when today's target is unmet. No relaxing of evidence gates.
+CATCHUP_QUERIES = [
+ ('catch-site-committee', '"2028" "site selection committee" "association"'),
+ ('catch-host-site', '"2029" "annual conference" "host site"'),
+ ('catch-venue-board', '"2028 conference" "board" "location options"'),
+ ('catch-convention-location', '"2029 convention" "site selection" "society"'),
+ ('catch-financial-minutes', '"conference" "board minutes" "hotel" association'),
+ ('catch-committee-created', '"annual conference" "new committee" "2028"'),
+ ('catch-change-venue', '"regional association" "conference" "considering venues"'),
+ ('catch-hosting-proposals', '"annual meeting" "host site" "society" "2029"'),
+ ('catch-budget-planning', '"association" "conference committee" "financial review"'),
+ ('catch-hotel-negotiation', '"association" "hotel contract" "2028" "review"'),
+ ('catch-museum-society', '"museum association" "conference" "site selection"'),
+ ('catch-library-association', '"library association" "annual conference" "2028" "planning"'),
+ ('catch-healthcare-association', '"healthcare association" "2028 conference" "committee"'),
+ ('catch-historical-society', '"historical society" "annual meeting" "2028" "host"'),
+ ('catch-faith-convention', '"religious association" "2029" "convention" "site"'),
+ ('catch-education-venue', '"education association" "2028 conference" "venue"'),
+ ('catch-fraternal-convention', '"fraternal organization" "2028" "convention" "site"'),
+ ('catch-member-feedback', '"association" "conference" "feedback" "2027" "changes"'),
+ ('catch-local-host', '"professional association" "local host committee" "2028"'),
+ ('catch-retreat-planning', '"nonprofit association" "retreat" "location" "2027"'),
+ ('catch-site-next', '"2029" "site selection" "state association"'),
+ ('catch-site-2030', '"2030" "conference" "site selection committee"'),
+ ('catch-new-director', '"association" "conference" "new executive director" "2027"'),
+ ('catch-conference-pricing', '"association" "conference" "rising costs" "2028"'),
+]
+CATCHUP_PER_RUN=6
 
 # Lower-friction public-index queries for regional organizers. These still pass
 # the named-buyer, event-context and early-change filters in as_candidate().
@@ -843,6 +873,9 @@ def replay_archived(previous_archive,seen):
 
 def run():
     previous=existing()
+    daily_history=read_history()
+    before_goal=today_progress(daily_history,NOW)
+    catchup_active=bool(before_goal['remaining'])
     seen={}
     prior_rejections=rejected_archive()
     near_misses={x['id']:x for x in prior_rejections if x.get('id')}
@@ -871,6 +904,14 @@ def run():
     fetched=0;failed=[];fresh=0;rejected=0;social_attempted=0;social_found=0
     light=os.environ.get('SF_LIGHT_SCAN','false').lower()=='true'
     selected=[(i,pair) for i,pair in enumerate(QUERIES) if not light or i % 6 == NOW.hour % 6]
+    extra_count=0
+    if catchup_active:
+        # Rotate six additional nonprofit/SMERF planning searches per run.
+        offset=(NOW.hour*CATCHUP_PER_RUN+NOW.toordinal()*3)%len(CATCHUP_QUERIES)
+        additions=[(len(QUERIES)+j,CATCHUP_QUERIES[(offset+j)%len(CATCHUP_QUERIES)])
+                   for j in range(CATCHUP_PER_RUN)]
+        selected.extend(additions)
+        extra_count=len(additions)
     for i,(label,query) in selected:
         engines=['google']
         if i in (0,2,4,6,8):engines.append('bing')
@@ -963,6 +1004,9 @@ def run():
         curated_count=0
     previous_ids={x.get('id') for x in previous}
     fresh_indexed=sum(1 for x in kept if x.get('origin') in ('news_index','social_index') and x.get('id') not in previous_ids)
+    daily_history,daily_goal,daily_additions=update_history(daily_history,organizations,kept,NOW)
+    daily_goal['catchup_queries_used']=extra_count
+    daily_goal['newly_added_this_scan']=[x['name'] for x in daily_additions]
     out={'generated_at':NOW.isoformat(timespec='seconds'), 'scanner_version':'5.0-hourly-robert-pre-rfp', 'scan_mode':'light' if light else 'deep',
          'purpose':'Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.',
          'scan_sources_ok':fetched,'official_pages_checked':watched_ok,
@@ -973,7 +1017,7 @@ def run():
          'social_by_platform':{p:sum(1 for x in kept if x.get('platform')==p) for p,_ in SOCIAL_DOMAINS},
          'sources_attempted':len(selected)+sum(i in (0,2,4,6,8) for i,_ in selected)+sum(i%3==1 for i,_ in selected)+social_attempted+len(watched),
          'coverage_warning':'Public RSS/indexed social plus a small set of manually chosen official page watches. Social indexes are incomplete; original post dates unverified. Official watch pages do not prove buyer demand or open sourcing.',
-         'new_discoveries':fresh_indexed,'new_organizations':new_organizations,
+         'daily_goal':daily_goal,'new_discoveries':fresh_indexed,'new_organizations':new_organizations,
          'new_organizations_count':len(new_organizations),
          'new_source_watch_organizations':new_source_watch_organizations,
          'new_source_watch_count':len(new_source_watch_organizations),
@@ -1007,6 +1051,7 @@ def run():
       'replayed_this_run':checked_rejected,'recovered_this_run':archive_recovered,
       'historical_rejections_available':False,
       'explanation':'Legacy rejected items were not preserved. This new journal saves near-misses and tests them again.'}
+    write_history(daily_history)
     DEST.parent.mkdir(parents=True,exist_ok=True)
     DEST.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print(f'Feeds OK={fetched}, failed={len(failed)}, new={fresh}, retained={len(kept)}, filtered={rejected}, old_noise_removed={dropped_previous}')
