@@ -35,7 +35,7 @@ jobs:
           python-version: '3.12'
       - name: Test replay filters and syntax
         run: |
-          python -m py_compile scripts/discover.py scripts/daily_target.py scripts/primary_source.py scripts/social_monitor.py scripts/merge_public_ai.py scripts/briefs.py
+          python -m py_compile scripts/discover.py scripts/daily_target.py scripts/primary_source.py scripts/social_monitor.py scripts/merge_public_social.py scripts/merge_public_ai.py scripts/briefs.py
           python scripts/test_discover_replay.py
           python scripts/test_daily_target.py
           python scripts/test_multilane_discovery.py
@@ -77,7 +77,9 @@ jobs:
           # The checkout may predate a user or scheduled ChatGPT GitHub edit.
           git fetch origin main
           git show origin/main:data/briefs.json > /tmp/signal-forge-remote-briefs.json || true
+          git show origin/main:data/social_watch.json > /tmp/signal-forge-remote-social.json || true
           python scripts/merge_public_ai.py /tmp/signal-forge-remote-briefs.json
+          python scripts/merge_public_social.py /tmp/signal-forge-remote-social.json
           git add data/signals.json data/intelligence.json data/briefs.json data/rejected_candidates.json data/discovery_history.json data/social_watch.json
           if git diff --cached --quiet; then
             echo "No new public feed changes to commit."
@@ -92,9 +94,11 @@ jobs:
             echo "Repository changed during scan; rebasing (attempt ${attempt}/5)."
             git fetch origin main
             git show origin/main:data/briefs.json > /tmp/signal-forge-remote-briefs.json || true
+            git show origin/main:data/social_watch.json > /tmp/signal-forge-remote-social.json || true
             git -c rebase.autoStash=true rebase -X theirs origin/main
             python scripts/merge_public_ai.py /tmp/signal-forge-remote-briefs.json
-            git add data/briefs.json
+            python scripts/merge_public_social.py /tmp/signal-forge-remote-social.json
+            git add data/briefs.json data/social_watch.json
             if ! git diff --cached --quiet; then git -c core.editor=true commit --amend --no-edit; fi
             sleep "${attempt}"
           done
