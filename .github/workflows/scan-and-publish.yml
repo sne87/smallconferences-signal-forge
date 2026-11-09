@@ -123,6 +123,8 @@ jobs:
           cp qualification.html dist/qualification.html
           cp priority.html dist/priority.html
           cp universe.html dist/universe.html
+          cp new-50.html dist/new-50.html
+          cp data/new_50_research_candidates.json dist/data/new_50_research_candidates.json
           cp data/qualification_universe_50plus.json dist/data/qualification_universe_50plus.json
           cp data/robert_priority_research_queue.json dist/data/robert_priority_research_queue.json
           cp data/signals.json dist/data/signals.json
