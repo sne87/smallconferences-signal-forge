@@ -84,7 +84,7 @@ class SourceText(HTMLParser):
 
 RELEVANT_PATH=re.compile(r'(conference|meeting|convention|site|selection|committee|host|event|future|leadership|minutes|board|news|annual|forms|venue|about)',re.I)
 EVENT=re.compile(r'\b(conference|convention|annual meeting|annual gathering|regional meeting|summit|retreat)\b',re.I)
-VENUE_SCOPE=re.compile(r'\b(site selection|host site|host city|site voting|conference location|hotel|venue|future meetings|meeting site|conference site|location proposals?|annual meeting host|interested sites)\b',re.I)
+VENUE_SCOPE=re.compile(r'\b(site selection|future sites?|site proposals?|site options|host site|host city|site voting|conference location|hotel|venue|future meetings|meeting site|conference site|location proposals?|annual meeting host|interested sites)\b',re.I)
 DECISION=re.compile(r'\b(review|reviewing|committee|seeking|select|selection|recommend|vote|application|apply|consider|proposal|contract|invite|host|new|upcoming|future|planning|decid)\w*',re.I)
 FUTURE=re.compile(r'\b(?:2027|2028|2029|2030|2031)\b')
 PROOF_CEILING=1000
