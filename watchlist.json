@@ -234,6 +234,11 @@
       "name": "Southern Association for College Admission Counseling",
       "state": "TX",
       "ein": "621140884"
+    },
+    {
+      "name": "Southern Association of Student Financial Aid Administrators",
+      "state": "SC",
+      "ein": "581575818"
     }
   ]
 }
