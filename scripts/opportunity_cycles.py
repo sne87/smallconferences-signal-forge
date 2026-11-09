@@ -12,6 +12,17 @@ from datetime import date
 from opportunity_gate import assess
 
 YEAR = re.compile(r'(?<!\d)20(?:27|28|29|30|31|32)(?!\d)')
+YEAR_RANGE = re.compile(r'(?<!\d)(20(?:27|28|29|30|31|32))\s*[–—-]\s*(20(?:27|28|29|30|31|32))(?!\d)')
+
+def explicit_event_years(sentence):
+    """Expand bounded future-year ranges only when the sentence describes an event."""
+    years = set(YEAR.findall(sentence))
+    for match in YEAR_RANGE.finditer(sentence):
+        start, end = map(int, match.groups())
+        if start <= end and end - start <= 4:
+            years.update(str(y) for y in range(start, end + 1))
+    return sorted(years)
+
 SENTENCE = re.compile(r'(?<=[.!?;])\s+(?=[A-Z0-9])|\n+')
 EVENT = re.compile(r'\b(?:annual (?:conference|meeting|convention)|conference|convention|symposium|future sites?|site selection|venue|hotel|meeting site)\b',re.I)
 COMPLETE = re.compile(r'\b(?:signed|contracted|finalized|confirmed|already selected|chosen|booked|awarded)\b',re.I)
@@ -34,7 +45,7 @@ def assess_cycles(text, today=None):
     sentences = _sentences(text)
     observations={}
     for i, sentence in enumerate(sentences):
-        years=sorted(set(YEAR.findall(sentence)))
+        years=explicit_event_years(sentence)
         if not years:continue
         if not EVENT.search(sentence):
             # A sentence mentioning a fiscal year or publication date cannot
@@ -88,7 +99,7 @@ def assess_cycles(text, today=None):
                         'other_stages':all_stages,
                         'counterevidence_flags':flags,
                         'commitment_evidence_same_year':bool(committed_evidence),
-                        'multi_year_sentence':any(len(set(YEAR.findall(p)))>1 for p in passages),
+                        'multi_year_sentence':any(len(explicit_event_years(p))>1 for p in passages),
                         'qualified':False,'open_contract_verified':False,
                         'next_step':strongest['next_step']})
     return results
