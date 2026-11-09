@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T04:28:47+00:00",
+  "generated_at": "2026-11-09T04:41:40+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -44,44 +44,44 @@
     {
       "name": "Arkansas Education Association",
       "state": "AR",
-      "input_ein": "",
+      "input_ein": "710004515",
       "financial": {
-        "status": "provisional-identity",
-        "match": "unique exact name match, EIN confirmation required",
+        "status": "filing-found",
+        "match": "EIN supplied in watchlist",
         "ein": "710004515",
         "legal_name": "Arkansas Education Association",
         "fiscal_year": 2023,
         "revenue": 2760676,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
-        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+        "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
       "sources": [],
       "checks": [],
       "historical_years": [],
-      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
       "errors": [],
       "status": "investigation-only"
     },
     {
       "name": "Nonprofit Association of Oregon",
       "state": "OR",
-      "input_ein": "",
+      "input_ein": "930685385",
       "financial": {
-        "status": "provisional-identity",
-        "match": "unique exact name match, EIN confirmation required",
+        "status": "filing-found",
+        "match": "EIN supplied in watchlist",
         "ein": "930685385",
         "legal_name": "Nonprofit Association Of Oregon",
         "fiscal_year": 2023,
         "revenue": 2287021,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/930685385.json",
-        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+        "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
       "sources": [],
       "checks": [],
       "historical_years": [],
-      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
       "errors": [],
       "status": "investigation-only"
     },
@@ -358,22 +358,9 @@
         "fit": "unknown",
         "caveat": "Public financial API unavailable; do not infer revenue."
       },
-      "sources": [
-        {
-          "category": "event-history",
-          "query_year": 2025,
-          "title": "Rapides Parish Library staff honored at Louisiana Library Association - KALB | News Channel 5",
-          "summary": "Rapides Parish Library staff honored at Louisiana Library Association KALB | News Channel 5",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWl84OWljSWROeFNiMm5pQ3EtcTdPZ3M1a0l3WWhQS0tya2ZMUzQtU0pTS0tBNUFKOURvdUM1cjZ1ZmtHMEUwQ0I5bGhmY0JFRXp2SHN1NXNCb0VOYXNCYXJJZEY1YnhDeWNrQzhNTEN6eC1LMFNtbnBkQXdvbTN2QjJNMEV2VVgtQUVxYXBwcTFfNWloeXJPNEJPbVJfN2V00gG0AUFVX3lxTE1TOWtPMkFiekg0VU92UW9tdDlITTFuS2tWTW1ZREhvR3Zfdmw2aFo3V2JlMjdJdXp6ZEVaTlR4M1RETVJJMFhodEdJUnlTaWFNNVlNRWxRQzdGdWRpcjRjM3A2MzVTMHZUdmF6Y0lSUGEyLVVfVk1ySHpUWmEzQjdYd1M4bnlFeHdac2ZSRTZsdjVQRzdrTFhGRWktWnNGeFdvZko0Y1psUWZoUTgyanJ4ejItNg?oc=5",
-          "index_date": "2025-03-25",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        }
-      ],
+      "sources": [],
       "checks": [],
-      "historical_years": [
-        2025
-      ],
+      "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
         "ProPublica: HTTP Error 404: Not Found"
@@ -453,30 +440,7 @@
         "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
         "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Minnesota%20Council%20of%20Nonprofits&state%5Bid%5D=MN"
       },
-      "sources": [
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Minnesota Council of Nonprofits is unionizing - The NewsGuild - CWA",
-          "summary": "Minnesota Council of Nonprofits is unionizing The NewsGuild - CWA",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9tWjlSQzJWdkp4QzJjMTJfbzBhY0hGdU5fb3dkUzdpT0lEMWV0aWlualFxZDhEanJlOGVlRERQZDlxRnRVampDblZ0WlExLWlGYllsanFnMkp5bnpYeFpqMHhCc0lEVUQ3enZVQzlERW41QVNzcVdr?oc=5",
-          "index_date": "2021-03-15",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Minnesota Council of Nonprofits appoints new executive director - The Business Journals",
-          "summary": "Minnesota Council of Nonprofits appoints new executive director The Business Journals",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbWg2dE1zc0xjUDI4MUZ3cUk0d1ZKaU1qdXR4bW1iRFZMMldjNnR4MjUzRUZYOWFqVzBkYzM1UGNxVUxZdmNXMEUwRWozUUs0aVNvMTBUbkhMdTl6TzdFZTlscHpGd2ViYkpYMmFnbXFoYU1VdWpyLWQxcTFnU0Q4cFBjbkhCa3JWTDRnUlU3dElxdjUzY1dQekZwbWt3S2RORVY0OVVmMTNobHpN?oc=5",
-          "index_date": "2021-07-08",
-          "clues": [
-            "decision-role"
-          ],
-          "date_warning": "Original source date and event date unverified."
-        }
-      ],
+      "sources": [],
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
@@ -561,28 +525,7 @@
         "fit": "unknown",
         "caveat": "Public financial API unavailable; do not infer revenue."
       },
-      "sources": [
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "North Carolina Campus Engagement moves in bold new direction - Elon University",
-          "summary": "North Carolina Campus Engagement moves in bold new direction Elon University",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcXRTcExVZk5ta1gwVnZoTll1VTV1YlpRTWhYczY0NjhuaXYwcmZobkZCeTVvbzRQWnpNa0Y3c0tPYkUzRU9OdDQ3OWNXR3EzbG0xTXY2TEhNTUhjWU9vLVloTHJ6MVNDdnVTejdQcjlSUWQ0X1d5NXV5YXJSbmNmb01YaVotUGFCQ0V6cElPRkpIVHZOdWNFVHhZcTN5RWt3Y0E?oc=5",
-          "index_date": "2022-10-05",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Catawba College named winner of NC Collegiate Hunger Challenge: Food Lion Feeds and North Carolina Campus Engagement recognize student leaders for tackling food insecurity - Salisbury Post",
-          "summary": "Catawba College named winner of NC Collegiate Hunger Challenge: Food Lion Feeds and North Carolina Campus Engagement recognize student leaders for tackling food insecurity Salisbury Post",
-          "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxQVlY0b2pWMExObWNUOHFmengxYXJQYWZ2VDdIUlRxeFJlbzhGbXgwZnR2WG16S3ZSdzBRdzVxdUxiUlRrR2dyb21hSXh5eU1UOEM2cER0ZHNibkNkQlVOaVZRS0NxNE1mOW9RdjNuV1BqVVQ1aXA1R1BhZGFjR0ZDTEt6enp0UnJWQ3V0Y00yN0dLcXdBcE1tYmxoUDRNWk5aM05HbnVvYkp4R25sUEJwZHZ6SVlWZ19BZk1STzF4empBYzB0WHpzcGtHQzEzbjhQcjdVbU96QXRTQkFqVDRELWdLSVdLTF9sODNNTWpqcW00VXo5UXprcWJ3VGdSTlJuNW55WjU5UlZxMnNReWpEYU14aXo0dXZqRUwyQlJvcTl6aG04MEpueUxQY1Ewc2U2SG5FU01ubw?oc=5",
-          "index_date": "2026-03-01",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        }
-      ],
+      "sources": [],
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
@@ -759,70 +702,18 @@
       },
       "sources": [
         {
-          "category": "event-history",
-          "query_year": 2025,
+          "category": "upcoming-event",
+          "query_year": 2027,
           "title": "Visit Lake Charles Celebrates Louisiana Travel Association Awards, Graduations - visitlakecharles.org",
           "summary": "Visit Lake Charles Celebrates Louisiana Travel Association Awards, Graduations visitlakecharles.org",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNam0zSWNiWEpPNlNyaHEzSEFtRzU2aDlWRmFDT3N3MFRPOUNPZXZDd0l2VnVycThVTXhycGpBZUsweEpSSGo4NW9mRHlwNUpoWWJFcjhtUTA0dFFpaG1yQlU4cmJ0aFdpU3dpVE1ic25GNWlhdTBTTlEtX0haa21uZ2U1T2hyNEx4dGhpeXJrVy00OThRblNTQzJWeWF1QnNrdjBTQzJFdXhINGpUdTBJalQ4Q2dCYzNtZ3h0Y0lldXFJa0E?oc=5",
           "index_date": "2026-01-23",
           "clues": [],
           "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "event-history",
-          "query_year": 2025,
-          "title": "Louisiana Travel Association Board re-elects Joan Botts of Paragon Casino Resort - CDC Gaming",
-          "summary": "Louisiana Travel Association Board re-elects Joan Botts of Paragon Casino Resort CDC Gaming",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON1c0R1BHVFNHUno3UlVqUEFaWHNmOGZ3QU5USkQ1cjBfeG1OMURpdkU2WEJIU2pDM0FjRzFwZHhweHJMSEQ4eWRnb0FUZkNRekxGaVNfQW81TjQ0aUxnZGdMMUlldnpxa1kwM0E2UzRzQlgxXzZfLUhsZnR4ek54YnE3ejY5NGF3Q3NxYTUtSV8wb19FN3d3VW4tcVVBeW82anowZlF3?oc=5",
-          "index_date": "2026-02-10",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "event-history",
-          "query_year": 2025,
-          "title": "Chef John Besh and Octavio Mantilla Named Restaurateur of the Year by Louisiana Travel Association - New Orleans Magazine",
-          "summary": "Chef John Besh and Octavio Mantilla Named Restaurateur of the Year by Louisiana Travel Association New Orleans Magazine",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaEo5dDNTdy14VEVLVHdTaWpaQmVCWGp5OXZOQlFmM2VTUmtSTUNTeF9yek9tdnQwRWJVR1JGa3ZoZzR6eTJzQ1doN2l5RHZRT1lMUzJpZ3oxT3RjZ2RYaHhGN0JETkFzbUhQRlpaaEhVUm9ZS3ZPWkZoZVZjU2tpTklzNzFMQlVOcnJGM19sRmZiU1dCcnktZUxKWlZyN1MxTDJ1ZUR2YUJiVFpjQmpvZ3B0azBsRk0tRkNsSEJKLUFuY0dGeWZv?oc=5",
-          "index_date": "2026-01-28",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Head of Louisiana travel association picked to lead Visit Baton Rouge - The Advocate",
-          "summary": "Head of Louisiana travel association picked to lead Visit Baton Rouge The Advocate",
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQeE16ZnRSenRlbEZQdmoyRGhjUmNmbVNwaV80eDZOSDRlYlI3c3dYLTltX2xoRk9Yamx2Z0g3dVNfckJfX09kd21mVmVtLTlkZVZ5cjdvME9VNXIydWJfa3F5MkREVlR0T0sxU29vZ3ZaclBuVzJVcFdmaWtYUWJxeWozcU5YQnhFZUdKTXNFc1FjbUkxUDY3TC1BMHdqTzlPdUQ5T3pYc0xJTzFFUFVROUx5LWtfWFBOMFh4WnRSR3M5V1JpM3BpblZRSTRHV012a2ZiVF9ZdUotWW1ma2hVV3p1TzBWVGhMYU1qamVvWFpwNnZfTndPcGQzazh3MEN0UTNV?oc=5",
-          "index_date": "2022-06-30",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Louisiana Travel Association names leadership class - NOLA.com",
-          "summary": "Louisiana Travel Association names leadership class NOLA.com",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWktKZW5adkVsY090TnA1cDI0TWlzMjBBc29tOGRRZng3dHF3QmV1X1Mya0hPQnJkQzNkTU5mVGdpM1NycUp1dDNLdWhRb3VXRzlta2dNb0M1a1VMZE5wMko4c1Vla0ltNUI3S2dmLWdvbEMtT2tBd0NaYnlKeHZoUko5ajMxdDZMUnJnV2ZzdEYxTlFlSFM4blJ0OFBXRHFnT1ozaVZLa2k2M2tUNmZQYXA4SzhLcmNEeklxd0Z1dXVXY1JycmpYdVBZWnFVUDd0VmfSAdcBQVVfeXFMTzlKS1F5UDBPaEtRbXpQR3ktSUVqbmZBSXpuNVRoM1dOSnNleF9Ba2VIR3Z5NW9pTENqeFVOUzNKR2FIX3ZPNWkxNnZNVUhHTkticU1sRExVRWc3Y1c0WndjYjVCT0VuclhDeTAyaFRXWkZjakozZWdqQ2NnZEZvLUdTNzhXQm5LY3IxcG9hU2xNeUttRndzQ1pEMWhweFR6dlBqU0ZzaFdZdzFzS2YxcnhOc29wYkpaV2RzQW9fZ0pNS3l4XzlLMVRyUG5RUGZaa09hajlma00?oc=5",
-          "index_date": "2024-02-11",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Dr. Wei Wang Named 2025 Champion of Tourism Education by Mississippi Tourism Association and Louisiana Travel Association - The University of Southern Mississippi",
-          "summary": "Dr. Wei Wang Named 2025 Champion of Tourism Education by Mississippi Tourism Association and Louisiana Travel Association The University of Southern Mississippi",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdWxuTmRpbW5rOGJZMkFkTjBuV0RCcWxsU2VBTHhBVkNVQklzb3IzaGR4c1dlYWxvTWp0ZjZmTmNMZzRBVnRHemJObklJUkJlS3c1WENKR3h5LUROVUJLbmZhNVZ4TEp6V3k2QTV1TXVwekJqdV96TnBxOTdsWEp2cnp3?oc=5",
-          "index_date": "2025-09-04",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
         }
       ],
       "checks": [],
-      "historical_years": [
-        2025
-      ],
+      "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [],
       "status": "investigation-only"
@@ -911,12 +802,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -939,16 +825,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -970,16 +847,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1001,16 +869,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1028,20 +887,36 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/42688900.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [],
-      "checks": [],
-      "historical_years": [],
-      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "New England Museum Association honors Yerdon - Seacoastonline.com",
+          "summary": "New England Museum Association honors Yerdon Seacoastonline.com",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcldaeDZoRHRRTlNQVmpYcGdUTWlJS093V2lwTXVOemxZLUM1N21qVGtVejBVYnBid3cxcHdOMEM3M0NXTDRjTlE0TjBZSGZiakpleHpjT1RhUGY0bzVzZk92ektiRkR2RzkyamZ0WVNfMjFSa2szZHBGMjhITnVoY1FrWnBwSVVUZ3ZldU9RMHVubUstTkdTN0tOazBQbmlOcUE2Z2ZkbjhnZjND?oc=5",
+          "index_date": "2018-11-27",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Dan Yaeger is new executive director of New England Museum Association - Wicked Local",
+          "summary": "Dan Yaeger is new executive director of New England Museum Association Wicked Local",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc0doSnctVWoyWGlTcHNaOUFHSjVKV1g0QlJXNjhaUlNrRnFJNHVldmhRdDI1NUM1NzlyaHJxdGpoczRva0lLOGxmY2hPN3pjZS1pUmF2MkNzX0VISnN2TG90b3ZZTVlpdGNOdmJhWTVkd0t6NHZfRHpCYnpOYmtkM0hLWnh6blJzWUl4cnJzV3NZZTFmSGdBZ1IzS1djRzVURTZEdmxSZjY?oc=5",
+          "index_date": "2010-04-02",
+          "clues": [
+            "decision-role"
+          ],
+          "date_warning": "Original source date and event date unverified."
+        }
       ],
+      "checks": [],
+      "historical_years": [
+        2025
+      ],
+      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1081,20 +956,32 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/311609577.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [],
+      "sources": [
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Association of African American Museums Names Vedet Coleman-Robinson President and CEO - Black Art In America™ Gallery & Gardens",
+          "summary": "Association of African American Museums Names Vedet Coleman-Robinson President and CEO Black Art In America™ Gallery & Gardens",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeWlNX0FxNmpzWlgya1o0SDk4emt4T0dsLTJvQ3F5MVZOTmQ2anBkT2MzMWVLS24ya2h5bEV5Mmpmb3VWU2JEZjEyM3hEMXhmc3ZfT3FGT0xMd0FuWUp2NjdwRHQzWklZZlowVHFzT2loN3FveUdXZU0wNjRReHZBNnZBZjI3ejdpMHAxOXBEaGpJTVVCcHdRWXVaY3JIelZmMnREejdJRXJtdFFyR1VYemJ0UkJmdFVoYkR3SEIzZTJzWGJTSHNTeTdpOA?oc=5",
+          "index_date": "2024-03-26",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Association of African American Museums and the Howard University School of Business Establish a New Advanced Executive Training Partnership - The Dig at Howard University",
+          "summary": "Association of African American Museums and the Howard University School of Business Establish a New Advanced Executive Training Partnership The Dig at Howard University",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWVZYaTFsdWotdW5sZVhTdlFtbEY1Q0pRQWg1R1lJczgzQUlvQ2F3TWNCUGZlRXFjU1ZWbXBJei1aSDZWTFY3eEsyQW05cm9GTzVvRXlTYThtNHpYamt0azRFNFQ4TU1oaGxHWUp3VUFZdzRicFRLYjRuaF9ZLU85WTNoUGUyTUZfdU5VS1pjaGNnVUZjMENicW9UUTFBSDg0YzAwaV94M2RVWnQ3RjhqZXVQUTl3WDRMTFlRWWVIQy1DaHhEcmdvYlBLOWJLQi16?oc=5",
+          "index_date": "2022-04-21",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1116,16 +1003,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1147,16 +1025,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1178,16 +1047,40 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Florida Society of Association Executives",
+      "state": "FL",
+      "input_ein": "596140583",
+      "financial": {
+        "status": "filing-found",
+        "match": "EIN supplied in watchlist",
+        "ein": "596140583",
+        "legal_name": "Florida Society Of Association Executives Inc",
+        "fiscal_year": 2023,
+        "revenue": 1368714,
+        "fit": "within",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/596140583.json",
+        "caveat": "Form 990 revenue is organization revenue, not conference spend."
+      },
+      "sources": [
+        {
+          "category": "venue-commitment",
+          "query_year": null,
+          "title": "Communication Alumna Recognized by Florida Society of Association Executives - Florida State University",
+          "summary": "Communication Alumna Recognized by Florida Society of Association Executives Florida State University",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNYnNZS3YyelhjQW1ockJXR1pRQkxVa3JvU2JtTkpyak1IdXBmYWhFSjYxOFZzV2EydDVpSGxGTEZwMldZQlBLTnZhV0Z4bTFRMFdJcVF0dU5rN095alJtZFFmNzZ3ODN4aS1GYnBlQ25WZ2JDNkFnalp5MFU1NXdJTkl5SE0za010TWtuN2VtU3Y1bEt2MWhDd3hIV0tMa1czNEpxTXBOcDIwOVVnT2NlRm9PVS15Tk56bW1QTjhITklWUlA4?oc=5",
+          "index_date": "2020-09-09",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
       ],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
+      "errors": [],
       "status": "investigation-only"
     }
   ]

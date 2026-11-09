@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T04:39:37+00:00",
+  "generated_at": "2026-11-09T04:43:03+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -88,8 +88,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "556ee8020127513e492a"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "indiana league of municipal clerks and treasurers",
@@ -198,8 +197,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "6df4081687fff4e701ba"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "association of local government auditors",
@@ -271,13 +269,12 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "5dd43ac2de10aecb0ef3"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "nonprofit association of oregon",
       "name": "Nonprofit Association of Oregon",
-      "fingerprint": "413e00074c40ad289955",
+      "fingerprint": "4af7e99b77158b682541",
       "first_detected": "2026-11-06",
       "source_count": 2,
       "independent_publishers": 1,
@@ -305,7 +302,7 @@
         "revenue": 2287021,
         "fiscal_year": 2023,
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/930685385.json",
-        "match_status": "provisional-identity"
+        "match_status": "filing-found"
       },
       "signal_families": [
         "attendee-change",
@@ -315,7 +312,7 @@
       "suggested_bucket": "early-watch",
       "evidence_digest": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most Additional separate clue:  TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p",
       "ai_summary": "The association’s public conference-input form invites feedback about previous conferences, while its speaking-opportunities page identifies a Fall 2027 Nonprofit Impact Conference. Together these are credible signals of an upcoming programming cycle and possible experience redesign, not evidence of a venue or planner search. A preliminary 2023 Form 990 match shows approximately $2.29 million in organizational revenue, but the legal entity/EIN and event-specific spend must be verified. Crucially, the published proposal windows concern speakers and sessions, not venue sourcing. Next: identify the 2027 conference operations owner, previous two venue contracts, expected room nights, whether hotel/venue decisions are already assigned, and whether a fee-paid outside cost assessment would be considered.",
-      "ai_status": "chatgpt_manual_review_2026-11-08",
+      "ai_status": "stale_source_change_recheck_required",
       "ai_source": "ChatGPT source-constrained synthesis, manually saved through connected GitHub; not independently verified",
       "ai_reviewed_at": "2026-11-08",
       "next_verification_questions": [
@@ -327,7 +324,8 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source_fingerprint": "413e00074c40ad289955"
     },
     {
       "key": "new york state association of professional land surveyors",
@@ -387,7 +385,7 @@
     {
       "key": "arkansas education association",
       "name": "Arkansas Education Association",
-      "fingerprint": "2ef5f002cca8fd1c7357",
+      "fingerprint": "2b35657eeab69f126519",
       "first_detected": "2026-11-06",
       "source_count": 2,
       "independent_publishers": 1,
@@ -415,7 +413,7 @@
         "revenue": 2760676,
         "fiscal_year": 2023,
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
-        "match_status": "provisional-identity"
+        "match_status": "filing-found"
       },
       "signal_families": [
         "capacity",
@@ -437,7 +435,8 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source_fingerprint": "2ef5f002cca8fd1c7357"
     },
     {
       "key": "north carolina association of municipal clerks",
