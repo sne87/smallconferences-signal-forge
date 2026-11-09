@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-09",
+  "screening_standard": "Only retain a documented future event with hotel needs, accessible decision path, plausible manageable scope, and unresolved sourcing; not approved until incumbent and outside-advisor opportunity confirmed.",
+  "retained": [
+    {
+      "name": "Colorado-Wyoming Association of Museums",
+      "url": "https://www.cwam-us.org/annual-meeting/future-meetings/",
+      "status": "Priority verification, not qualified",
+      "evidence": "2029 host applications due February 1 2027; annual meeting about 150, up to 350; hotels and meeting spaces explicitly requested; Rachael Storm listed as Annual Meeting Team Leader.",
+      "concerns": "Host institution model, 2028 site vote October 15 2026; 2029 lodging contracting and paid advisor authority unverified.",
+      "next_step": "Confirm 2029 host decision still open and whether board or host signs hotel contracts, 2027/2028 actual room nights and cost, existing planner."
+    },
+    {
+      "name": "Digital Collegium",
+      "url": "https://digicol.org/annual-conference-site-selection-committee/",
+      "status": "Conditional watch, not qualified",
+      "evidence": "Site selection committee explicitly evaluates city, conference rooms, exhibits, cost, finalist site visits and contract terms; Sara Clark executive director chairs.",
+      "concerns": "Existing partner develops RFP and negotiates contracts; no evidence partner can be displaced or that future event year remains unawarded.",
+      "next_step": "Identify named partner, upcoming unawarded cycle and conference size; exclude if incumbent exclusive."
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Native American and Indigenous Studies Association",
+      "reason": "Explicit hotel negotiation incumbent INMEX",
+      "url": "https://naisa.org/proposals-for-future-sites/"
+    },
+    {
+      "name": "American Medical Informatics Association",
+      "reason": "2027–2030 annual symposium venues already contracted; large scope",
+      "url": "https://amia.org/about-amia/leadership-and-governance/bylaws-and-policies/amia-conference-oversight"
+    },
+    {
+      "name": "Nebraska Recreation and Parks Association",
+      "reason": "2027 site selection deadline and expected decision passed",
+      "url": "https://nerpa.wildapricot.org/Site-Selection"
+    },
+    {
+      "name": "Society of Environmental Journalists",
+      "reason": "Older 2027/2028 host RFP, current opening unverified",
+      "url": "https://www.sej.org/rfp-hosts-and-sponsors-sej-annual-conferences"
+    },
+    {
+      "name": "Joint Committee on Fisheries Engineering and Science",
+      "reason": "2028/2029 host RFP underway, campus dormitory alternative",
+      "url": "https://fishpassagejointcommittee.fisheries.org/2026/09/02/request-for-proposals-2028-2029-conferences/"
+    }
+  ]
+}
