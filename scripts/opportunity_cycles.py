@@ -93,6 +93,45 @@ def assess_cycles(text, today=None):
                         'next_step':strongest['next_step']})
     return results
 
+def outreach_screen(cycles, *, legal_entity_verified=False, revenue_verified=False,
+                    recurring_event_verified=False, scope_verified=False,
+                    decision_owner_verified=False, decision_ahead_verified=False,
+                    incumbent_checked=False, external_advisor_path_verified=False):
+    """Strict Robert outreach gate, distinct from research priority.
+
+    Missing information is never treated as a negative commitment check.
+    An RFP/host bid, venue commitment, or ambiguous same-year cycle blocks
+    outreach regardless of the numerical research priority.
+    """
+    required = {
+        'legal_entity_verified': legal_entity_verified,
+        'revenue_verified': revenue_verified,
+        'recurring_event_verified': recurring_event_verified,
+        'scope_verified': scope_verified,
+        'decision_owner_verified': decision_owner_verified,
+        'decision_ahead_verified': decision_ahead_verified,
+        'incumbent_checked': incumbent_checked,
+        'external_advisor_path_verified': external_advisor_path_verified,
+    }
+    eligible = [c for c in (cycles or [])
+                if c.get('stage') == 'possible_pre_rfp'
+                and c.get('pre_rfp_research_candidate') is True
+                and not c.get('commitment_evidence_same_year')
+                and not any(s in ('host_bid_in_progress','venue_rfp_or_bidding',
+                                  'bid_deadline_passed','possible_pre_rfp_with_venue_risk')
+                            for s in c.get('other_stages', []))
+                and not c.get('counterevidence_flags')]
+    missing = [key for key, verified in required.items() if verified is not True]
+    return {
+        'approach_ready': bool(eligible) and not missing,
+        'eligible_event_years': [c['event_year'] for c in eligible],
+        'missing_checks': missing,
+        'status': ('approach_soon' if eligible and not missing else
+                   'research_further' if eligible else 'future_watch_or_skip'),
+        'warning': 'Research gate only. Never automatically qualify or contact an organizer.',
+    }
+
+
 def select_next_cycle(cycles, fallback):
     """Choose the strongest research window, never imply an open contract."""
     if not cycles:return dict(fallback,event_year=None,cycle_evidence='',cycle_assessed=False)
