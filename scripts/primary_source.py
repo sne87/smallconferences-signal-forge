@@ -7,7 +7,7 @@ direct HTML pages to confirm that a planning/site decision appears in the
 organizer's own text. No commercial API, no claim of an open contract.
 """
 from __future__ import annotations
-import html, re, urllib.parse, urllib.request
+import html, re, urllib.parse, urllib.request, io
 from html.parser import HTMLParser
 from datetime import datetime, timezone
 
@@ -38,6 +38,15 @@ PRIMARY_QUERIES = [
  ('official-contract-timing', '"conference site selection" "contract" "association"'),
  ('official-site-invite', '"invites interested sites" "annual meeting"'),
  ('official-hotel-expiration', '"conference" "hotel contract" "renewal" association'),
+ # Governance-first lane: association board minutes expose decisions earlier
+ # than news/RFP announcements. Use indexed public PDFs only, never scrape
+ # inaccessible private board records.
+ ('minutes-future-sites', '"2028" "2029" "future sites" "board" pdf'),
+ ('minutes-location-options', '"2028" "annual meeting" "locations" "board minutes" pdf'),
+ ('minutes-hotel-negotiation', '"2028" "annual conference" "hotel" "negotiation" "board" pdf'),
+ ('minutes-site-review', '"2029" "site selection committee" "board minutes" pdf'),
+ ('minutes-budget-review', '"conference" "hotel contracts" "board minutes" 2026 pdf'),
+ ('minutes-conference-redesign', '"annual meeting" "rotation" "locations" "2028" pdf'),
 ]
 # RSS direct-web endpoint, not Google News. Can be blocked by the provider.
 def web_search_url(query: str) -> str:
@@ -88,11 +97,16 @@ def plausible_direct_page(article):
     url=str(article.get('url',''))
     try:u=urllib.parse.urlsplit(url)
     except ValueError:return False
-    if u.scheme!='https' or not u.netloc or u.path.lower().endswith(('.pdf','.doc','.docx','.png','.jpg','.zip')):return False
+    if u.scheme!='https' or not u.netloc or u.path.lower().endswith(('.doc','.docx','.png','.jpg','.zip')):return False
     h=host(url)
     if any(h==n or h.endswith('.'+n) for n in EXCLUDED_DOMAINS):return False
     title=article.get('title','');snippet=article.get('summary','')
     txt=(title+' '+snippet)
+    # PDFs can have opaque CMS filenames. Only accept when the indexed title
+    # itself describes future board, site, venue, or meeting decisions.
+    if u.path.lower().endswith('.pdf'):
+        return bool(re.search(r'\b(?:board|minutes|future sites?|site selection|venue|hotel|annual meeting)\b',txt,re.I)) and (
+            bool(FUTURE.search(txt)) or bool(re.search(r'\b(?:future sites|board meeting|site selection)\b',txt,re.I)))
     return (bool(RELEVANT_PATH.search(u.path)) or (bool(EVENT.search(txt)) and bool(FUTURE.search(txt)))) and (
         bool(VENUE_SCOPE.search(txt)) or bool(RELEVANT_PATH.search(u.path))
     )
@@ -120,21 +134,58 @@ def source_excerpt(page_text):
     # Passage-backed signal only, never a full-page speculative synthesis.
     return candidates[0][2][:PROOF_CEILING]
 
+def read_public_pdf(raw, *, max_pages=22):
+    """Extract PDF text only; never interpret scans or silently OCR content."""
+    try:
+        from pypdf import PdfReader
+    except ImportError as exc:
+        raise RuntimeError('pypdf missing: install free pypdf package in GitHub Actions') from exc
+    pdf=PdfReader(io.BytesIO(raw), strict=False)
+    sections=[]
+    for i,page in enumerate(pdf.pages[:max_pages]):
+        try:
+            t=page.extract_text() or ''
+        except Exception:
+            t=''
+        if t.strip():
+            sections.append((i+1,t))
+    return sections
+
 def fetch_source_passage(url,timeout=8):
     req=urllib.request.Request(url,headers={
-        'User-Agent':'Mozilla/5.0 (compatible; SignalForge/4.0; site-research)',
-        'Accept':'text/html,application/xhtml+xml'})
+        'User-Agent':'Mozilla/5.0 (compatible; SignalForge/5.2; public-source-research)',
+        'Accept':'text/html,application/xhtml+xml,application/pdf'})
     with urllib.request.urlopen(req,timeout=timeout) as res:
         content_type=res.headers.get('Content-Type','').lower()
-        if 'html' not in content_type:raise ValueError('not_html')
-        html_bytes=res.read(650_000)
+        is_pdf='application/pdf' in content_type or urllib.parse.urlsplit(url).path.lower().endswith('.pdf')
+        size_limit=2_000_000 if is_pdf else 650_000
+        payload=res.read(size_limit+1)
+        if len(payload)>size_limit:raise ValueError('source_too_large')
+    if is_pdf:
+        sections=read_public_pdf(payload)
+        if not sections:raise ValueError('pdf_has_no_extractable_text')
+        matches=[]
+        for page_num,page_text in sections:
+            excerpt=source_excerpt(page_text)
+            if excerpt:
+                strength=3*bool(re.search(r'\b(?:future sites?|site selection|hotel contract|venue options|location proposals)\b',excerpt,re.I))
+                strength+=bool(re.search(r'\b(?:2028|2029|2030|2031)\b',excerpt))
+                matches.append((strength,page_num,excerpt))
+        if not matches:return None
+        matches.sort(key=lambda x:(x[0],-x[1]),reverse=True)
+        _,page_num,excerpt=matches[0]
+        return {'excerpt':excerpt,'site_title':'Public conference governance PDF',
+                'site_name':'','source_type':'pdf','source_page_number':page_num,
+                'checked_on':datetime.now(timezone.utc).date().isoformat()}
+    if 'html' not in content_type:raise ValueError('not_html_or_pdf')
     parser=SourceText()
-    parser.feed(html_bytes.decode('utf-8','replace'))
+    parser.feed(payload.decode('utf-8','replace'))
     page=re.sub(r'\s+',' ',' '.join(parser.parts)).strip()
     excerpt=source_excerpt(page)
     if not excerpt:return None
     return {'excerpt':excerpt,'site_title':re.sub(r'\s+',' ',' '.join(parser.title)).strip()[:160],
-        'site_name':parser.site_name,'checked_on':datetime.now(timezone.utc).date().isoformat()}
+        'site_name':parser.site_name,'source_type':'html','source_page_number':None,
+        'checked_on':datetime.now(timezone.utc).date().isoformat()}
 
 def enrich_index_hit(article,timeout=8):
     if not plausible_direct_page(article):return None
@@ -150,4 +201,6 @@ def enrich_index_hit(article,timeout=8):
     enriched['source_page_checked_on']=proof['checked_on']
     enriched['original_index_title']=original_title
     enriched['source_page_excerpt']=proof['excerpt']
+    enriched['source_type']=proof.get('source_type','html')
+    enriched['source_page_number']=proof.get('source_page_number')
     return enriched
