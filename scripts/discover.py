@@ -834,7 +834,8 @@ def organization_stacks(items):
                'freshness':x.get('monitor_status',''),
                'counterevidence_flags':x.get('flags',[]),
                'families':x.get('types',[]),'tier':x.get('review_tier','watch'),
-                'window_stage':x.get('window_stage','watch_only'),'bid_deadline':x.get('bid_deadline','')})
+                'window_stage':x.get('window_stage','watch_only'),'bid_deadline':x.get('bid_deadline',''),
+                'source_type':x.get('source_type','html'),'source_page_number':x.get('source_page_number')})
     out=[]
     for group in groups.values():
         source_count=len(group['sources'])
@@ -1032,6 +1033,8 @@ def run():
                     item['source_page_checked']=True
                     item['source_page_checked_on']=proof['source_page_checked_on']
                     item['source_page_excerpt']=proof['source_page_excerpt'][:650]
+                    item['source_type']=proof.get('source_type','html')
+                    item['source_page_number']=proof.get('source_page_number')
                     item['date_basis']='Direct official webpage fetched on '+proof['source_page_checked_on']+'; original post/publication date unverified'
                     # Direct org-owned content is a stronger discovery source
                     # but NOT a verified uncommitted contract or buyer.
