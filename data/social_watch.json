@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-09T04:23:22+00:00",
+  "generated_at": "2026-11-09T04:27:04+00:00",
   "source": "public web-indexed social URLs only",
   "social_queries_attempted": 14,
-  "indexed_social_urls_returned": 132,
+  "indexed_social_urls_returned": 137,
   "public_posts_retained": 0,
-  "rejected_social_index_hits": 132,
+  "rejected_social_index_hits": 137,
   "errors": [],
   "notices": [
     "Public posts may be omitted by search-engine indexes. No API login or private group access is used.",
@@ -12,5 +12,5 @@
     "A committee planning the conference program is different from selecting hotels or hiring a planner."
   ],
   "items": [],
-  "latest_external_reconciliation": "2026-11-09T04:20:10+00:00"
+  "latest_external_reconciliation": "2026-11-09T04:23:22+00:00"
 }

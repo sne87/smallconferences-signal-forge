@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T04:23:22+00:00",
+  "generated_at": "2026-11-09T04:27:04+00:00",
   "scanner_version": "5.1-opportunity-stage-first",
   "scan_mode": "deep",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
@@ -22,16 +22,16 @@
   "scan_queries": 148,
   "social_index_queries": 14,
   "named_public_role_targets": 6,
-  "social_index_hits_seen": 132,
+  "social_index_hits_seen": 137,
   "social_direct_post_urls_seen": 0,
   "social_public_posts_archived": 0,
   "social_rejected_by_reason": {
-    "not_direct_social_post": 132
+    "not_direct_social_post": 137
   },
   "social_index_candidates_seen": 0,
   "primary_source_search_queries": 8,
-  "primary_source_pages_attempted": 10,
-  "primary_source_pages_checked": 9,
+  "primary_source_pages_attempted": 9,
+  "primary_source_pages_checked": 5,
   "primary_source_planning_passages": 0,
   "primary_source_research_candidates_added": 0,
   "primary_source_errors": [
@@ -47,7 +47,7 @@
     "x": 0,
     "reddit": 0
   },
-  "sources_attempted": 239,
+  "sources_attempted": 238,
   "coverage_warning": "Public RSS/news, direct association website excerpts and public indexed social post links. Social indexing is incomplete and employee affiliation/decision role unverified. Original publish dates of web excerpts may be unknown. None proves open hotel sourcing.",
   "daily_goal": {
     "date": "2026-11-08",
@@ -66,19 +66,76 @@
   "new_discoveries": 0,
   "new_organizations": [],
   "new_organizations_count": 0,
-  "new_source_watch_organizations": [
-    "United States Association of Prides",
-    "University Research Managers Association",
-    "International Neuroethics Society",
-    "Archivists for Congregations of Women Religious",
-    "Catholic Media Association"
-  ],
-  "new_source_watch_count": 5,
+  "new_source_watch_organizations": [],
+  "new_source_watch_count": 0,
   "curated_research_additions": 11,
   "review_priority_count": 3,
   "review_watch_count": 20,
   "stacked_organizations": 16,
   "organizations": [
+    {
+      "key": "hitop society",
+      "name": "HiTOP Society",
+      "signal_ids": [
+        "63c5a08cda63cec8f704"
+      ],
+      "families": [
+        "board-location"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "63c5a08cda63cec8f704",
+          "title": "HiTOP Society | 2027-2029 future site discussion and committee planning",
+          "url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2026 committee minutes",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "board-location"
+          ],
+          "tier": "priority",
+          "window_stage": "possible_pre_rfp",
+          "bid_deadline": ""
+        }
+      ],
+      "priority_count": 1,
+      "watch_count": 0,
+      "most_recent": "2026-11-08",
+      "window_stages": [
+        "possible_pre_rfp"
+      ],
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "board-location"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": true,
+      "priority": 58,
+      "stack_stage": "single-source clue",
+      "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
+    },
     {
       "key": "association for the study of higher education",
       "name": "Association for the Study of Higher Education",
@@ -117,6 +174,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "committee-forming"
@@ -176,6 +237,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "committee-forming"
@@ -275,6 +340,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
       "mentions": 3,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 2,
       "early_signal_families": [
         "economics"
@@ -377,6 +446,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
       "mentions": 3,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 2,
       "early_signal_families": [],
       "robert_fit_screen": {
@@ -452,6 +525,14 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
       "mentions": 2,
+      "financial_screen": {
+        "band": "within",
+        "revenue": 2287021,
+        "filing_year": 2023,
+        "identity_status": "provisional-identity",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/930685385.json",
+        "warning": "Annual organizational revenue, not event budget. Confirm exact legal identity and most recent return."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "attendee-change",
@@ -530,6 +611,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
       "mentions": 2,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "economics"
@@ -607,6 +692,14 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
       "mentions": 2,
+      "financial_screen": {
+        "band": "within",
+        "revenue": 2760676,
+        "filing_year": 2023,
+        "identity_status": "provisional-identity",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+        "warning": "Annual organizational revenue, not event budget. Confirm exact legal identity and most recent return."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "capacity"
@@ -666,68 +759,13 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "committee-forming"
-      ],
-      "robert_fit_screen": {
-        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
-        "recurring_event": "Research previous two event cycles",
-        "event_spend": "Event budget, room nights and supplier spend unverified",
-        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
-        "decision_maker": "Named purchasing authority and accessibility unverified",
-        "venue_planner": "Venue and planner agreement status unknown",
-        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
-        "qualified": false,
-        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
-        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
-      },
-      "pre_rfp_research_priority": false,
-      "priority": 58,
-      "stack_stage": "single-source clue",
-      "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
-    },
-    {
-      "key": "hitop society",
-      "name": "HiTOP Society",
-      "signal_ids": [
-        "63c5a08cda63cec8f704"
-      ],
-      "families": [
-        "board-location"
-      ],
-      "commitment_flags": [],
-      "evidence": [
-        {
-          "id": "63c5a08cda63cec8f704",
-          "title": "HiTOP Society | 2027-2029 future site discussion and committee planning",
-          "url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
-          "source": "Official association page (monitored)",
-          "published": "",
-          "document_date": "2026 committee minutes",
-          "freshness": "Official source page fetched during this scan",
-          "counterevidence_flags": [],
-          "families": [
-            "board-location"
-          ],
-          "tier": "priority",
-          "window_stage": "watch_only",
-          "bid_deadline": ""
-        }
-      ],
-      "priority_count": 1,
-      "watch_count": 0,
-      "most_recent": "2026-11-08",
-      "window_stages": [
-        "watch_only"
-      ],
-      "play": "Smart",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-08",
-      "mentions": 1,
-      "distinct_sources": 1,
-      "early_signal_families": [
-        "board-location"
       ],
       "robert_fit_screen": {
         "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
@@ -784,6 +822,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-09",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "location-exploration"
@@ -843,6 +885,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-09",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "location-exploration"
@@ -902,6 +948,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "location-exploration"
@@ -961,6 +1011,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "location-exploration"
@@ -1020,6 +1074,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "committee-forming"
@@ -1079,6 +1137,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [
         "location-exploration"
@@ -1144,6 +1206,10 @@
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
       "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
       "distinct_sources": 1,
       "early_signal_families": [],
       "robert_fit_screen": {
@@ -1164,14 +1230,14 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 784,
+  "rejected_irrelevant_hits": 748,
   "previous_noise_removed": 0,
   "rejection_reasons": {
-    "no_event_reference": 449,
-    "excluded_host": 176,
-    "organizer_name_missing": 173,
+    "no_event_reference": 378,
+    "excluded_host": 201,
+    "organizer_name_missing": 169,
+    "blog_or_completed_site": 51,
     "no_actionable_change_evidence": 40,
-    "blog_or_completed_site": 36,
     "foreign_reference": 7,
     "stale_or_future_index_date": 3,
     "not_in_person_site_opportunity": 2,
@@ -1204,7 +1270,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "United States Association of Prides",
       "organization_key": "united states association of prides",
@@ -1247,7 +1313,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "University Research Managers Association",
       "organization_key": "university research managers association",
@@ -1320,7 +1386,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "North Carolina Association of Municipal Clerks",
       "organization_key": "north carolina association of municipal clerks",
@@ -1363,12 +1429,12 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "HiTOP Society",
       "organization_key": "hitop society",
       "review_tier": "priority",
-      "window_stage": "watch_only",
+      "window_stage": "possible_pre_rfp",
       "strong_evidence": {
         "board-location": "- Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CM"
       },
@@ -1436,7 +1502,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "National Association of Community Development Extension Professionals",
       "organization_key": "national association of community development extension professionals",
@@ -1479,7 +1545,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association for the Study of Higher Education",
       "organization_key": "association for the study of higher education",
@@ -1522,7 +1588,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
       "organization_key": "indiana league of municipal clerks and treasurers",
@@ -1565,7 +1631,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Leadership Programs",
       "organization_key": "association of leadership programs",
@@ -1641,7 +1707,7 @@
       "research_assist": {
         "organization_name_candidate": "International Neuroethics Society",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T04:25:17+00:00",
+        "checked_at": "2026-11-09T04:28:42+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -1763,7 +1829,7 @@
       "research_assist": {
         "organization_name_candidate": "Catholic Media Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T04:25:19+00:00",
+        "checked_at": "2026-11-09T04:28:43+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -1886,7 +1952,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -1929,7 +1995,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -1972,7 +2038,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -2015,7 +2081,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -2060,7 +2126,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T04:23:22+00:00",
+      "last_checked": "2026-11-09T04:27:04+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -2133,7 +2199,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T04:25:20+00:00",
+        "checked_at": "2026-11-09T04:28:45+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -2209,7 +2275,45 @@
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
-      "qualification": "Unverified source watch"
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Arkansas Education Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-09T04:28:46+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "710004515",
+          "legal_name": "Arkansas Education Association",
+          "fiscal_year": 2023,
+          "revenue": 2760676,
+          "fit": "within",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "in-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
     },
     {
       "id": "bdda60c722506011eca5",
@@ -2385,8 +2489,8 @@
     }
   ],
   "rejection_audit": {
-    "archived_near_misses": 104,
-    "replayed_this_run": 103,
+    "archived_near_misses": 106,
+    "replayed_this_run": 104,
     "recovered_this_run": 0,
     "historical_rejections_available": false,
     "explanation": "Legacy rejected items were not preserved. This new journal saves near-misses and tests them again."
