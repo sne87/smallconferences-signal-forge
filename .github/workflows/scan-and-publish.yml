@@ -122,6 +122,8 @@ jobs:
           cp index.html dist/index.html
           cp qualification.html dist/qualification.html
           cp priority.html dist/priority.html
+          cp universe.html dist/universe.html
+          cp data/qualification_universe_50plus.json dist/data/qualification_universe_50plus.json
           cp data/robert_priority_research_queue.json dist/data/robert_priority_research_queue.json
           cp data/signals.json dist/data/signals.json
           cp data/intelligence.json dist/data/intelligence.json
