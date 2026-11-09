@@ -316,6 +316,38 @@
       "baseline_as_of": "2026-11-08",
       "baseline_excerpt": "December 2026: selected 2028 host is notified. January-June 2027: confirm dates and reserve hotel and conference rooms.",
       "curated_by_chatgpt": true
+    },
+    {
+      "organization": "Mid-South Educational Research Association",
+      "url": "https://www.msera.org/_files/ugd/90ff5d_d5ca989918fb46bb82163a0026f5d727.pdf",
+      "label": "Board minutes: 2028-2029 venue proposals and Executive Director negotiation role",
+      "needle": "Ideas discussed for the 2028 Annual Meeting included",
+      "family": "board-location",
+      "tier": "priority",
+      "next_action": "Check Fall 2026 board decisions before outreach. 2027 Pensacola hotel signed. Confirm 2028-29 site votes, conference cost and exact nonprofit revenue; board minute is draft, not evidence sourcing stays open.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "February 2026 board discussion: 2027 Hilton Pensacola contract signed; future sites committee to bring 2028/2029 hotel/site proposals to Fall 2026 Board Meeting; Executive Director suggested for a larger negotiating role. Source marked draft.",
+      "curated_by_chatgpt": true,
+      "counterevidence_flags": [
+        "2027 hotel already contracted",
+        "Fall 2026 board vote may have already occurred"
+      ]
+    },
+    {
+      "organization": "Southern Association for College Admission Counseling",
+      "url": "https://www.sacac.org/annual-conference/",
+      "label": "Current independent meeting procurement incumbent HelmsBriscoe",
+      "needle": "SACAC works with Helms Briscoe on our meeting procurement and site selection",
+      "family": "venue-committed",
+      "tier": "watch",
+      "next_action": "Do not flag as open pre-RFP: HelmsBriscoe handles sourcing and hotel contracts run 2-3 years. Confirm whether any smaller distinct event remains influenceable.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "SACAC states its host hotels are contracted roughly 2-3 years in advance and Helms Briscoe handles meeting procurement/site selection.",
+      "curated_by_chatgpt": true,
+      "counterevidence_flags": [
+        "Named incumbent sourcing partner HelmsBriscoe",
+        "Hotels contracted 2-3 years ahead"
+      ]
     }
   ]
 }
