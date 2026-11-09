@@ -60,6 +60,50 @@ def model_summary(name, sources, financial):
         print("AI synthesis unavailable for",name,":",type(exc).__name__)
         return "", "unavailable"
 
+def research_priority_screen(org, screening):
+    """Research triage only. One credible primary-source clue can merit review.
+
+    Independent publisher count measures corroboration, not whether an
+    official committee minute is worth investigating. It never verifies
+    a contract is open or authorizes outreach.
+    """
+    evidence = org.get("evidence", [])
+    primary = [
+        item for item in evidence
+        if item.get("url", "").startswith(("https://", "http://"))
+        and (
+            item.get("source", "").lower().startswith("official")
+            or item.get("source_type") == "official"
+        )
+        and item.get("window_stage") == "possible_pre_rfp"
+        and item.get("cycle_decisions")
+    ]
+    conflict = bool(org.get("commitment_flags"))
+    stages = set(org.get("window_stages", []))
+    procurement = bool(stages.intersection(
+        {"host_bid_in_progress", "venue_rfp_or_bidding", "bid_deadline_passed"}))
+    eligible = bool(screening.get("eligible_event_years"))
+    if conflict:
+        bucket = "conflict-check"
+    elif eligible and not procurement and (primary or org.get("distinct_sources", 0) >= 2):
+        bucket = "research-next"
+    else:
+        bucket = "early-watch"
+    return {
+        "bucket": bucket,
+        "official_cycle_sources": len(primary),
+        "needs_event_year_procurement_check": procurement,
+        "reason": (
+            "Counterevidence or commitment requires review" if conflict else
+            "Official source identifies a future event-cycle decision; all buying checks remain open"
+            if bucket == "research-next" and primary else
+            "Multiple sources identify a possible future cycle; verify original decisions"
+            if bucket == "research-next" else
+            "No sufficiently supported, unobstructed event-year research opening yet"
+        ),
+    }
+
+
 def main():
     feed=read(ROOT/"data"/"signals.json",{})
     intel=read(ROOT/"data"/"intelligence.json",{})
@@ -125,12 +169,8 @@ def main():
             screening = dict(screening, approach_ready=False,
                              status='research_further' if screening['eligible_event_years'] else 'future_watch_or_skip',
                              warning='Host/venue procurement found in this organization. Confirm the exact event year and separate any future unawarded cycle before outreach.')
-        if org.get("commitment_flags"):
-            suggested="conflict-check"
-        elif screening["status"] == "research_further" and org.get("distinct_sources",0)>=2:
-            suggested="research-next"
-        else:
-            suggested="early-watch"
+        triage = research_priority_screen(org, screening)
+        suggested = triage["bucket"]
         missing=[
             "Confirm organizer and correct legal entity/EIN",
             "Verify two past conference cycles, expected next event and manageable scope",
@@ -147,6 +187,7 @@ def main():
             "signal_families":org.get("families",[]),
             "commitment_flags":org.get("commitment_flags",[]),
             "suggested_bucket":suggested,
+            "research_triage":triage,
             "pre_rfp_outreach_screen":screening,
             "evidence_digest":summary,
             "ai_summary":ai_text,"ai_status":ai_status,
