@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T06:43:02+00:00",
+  "generated_at": "2026-11-09T06:47:43+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -469,7 +469,7 @@
           "external_advisor_path_verified"
         ],
         "status": "future_watch_or_skip",
-        "warning": "Active host/venue procurement signal. Verify a separate future cycle before outreach."
+        "warning": "Host/venue procurement found in this organization. Confirm the exact event year and separate any future unawarded cycle before outreach."
       },
       "evidence_digest": "hip Nonprofit Law and Compliance Issues Program Management Public Policy Support for Rural Nonprofits Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most, and/or what you’d like to see us do differently Additional separate clue: R | April 12–13, 2027 | No longer accepting proposals Eastern Oregon Nonprofit Conference – Location TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a proposal to present at an upcoming NAO conference ? Proposals ar",
       "ai_summary": "The association’s public conference-input form invites feedback about previous conferences, while its speaking-opportunities page identifies a Fall 2027 Nonprofit Impact Conference. Together these are credible signals of an upcoming programming cycle and possible experience redesign, not evidence of a venue or planner search. A preliminary 2023 Form 990 match shows approximately $2.29 million in organizational revenue, but the legal entity/EIN and event-specific spend must be verified. Crucially, the published proposal windows concern speakers and sessions, not venue sourcing. Next: identify the 2027 conference operations owner, previous two venue contracts, expected room nights, whether hotel/venue decisions are already assigned, and whether a fee-paid outside cost assessment would be considered.",
@@ -891,7 +891,7 @@
           "external_advisor_path_verified"
         ],
         "status": "future_watch_or_skip",
-        "warning": "Active host/venue procurement signal. Verify a separate future cycle before outreach."
+        "warning": "Host/venue procurement found in this organization. Confirm the exact event year and separate any future unawarded cycle before outreach."
       },
       "evidence_digest": "The call for host proposals for future Neuroethics conferences in 2028 and 2029 will be announced in November.",
       "ai_summary": "",
