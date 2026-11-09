@@ -152,7 +152,7 @@ function bucketForPublic(b){
  // Legacy briefs without a screen stay in watch, never approach-ready.
  if(!screen)return 'early-window';
  if(screen.status==='future_watch_or_skip')return 'early-window';
- if(screen.status==='research_further'&&b.independent_publishers>=2)return 'research-next';
+ if(screen.status==='research_further'&&b.suggested_bucket==='research-next')return 'research-next';
  if(screen.status==='approach_soon')return 'research-next'; // manual 12-gate approval still required
  return 'early-window';
 }
