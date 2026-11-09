@@ -463,7 +463,10 @@ def evidence_groups(text):
 # Collect why indexed material failed. This is the most important
 # diagnostic for a scanner that fetches hundreds of hits but finds few leads.
 REJECTION_COUNTS={}
+LAST_REJECTION_REASON=""
 def reject(reason):
+    global LAST_REJECTION_REASON
+    LAST_REJECTION_REASON=reason
     REJECTION_COUNTS[reason]=REJECTION_COUNTS.get(reason,0)+1
     return None
 
@@ -532,6 +535,8 @@ def next_action(types,flags,play):
     return 'Confirm legal organizer, prior event cycles, next decision point, hotel commitments and current planner.'
 
 def as_candidate(article,query_label):
+    global LAST_REJECTION_REASON
+    LAST_REJECTION_REASON=""
     assessment=relevance(article,query_label)
     if not assessment:return None
     title,summary,url=article['title'],article['summary'],article['url']
@@ -776,9 +781,73 @@ def organization_stacks(items):
         out.append(group)
     return sorted(out,key=lambda g:(g['pre_rfp_research_priority'],g['distinct_sources']>=2,g['priority'],g['most_recent']),reverse=True)
 
+# A bounded, transparent journal of near-miss indexed results. The previous
+# scanner did not store rejects, so historical rejects must be rediscovered.
+# Save only public URL/title/short indexed excerpt. Never call these leads.
+REJECTION_ARCHIVE=ROOT/'data'/'rejected_candidates.json'
+REPLAY_REASONS={'organizer_name_missing','no_actionable_change_evidence',
+                'routine_event_announcement','speaker_proposal_not_venue'}
+REPLAY_MAX=350
+REPLAY_LOOKBACK_DAYS=90
+
+def rejected_archive():
+    try:
+        d=json.loads(REJECTION_ARCHIVE.read_text(encoding='utf-8'))
+        return [x for x in d.get('items',[]) if isinstance(x,dict) and x.get('url')]
+    except (OSError,ValueError,TypeError):
+        return []
+
+def rejected_record(article,reason,label,engine):
+    if reason not in REPLAY_REASONS:return None
+    url=article.get('url','').strip()
+    title=article.get('title','').strip()
+    if not url.startswith(('https://','http://')) or len(title)<10:return None
+    # RSS snippets can be incomplete or misleading; this remains a caution bucket.
+    ident=hashlib.sha256((url.split('#')[0].lower()+'|'+title.lower()).encode()).hexdigest()[:20]
+    return {'id':ident,'url':url[:700],'title':title[:200],
+            'summary':article.get('summary','')[:475],
+            'source':article.get('source','')[:120],
+            'published':article.get('published',''),
+            'query_id':label,'engine':engine,'reason':reason,
+            'first_seen':NOW.date().isoformat(),
+            'last_seen':NOW.date().isoformat(),
+            'review_status':'unqualified_near_miss',
+            'caution':'Public-index snippet only. No venue availability, buying intent or buyer fit established.'}
+
+def archive_rejected_item(archive,article,reason,label,engine):
+    item=rejected_record(article,reason,label,engine)
+    if item:
+        old=archive.get(item['id'])
+        if old:item['first_seen']=old.get('first_seen',item['first_seen'])
+        archive[item['id']]=item
+
+def replay_archived(previous_archive,seen):
+    checked=0;recovered=0
+    # Re-screen previously discarded snippets using the CURRENT filters.
+    # Rejected candidates never become qualified by being replayed.
+    for old in previous_archive:
+        if checked>=REPLAY_MAX:break
+        try:age=(NOW.date()-datetime.fromisoformat(old.get('last_seen','')).date()).days
+        except ValueError:age=9999
+        if age>REPLAY_LOOKBACK_DAYS:continue
+        checked+=1
+        source={k:old.get(k,'') for k in ('title','summary','url','source','published')}
+        item=as_candidate(source,old.get('query_id','replay'))
+        if item and item['id'] not in seen:
+            item['first_detected']=old.get('first_seen',NOW.date().isoformat())
+            item['replay_recovered']=True
+            item['replay_note']='Previously rejected indexed excerpt, now research-only under revised filters. Check original source before use.'
+            seen[item['id']]=item
+            recovered+=1
+    return checked,recovered
+
 def run():
     previous=existing()
     seen={}
+    prior_rejections=rejected_archive()
+    near_misses={x['id']:x for x in prior_rejections if x.get('id')}
+    archive_recovered=0
+    checked_rejected=0
     dropped_previous=0
     # Re-evaluate the old feed under new strict criteria. This is the *public*
     # discovery feed only. It does not erase private saved review/evidence notes.
@@ -796,6 +865,9 @@ def run():
             curr['detected']=x.get('detected',curr['detected'])
             seen[curr['id']]=curr
         else:dropped_previous+=1
+    # Replay before polling live public sources so filter changes can recover
+    # relevant older indexed snippets without losing the original audit trail.
+    checked_rejected,archive_recovered=replay_archived(prior_rejections,seen)
     fetched=0;failed=[];fresh=0;rejected=0;social_attempted=0;social_found=0
     light=os.environ.get('SF_LIGHT_SCAN','false').lower()=='true'
     selected=[(i,pair) for i,pair in enumerate(QUERIES) if not light or i % 6 == NOW.hour % 6]
@@ -811,7 +883,10 @@ def run():
                 articles=fetch_rss(scan_url(query,engine));fetched+=1
                 for a in articles[:25]:
                     item=as_candidate(a,label)
-                    if item is None:rejected+=1;continue
+                    if item is None:
+                        rejected+=1
+                        archive_rejected_item(near_misses,a,LAST_REJECTION_REASON,label,engine)
+                        continue
                     if item['id'] in seen:
                         old=seen[item['id']]
                         old['types']=sorted(set(old.get('types',[])+item['types']))
@@ -832,7 +907,10 @@ def run():
             articles=fetch_rss(scan_url(query,'web'));fetched+=1
             for a in articles[:20]:
                 item=as_candidate(a,label)
-                if item is None:rejected+=1;continue
+                if item is None:
+                    rejected+=1
+                    archive_rejected_item(near_misses,a,LAST_REJECTION_REASON,label,'public-web-index')
+                    continue
                 social_found+=1
                 if item['id'] in seen:
                     old=seen[item['id']]
@@ -906,6 +984,29 @@ def run():
          'organizations':organizations,'rejected_irrelevant_hits':rejected,
          'previous_noise_removed':dropped_previous,'rejection_reasons':dict(sorted(REJECTION_COUNTS.items(),key=lambda x:-x[1])),
          'errors':failed[:15],'signals':kept}
+    # Old material is retained only for bounded audit/replay, not indefinitely.
+    live_ids={x.get('id') for x in kept}
+    for ident in list(near_misses):
+        entry=near_misses[ident]
+        if ident in live_ids:
+            near_misses.pop(ident,None)
+            continue
+        try:age=(NOW.date()-datetime.fromisoformat(entry.get('last_seen','')).date()).days
+        except ValueError:age=9999
+        if age>REPLAY_LOOKBACK_DAYS:near_misses.pop(ident,None)
+    archive_items=sorted(near_misses.values(),key=lambda x:(x.get('last_seen',''),x.get('reason','')),reverse=True)[:REPLAY_MAX]
+    REJECTION_ARCHIVE.parent.mkdir(parents=True,exist_ok=True)
+    REJECTION_ARCHIVE.write_text(json.dumps({
+        'generated_at':NOW.isoformat(timespec='seconds'),
+        'purpose':'Auditable near-miss INDEXED RESULTS, not leads; automatically re-screened when discovery criteria change.',
+        'historical_warning':'Before this feature, discarded indexed items were NOT stored. Replaying earlier misses requires running the public searches again.',
+        'count':len(archive_items),'replayed_this_run':checked_rejected,
+        'recovered_this_run':archive_recovered,
+        'items':archive_items},indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    out['rejection_audit']={'archived_near_misses':len(archive_items),
+      'replayed_this_run':checked_rejected,'recovered_this_run':archive_recovered,
+      'historical_rejections_available':False,
+      'explanation':'Legacy rejected items were not preserved. This new journal saves near-misses and tests them again.'}
     DEST.parent.mkdir(parents=True,exist_ok=True)
     DEST.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print(f'Feeds OK={fetched}, failed={len(failed)}, new={fresh}, retained={len(kept)}, filtered={rejected}, old_noise_removed={dropped_previous}')
