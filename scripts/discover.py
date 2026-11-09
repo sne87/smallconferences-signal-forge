@@ -719,7 +719,9 @@ def official_watches(old_items):
                 # Preserve a dated snapshot with explicit stale-source warning.
                 raise ValueError('expected source passage absent or changed')
             checks+=1
-            excerpt=page[max(0,match.start()-60):min(len(page),match.end()+110)]
+            excerpt=page[max(0,match.start()-160):min(len(page),match.end()+310)]
+            watch_cycles=assess_cycles(excerpt,NOW.date())
+            watch_triage=select_next_cycle(watch_cycles,assess_opportunity(excerpt,NOW.date()))
             ident=hashlib.sha256(('watch:'+url).encode()).hexdigest()[:20]
             old=old_by_id.get(ident,{})
             family=spec.get('family','committee-reset')
@@ -734,9 +736,10 @@ def official_watches(old_items):
                'monitor_status':'Official source page fetched during this scan',
                'organization_candidate':org,'organization_key':org_key(org),
                'review_tier':'priority' if is_priority else 'watch',
-                'window_stage':select_next_cycle(assess_cycles(excerpt,NOW.date()),assess_opportunity(excerpt,NOW.date()))['stage'],
-                'cycle_decisions':assess_cycles(excerpt,NOW.date()),
-                'event_year':select_next_cycle(assess_cycles(excerpt,NOW.date()),assess_opportunity(excerpt,NOW.date())).get('event_year'),'strong_evidence':{family:excerpt} if is_priority else {},
+                'window_stage':watch_triage['stage'],
+                'pre_rfp_priority':watch_triage['pre_rfp_research_candidate'] and not spec.get('counterevidence_flags'),
+                'cycle_decisions':watch_cycles,
+                'event_year':watch_triage.get('event_year'),'strong_evidence':{family:excerpt} if is_priority else {},
                'early_evidence':{} if is_priority else {family:excerpt},
                'types':[family],'priority':61 if is_priority else 36,
                'query_id':'official-page-monitor','play':'Smart',
@@ -764,8 +767,10 @@ def official_watches(old_items):
                 old=old_by_id.get(ident,{})
                 family=spec.get('family','committee-reset')
                 is_priority=spec.get('tier')=='priority'
+                base_cycles=assess_cycles(baseline_text,NOW.date())
+                base_triage=select_next_cycle(base_cycles,assess_opportunity(baseline_text,NOW.date()))
                 item={'id':ident,'title':org+' | '+spec.get('label','Organizational conference watch'),
-                  'summary':baseline_text[:280], 'url':url,'source':'Official association page (research snapshot)',
+                  'summary':baseline_text[:480], 'url':url,'source':'Official association page (research snapshot)',
                   'published':'','indexed_date':'',
                   'date_basis':'Research snapshot checked '+baseline_date+'; runner could not access page in latest scan',
                   'origin':'official_watch','platform':'','original_post_checked':False,
@@ -774,6 +779,8 @@ def official_watches(old_items):
                   'monitor_status':('STALE RESEARCH ONLY: original page not rechecked since '+baseline_date if age>30 else 'NOT RECHECKED LIVE: saved public-source research baseline from '+baseline_date),
                   'organization_candidate':org,'organization_key':org_key(org),
                   'review_tier':'priority' if is_priority else 'watch',
+                  'window_stage':base_triage['stage'],'event_year':base_triage.get('event_year'),
+                  'cycle_decisions':base_cycles,'pre_rfp_priority':False,
                   'strong_evidence':{family:baseline_text} if is_priority else {},
                   'early_evidence':{} if is_priority else {family:baseline_text},
                   'types':[family],'priority':(20 if age>30 else 48 if is_priority else 30),
