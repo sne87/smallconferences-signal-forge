@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-08",
+  "caveat": "Published role records based on official association pages. Search public professional posts only. A board, committee or staff title does not prove outside planner purchasing authority, actual hotel contract status, or conference budget.",
+  "targets": [
+    {
+      "name": "Shawne Southard",
+      "organization": "North Carolina Association of Municipal Clerks",
+      "role": "2029 Site Selection Committee Chair",
+      "event_year": 2029,
+      "role_source": "https://ncamc.nclm.org/leadership/",
+      "verified_as_of": "2026-11-08",
+      "scope": "Site recommendation process; hotel contract signing authority not established"
+    },
+    {
+      "name": "Wesley Barker",
+      "organization": "North Carolina Association of Municipal Clerks",
+      "role": "2028 Site Selection Committee Chair",
+      "event_year": 2028,
+      "role_source": "https://ncamc.nclm.org/leadership/",
+      "verified_as_of": "2026-11-08",
+      "scope": "Site recommendation process; verify site selection is still open"
+    },
+    {
+      "name": "Terri Budde",
+      "organization": "Indiana League of Municipal Clerks and Treasurers",
+      "role": "2028 Conference Site Selection Committee Chair",
+      "event_year": 2028,
+      "role_source": "https://aimindiana.org/ilmct-committees/",
+      "verified_as_of": "2026-11-08",
+      "scope": "Conference site selection committee; paid vendor decision-making unknown"
+    },
+    {
+      "name": "Vicki Kitchen",
+      "organization": "Indiana League of Municipal Clerks and Treasurers",
+      "role": "2027 Annual Conference Co-Chair",
+      "event_year": 2027,
+      "role_source": "https://aimindiana.org/ilmct-committees/",
+      "verified_as_of": "2026-11-08",
+      "scope": "Conference planning role; check venue/hotel ownership separately"
+    },
+    {
+      "name": "Terri Buckmaster",
+      "organization": "Indiana League of Municipal Clerks and Treasurers",
+      "role": "2027 Annual Conference Co-Chair",
+      "event_year": 2027,
+      "role_source": "https://aimindiana.org/ilmct-committees/",
+      "verified_as_of": "2026-11-08",
+      "scope": "Conference planning role; check venue/hotel ownership separately"
+    },
+    {
+      "name": "Renee Johnson",
+      "organization": "Arkansas Education Association",
+      "role": "Executive Director",
+      "event_year": null,
+      "role_source": "https://www.aeaonline.org/about-aea/our-staff",
+      "verified_as_of": "2026-11-08",
+      "scope": "Executive leadership; no evidence of conference venue purchasing authority"
+    }
+  ]
+}
