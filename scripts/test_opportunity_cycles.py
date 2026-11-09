@@ -2,7 +2,7 @@
 import unittest
 from datetime import date
 from opportunity_gate import assess
-from opportunity_cycles import assess_cycles,select_next_cycle
+from opportunity_cycles import assess_cycles,select_next_cycle,outreach_screen
 TODAY=date(2026,11,8)
 
 class CycleTests(unittest.TestCase):
@@ -42,4 +42,30 @@ class CycleTests(unittest.TestCase):
   c=assess_cycles(t,TODAY)
   self.assertEqual([z['event_year'] for z in c],[2028,2029])
   self.assertTrue(all(z['multi_year_sentence'] for z in c))
+ def test_no_outreach_from_high_priority_host_bid(self):
+  cycles=[{'event_year':2028,'stage':'host_bid_in_progress','pre_rfp_research_candidate':False,
+           'commitment_evidence_same_year':False,'other_stages':['host_bid_in_progress'],
+           'counterevidence_flags':[]}]
+  self.assertFalse(outreach_screen(cycles,**{k:True for k in (
+   'legal_entity_verified','revenue_verified','recurring_event_verified','scope_verified',
+   'decision_owner_verified','decision_ahead_verified','incumbent_checked',
+   'external_advisor_path_verified')})['approach_ready'])
+ def test_pre_rfp_research_not_automatically_approach_ready(self):
+  cycles=assess_cycles('For the 2029 annual conference the site selection committee is reviewing venue options.',TODAY)
+  screen=outreach_screen(cycles)
+  self.assertEqual(screen['status'],'research_further')
+  self.assertFalse(screen['approach_ready'])
+  self.assertIn('external_advisor_path_verified',screen['missing_checks'])
+ def test_pre_rfp_with_same_year_rfp_not_promoted(self):
+  cycles=[{'event_year':2029,'stage':'possible_pre_rfp','pre_rfp_research_candidate':True,
+           'commitment_evidence_same_year':False,
+           'other_stages':['possible_pre_rfp','venue_rfp_or_bidding'],'counterevidence_flags':[]}]
+  self.assertEqual(outreach_screen(cycles)['status'],'future_watch_or_skip')
+ def test_complete_independent_checks_can_mark_outreach_screen_ready(self):
+  cycles=assess_cycles('For the 2029 annual conference the site selection committee is reviewing venue options.',TODAY)
+  flags={k:True for k in ('legal_entity_verified','revenue_verified','recurring_event_verified',
+      'scope_verified','decision_owner_verified','decision_ahead_verified',
+      'incumbent_checked','external_advisor_path_verified')}
+  self.assertTrue(outreach_screen(cycles,**flags)['approach_ready'])
+
 if __name__=='__main__':unittest.main()
