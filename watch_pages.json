@@ -256,6 +256,66 @@
       ],
       "curated_by_chatgpt": true,
       "curated_at": "2026-11-08"
+    },
+    {
+      "organization": "International Neuroethics Society",
+      "url": "https://neuroethicssociety.org/meeting/neuroethics-2027/",
+      "label": "November 2026 host invitation expected for 2028-2029; 175 person meeting",
+      "needle": "host proposals",
+      "family": "location-exploration",
+      "tier": "watch",
+      "next_action": "Check whether November call concerns hosts, hotels, or outside planning and whether a US meeting location is possible.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "The call for host proposals for future Neuroethics conferences in 2028 and 2029 will be announced in November.",
+      "curated_by_chatgpt": true
+    },
+    {
+      "organization": "Archivists for Congregations of Women Religious",
+      "url": "https://archivistsacwr.org/news/",
+      "label": "2028 triennial conference planning and volunteer committee",
+      "needle": "Planning for 2028 is underway",
+      "family": "committee-forming",
+      "tier": "watch",
+      "next_action": "Establish whether 2028 is hotel based rather than convent/campus based; confirm conference size, decision-maker and available venue sourcing.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "Planning for 2028 is underway and volunteers are being recruited for the Triennial Conference Planning Committee.",
+      "curated_by_chatgpt": true
+    },
+    {
+      "organization": "Catholic Media Association",
+      "url": "https://www.catholicmediaassociation.org/host-a-conference",
+      "label": "Invitation for future diocesan conference hosts 2028-2030",
+      "needle": "Now accepting invitations for June 2028, 2029 and 2030",
+      "family": "location-exploration",
+      "tier": "watch",
+      "next_action": "Confirm US host cities, hotel nights, proposed contract stage and if planning is assigned to host diocese or a paid planner.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "Now accepting invitations for June 2028, 2029 and 2030.",
+      "curated_by_chatgpt": true
+    },
+    {
+      "organization": "United States Association of Prides",
+      "url": "https://www.usaprides.org/conference/rfp",
+      "label": "2028-2030 member host proposal process, roughly 200 attendees",
+      "needle": "seeking member organizations to co-host",
+      "family": "location-exploration",
+      "tier": "watch",
+      "next_action": "Host application is already a formal process. Verify nonprofit revenue, hotel scope, and whether the selected host will need outside venue sourcing.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "USA Prides is seeking member organizations to co-host its annual conference in 2028, 2029 and 2030, with nearly 200 leaders attending.",
+      "curated_by_chatgpt": true
+    },
+    {
+      "organization": "University Research Managers Association",
+      "url": "https://urma.org/conferences/hosting-an-urma-conference/",
+      "label": "2028 host selection December 2026; hotel reservations January-June 2027",
+      "needle": "Reserve hotel and conference rooms",
+      "family": "location-exploration",
+      "tier": "watch",
+      "next_action": "The host application deadline was October 30, 2026. Track December host assignment, then identify who will source 2028 hotels in Jan-Jun 2027.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "December 2026: selected 2028 host is notified. January-June 2027: confirm dates and reserve hotel and conference rooms.",
+      "curated_by_chatgpt": true
     }
   ]
 }
