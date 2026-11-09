@@ -14,6 +14,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from daily_target import read_history, today_progress, update_history, write_history
 from opportunity_gate import assess as assess_opportunity
+from opportunity_cycles import assess_cycles, select_next_cycle
 from primary_source import selected_queries as primary_queries, enrich_index_hit, plausible_direct_page, read_public_pdf
 from social_monitor import (social_searches as targeted_social_searches,
     read_role_targets, platform_for_url, watch_record as public_social_record,
@@ -551,7 +552,8 @@ def relevance(article,label):
     if GENERIC_BLOG.search(title) or HARD_NEGATIVE.search(title) or CLOSED_LOCATION.search(title):return reject('blog_or_completed_site')
     txt=event_context(title,summary)
     if not EVENT_REGEX.search(txt):return reject('no_event_reference')
-    triage=assess_opportunity(txt,NOW.date())
+    cycles=assess_cycles(txt,NOW.date())
+    triage=select_next_cycle(cycles,assess_opportunity(txt,NOW.date()))
     if triage['stage'] in ('virtual_only','programming_only','bid_deadline_passed'):
         return reject('not_in_person_site_opportunity' if triage['stage']=='virtual_only' else
                       'speaker_program_not_venue' if triage['stage']=='programming_only' else 'past_site_bid_deadline')
@@ -582,7 +584,7 @@ def relevance(article,label):
         except ValueError:return reject('invalid_date')
     # Priority requires actual source-text evidence. Watch can be exploratory.
     tier='priority' if strong else 'watch'
-    return {'strong':strong,'weak':weak,'tier':tier,'organization':org,'triage':triage}
+    return {'strong':strong,'weak':weak,'tier':tier,'organization':org,'triage':triage,'cycles':cycles}
 
 def next_action(types,flags,play):
     if flags:return 'Check named hotel, planner and room-block commitments first. Is any useful scope still influenceable?'
@@ -600,13 +602,17 @@ def as_candidate(article,query_label):
     if not assessment:return None
     title,summary,url=article['title'],article['summary'],article['url']
     txt=event_context(title,summary)
-    flags=[k for k,pattern in COMMITMENT_CLUES if re.search(pattern,txt,re.I)]
+    whole_document_flags=[k for k,pattern in COMMITMENT_CLUES if re.search(pattern,txt,re.I)]
+    # A signed 2027 venue is not a 2029 contract. Keep its risk as a
+    # separate document-level note, but only score flags tied to this cycle.
+    flags=list(assessment['triage'].get('commitment_clues') or []) if assessment['triage'].get('cycle_assessed') else whole_document_flags
     types=list(assessment['strong'])+ [k for k in assessment['weak'] if k not in assessment['strong']]
     triage=assessment['triage']
+    cycle_excerpt=triage.get('cycle_evidence') or txt
     has_direct=('procurement' in assessment['strong'] and re.search(r'\b(?:planner|planning services|management services|consultant)\b',txt,re.I))
     play='Safe' if has_direct else ('Bold' if ('economics' in types or 'attendee-change' in types or 'economics-watch' in types) and not ('venue-decision' in types or 'committee-reset' in types) else 'Smart')
     score=min(92, (49 if assessment['tier']=='priority' else 28) + 9*min(len(assessment['strong']),3) + 5*min(len(assessment['weak']),3) + (7 if has_direct else 0) - 12*bool(flags))
-    score,robert_fit=robert_discovery_priority(types,txt,flags,score)
+    score,robert_fit=robert_discovery_priority(types,cycle_excerpt,flags,score)
     platform=source_platform(article,query_label) or ''
     is_social=bool(platform)
     date=article.get('published','')
@@ -620,11 +626,14 @@ def as_candidate(article,query_label):
       'organization_candidate':assessment['organization'],
       'organization_key':org_key(assessment['organization']),
       'review_tier':assessment['tier'],
-       'window_stage':triage['stage'],'bid_deadline':triage['deadline'],
+       'window_stage':triage['stage'],'event_year':triage.get('event_year'),
+       'cycle_decisions':assessment['cycles'],'cycle_evidence':triage.get('cycle_evidence',''),
+       'whole_document_commitment_flags':whole_document_flags,
+       'bid_deadline':triage['deadline'],
        'window_flags':triage['commitment_clues'],
        'hotel_scope_mentioned':triage['hotel_scope_mentioned'],
       'strong_evidence':assessment['strong'],'early_evidence':assessment['weak'],
-      'types':types,'priority':score,'robert_fit_clue':robert_fit,'pre_rfp_priority':triage['pre_rfp_research_candidate'] and not bool(flags) and not bool(RFP_PHASE.search(txt)),'query_id':query_label,'play':play,
+      'types':types,'priority':score,'robert_fit_clue':robert_fit,'pre_rfp_priority':triage['pre_rfp_research_candidate'] and not bool(flags) and not bool(RFP_PHASE.search(cycle_excerpt)),'query_id':query_label,'play':play,
       'next_action':(triage['next_step'] if triage['stage']!='watch_only' else next_action(types,flags,play)),'flags':flags,
       'signal_strength':('Specific indexed buying/planning clue, not a confirmed buyer' if assessment['tier']=='priority' else 'Early indexed clue; no purchasing intent established'),
       'signal_evidence':assessment['strong'] or assessment['weak'],
@@ -693,7 +702,10 @@ def official_watches(old_items):
                'last_checked':NOW.isoformat(timespec='seconds'),
                'monitor_status':'Official source page fetched during this scan',
                'organization_candidate':org,'organization_key':org_key(org),
-               'review_tier':'priority' if is_priority else 'watch','window_stage':assess_opportunity(excerpt,NOW.date())['stage'],'strong_evidence':{family:excerpt} if is_priority else {},
+               'review_tier':'priority' if is_priority else 'watch',
+                'window_stage':select_next_cycle(assess_cycles(excerpt,NOW.date()),assess_opportunity(excerpt,NOW.date()))['stage'],
+                'cycle_decisions':assess_cycles(excerpt,NOW.date()),
+                'event_year':select_next_cycle(assess_cycles(excerpt,NOW.date()),assess_opportunity(excerpt,NOW.date())).get('event_year'),'strong_evidence':{family:excerpt} if is_priority else {},
                'early_evidence':{} if is_priority else {family:excerpt},
                'types':[family],'priority':61 if is_priority else 36,
                'query_id':'official-page-monitor','play':'Smart',
@@ -812,12 +824,14 @@ def organization_stacks(items):
         if not key:continue
         group=groups.setdefault(key,{'key':key,'name':x.get('organization_candidate',''),
              'signal_ids':[],'families':set(),'sources':set(),'commitment_flags':set(),
-             'evidence':[],'priority_count':0,'watch_count':0,'most_recent':'','window_stages':set(),
+             'evidence':[],'priority_count':0,'watch_count':0,'most_recent':'','window_stages':set(),'event_years':set(),'cycle_candidates':set(),
              'play':'Smart','qualifying_status':'Requires manual verification'})
         group['signal_ids'].append(x['id'])
         group['first_detected']=min(group.get('first_detected','9999-12-31'),x.get('first_detected') or x.get('detected') or '9999-12-31')
         group['families'].update(x.get('types',[]))
         group['window_stages'].add(x.get('window_stage') or 'watch_only')
+        if x.get('event_year'):group['event_years'].add(x['event_year'])
+        if x.get('pre_rfp_priority') and x.get('event_year'):group['cycle_candidates'].add(x['event_year'])
         if x.get('review_tier')=='priority':group['priority_count']+=1
         else:group['watch_count']+=1
         group['commitment_flags'].update(x.get('flags',[]))
@@ -835,7 +849,9 @@ def organization_stacks(items):
                'counterevidence_flags':x.get('flags',[]),
                'families':x.get('types',[]),'tier':x.get('review_tier','watch'),
                 'window_stage':x.get('window_stage','watch_only'),'bid_deadline':x.get('bid_deadline',''),
-                'source_type':x.get('source_type','html'),'source_page_number':x.get('source_page_number')})
+                'source_type':x.get('source_type','html'),'source_page_number':x.get('source_page_number'),
+                'event_year':x.get('event_year'),'cycle_decisions':x.get('cycle_decisions',[]),
+                'whole_document_commitment_flags':x.get('whole_document_commitment_flags',[])})
     out=[]
     for group in groups.values():
         source_count=len(group['sources'])
@@ -848,9 +864,11 @@ def organization_stacks(items):
         group['families']=sorted(group['families'])
         group['commitment_flags']=sorted(group['commitment_flags'])
         group['window_stages']=sorted(group['window_stages'])
+        group['event_years']=sorted(group['event_years'])
+        group['cycle_candidates']=sorted(group['cycle_candidates'])
         group['early_signal_families']=sorted(set(group['families']) & set(ROBERT_EARLY_FAMILIES))
         group['robert_fit_screen']=preliminary_fit_gates(group)
-        group['pre_rfp_research_priority']=('possible_pre_rfp' in group['window_stages'] and not group['commitment_flags'] and 'procurement' not in group['families'] and group['financial_screen']['band'] not in ('above','below'))
+        group['pre_rfp_research_priority']=(bool(group['cycle_candidates']) and group['financial_screen']['band'] not in ('above','below'))
         group['priority']=min(92,28 + min(kind_count,4)*8 + min(source_count,3)*7 +
                               min(20,len(group['early_signal_families'])*10) +
                               (5 if group['priority_count'] else 0) -
