@@ -364,6 +364,54 @@
         "Internal volunteer site-selection committee",
         "2027 Hyatt Regency Jacksonville Riverwalk named"
       ]
+    },
+    {
+      "organization": "Oregon PRIMA Chapter",
+      "url": "https://orprima.starchapter.com/images/10-28-25_OR-PRIMA_Minutes.pdf",
+      "label": "Board documented 2025 venue complaints and 2028 site exploration",
+      "needle": "The Board explored venue options for the 2027 Spring Education Session and 2028 Fall Conference",
+      "family": "board-location",
+      "tier": "watch",
+      "source_document_date": "2025-10-27",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "October 2025 board minutes approved $36,449.41 Eagle Crest Resort payment and cited cleanliness/AV/food complaints; considered alternatives for 2027 Spring and 2028 Fall. 2027 fall city Hood River announced subsequently, 2028 commitments require fresh check.",
+      "next_action": "Find 2026 board minutes and confirm which 2028 Fall Conference location/hotel decision is still influenceable; quantify actual room nights and chapter revenue before Robert outreach.",
+      "counterevidence_flags": [
+        "Source decisions documented in 2025; may have changed",
+        "2027 Fall Conference location announced as Hood River"
+      ],
+      "curated_by_chatgpt": true
+    },
+    {
+      "organization": "Society for Historians of American Foreign Relations",
+      "url": "https://members.shafr.org/assets/docs/Council_Minutes/SHAFR-Council-01-2026.pdf",
+      "label": "Council selected 2028 Hague host but deferred 2030 site decision",
+      "needle": "The motion to defer the decision carried",
+      "family": "board-location",
+      "tier": "watch",
+      "source_document_date": "2026-01-16",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "January 2026 SHAFR council minutes approved The Hague for the 2028 conference and deferred selecting the 2030 site, encouraging Nashville and Dallas proposals for 2030. 2027 location and hotel blocks are now named.",
+      "next_action": "Check all later 2026 council minutes for 2030 site vote; do not present 2028 as open. Check whether a host university/campus leaves paid hotel leverage.",
+      "counterevidence_flags": [
+        "2028 city/host already selected",
+        "2027 hotel accommodations published",
+        "Campus-hosted model may limit independent sourcing"
+      ],
+      "curated_by_chatgpt": true
+    },
+    {
+      "organization": "networkED",
+      "url": "https://www.network-ed.org/open-positions",
+      "label": "Conference chair vacancy covers venue, catering and 2027-2028 budget",
+      "needle": "Leads planning for the annual Gateway to Innovation Conference",
+      "family": "capacity",
+      "tier": "watch",
+      "source_document_date": "2026-11",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review. Event size and nonprofit revenue unknown.",
+      "next_action": "Verify whether Gateway to Innovation attracts paid overnight hotel nights and meets Robert's scale, and whether an outside cost-assessment professional could supplement volunteer leadership.",
+      "curated_by_chatgpt": true
     }
   ]
 }
