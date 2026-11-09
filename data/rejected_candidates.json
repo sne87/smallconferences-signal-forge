@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T06:48:22+00:00",
+  "generated_at": "2026-11-09T06:51:35+00:00",
   "purpose": "Auditable near-miss INDEXED RESULTS, not leads; automatically re-screened when discovery criteria change.",
   "historical_warning": "Before this feature, discarded indexed items were NOT stored. Replaying earlier misses requires running the public searches again.",
   "count": 120,
