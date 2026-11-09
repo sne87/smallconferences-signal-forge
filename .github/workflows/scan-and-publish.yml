@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'qualification.html'
       - 'scripts/**'
       - 'watchlist.json'
       - 'watch_pages.json'
@@ -117,6 +118,7 @@ jobs:
         run: |
           mkdir -p dist/data
           cp index.html dist/index.html
+          cp qualification.html dist/qualification.html
           cp data/signals.json dist/data/signals.json
           cp data/intelligence.json dist/data/intelligence.json
           cp data/briefs.json dist/data/briefs.json
