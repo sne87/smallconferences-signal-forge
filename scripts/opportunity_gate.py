@@ -41,7 +41,10 @@ def assess(text, today=None):
     if deadline and deadline<today.isoformat(): flags.append('Posted bid deadline has passed')
     if host_bid: flags.append('Host-institution bid is not a hotel/planner services RFP')
     if speaker and not (host_bid or venue_bid or early): flags.append('Speaker/session proposal only')
-    if venue_bid:
+    if virtual:
+        stage='virtual_only'
+        action='Exclude unless a separate in-person event with hotel requirements is identified.'
+    elif venue_bid:
         stage='venue_rfp_or_bidding'
         action='An RFP or bid process may already be underway; verify whether outside help remains influenceable.'
     elif host_bid:
