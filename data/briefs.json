@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T06:47:43+00:00",
+  "generated_at": "2026-11-09T06:51:11+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -28,7 +28,13 @@
         "board-location"
       ],
       "commitment_flags": [],
-      "suggested_bucket": "early-watch",
+      "suggested_bucket": "research-next",
+      "research_triage": {
+        "bucket": "research-next",
+        "official_cycle_sources": 1,
+        "needs_event_year_procurement_check": false,
+        "reason": "Official source identifies a future event-cycle decision; all buying checks remain open"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [
@@ -87,7 +93,13 @@
         "location-exploration"
       ],
       "commitment_flags": [],
-      "suggested_bucket": "early-watch",
+      "suggested_bucket": "research-next",
+      "research_triage": {
+        "bucket": "research-next",
+        "official_cycle_sources": 1,
+        "needs_event_year_procurement_check": false,
+        "reason": "Official source identifies a future event-cycle decision; all buying checks remain open"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [
@@ -150,7 +162,13 @@
         "committee-forming"
       ],
       "commitment_flags": [],
-      "suggested_bucket": "early-watch",
+      "suggested_bucket": "research-next",
+      "research_triage": {
+        "bucket": "research-next",
+        "official_cycle_sources": 1,
+        "needs_event_year_procurement_check": false,
+        "reason": "Official source identifies a future event-cycle decision; all buying checks remain open"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [
@@ -208,7 +226,13 @@
         "committee-forming"
       ],
       "commitment_flags": [],
-      "suggested_bucket": "early-watch",
+      "suggested_bucket": "research-next",
+      "research_triage": {
+        "bucket": "research-next",
+        "official_cycle_sources": 1,
+        "needs_event_year_procurement_check": false,
+        "reason": "Official source identifies a future event-cycle decision; all buying checks remain open"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [
@@ -296,6 +320,12 @@
         "2027 host hotel already publicly named"
       ],
       "suggested_bucket": "conflict-check",
+      "research_triage": {
+        "bucket": "conflict-check",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "Counterevidence or commitment requires review"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -384,6 +414,12 @@
         "2027 host city already announced"
       ],
       "suggested_bucket": "conflict-check",
+      "research_triage": {
+        "bucket": "conflict-check",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "Counterevidence or commitment requires review"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -455,6 +491,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": true,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -526,6 +568,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -597,6 +645,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -653,6 +707,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -709,6 +769,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -765,6 +831,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -821,6 +893,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -877,6 +955,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": true,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -933,6 +1017,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -989,6 +1079,12 @@
       ],
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -1056,6 +1152,12 @@
         "Fall 2026 board vote may have already occurred"
       ],
       "suggested_bucket": "conflict-check",
+      "research_triage": {
+        "bucket": "conflict-check",
+        "official_cycle_sources": 1,
+        "needs_event_year_procurement_check": false,
+        "reason": "Counterevidence or commitment requires review"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [
@@ -1122,6 +1224,12 @@
         "Campus-hosted model may limit independent sourcing"
       ],
       "suggested_bucket": "conflict-check",
+      "research_triage": {
+        "bucket": "conflict-check",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "Counterevidence or commitment requires review"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -1189,6 +1297,12 @@
         "Internal volunteer site-selection committee"
       ],
       "suggested_bucket": "conflict-check",
+      "research_triage": {
+        "bucket": "conflict-check",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "Counterevidence or commitment requires review"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -1251,6 +1365,12 @@
         "Source decisions documented in 2025; may have changed"
       ],
       "suggested_bucket": "conflict-check",
+      "research_triage": {
+        "bucket": "conflict-check",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "Counterevidence or commitment requires review"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -1318,6 +1438,12 @@
         "Named incumbent sourcing partner HelmsBriscoe"
       ],
       "suggested_bucket": "conflict-check",
+      "research_triage": {
+        "bucket": "conflict-check",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "Counterevidence or commitment requires review"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
@@ -1380,6 +1506,12 @@
         "Host LOI process is already public; hotel bids scheduled November 2026"
       ],
       "suggested_bucket": "conflict-check",
+      "research_triage": {
+        "bucket": "conflict-check",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "Counterevidence or commitment requires review"
+      },
       "pre_rfp_outreach_screen": {
         "approach_ready": false,
         "eligible_event_years": [],
