@@ -33,6 +33,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Test replay filters and syntax
+        run: |
+          python -m py_compile scripts/discover.py scripts/merge_public_ai.py scripts/briefs.py
+          python scripts/test_discover_replay.py
       - name: Choose lightweight vs deep scan
         id: mode
         shell: bash
@@ -72,7 +76,7 @@ jobs:
           git fetch origin main
           git show origin/main:data/briefs.json > /tmp/signal-forge-remote-briefs.json || true
           python scripts/merge_public_ai.py /tmp/signal-forge-remote-briefs.json
-          git add data/signals.json data/intelligence.json data/briefs.json
+          git add data/signals.json data/intelligence.json data/briefs.json data/rejected_candidates.json
           if git diff --cached --quiet; then
             echo "No new public feed changes to commit."
             exit 0
@@ -101,6 +105,7 @@ jobs:
           cp data/signals.json dist/data/signals.json
           cp data/intelligence.json dist/data/intelligence.json
           cp data/briefs.json dist/data/briefs.json
+          cp data/rejected_candidates.json dist/data/rejected_candidates.json
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload site artifact
