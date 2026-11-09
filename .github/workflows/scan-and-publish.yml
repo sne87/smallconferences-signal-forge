@@ -33,13 +33,16 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install free PDF text extraction
+        run: python -m pip install --disable-pip-version-check 'pypdf>=5,<7'
       - name: Test replay filters and syntax
         run: |
-          python -m py_compile scripts/discover.py scripts/daily_target.py scripts/opportunity_gate.py scripts/primary_source.py scripts/social_monitor.py scripts/merge_public_social.py scripts/merge_public_ai.py scripts/briefs.py
+          python -m py_compile scripts/discover.py scripts/daily_target.py scripts/opportunity_gate.py scripts/primary_source.py scripts/test_governance_discovery.py scripts/social_monitor.py scripts/merge_public_social.py scripts/merge_public_ai.py scripts/briefs.py
           python scripts/test_discover_replay.py
           python scripts/test_daily_target.py
           python scripts/test_multilane_discovery.py
           python scripts/test_opportunity_gate.py
+          python scripts/test_governance_discovery.py
       - name: Choose lightweight vs deep scan
         id: mode
         shell: bash
