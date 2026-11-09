@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:09:41+00:00",
+  "generated_at": "2026-11-09T05:13:28+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -1122,6 +1122,28 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Southern Association of Student Financial Aid Administrators",
+      "state": "SC",
+      "input_ein": "581575818",
+      "financial": {
+        "status": "filing-found",
+        "match": "EIN supplied in watchlist",
+        "ein": "581575818",
+        "legal_name": "Southern Association Of Student Financial Aid Administrators Inc",
+        "fiscal_year": 2024,
+        "revenue": 501966,
+        "fit": "within",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/581575818.json",
+        "caveat": "Form 990 revenue is organization revenue, not conference spend."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
       "errors": [],
       "status": "investigation-only"
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:11:13+00:00",
+  "generated_at": "2026-11-09T05:15:03+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -752,6 +752,57 @@
       ],
       "suggested_bucket": "conflict-check",
       "evidence_digest": "ontract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville)",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "southern association of student financial aid administrators",
+      "name": "Southern Association of Student Financial Aid Administrators",
+      "fingerprint": "2016454b1c57f5f70c7a",
+      "first_detected": "2026-11-08",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "Southern Association of Student Financial Aid Administrators | Volunteer Site Selection Committee handles future hotel and event contracts",
+          "url": "https://sasfaa.org/Volunteer",
+          "source": "Official association page (research snapshot)",
+          "reported_date": "",
+          "note": "SASFAA maintains a Site Selection committee securing conference sites, contracts and board meeting locations; 2027 Jacksonville hotel is already public, 2028 venue still needs verification.",
+          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
+          "commitment_flags": [
+            "Internal volunteer site-selection committee",
+            "2027 Hyatt Regency Jacksonville Riverwalk named"
+          ]
+        }
+      ],
+      "financial": {
+        "revenue": 501966,
+        "fiscal_year": 2024,
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/581575818.json",
+        "match_status": "filing-found"
+      },
+      "signal_families": [
+        "location-exploration"
+      ],
+      "commitment_flags": [
+        "2027 Hyatt Regency Jacksonville Riverwalk named",
+        "Internal volunteer site-selection committee"
+      ],
+      "suggested_bucket": "conflict-check",
+      "evidence_digest": "SASFAA maintains a Site Selection committee securing conference sites, contracts and board meeting locations; 2027 Jacksonville hotel is already public, 2028 venue still needs verification.",
       "ai_summary": "",
       "ai_status": "not_configured",
       "ai_source": "",
