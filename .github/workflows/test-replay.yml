@@ -5,6 +5,8 @@ on:
     paths:
       - 'scripts/discover.py'
       - 'scripts/test_discover_replay.py'
+      - 'scripts/daily_target.py'
+      - 'scripts/test_daily_target.py'
       - '.github/workflows/test-replay.yml'
   workflow_dispatch:
 permissions:
@@ -20,5 +22,6 @@ jobs:
           python-version: '3.12'
       - name: Compile and test without network
         run: |
-          python -m py_compile scripts/discover.py
+          python -m py_compile scripts/discover.py scripts/daily_target.py
           python scripts/test_discover_replay.py
+          python scripts/test_daily_target.py
