@@ -52,6 +52,21 @@ class SourceTests(unittest.TestCase):
   merged=sm.combine_records(prior,[x],now)
   self.assertEqual(len(merged),1)
   self.assertEqual(merged[0]['first_seen'],'2026-11-06')
+ def test_merge_retains_social_posts_from_remote_chatgpt_sync(self):
+  import json
+  import merge_public_social as mp
+  from unittest.mock import patch
+  with TemporaryDirectory() as tmp:
+   local=Path(tmp)/'social_watch.json'
+   remote=Path(tmp)/'latest_git.json'
+   local.write_text(json.dumps({'items':[{'id':'local','url':'https://www.linkedin.com/posts/local','post_title':'Local'}]}))
+   remote.write_text(json.dumps({'generated_at':'2026-11-09','items':[{'id':'external','url':'https://www.linkedin.com/posts/external','post_title':'External','organizer_mentioned':'Named Association'}]}))
+   with patch.object(mp,'LOCAL',local):
+    mp.merge(remote)
+   out=json.loads(local.read_text())
+   self.assertEqual(out['public_posts_retained'],2)
+   self.assertEqual({x['id'] for x in out['items']},{'local','external'})
+
  def test_social_save_no_personal_data(self):
   with TemporaryDirectory() as tmp:
    now=datetime(2026,11,8,tzinfo=timezone.utc)
