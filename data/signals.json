@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-09T05:11:40+00:00",
+  "generated_at": "2026-11-09T05:29:51+00:00",
   "scanner_version": "5.1-opportunity-stage-first",
   "scan_mode": "deep",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
-  "scan_sources_ok": 205,
-  "official_pages_checked": 15,
-  "official_pages_monitored": 26,
+  "scan_sources_ok": 119,
+  "official_pages_checked": 17,
+  "official_pages_monitored": 29,
   "official_watch_errors": [
     "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
@@ -14,13 +14,14 @@
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed",
-    "International Neuroethics Society: ValueError expected source passage absent or changed",
-    "Archivists for Congregations of Women Religious: ValueError expected source passage absent or changed",
+    "International Neuroethics Society: HTTPError HTTP Error 403: Forbidden",
+    "Archivists for Congregations of Women Religious: HTTPError HTTP Error 403: Forbidden",
     "Catholic Media Association: ValueError expected source passage absent or changed",
-    "Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat"
+    "Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat",
+    "Oregon PRIMA Chapter: HTTPError HTTP Error 403: Forbidden"
   ],
   "scan_sources_failed": 12,
-  "scan_queries": 148,
+  "scan_queries": 85,
   "social_index_queries": 14,
   "named_public_role_targets": 6,
   "social_index_hits_seen": 140,
@@ -32,10 +33,11 @@
   "social_index_candidates_seen": 0,
   "primary_source_search_queries": 8,
   "primary_source_pages_attempted": 10,
-  "primary_source_pages_checked": 8,
+  "primary_source_pages_checked": 7,
   "primary_source_planning_passages": 0,
   "primary_source_research_candidates_added": 0,
   "primary_source_errors": [
+    "minutes-site-review: HTTPError HTTP Error 403: Forbidden",
     "minutes-budget-review: HTTPError HTTP Error 403: Forbidden",
     "minutes-conference-redesign: HTTPError HTTP Error 403: Forbidden"
   ],
@@ -46,7 +48,7 @@
     "x": 0,
     "reddit": 0
   },
-  "sources_attempted": 242,
+  "sources_attempted": 158,
   "coverage_warning": "Public RSS/news, direct association website excerpts and public indexed social post links. Social indexing is incomplete and employee affiliation/decision role unverified. Original publish dates of web excerpts may be unknown. None proves open hotel sourcing.",
   "daily_goal": {
     "date": "2026-11-08",
@@ -66,15 +68,15 @@
   "new_organizations": [],
   "new_organizations_count": 0,
   "new_source_watch_organizations": [
-    "Mid-South Educational Research Association",
-    "Southern Association of Student Financial Aid Administrators",
-    "Southern Association for College Admission Counseling"
+    "networkED",
+    "Society for Historians of American Foreign Relations",
+    "Oregon PRIMA Chapter"
   ],
   "new_source_watch_count": 3,
-  "curated_research_additions": 14,
+  "curated_research_additions": 17,
   "review_priority_count": 4,
-  "review_watch_count": 22,
-  "stacked_organizations": 19,
+  "review_watch_count": 25,
+  "stacked_organizations": 22,
   "organizations": [
     {
       "key": "hitop society",
@@ -103,7 +105,41 @@
           "window_stage": "possible_pre_rfp",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "possible_pre_rfp",
+              "pre_rfp_research_candidate": true,
+              "evidence_excerpt": "s - Strategic planning and member survey results presentation - Bylaws review and proposed revision - Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CME implementation options Note: AI was used to format meeting minutes.",
+              "other_stages": [
+                "possible_pre_rfp"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+            },
+            {
+              "event_year": 2029,
+              "stage": "possible_pre_rfp",
+              "pre_rfp_research_candidate": true,
+              "evidence_excerpt": "s - Strategic planning and member survey results presentation - Bylaws review and proposed revision - Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CME implementation options Note: AI was used to format meeting minutes.",
+              "other_stages": [
+                "possible_pre_rfp"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 1,
@@ -111,6 +147,12 @@
       "most_recent": "2026-11-08",
       "window_stages": [
         "possible_pre_rfp"
+      ],
+      "event_years": [
+        2027
+      ],
+      "cycle_candidates": [
+        2027
       ],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
@@ -142,6 +184,112 @@
       "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
     },
     {
+      "key": "national association of community development extension professionals",
+      "name": "National Association of Community Development Extension Professionals",
+      "signal_ids": [
+        "e0aa765f1bc390ed8ba6"
+      ],
+      "families": [
+        "location-exploration"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "e0aa765f1bc390ed8ba6",
+          "title": "National Association of Community Development Extension Professionals | 2028 conference host site solicitation for Southern land-grant institutions",
+          "url": "https://www.nacdep.net/2028-site-selection-files",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2026 site selection notice",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [],
+          "families": [
+            "location-exploration"
+          ],
+          "tier": "watch",
+          "window_stage": "possible_pre_rfp",
+          "bid_deadline": "",
+          "source_type": "html",
+          "source_page_number": null,
+          "event_year": 2028,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "As we prepare to gather in Portland, Oregon, in June 2027, the time is upon us to select the 2028 conference host site.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            },
+            {
+              "event_year": 2028,
+              "stage": "possible_pre_rfp",
+              "pre_rfp_research_candidate": true,
+              "evidence_excerpt": "2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference.",
+              "other_stages": [
+                "possible_pre_rfp",
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+            }
+          ],
+          "whole_document_commitment_flags": []
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "window_stages": [
+        "possible_pre_rfp"
+      ],
+      "event_years": [
+        2028
+      ],
+      "cycle_candidates": [
+        2028
+      ],
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "location-exploration"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": true,
+      "priority": 53,
+      "stack_stage": "single-source clue",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
       "key": "association for the study of higher education",
       "name": "Association for the Study of Higher Education",
       "signal_ids": [
@@ -168,7 +316,26 @@
           "window_stage": "possible_pre_rfp",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "possible_pre_rfp",
+              "pre_rfp_research_candidate": true,
+              "evidence_excerpt": "Term: 11/2026-11/2027 The Site Selection Committee makes recommendations about the sites of future conferences.",
+              "other_stages": [
+                "possible_pre_rfp"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -176,6 +343,12 @@
       "most_recent": "2026-11-08",
       "window_stages": [
         "possible_pre_rfp"
+      ],
+      "event_years": [
+        2027
+      ],
+      "cycle_candidates": [
+        2027
       ],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
@@ -237,7 +410,41 @@
           "window_stage": "possible_pre_rfp",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2028,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "Annual Conference Committee (2027) Co-Chair: Vicki Kitchen , Clerk-Treasurer, North Liberty Co-Chair: Terri Buckmaster , Clerk",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            },
+            {
+              "event_year": 2028,
+              "stage": "possible_pre_rfp",
+              "pre_rfp_research_candidate": true,
+              "evidence_excerpt": "mmittee Legislative Committee Membership Committee Mentor Committee Nominating Committee Parliamentarian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall be a conference Site Selection Committee appointed according to this rule.",
+              "other_stages": [
+                "possible_pre_rfp"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -245,6 +452,12 @@
       "most_recent": "2026-11-08",
       "window_stages": [
         "possible_pre_rfp"
+      ],
+      "event_years": [
+        2028
+      ],
+      "cycle_candidates": [
+        2028
       ],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
@@ -310,7 +523,26 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "pancy) + 16.9% taxes + $5 per night State of Georgia Hotel Motel fee = $307.77 per room, per night Rooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            }
+          ],
+          "whole_document_commitment_flags": []
         },
         {
           "id": "5495355894dd1bae53e6",
@@ -328,7 +560,10 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         },
         {
           "id": "3f964c6691eaa8e48c9f",
@@ -346,7 +581,10 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -355,6 +593,10 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [
+        2027
+      ],
+      "cycle_candidates": [],
       "play": "Bold",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
@@ -418,7 +660,10 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         },
         {
           "id": "de027aa5a16496824d30",
@@ -438,7 +683,10 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         },
         {
           "id": "3a16b563f667c3ca69c0",
@@ -458,7 +706,26 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "ALGA advertises the May 2–5, 2027 hybrid annual conference in Denver, which draws hundreds in person and online.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -467,6 +734,10 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [
+        2027
+      ],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
@@ -527,7 +798,10 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         },
         {
           "id": "00a7a89cdd60981d6e2d",
@@ -542,18 +816,44 @@
             "event-review"
           ],
           "tier": "watch",
-          "window_stage": "watch_only",
+          "window_stage": "host_bid_in_progress",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "host_bid_in_progress",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "R | April 12–13, 2027 | No longer accepting proposals Eastern Oregon Nonprofit Conference – Location TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a proposal to present at an upcoming NAO conference ? Proposals are currently under review.",
+              "other_stages": [
+                "host_bid_in_progress"
+              ],
+              "counterevidence_flags": [
+                "Host-institution bid is not a hotel/planner services RFP"
+              ],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Host selection is underway; identify who owns subsequent hotel decisions and their deadline."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
       "watch_count": 2,
       "most_recent": "2026-11-06",
       "window_stages": [
+        "host_bid_in_progress",
         "watch_only"
       ],
+      "event_years": [
+        2027
+      ],
+      "cycle_candidates": [],
       "play": "Bold",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
@@ -617,7 +917,26 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2029,
+          "cycle_decisions": [
+            {
+              "event_year": 2029,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            }
+          ],
+          "whole_document_commitment_flags": []
         },
         {
           "id": "bdda60c722506011eca5",
@@ -635,7 +954,10 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 1,
@@ -644,6 +966,10 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [
+        2029
+      ],
+      "cycle_candidates": [],
       "play": "Bold",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
@@ -699,10 +1025,29 @@
             "disruption"
           ],
           "tier": "watch",
-          "window_stage": "watch_only",
+          "window_stage": "planning_change_watch",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "planning_change_watch",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "The Conference is currently being shifted to Summer 2027.",
+              "other_stages": [
+                "planning_change_watch"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "A committee or timing change is real, but determine whether it changes hotel or planner sourcing."
+            }
+          ],
+          "whole_document_commitment_flags": []
         },
         {
           "id": "53d27bbb760d30f5643c",
@@ -720,15 +1065,23 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
       "watch_count": 2,
       "most_recent": "2026-11-06",
       "window_stages": [
+        "planning_change_watch",
         "watch_only"
       ],
+      "event_years": [
+        2027
+      ],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-06",
@@ -789,7 +1142,26 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2029,
+          "cycle_decisions": [
+            {
+              "event_year": 2029,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "Town of Montreat Anna Hughey, MMC, NCCMC Town of Maiden Betsy Shores, 2nd VP, Advisor Town of Davidson Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Citarelli, CMC, NCCMC Town of Surf City Makeba Robinson Cape Fear Pub Util Auth Beth Usery, MMC, NCCMC Caswell Beach Kristin Wells, NCCMC Town of Burgaw Donna Alwine, CMC, MMC, NCCMC Town of Wallburg Holl",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 1,
@@ -798,6 +1170,10 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [
+        2029
+      ],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
@@ -854,7 +1230,56 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2028,
+          "cycle_decisions": [
+            {
+              "event_year": 2028,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "Submit a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last two weeks of January or the first two weeks of February. ​ First held in Minneapolis, Minnesota in 2023, the Conference annually brings together nearly 200 leaders from Pride organizations of all size",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            },
+            {
+              "event_year": 2029,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "Submit a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last two weeks of January or the first two weeks of February. ​ First held in Minneapolis, Minnesota in 2023, the Conference annually brings together nearly 200 leaders from Pride organizations of all size",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            },
+            {
+              "event_year": 2030,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "Submit a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last two weeks of January or the first two weeks of February. ​ First held in Minneapolis, Minnesota in 2023, the Conference annually brings together nearly 200 leaders from Pride organizations of all size",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -863,6 +1288,10 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [
+        2028
+      ],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-09",
@@ -919,7 +1348,26 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "2027 January-June: Confirm conference dates. Reserve hotel and conference rooms.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -928,6 +1376,10 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [
+        2027
+      ],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-09",
@@ -958,44 +1410,49 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
-      "key": "national association of community development extension professionals",
-      "name": "National Association of Community Development Extension Professionals",
+      "key": "networked",
+      "name": "networkED",
       "signal_ids": [
-        "e0aa765f1bc390ed8ba6"
+        "91f7d60a9ddc13f088cb"
       ],
       "families": [
-        "location-exploration"
+        "capacity"
       ],
       "commitment_flags": [],
       "evidence": [
         {
-          "id": "e0aa765f1bc390ed8ba6",
-          "title": "National Association of Community Development Extension Professionals | 2028 conference host site solicitation for Southern land-grant institutions",
-          "url": "https://www.nacdep.net/2028-site-selection-files",
+          "id": "91f7d60a9ddc13f088cb",
+          "title": "networkED | Conference chair vacancy covers venue, catering and 2027-2028 budget",
+          "url": "https://www.network-ed.org/open-positions",
           "source": "Official association page (monitored)",
           "published": "",
-          "document_date": "2026 site selection notice",
+          "document_date": "2026-11",
           "freshness": "Official source page fetched during this scan",
           "counterevidence_flags": [],
           "families": [
-            "location-exploration"
+            "capacity"
           ],
           "tier": "watch",
-          "window_stage": "host_bid_in_progress",
+          "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
       "watch_count": 1,
-      "most_recent": "2026-11-08",
+      "most_recent": "2026-11-09",
       "window_stages": [
-        "host_bid_in_progress"
+        "watch_only"
       ],
+      "event_years": [],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-08",
+      "first_detected": "2026-11-09",
       "mentions": 1,
       "financial_screen": {
         "band": "unknown",
@@ -1003,11 +1460,11 @@
       },
       "distinct_sources": 1,
       "early_signal_families": [
-        "location-exploration"
+        "capacity"
       ],
       "robert_fit_screen": {
         "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
-        "recurring_event": "Research previous two event cycles",
+        "recurring_event": "No confirmed recurring event history",
         "event_spend": "Event budget, room nights and supplier spend unverified",
         "workload": "Attendance, days, tracks, exhibitors and staff unverified",
         "decision_maker": "Named purchasing authority and accessibility unverified",
@@ -1046,18 +1503,23 @@
             "location-exploration"
           ],
           "tier": "watch",
-          "window_stage": "watch_only",
+          "window_stage": "host_bid_in_progress",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
       "watch_count": 1,
       "most_recent": "2026-11-08",
       "window_stages": [
-        "watch_only"
+        "host_bid_in_progress"
       ],
+      "event_years": [],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
@@ -1111,18 +1573,41 @@
             "committee-forming"
           ],
           "tier": "watch",
-          "window_stage": "watch_only",
+          "window_stage": "planning_change_watch",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2028,
+          "cycle_decisions": [
+            {
+              "event_year": 2028,
+              "stage": "planning_change_watch",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "Planning for 2028 is underway and volunteers are being recruited for the Triennial Conference Planning Committee.",
+              "other_stages": [
+                "planning_change_watch"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "A committee or timing change is real, but determine whether it changes hotel or planner sourcing."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
       "watch_count": 1,
       "most_recent": "2026-11-08",
       "window_stages": [
-        "watch_only"
+        "planning_change_watch"
       ],
+      "event_years": [
+        2028
+      ],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
@@ -1179,7 +1664,10 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -1188,6 +1676,8 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
@@ -1247,18 +1737,72 @@
             "board-location"
           ],
           "tier": "priority",
-          "window_stage": "watch_only",
+          "window_stage": "possible_pre_rfp",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2029,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "tee, including new committee members. ● It was noted that the 2027 Annual Meeting now has a signed contract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville). ● A motion was made by Dr.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": true,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            },
+            {
+              "event_year": 2028,
+              "stage": "possible_pre_rfp_with_venue_risk",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "Jane Nell Luster to charge the previous and current Future Sites chairs with collaboratively bringing proposals as specified by the operations manual for the 2028 and 2029",
+              "other_stages": [
+                "possible_pre_rfp",
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": true,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+            },
+            {
+              "event_year": 2029,
+              "stage": "possible_pre_rfp",
+              "pre_rfp_research_candidate": true,
+              "evidence_excerpt": "Jane Nell Luster to charge the previous and current Future Sites chairs with collaboratively bringing proposals as specified by the operations manual for the 2028 and 2029",
+              "other_stages": [
+                "possible_pre_rfp"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 1,
       "watch_count": 0,
       "most_recent": "2026-11-09",
       "window_stages": [
-        "watch_only"
+        "possible_pre_rfp"
       ],
+      "event_years": [
+        2029
+      ],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-09",
@@ -1287,6 +1831,84 @@
       "priority": 40,
       "stack_stage": "single-source clue",
       "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
+    },
+    {
+      "key": "society for historians of american foreign relations",
+      "name": "Society for Historians of American Foreign Relations",
+      "signal_ids": [
+        "4954f01704167556b881"
+      ],
+      "families": [
+        "board-location"
+      ],
+      "commitment_flags": [
+        "2027 hotel accommodations published",
+        "2028 city/host already selected",
+        "Campus-hosted model may limit independent sourcing"
+      ],
+      "evidence": [
+        {
+          "id": "4954f01704167556b881",
+          "title": "Society for Historians of American Foreign Relations | Council selected 2028 Hague host but deferred 2030 site decision",
+          "url": "https://members.shafr.org/assets/docs/Council_Minutes/SHAFR-Council-01-2026.pdf",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2026-01-16",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [
+            "2028 city/host already selected",
+            "2027 hotel accommodations published",
+            "Campus-hosted model may limit independent sourcing"
+          ],
+          "families": [
+            "board-location"
+          ],
+          "tier": "watch",
+          "window_stage": "watch_only",
+          "bid_deadline": "",
+          "source_type": "html",
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-09",
+      "window_stages": [
+        "watch_only"
+      ],
+      "event_years": [],
+      "cycle_candidates": [],
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-09",
+      "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "board-location"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Potential commitment evidence present",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": false,
+      "priority": 35,
+      "stack_stage": "single-source clue",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
       "key": "southern association of student financial aid administrators",
@@ -1321,7 +1943,41 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "2027 Jacksonville hotel is already public, 2028 venue still needs verification.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            },
+            {
+              "event_year": 2028,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "2027 Jacksonville hotel is already public, 2028 venue still needs verification.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -1330,6 +1986,90 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [
+        2027
+      ],
+      "cycle_candidates": [],
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "financial_screen": {
+        "band": "within",
+        "revenue": 501966,
+        "filing_year": 2024,
+        "identity_status": "filing-found",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/581575818.json",
+        "warning": "Annual organizational revenue, not event budget. Confirm exact legal identity and most recent return."
+      },
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "location-exploration"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Potential commitment evidence present",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": false,
+      "priority": 35,
+      "stack_stage": "single-source clue",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "oregon prima chapter",
+      "name": "Oregon PRIMA Chapter",
+      "signal_ids": [
+        "976a40babc268bcd84f2"
+      ],
+      "families": [
+        "board-location"
+      ],
+      "commitment_flags": [
+        "2027 Fall Conference location announced as Hood River",
+        "Source decisions documented in 2025; may have changed"
+      ],
+      "evidence": [
+        {
+          "id": "976a40babc268bcd84f2",
+          "title": "Oregon PRIMA Chapter | Board documented 2025 venue complaints and 2028 site exploration",
+          "url": "https://orprima.starchapter.com/images/10-28-25_OR-PRIMA_Minutes.pdf",
+          "source": "Official association page (research snapshot)",
+          "published": "",
+          "document_date": "2025-10-27",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
+          "counterevidence_flags": [
+            "Source decisions documented in 2025; may have changed",
+            "2027 Fall Conference location announced as Hood River"
+          ],
+          "families": [
+            "board-location"
+          ],
+          "tier": "watch",
+          "window_stage": "watch_only",
+          "bid_deadline": "",
+          "source_type": "html",
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "window_stages": [
+        "watch_only"
+      ],
+      "event_years": [],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
@@ -1340,7 +2080,7 @@
       },
       "distinct_sources": 1,
       "early_signal_families": [
-        "location-exploration"
+        "board-location"
       ],
       "robert_fit_screen": {
         "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
@@ -1392,7 +2132,26 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": 2028,
+          "cycle_decisions": [
+            {
+              "event_year": 2028,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "We hope to announce the site of the 2028 Annual Conference soon! Contracts with host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": false,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            }
+          ],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -1401,6 +2160,10 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [
+        2028
+      ],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-09",
@@ -1461,7 +2224,10 @@
           "window_stage": "watch_only",
           "bid_deadline": "",
           "source_type": "html",
-          "source_page_number": null
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
         }
       ],
       "priority_count": 0,
@@ -1470,6 +2236,8 @@
       "window_stages": [
         "watch_only"
       ],
+      "event_years": [],
+      "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
       "first_detected": "2026-11-08",
@@ -1498,21 +2266,21 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 784,
+  "rejected_irrelevant_hits": 381,
   "previous_noise_removed": 0,
   "rejection_reasons": {
-    "no_event_reference": 454,
-    "organizer_name_missing": 193,
-    "excluded_host": 164,
-    "no_actionable_change_evidence": 42,
-    "blog_or_completed_site": 33,
+    "no_event_reference": 220,
+    "organizer_name_missing": 139,
+    "excluded_host": 81,
+    "no_actionable_change_evidence": 32,
+    "blog_or_completed_site": 13,
     "foreign_reference": 7,
-    "stale_or_future_index_date": 3,
-    "not_in_person_site_opportunity": 2,
-    "speaker_program_not_venue": 1
+    "speaker_program_not_venue": 1,
+    "legislative_committee_not_meeting_event": 1,
+    "stale_or_future_index_date": 1,
+    "not_in_person_site_opportunity": 1
   },
   "errors": [
-    "committee-formation (bing): ParseError: not well-formed (invalid token): line 1, column 41",
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
@@ -1520,16 +2288,17 @@
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed",
-    "official watch: International Neuroethics Society: ValueError expected source passage absent or changed",
-    "official watch: Archivists for Congregations of Women Religious: ValueError expected source passage absent or changed",
+    "official watch: International Neuroethics Society: HTTPError HTTP Error 403: Forbidden",
+    "official watch: Archivists for Congregations of Women Religious: HTTPError HTTP Error 403: Forbidden",
     "official watch: Catholic Media Association: ValueError expected source passage absent or changed",
-    "official watch: Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat"
+    "official watch: Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat",
+    "official watch: Oregon PRIMA Chapter: HTTPError HTTP Error 403: Forbidden"
   ],
   "signals": [
     {
       "id": "3e6ecf6e3bda131c950b",
       "title": "Mid-South Educational Research Association | Board minutes: 2028-2029 venue proposals and Executive Director negotiation role",
-      "summary": "ontract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville)",
+      "summary": "tee, including new committee members. ● It was noted that the 2027 Annual Meeting now has a signed contract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville). ● A motion was made by Dr. Jane Nell",
       "url": "https://www.msera.org/_files/ugd/90ff5d_d5ca989918fb46bb82163a0026f5d727.pdf",
       "source": "Official association page (monitored)",
       "published": "",
@@ -1540,14 +2309,64 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Mid-South Educational Research Association",
       "organization_key": "mid south educational research association",
       "review_tier": "priority",
-      "window_stage": "watch_only",
+      "window_stage": "possible_pre_rfp",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "tee, including new committee members. ● It was noted that the 2027 Annual Meeting now has a signed contract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville). ● A motion was made by Dr.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": true,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        },
+        {
+          "event_year": 2028,
+          "stage": "possible_pre_rfp_with_venue_risk",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "Jane Nell Luster to charge the previous and current Future Sites chairs with collaboratively bringing proposals as specified by the operations manual for the 2028 and 2029",
+          "other_stages": [
+            "possible_pre_rfp",
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": true,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+        },
+        {
+          "event_year": 2029,
+          "stage": "possible_pre_rfp",
+          "pre_rfp_research_candidate": true,
+          "evidence_excerpt": "Jane Nell Luster to charge the previous and current Future Sites chairs with collaboratively bringing proposals as specified by the operations manual for the 2028 and 2029",
+          "other_stages": [
+            "possible_pre_rfp"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+        }
+      ],
+      "event_year": 2029,
       "strong_evidence": {
-        "board-location": "ontract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville)"
+        "board-location": "tee, including new committee members. ● It was noted that the 2027 Annual Meeting now has a signed contract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville). ● A motion was made by Dr. Jane Nell Luster to charge the previous and current Future Sites chairs with collaboratively bringing proposals as specified by the operations manual for the 2028 and 2029"
       },
       "early_evidence": {},
       "types": [
@@ -1564,7 +2383,7 @@
       "source_document_date": "",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "board-location": "ontract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville)"
+        "board-location": "tee, including new committee members. ● It was noted that the 2027 Annual Meeting now has a signed contract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville). ● A motion was made by Dr. Jane Nell Luster to charge the previous and current Future Sites chairs with collaboratively bringing proposals as specified by the operations manual for the 2028 and 2029"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -1605,7 +2424,7 @@
     {
       "id": "5c8775ee949b041e7e3c",
       "title": "United States Association of Prides | 2028-2030 member host proposal process, roughly 200 attendees",
-      "summary": " a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last ",
+      "summary": "Sign-In Host a Future USA Prides Conference! Want to host the USA Prides National Conference? Submit a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last two weeks of January or the first two weeks of Febr",
       "url": "https://www.usaprides.org/conference/rfp",
       "source": "Official association page (monitored)",
       "published": "",
@@ -1616,15 +2435,64 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "United States Association of Prides",
       "organization_key": "united states association of prides",
       "review_tier": "watch",
       "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [
+        {
+          "event_year": 2028,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "Submit a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last two weeks of January or the first two weeks of February. ​ First held in Minneapolis, Minnesota in 2023, the Conference annually brings together nearly 200 leaders from Pride organizations of all size",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        },
+        {
+          "event_year": 2029,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "Submit a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last two weeks of January or the first two weeks of February. ​ First held in Minneapolis, Minnesota in 2023, the Conference annually brings together nearly 200 leaders from Pride organizations of all size",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        },
+        {
+          "event_year": 2030,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "Submit a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last two weeks of January or the first two weeks of February. ​ First held in Minneapolis, Minnesota in 2023, the Conference annually brings together nearly 200 leaders from Pride organizations of all size",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        }
+      ],
+      "event_year": 2028,
       "strong_evidence": {},
       "early_evidence": {
-        "location-exploration": " a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last "
+        "location-exploration": "Sign-In Host a Future USA Prides Conference! Want to host the USA Prides National Conference? Submit a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last two weeks of January or the first two weeks of February. ​ First held in Minneapolis, Minnesota in 2023, the Conference annually brings together nearly 200 leaders from Pride organizations of all size"
       },
       "types": [
         "location-exploration"
@@ -1637,7 +2505,7 @@
       "source_document_date": "",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "location-exploration": " a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last "
+        "location-exploration": "Sign-In Host a Future USA Prides Conference! Want to host the USA Prides National Conference? Submit a proposal! ​ ​ The United States Association of Prides is seeking member organizations to co-host our annual conference in 2028, 2029, and 2030. The ideal conference dates would be a weekend during the last two weeks of January or the first two weeks of February. ​ First held in Minneapolis, Minnesota in 2023, the Conference annually brings together nearly 200 leaders from Pride organizations of all size"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -1648,7 +2516,7 @@
     {
       "id": "2cde45977bef20783658",
       "title": "University Research Managers Association | 2028 host selection December 2026; hotel reservations January-June 2027",
-      "summary": " by the board! 2027 January-June: Confirm conference dates. Reserve hotel and conference rooms. Start thinking about time slots, possible speakers, a reception, and a field trip. June: Announce 2028 host ",
+      "summary": "epare application. October: Finalize and submit application December: Selected 2028 host is notified by the board! 2027 January-June: Confirm conference dates. Reserve hotel and conference rooms. Start thinking about time slots, possible speakers, a reception, and a field trip. June: Announce 2028 host location to membership. Develop conference planning comm",
       "url": "https://urma.org/conferences/hosting-an-urma-conference/",
       "source": "Official association page (monitored)",
       "published": "",
@@ -1659,15 +2527,34 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "University Research Managers Association",
       "organization_key": "university research managers association",
       "review_tier": "watch",
       "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "2027 January-June: Confirm conference dates. Reserve hotel and conference rooms.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        }
+      ],
+      "event_year": 2027,
       "strong_evidence": {},
       "early_evidence": {
-        "location-exploration": " by the board! 2027 January-June: Confirm conference dates. Reserve hotel and conference rooms. Start thinking about time slots, possible speakers, a reception, and a field trip. June: Announce 2028 host "
+        "location-exploration": "epare application. October: Finalize and submit application December: Selected 2028 host is notified by the board! 2027 January-June: Confirm conference dates. Reserve hotel and conference rooms. Start thinking about time slots, possible speakers, a reception, and a field trip. June: Announce 2028 host location to membership. Develop conference planning committee June-December: Discuss potential conference line-up with board. Get feedback from membership. Line up speakers and plan field trips and ac"
       },
       "types": [
         "location-exploration"
@@ -1680,7 +2567,7 @@
       "source_document_date": "",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "location-exploration": " by the board! 2027 January-June: Confirm conference dates. Reserve hotel and conference rooms. Start thinking about time slots, possible speakers, a reception, and a field trip. June: Announce 2028 host "
+        "location-exploration": "epare application. October: Finalize and submit application December: Selected 2028 host is notified by the board! 2027 January-June: Confirm conference dates. Reserve hotel and conference rooms. Start thinking about time slots, possible speakers, a reception, and a field trip. June: Announce 2028 host location to membership. Develop conference planning committee June-December: Discuss potential conference line-up with board. Get feedback from membership. Line up speakers and plan field trips and ac"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -1721,7 +2608,7 @@
     {
       "id": "e69b869d8ba1c5c1938f",
       "title": "Southern Association for College Admission Counseling | Current independent meeting procurement incumbent HelmsBriscoe",
-      "summary": "ith host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection. There are many considerations given to selecting a location such as space constraints, sleeping room needs, ",
+      "summary": "is the next conference? We hope to announce the site of the 2028 Annual Conference soon! Contracts with host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection. There are many considerations given to selecting a location such as space constraints, sleeping room needs, cost, ease of ",
       "url": "https://www.sacac.org/annual-conference/",
       "source": "Official association page (monitored)",
       "published": "",
@@ -1732,15 +2619,34 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Southern Association for College Admission Counseling",
       "organization_key": "southern association for college admission counseling",
       "review_tier": "watch",
       "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [
+        {
+          "event_year": 2028,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "We hope to announce the site of the 2028 Annual Conference soon! Contracts with host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        }
+      ],
+      "event_year": 2028,
       "strong_evidence": {},
       "early_evidence": {
-        "venue-committed": "ith host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection. There are many considerations given to selecting a location such as space constraints, sleeping room needs, "
+        "venue-committed": "is the next conference? We hope to announce the site of the 2028 Annual Conference soon! Contracts with host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection. There are many considerations given to selecting a location such as space constraints, sleeping room needs, cost, ease of travel, etc. If you have questions about how we navigate this process, please contact Annual Conference Chair Cory Bailey at annualconference@sacac.org . Thank to you to our 2027 Confere"
       },
       "types": [
         "venue-committed"
@@ -1756,7 +2662,103 @@
       "source_document_date": "",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "venue-committed": "ith host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection. There are many considerations given to selecting a location such as space constraints, sleeping room needs, "
+        "venue-committed": "is the next conference? We hope to announce the site of the 2028 Annual Conference soon! Contracts with host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection. There are many considerations given to selecting a location such as space constraints, sleeping room needs, cost, ease of travel, etc. If you have questions about how we navigate this process, please contact Annual Conference Chair Cory Bailey at annualconference@sacac.org . Thank to you to our 2027 Confere"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "4954f01704167556b881",
+      "title": "Society for Historians of American Foreign Relations | Council selected 2028 Hague host but deferred 2030 site decision",
+      "summary": "2030. One vote was cast in favor of Nashville, three votes were cast in favor of Dallas, and ten votes were cast in favor of not selecting a site at this time. The motion to defer the decision carried. Council directed Immerman to encourage Vanderbilt and the CPH to resubmit their proposals for 2030. Immerman then provided an overview of ﬁnancial matters. At",
+      "url": "https://members.shafr.org/assets/docs/Council_Minutes/SHAFR-Council-01-2026.pdf",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-09; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-09",
+      "first_detected": "2026-11-09",
+      "last_checked": "2026-11-09T05:29:51+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Society for Historians of American Foreign Relations",
+      "organization_key": "society for historians of american foreign relations",
+      "review_tier": "watch",
+      "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [],
+      "event_year": null,
+      "strong_evidence": {},
+      "early_evidence": {
+        "board-location": "2030. One vote was cast in favor of Nashville, three votes were cast in favor of Dallas, and ten votes were cast in favor of not selecting a site at this time. The motion to defer the decision carried. Council directed Immerman to encourage Vanderbilt and the CPH to resubmit their proposals for 2030. Immerman then provided an overview of ﬁnancial matters. At the June meeting, SHAFR’s ﬁnancial outlook appeared concerning, prompting several major decisions. These included moving Diplomatic History and Passp"
+      },
+      "types": [
+        "board-location"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Check all later 2026 council minutes for 2030 site vote; do not present 2028 as open. Check whether a host university/campus leaves paid hotel leverage.",
+      "flags": [
+        "2028 city/host already selected",
+        "2027 hotel accommodations published",
+        "Campus-hosted model may limit independent sourcing"
+      ],
+      "source_document_date": "2026-01-16",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "board-location": "2030. One vote was cast in favor of Nashville, three votes were cast in favor of Dallas, and ten votes were cast in favor of not selecting a site at this time. The motion to defer the decision carried. Council directed Immerman to encourage Vanderbilt and the CPH to resubmit their proposals for 2030. Immerman then provided an overview of ﬁnancial matters. At the June meeting, SHAFR’s ﬁnancial outlook appeared concerning, prompting several major decisions. These included moving Diplomatic History and Passp"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "91f7d60a9ddc13f088cb",
+      "title": "networkED | Conference chair vacancy covers venue, catering and 2027-2028 budget",
+      "summary": "diences Strong organizational and communication skills View the full Professional Outreach Chair job description (opens in a new tab) Conference Planning Chair Leads planning for the annual Gateway to Innovation Conference, from theme and speakers to venue, budget and the post-conference review. Term Two years, renewable once by majority vote Time About 5 to",
+      "url": "https://www.network-ed.org/open-positions",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-09; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-09",
+      "first_detected": "2026-11-09",
+      "last_checked": "2026-11-09T05:29:51+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "networkED",
+      "organization_key": "networked",
+      "review_tier": "watch",
+      "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [],
+      "event_year": null,
+      "strong_evidence": {},
+      "early_evidence": {
+        "capacity": "diences Strong organizational and communication skills View the full Professional Outreach Chair job description (opens in a new tab) Conference Planning Chair Leads planning for the annual Gateway to Innovation Conference, from theme and speakers to venue, budget and the post-conference review. Term Two years, renewable once by majority vote Time About 5 to 10 hours a month Reports to Executive Board Full role description Hide role description What you'll do Set the conference theme, objectives and planning timeline with the "
+      },
+      "types": [
+        "capacity"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Verify whether Gateway to Innovation attracts paid overnight hotel nights and meets Robert's scale, and whether an outside cost-assessment professional could supplement volunteer leadership.",
+      "flags": [],
+      "source_document_date": "2026-11",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "capacity": "diences Strong organizational and communication skills View the full Professional Outreach Chair job description (opens in a new tab) Conference Planning Chair Leads planning for the annual Gateway to Innovation Conference, from theme and speakers to venue, budget and the post-conference review. Term Two years, renewable once by majority vote Time About 5 to 10 hours a month Reports to Executive Board Full role description Hide role description What you'll do Set the conference theme, objectives and planning timeline with the "
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -1767,7 +2769,7 @@
     {
       "id": "ed4e16fb216af61b63cf",
       "title": "North Carolina Association of Municipal Clerks | 2029 conference site-selection committee with named chair",
-      "summary": "on Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Cita",
+      "summary": "Town of Montreat Anna Hughey, MMC, NCCMC Town of Maiden Betsy Shores, 2nd VP, Advisor Town of Davidson Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Citarelli, CMC, NCCMC Town of Surf City Makeba Robinson Cape Fear Pub Uti",
       "url": "https://ncamc.nclm.org/leadership/",
       "source": "Official association page (monitored)",
       "published": "",
@@ -1778,14 +2780,33 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "North Carolina Association of Municipal Clerks",
       "organization_key": "north carolina association of municipal clerks",
       "review_tier": "priority",
       "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [
+        {
+          "event_year": 2029,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "Town of Montreat Anna Hughey, MMC, NCCMC Town of Maiden Betsy Shores, 2nd VP, Advisor Town of Davidson Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Citarelli, CMC, NCCMC Town of Surf City Makeba Robinson Cape Fear Pub Util Auth Beth Usery, MMC, NCCMC Caswell Beach Kristin Wells, NCCMC Town of Burgaw Donna Alwine, CMC, MMC, NCCMC Town of Wallburg Holl",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        }
+      ],
+      "event_year": 2029,
       "strong_evidence": {
-        "committee-forming": "on Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Cita"
+        "committee-forming": "Town of Montreat Anna Hughey, MMC, NCCMC Town of Maiden Betsy Shores, 2nd VP, Advisor Town of Davidson Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Citarelli, CMC, NCCMC Town of Surf City Makeba Robinson Cape Fear Pub Util Auth Beth Usery, MMC, NCCMC Caswell Beach Kristin Wells, NCCMC Town of Burgaw Donna Alwine, CMC, MMC, NCCMC Town of Wallburg Holl"
       },
       "early_evidence": {},
       "types": [
@@ -1799,7 +2820,7 @@
       "source_document_date": "2025-26 leadership listing",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "committee-forming": "on Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Cita"
+        "committee-forming": "Town of Montreat Anna Hughey, MMC, NCCMC Town of Maiden Betsy Shores, 2nd VP, Advisor Town of Davidson Katie Hertel NCLM Baxter Wells, Secretary/Treasurer NCLM Site Selection - 2029 Chair: Shawne Southard, CMC, NCCMC Town of Morehead City Jamie Whitley, CMC, NCCMC Town of Manteo Carla, Citarelli, CMC, NCCMC Town of Surf City Makeba Robinson Cape Fear Pub Util Auth Beth Usery, MMC, NCCMC Caswell Beach Kristin Wells, NCCMC Town of Burgaw Donna Alwine, CMC, MMC, NCCMC Town of Wallburg Holl"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -1810,7 +2831,7 @@
     {
       "id": "63c5a08cda63cec8f704",
       "title": "HiTOP Society | 2027-2029 future site discussion and committee planning",
-      "summary": "- Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CM",
+      "summary": "s - Strategic planning and member survey results presentation - Bylaws review and proposed revision - Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CME implementation options Note: AI",
       "url": "https://www.hitop-system.org/the-executive-committee-meeting-minutes",
       "source": "Official association page (monitored)",
       "published": "",
@@ -1821,14 +2842,48 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "HiTOP Society",
       "organization_key": "hitop society",
       "review_tier": "priority",
       "window_stage": "possible_pre_rfp",
+      "pre_rfp_priority": true,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "possible_pre_rfp",
+          "pre_rfp_research_candidate": true,
+          "evidence_excerpt": "s - Strategic planning and member survey results presentation - Bylaws review and proposed revision - Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CME implementation options Note: AI was used to format meeting minutes.",
+          "other_stages": [
+            "possible_pre_rfp"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+        },
+        {
+          "event_year": 2029,
+          "stage": "possible_pre_rfp",
+          "pre_rfp_research_candidate": true,
+          "evidence_excerpt": "s - Strategic planning and member survey results presentation - Bylaws review and proposed revision - Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CME implementation options Note: AI was used to format meeting minutes.",
+          "other_stages": [
+            "possible_pre_rfp"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+        }
+      ],
+      "event_year": 2027,
       "strong_evidence": {
-        "board-location": "- Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CM"
+        "board-location": "s - Strategic planning and member survey results presentation - Bylaws review and proposed revision - Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CME implementation options Note: AI was used to format meeting minutes. For questions about content on this page, please contact: Kelsie Forbush Get Involved in the HiTOP Society New members are always "
       },
       "early_evidence": {},
       "types": [
@@ -1842,7 +2897,7 @@
       "source_document_date": "2026 committee minutes",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "board-location": "- Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CM"
+        "board-location": "s - Strategic planning and member survey results presentation - Bylaws review and proposed revision - Organizational infrastructure and governance discussion - Future conference planning and site selection (2027–2029) - DEI Committee and Awards Committee formation - Leadership succession planning - Continuing education and CME implementation options Note: AI was used to format meeting minutes. For questions about content on this page, please contact: Kelsie Forbush Get Involved in the HiTOP Society New members are always "
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -1883,7 +2938,7 @@
     {
       "id": "e0aa765f1bc390ed8ba6",
       "title": "National Association of Community Development Extension Professionals | 2028 conference host site solicitation for Southern land-grant institutions",
-      "summary": "conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past ",
+      "summary": "! As we prepare to gather in Portland, Oregon, in June 2027, the time is upon us to select the 2028 conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past conference applications are avai",
       "url": "https://www.nacdep.net/2028-site-selection-files",
       "source": "Official association page (monitored)",
       "published": "",
@@ -1894,15 +2949,50 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "National Association of Community Development Extension Professionals",
       "organization_key": "national association of community development extension professionals",
       "review_tier": "watch",
-      "window_stage": "host_bid_in_progress",
+      "window_stage": "possible_pre_rfp",
+      "pre_rfp_priority": true,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "As we prepare to gather in Portland, Oregon, in June 2027, the time is upon us to select the 2028 conference host site.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        },
+        {
+          "event_year": 2028,
+          "stage": "possible_pre_rfp",
+          "pre_rfp_research_candidate": true,
+          "evidence_excerpt": "2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference.",
+          "other_stages": [
+            "possible_pre_rfp",
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+        }
+      ],
+      "event_year": 2028,
       "strong_evidence": {},
       "early_evidence": {
-        "location-exploration": "conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past "
+        "location-exploration": "! As we prepare to gather in Portland, Oregon, in June 2027, the time is upon us to select the 2028 conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past conference applications are available on this page, along with the current application template for the 2028 NACDEP conference. Send applications to Ricky Atkins ( [email protected] ) and cc Past Pres"
       },
       "types": [
         "location-exploration"
@@ -1915,7 +3005,7 @@
       "source_document_date": "2026 site selection notice",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "location-exploration": "conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past "
+        "location-exploration": "! As we prepare to gather in Portland, Oregon, in June 2027, the time is upon us to select the 2028 conference host site. 2028 NACDEP Conference Site Selection NACDEP is currently seeking a site for its 2028 conference. Applications are open to land-grant institutions, with preference for the Southern region. Examples of past conference applications are available on this page, along with the current application template for the 2028 NACDEP conference. Send applications to Ricky Atkins ( [email protected] ) and cc Past Pres"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -1926,7 +3016,7 @@
     {
       "id": "d06cddf89b4cbbe4e452",
       "title": "Association for the Study of Higher Education | 2030-2031 site selection committee begins late 2026",
-      "summary": "experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The ",
+      "summary": "-2 hours per month Consider joining this committee if: are interested in learning about and/or have experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The Site Selection Committee makes recommendations about the sites of ",
       "url": "https://www.ashe.ws/2027-committees",
       "source": "Official association page (monitored)",
       "published": "",
@@ -1937,15 +3027,34 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association for the Study of Higher Education",
       "organization_key": "association for the study of higher education",
       "review_tier": "watch",
       "window_stage": "possible_pre_rfp",
+      "pre_rfp_priority": true,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "possible_pre_rfp",
+          "pre_rfp_research_candidate": true,
+          "evidence_excerpt": "Term: 11/2026-11/2027 The Site Selection Committee makes recommendations about the sites of future conferences.",
+          "other_stages": [
+            "possible_pre_rfp"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+        }
+      ],
+      "event_year": 2027,
       "strong_evidence": {},
       "early_evidence": {
-        "committee-forming": "experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The "
+        "committee-forming": "-2 hours per month Consider joining this committee if: are interested in learning about and/or have experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The Site Selection Committee makes recommendations about the sites of future conferences. Time Commitment: Committee will begin work in late 2026/early 2027 to review potential locations for 2030 and 2031"
       },
       "types": [
         "committee-forming"
@@ -1958,7 +3067,7 @@
       "source_document_date": "2026 volunteer call",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "committee-forming": "experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The "
+        "committee-forming": "-2 hours per month Consider joining this committee if: are interested in learning about and/or have experience with publications, especially scholarly journals Site Selection Committee Upcoming Opportunities: 1 Member. Term: 11/2026-11/2029 1 Graduate Student Member. Term: 11/2026-11/2027 The Site Selection Committee makes recommendations about the sites of future conferences. Time Commitment: Committee will begin work in late 2026/early 2027 to review potential locations for 2030 and 2031"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -1969,7 +3078,7 @@
     {
       "id": "60879cbffa2d378c7d95",
       "title": "Indiana League of Municipal Clerks and Treasurers | 2028 conference site selection committee appointed",
-      "summary": "rian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall b",
+      "summary": "mmittee Legislative Committee Membership Committee Mentor Committee Nominating Committee Parliamentarian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall be a conference Site Selection Committee appointed ",
       "url": "https://aimindiana.org/ilmct-committees/",
       "source": "Official association page (monitored)",
       "published": "",
@@ -1980,15 +3089,49 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
       "organization_key": "indiana league of municipal clerks and treasurers",
       "review_tier": "watch",
       "window_stage": "possible_pre_rfp",
+      "pre_rfp_priority": true,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "Annual Conference Committee (2027) Co-Chair: Vicki Kitchen , Clerk-Treasurer, North Liberty Co-Chair: Terri Buckmaster , Clerk",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        },
+        {
+          "event_year": 2028,
+          "stage": "possible_pre_rfp",
+          "pre_rfp_research_candidate": true,
+          "evidence_excerpt": "mmittee Legislative Committee Membership Committee Mentor Committee Nominating Committee Parliamentarian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall be a conference Site Selection Committee appointed according to this rule.",
+          "other_stages": [
+            "possible_pre_rfp"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+        }
+      ],
+      "event_year": 2028,
       "strong_evidence": {},
       "early_evidence": {
-        "committee-forming": "rian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall b"
+        "committee-forming": "mmittee Legislative Committee Membership Committee Mentor Committee Nominating Committee Parliamentarian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall be a conference Site Selection Committee appointed according to this rule. Annual Conference Committee (2027) Co-Chair: Vicki Kitchen , Clerk-Treasurer, North Liberty Co-Chair: Terri Buckmaster , Clerk"
       },
       "types": [
         "committee-forming"
@@ -2001,7 +3144,7 @@
       "source_document_date": "Current published committee page",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "committee-forming": "rian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall b"
+        "committee-forming": "mmittee Legislative Committee Membership Committee Mentor Committee Nominating Committee Parliamentarian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall be a conference Site Selection Committee appointed according to this rule. Annual Conference Committee (2027) Co-Chair: Vicki Kitchen , Clerk-Treasurer, North Liberty Co-Chair: Terri Buckmaster , Clerk"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -2012,7 +3155,7 @@
     {
       "id": "2d3bb2c6184475ece9a6",
       "title": "Association of Leadership Programs | 2028 host location process, 250+ attendees and lodging scale",
-      "summary": "of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred",
+      "summary": "d with receiving formal contract bids from partners in your community. IMPORTANT DETAILS The letter of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred. The Association of Leadership P",
       "url": "https://www.alpleaders.org/2028_site_selection.php",
       "source": "Official association page (monitored)",
       "published": "",
@@ -2023,15 +3166,18 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Leadership Programs",
       "organization_key": "association of leadership programs",
       "review_tier": "watch",
       "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [],
+      "event_year": null,
       "strong_evidence": {},
       "early_evidence": {
-        "venue-decision": "of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred"
+        "venue-decision": "d with receiving formal contract bids from partners in your community. IMPORTANT DETAILS The letter of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred. The Association of Leadership Programs serves as the official organizer of the conference and the financial administrator, with support and enhancement from the host program. ALP will host all confe"
       },
       "types": [
         "venue-decision"
@@ -2047,7 +3193,7 @@
       "source_document_date": "2026 site selection process",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "venue-decision": "of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred"
+        "venue-decision": "d with receiving formal contract bids from partners in your community. IMPORTANT DETAILS The letter of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred. The Association of Leadership Programs serves as the official organizer of the conference and the financial administrator, with support and enhancement from the host program. ALP will host all confe"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -2074,6 +3220,10 @@
       "organization_candidate": "International Neuroethics Society",
       "organization_key": "international neuroethics society",
       "review_tier": "watch",
+      "window_stage": "host_bid_in_progress",
+      "event_year": null,
+      "cycle_decisions": [],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "location-exploration": "The call for host proposals for future Neuroethics conferences in 2028 and 2029 will be announced in November."
@@ -2099,7 +3249,7 @@
       "research_assist": {
         "organization_name_candidate": "International Neuroethics Society",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T05:13:23+00:00",
+        "checked_at": "2026-11-09T05:31:02+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -2154,6 +3304,26 @@
       "organization_candidate": "Archivists for Congregations of Women Religious",
       "organization_key": "archivists for congregations of women religious",
       "review_tier": "watch",
+      "window_stage": "planning_change_watch",
+      "event_year": 2028,
+      "cycle_decisions": [
+        {
+          "event_year": 2028,
+          "stage": "planning_change_watch",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "Planning for 2028 is underway and volunteers are being recruited for the Triennial Conference Planning Committee.",
+          "other_stages": [
+            "planning_change_watch"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "A committee or timing change is real, but determine whether it changes hotel or planner sourcing."
+        }
+      ],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "committee-forming": "Planning for 2028 is underway and volunteers are being recruited for the Triennial Conference Planning Committee."
@@ -2196,6 +3366,10 @@
       "organization_candidate": "Catholic Media Association",
       "organization_key": "catholic media association",
       "review_tier": "watch",
+      "window_stage": "watch_only",
+      "event_year": null,
+      "cycle_decisions": [],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "location-exploration": "Now accepting invitations for June 2028, 2029 and 2030."
@@ -2221,7 +3395,7 @@
       "research_assist": {
         "organization_name_candidate": "Catholic Media Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T05:13:25+00:00",
+        "checked_at": "2026-11-09T05:31:03+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -2307,6 +3481,41 @@
       "organization_candidate": "Southern Association of Student Financial Aid Administrators",
       "organization_key": "southern association of student financial aid administrators",
       "review_tier": "watch",
+      "window_stage": "watch_only",
+      "event_year": 2027,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "2027 Jacksonville hotel is already public, 2028 venue still needs verification.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        },
+        {
+          "event_year": 2028,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "2027 Jacksonville hotel is already public, 2028 venue still needs verification.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        }
+      ],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "location-exploration": "SASFAA maintains a Site Selection committee securing conference sites, contracts and board meeting locations; 2027 Jacksonville hotel is already public, 2028 venue still needs verification."
@@ -2334,6 +3543,55 @@
       "qualification": "Unverified source watch"
     },
     {
+      "id": "976a40babc268bcd84f2",
+      "title": "Oregon PRIMA Chapter | Board documented 2025 venue complaints and 2028 site exploration",
+      "summary": "October 2025 board minutes approved $36,449.41 Eagle Crest Resort payment and cited cleanliness/AV/food complaints; considered alternatives for 2027 Spring and 2028 Fall. 2027 fall city Hood River announced subsequently, 2028 commitments require fresh check.",
+      "url": "https://orprima.starchapter.com/images/10-28-25_OR-PRIMA_Minutes.pdf",
+      "source": "Official association page (research snapshot)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Research snapshot checked 2026-11-08; runner could not access page in latest scan",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
+      "organization_candidate": "Oregon PRIMA Chapter",
+      "organization_key": "oregon prima chapter",
+      "review_tier": "watch",
+      "window_stage": "watch_only",
+      "event_year": null,
+      "cycle_decisions": [],
+      "pre_rfp_priority": false,
+      "strong_evidence": {},
+      "early_evidence": {
+        "board-location": "October 2025 board minutes approved $36,449.41 Eagle Crest Resort payment and cited cleanliness/AV/food complaints; considered alternatives for 2027 Spring and 2028 Fall. 2027 fall city Hood River announced subsequently, 2028 commitments require fresh check."
+      },
+      "types": [
+        "board-location"
+      ],
+      "priority": 30,
+      "query_id": "official-page-baseline",
+      "play": "Smart",
+      "next_action": "Recheck original source because automated access failed. Find 2026 board minutes and confirm which 2028 Fall Conference location/hotel decision is still influenceable; quantify actual room nights and chapter revenue before Robert outreach.",
+      "flags": [
+        "Source decisions documented in 2025; may have changed",
+        "2027 Fall Conference location announced as Hood River"
+      ],
+      "source_document_date": "2025-10-27",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
+      "signal_evidence": {
+        "board-location": "October 2025 board minutes approved $36,449.41 Eagle Crest Resort payment and cited cleanliness/AV/food complaints; considered alternatives for 2027 Spring and 2028 Fall. 2027 fall city Hood River announced subsequently, 2028 commitments require fresh check."
+      },
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
       "id": "af1518344eca1a7b1f04",
       "title": "New York State Association of Professional Land Surveyors | 2029 hotel proposals under review",
       "summary": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference.",
@@ -2352,6 +3610,26 @@
       "organization_candidate": "New York State Association of Professional Land Surveyors",
       "organization_key": "new york state association of professional land surveyors",
       "review_tier": "priority",
+      "window_stage": "watch_only",
+      "event_year": 2029,
+      "cycle_decisions": [
+        {
+          "event_year": 2029,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        }
+      ],
+      "pre_rfp_priority": false,
       "strong_evidence": {
         "venue-decision": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference."
       },
@@ -2378,7 +3656,7 @@
     {
       "id": "b6bf4a5ddd897e69bd79",
       "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
-      "summary": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most",
+      "summary": "hip Nonprofit Law and Compliance Issues Program Management Public Policy Support for Rural Nonprofits Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most, and/or what you’d like to see us do differently",
       "url": "https://nonprofitoregon.org/conference-notification-form/",
       "source": "Official association page (monitored)",
       "published": "",
@@ -2389,15 +3667,18 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
       "review_tier": "watch",
       "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [],
+      "event_year": null,
       "strong_evidence": {},
       "early_evidence": {
-        "attendee-change": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most"
+        "attendee-change": "hip Nonprofit Law and Compliance Issues Program Management Public Policy Support for Rural Nonprofits Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most, and/or what you’d like to see us do differently. If you have never attended an NAO conference, what are you most looking forward to? If you have a specific speaker you wish to see at our conference,"
       },
       "types": [
         "attendee-change"
@@ -2410,7 +3691,7 @@
       "source_document_date": "",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "attendee-change": "s Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most"
+        "attendee-change": "hip Nonprofit Law and Compliance Issues Program Management Public Policy Support for Rural Nonprofits Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most, and/or what you’d like to see us do differently. If you have never attended an NAO conference, what are you most looking forward to? If you have a specific speaker you wish to see at our conference,"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -2421,7 +3702,7 @@
     {
       "id": "00a7a89cdd60981d6e2d",
       "title": "Nonprofit Association of Oregon | 2027 conference cycle and program decision milestones",
-      "summary": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p",
+      "summary": "R | April 12–13, 2027 | No longer accepting proposals Eastern Oregon Nonprofit Conference – Location TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a proposal to present at an upcoming NAO conference ? Proposals ar",
       "url": "https://nonprofitoregon.org/events-trainings/speaking-opportunities/",
       "source": "Official association page (monitored)",
       "published": "",
@@ -2432,15 +3713,36 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
       "review_tier": "watch",
-      "window_stage": "watch_only",
+      "window_stage": "host_bid_in_progress",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "host_bid_in_progress",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "R | April 12–13, 2027 | No longer accepting proposals Eastern Oregon Nonprofit Conference – Location TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a proposal to present at an upcoming NAO conference ? Proposals are currently under review.",
+          "other_stages": [
+            "host_bid_in_progress"
+          ],
+          "counterevidence_flags": [
+            "Host-institution bid is not a hotel/planner services RFP"
+          ],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Host selection is underway; identify who owns subsequent hotel decisions and their deadline."
+        }
+      ],
+      "event_year": 2027,
       "strong_evidence": {},
       "early_evidence": {
-        "event-review": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p"
+        "event-review": "R | April 12–13, 2027 | No longer accepting proposals Eastern Oregon Nonprofit Conference – Location TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a proposal to present at an upcoming NAO conference ? Proposals are currently under review. We will contact you with our initial decisions by November 6, 2026. NAO Members receive priority consideration "
       },
       "types": [
         "event-review"
@@ -2453,7 +3755,7 @@
       "source_document_date": "",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "event-review": " TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a p"
+        "event-review": "R | April 12–13, 2027 | No longer accepting proposals Eastern Oregon Nonprofit Conference – Location TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a proposal to present at an upcoming NAO conference ? Proposals are currently under review. We will contact you with our initial decisions by November 6, 2026. NAO Members receive priority consideration "
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -2464,7 +3766,7 @@
     {
       "id": "47a9b187f0d9f5e341b3",
       "title": "Association of Local Government Auditors | FY2025 $1.10M revenue supports financial fit",
-      "summary": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue",
+      "summary": "a is from the IRS. See an issue with the data? Contact Us Fiscal Year Ending March 2025 Extracted Financial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue Contributions $181,311 16.5% Program Services $882,700 80.1% Investment Income ",
       "url": "https://projects.propublica.org/nonprofits/organizations/232539807",
       "source": "Official association page (monitored)",
       "published": "",
@@ -2475,15 +3777,18 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
       "review_tier": "watch",
       "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [],
+      "event_year": null,
       "strong_evidence": {},
       "early_evidence": {
-        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue"
+        "verified-financial-fit": "a is from the IRS. See an issue with the data? Contact Us Fiscal Year Ending March 2025 Extracted Financial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue Contributions $181,311 16.5% Program Services $882,700 80.1% Investment Income $23,929 2.2% Bond Proceeds $0 Royalties $0 Rental Property Income $0 Net Fundraising $0 Sales of Assets $0 Net Inventory"
       },
       "types": [
         "verified-financial-fit"
@@ -2496,7 +3801,7 @@
       "source_document_date": "FY2025",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue"
+        "verified-financial-fit": "a is from the IRS. See an issue with the data? Contact Us Fiscal Year Ending March 2025 Extracted Financial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue Contributions $181,311 16.5% Program Services $882,700 80.1% Investment Income $23,929 2.2% Bond Proceeds $0 Royalties $0 Rental Property Income $0 Net Fundraising $0 Sales of Assets $0 Net Inventory"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -2507,7 +3812,7 @@
     {
       "id": "bc3681e0bb15dc2c6cd3",
       "title": "Council of Academic Programs in Communication Sciences and Disorders | 2027 annual conference subsidized; host hotel publicly named",
-      "summary": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration ",
+      "summary": "pancy) + 16.9% taxes + $5 per night State of Georgia Hotel Motel fee = $307.77 per room, per night Rooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration Rates available Tuesday, January 5, 2027 -",
       "url": "https://www.capcsd.org/annual-conference/",
       "source": "Official association page (monitored)",
       "published": "",
@@ -2518,15 +3823,34 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
       "review_tier": "watch",
       "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "pancy) + 16.9% taxes + $5 per night State of Georgia Hotel Motel fee = $307.77 per room, per night Rooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        }
+      ],
+      "event_year": 2027,
       "strong_evidence": {},
       "early_evidence": {
-        "event-economics": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration "
+        "event-economics": "pancy) + 16.9% taxes + $5 per night State of Georgia Hotel Motel fee = $307.77 per room, per night Rooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration Rates available Tuesday, January 5, 2027 - Friday, February 19, 2027 Annual Conference Registration Early Bird Fee Registration Fee Type 1/5 - 2/19 2/20 - 4/3 Member $650 $800 Affiliate $650 $800 Non-"
       },
       "types": [
         "event-economics"
@@ -2541,7 +3865,7 @@
       "source_document_date": "2027 event notice",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "event-economics": "ooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration "
+        "event-economics": "pancy) + 16.9% taxes + $5 per night State of Georgia Hotel Motel fee = $307.77 per room, per night Rooms have (1) King bed or (2) Queens beds Registration Fees CAPCSD is subsidizing the 2027 annual conference and the registration fees are less than the actual per-person cost that CAPCSD pays. Early Bird Registration Rates available Tuesday, January 5, 2027 - Friday, February 19, 2027 Annual Conference Registration Early Bird Fee Registration Fee Type 1/5 - 2/19 2/20 - 4/3 Member $650 $800 Affiliate $650 $800 Non-"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -2552,7 +3876,7 @@
     {
       "id": "5495355894dd1bae53e6",
       "title": "Council of Academic Programs in Communication Sciences and Disorders | FY2025 $1.93M revenue verifies financial range",
-      "summary": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev",
+      "summary": "ta is from the IRS. See an issue with the data? Contact Us Fiscal Year Ending June 2025 Extracted Financial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Revenue Contributions $5,000 0.3% Program Services $1,855,287 96.1% Investment Inco",
       "url": "https://projects.propublica.org/nonprofits/organizations/630784938",
       "source": "Official association page (monitored)",
       "published": "",
@@ -2563,15 +3887,18 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-09T05:11:40+00:00",
+      "last_checked": "2026-11-09T05:29:51+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
       "review_tier": "watch",
       "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [],
+      "event_year": null,
       "strong_evidence": {},
       "early_evidence": {
-        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev"
+        "verified-financial-fit": "ta is from the IRS. See an issue with the data? Contact Us Fiscal Year Ending June 2025 Extracted Financial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Revenue Contributions $5,000 0.3% Program Services $1,855,287 96.1% Investment Income $66,077 3.4% Bond Proceeds $0 Royalties $0 Rental Property Income $0 Net Fundraising $0 Sales of Assets $0 Net Invent"
       },
       "types": [
         "verified-financial-fit"
@@ -2584,7 +3911,7 @@
       "source_document_date": "FY2025",
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
-        "verified-financial-fit": "nancial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Rev"
+        "verified-financial-fit": "ta is from the IRS. See an issue with the data? Contact Us Fiscal Year Ending June 2025 Extracted Financial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Revenue Contributions $5,000 0.3% Program Services $1,855,287 96.1% Investment Income $66,077 3.4% Bond Proceeds $0 Royalties $0 Rental Property Income $0 Net Fundraising $0 Sales of Assets $0 Net Invent"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -2611,6 +3938,26 @@
       "organization_candidate": "Arkansas Education Association",
       "organization_key": "arkansas education association",
       "review_tier": "watch",
+      "window_stage": "planning_change_watch",
+      "event_year": 2027,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "planning_change_watch",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "The Conference is currently being shifted to Summer 2027.",
+          "other_stages": [
+            "planning_change_watch"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "A committee or timing change is real, but determine whether it changes hotel or planner sourcing."
+        }
+      ],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "disruption": "The Conference is currently being shifted to Summer 2027."
@@ -2636,7 +3983,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-09T05:13:26+00:00",
+        "checked_at": "2026-11-09T05:31:05+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -2691,6 +4038,10 @@
       "organization_candidate": "Arkansas Education Association",
       "organization_key": "arkansas education association",
       "review_tier": "watch",
+      "window_stage": "watch_only",
+      "event_year": null,
+      "cycle_decisions": [],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
@@ -2712,7 +4063,45 @@
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
-      "qualification": "Unverified source watch"
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Arkansas Education Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-09T05:31:06+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "710004515",
+          "legal_name": "Arkansas Education Association",
+          "fiscal_year": 2023,
+          "revenue": 2760676,
+          "fit": "within",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "in-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
     },
     {
       "id": "bdda60c722506011eca5",
@@ -2733,6 +4122,10 @@
       "organization_candidate": "New York State Association of Professional Land Surveyors",
       "organization_key": "new york state association of professional land surveyors",
       "review_tier": "watch",
+      "window_stage": "watch_only",
+      "event_year": null,
+      "cycle_decisions": [],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "economics": "The NYSAPLS executive board reviewed its financial position in July 2026, noting declining revenue from educational programs and rising expenses, while discussing future annual conference locations."
@@ -2775,6 +4168,10 @@
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
       "review_tier": "watch",
+      "window_stage": "watch_only",
+      "event_year": null,
+      "cycle_decisions": [],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "decision-cadence": "ALGA's board approves conference sites three years ahead. As of February 2026, 2026 Cleveland, 2027 Denver and 2028 St. Louis were selected; 2029 status was not established by this source."
@@ -2819,6 +4216,26 @@
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
       "review_tier": "watch",
+      "window_stage": "watch_only",
+      "event_year": 2027,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "ALGA advertises the May 2–5, 2027 hybrid annual conference in Denver, which draws hundreds in person and online.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        }
+      ],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "event-cycle": "ALGA advertises the May 2–5, 2027 hybrid annual conference in Denver, which draws hundreds in person and online."
@@ -2863,6 +4280,10 @@
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
       "review_tier": "watch",
+      "window_stage": "watch_only",
+      "event_year": null,
+      "cycle_decisions": [],
+      "pre_rfp_priority": false,
       "strong_evidence": {},
       "early_evidence": {
         "economics": "CAPCSD board minutes for February 9–11, 2025 say the board discussed future conference financial implications, revenue-generation and cost-reduction strategies, including evaluating tier-one and tier-two cities."
