@@ -114,6 +114,15 @@ def main():
         cycles = [decision for item in org.get("evidence", [])
                   for decision in item.get("cycle_decisions", [])]
         screening = outreach_screen(cycles)
+        # A host-site solicitation is not a pre-RFP hotel-planning opportunity.
+        # The cycle extractor may recognize "site selection" even when the
+        # source-level classifier correctly identified an active host bid.
+        procurement_stages = {'host_bid_in_progress', 'venue_rfp_or_bidding', 'bid_deadline_passed'}
+        if procurement_stages.intersection(org.get("window_stages", [])):
+            screening = dict(screening, approach_ready=False,
+                             eligible_event_years=[],
+                             status='future_watch_or_skip',
+                             warning='Active host/venue procurement signal. Verify a separate future cycle before outreach.')
         if org.get("commitment_flags"):
             suggested="conflict-check"
         elif screening["status"] == "research_further" and org.get("distinct_sources",0)>=2:
