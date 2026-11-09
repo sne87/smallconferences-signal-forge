@@ -14,6 +14,16 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 DEST=ROOT/'data'/'social_watch.json'
+ROLE_TARGETS=ROOT/'data'/'people_watch.json'
+
+def read_role_targets(path=ROLE_TARGETS):
+    try:
+        d=json.loads(Path(path).read_text(encoding='utf-8'))
+        items=d.get('targets',[])
+        return [x for x in items if isinstance(x,dict) and x.get('name') and x.get('organization') and x.get('role_source')]
+    except (OSError,ValueError,TypeError):
+        return []
+
 PLATFORMS={
  'linkedin':('linkedin.com','linkedin.com/posts/'),
  'facebook':('facebook.com','facebook.com/'),
@@ -23,6 +33,9 @@ PLATFORMS={
 }
 GENERAL = [
  ('conference-site','"association" "conference site selection" "2028"'),
+ ('host-invitation','"looking for a host city" "2028" "conference"'),
+ ('site-decision','"conference" "where should" "held" "2029"'),
+ ('site-recommendations','"annual meeting" "recommendations" "conference site"'),
  ('future-city','"2029 conference" "location" "committee"'),
  ('hotel-terms','"association" "conference hotel" "contract"'),
  ('host-venue','"2028" "conference" "host site" "looking"'),
@@ -38,7 +51,7 @@ GENERAL = [
 # Deep scan: 14 social searches with organization-specific searches using the
 # WHOLE organization name. Light scan: 6. No direct employee targeting unless
 # a named post itself establishes the relationship in public source text.
-def social_searches(now,light,known_names=()):
+def social_searches(now,light,known_names=(),people_targets=()):
     cap=6 if light else 14
     day=now.toordinal()
     unique=list(dict.fromkeys(str(n).strip() for n in known_names if len(str(n).strip())>10))
@@ -65,6 +78,20 @@ def social_searches(now,light,known_names=()):
                     ' "conference" "committee"')
             restrict='site:linkedin.com/posts/' if platform=='linkedin' else 'site:facebook.com/'
             batch.append((f'social-{platform}-org-roles',restrict+' "'+name.replace('"','')+'"'+suffix))
+    # A distinct lane searches people whose event roles are documented
+    # on organizer-owned pages. We still require the resulting public POST
+    # itself to contain event context; never infer the author from a search.
+    if people_targets:
+        role_count=1 if light else 3
+        targets=sorted(people_targets,key=lambda x:x.get('name',''))
+        for i in range(min(role_count,len(targets))):
+            person=targets[(day+now.hour+i)%len(targets)]
+            name=person.get('name','').replace('"','')
+            org=person.get('organization','').replace('"','')
+            # Replace broad generic searches to keep free RSS work bounded.
+            query='site:linkedin.com/posts/ "'+name+'" "'+org+'" "conference"'
+            label='social-linkedin-official-role-'+str(i)
+            batch[-(i+1)]=(label,query)
     return batch
 
 def platform_for_url(url):
