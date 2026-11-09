@@ -179,6 +179,46 @@
       "name": "Georgia Economic Developers Association",
       "state": "GA",
       "ein": ""
+    },
+    {
+      "name": "Association for the Study of Higher Education",
+      "state": "",
+      "ein": "521071242"
+    },
+    {
+      "name": "Housing Oregon",
+      "state": "OR",
+      "ein": "931174536"
+    },
+    {
+      "name": "New England Museum Association",
+      "state": "MA",
+      "ein": "042688900"
+    },
+    {
+      "name": "Southeastern Museums Conference",
+      "state": "GA",
+      "ein": "541042825"
+    },
+    {
+      "name": "Association of African American Museums",
+      "state": "DC",
+      "ein": "311609577"
+    },
+    {
+      "name": "Chamber of Commerce Executives of Kansas",
+      "state": "OK",
+      "ein": "480951722"
+    },
+    {
+      "name": "Association of Local Government Auditors",
+      "state": "",
+      "ein": "232539807"
+    },
+    {
+      "name": "Council of Academic Programs in Communication Sciences and Disorders",
+      "state": "",
+      "ein": "630784938"
     }
   ]
 }
