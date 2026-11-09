@@ -136,7 +136,8 @@ def run():
   for item in roster:
    if checked>=2:break
    if not item['source_status']=='official_page_confirmed':continue
-   if item.get('financial') and item['financial'].get('fiscal_year',0)>=now.year-3:continue
+   fy=item.get('financial',{}).get('fiscal_year')
+   if isinstance(fy,int) and fy>=now.year-3:continue
    try:
     item['financial']=financial({'name':item['name'],'state':'','ein':''})
     checked+=1
