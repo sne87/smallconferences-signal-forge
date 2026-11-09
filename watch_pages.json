@@ -348,6 +348,22 @@
         "Named incumbent sourcing partner HelmsBriscoe",
         "Hotels contracted 2-3 years ahead"
       ]
+    },
+    {
+      "organization": "Southern Association of Student Financial Aid Administrators",
+      "url": "https://sasfaa.org/Volunteer",
+      "label": "Volunteer Site Selection Committee handles future hotel and event contracts",
+      "needle": "The Site Selection committee secures appropriate conference sites",
+      "family": "location-exploration",
+      "tier": "watch",
+      "next_action": "FY2025 revenue $512,302. 2027 annual at Hyatt Regency Jacksonville confirmed with 500+ expected. Investigate 2028 site decision and whether volunteer Site Selection Committee accepts independent hotel comparisons.",
+      "baseline_as_of": "2026-11-08",
+      "baseline_excerpt": "SASFAA maintains a Site Selection committee securing conference sites, contracts and board meeting locations; 2027 Jacksonville hotel is already public, 2028 venue still needs verification.",
+      "curated_by_chatgpt": true,
+      "counterevidence_flags": [
+        "Internal volunteer site-selection committee",
+        "2027 Hyatt Regency Jacksonville Riverwalk named"
+      ]
     }
   ]
 }
