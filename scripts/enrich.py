@@ -25,7 +25,7 @@ OUT = ROOT / 'data' / 'intelligence.json'
 NOW = datetime.now(timezone.utc)
 UA = 'SignalForgePublicResearch/3.0 (+https://projects.propublica.org/nonprofits/api/; public data only)'
 MONTHS = 'January February March April May June July August September October November December'.split()
-RECORD_LIMIT = 18
+RECORD_LIMIT = 48
 SOURCE_CAP = 5
 SCANS = [
     ('event-history', '"annual conference" OR "annual convention" OR "annual meeting"', 2025),
@@ -165,6 +165,13 @@ def analyze(target):
     except Exception as exc:
         result['financial']={'status':'source-unavailable','match':'unknown','revenue':None,'fit':'unknown','caveat':'Public financial API unavailable; do not infer revenue.'}
         result['errors'].append('ProPublica: '+str(exc)[:120])
+    # Spend the limited free news lookups on financially plausible organizations.
+    # An out-of-band nonprofit remains in the audit with its sourced financials,
+    # but cannot consume the same 8 public-index searches as top budget matches.
+    if result['financial'].get('fit') in ('above','below'):
+        result['next_step']='Outside the preferred $500K-$7M revenue band. Reconsider only with evidence of strong event-specific spend and external planning need.'
+        result['status']='financial-out-of-band'
+        return result
     for tag,query,base_year in SCANS:
         year=NOW.year+(base_year-2026) if base_year is not None else None
         try:
