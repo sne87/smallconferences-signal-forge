@@ -77,6 +77,8 @@ jobs:
           GEMINI_MODEL: gemini-2.5-flash-lite
           SF_FULL_SCAN: ${{ steps.mode.outputs.full }}
         run: python scripts/briefs.py
+      - name: Build source-limited qualification packets
+        run: python scripts/qualification_research.py
       - name: Save public feed to repository
         shell: bash
         run: |
@@ -90,7 +92,7 @@ jobs:
           git show origin/main:data/social_watch.json > /tmp/signal-forge-remote-social.json || true
           python scripts/merge_public_ai.py /tmp/signal-forge-remote-briefs.json
           python scripts/merge_public_social.py /tmp/signal-forge-remote-social.json
-          git add data/signals.json data/intelligence.json data/briefs.json data/rejected_candidates.json data/discovery_history.json data/social_watch.json data/prospect_universe.json
+          git add data/signals.json data/intelligence.json data/briefs.json data/rejected_candidates.json data/discovery_history.json data/social_watch.json data/prospect_universe.json data/qualification_packets.json
           if git diff --cached --quiet; then
             echo "No new public feed changes to commit."
             exit 0
@@ -122,6 +124,7 @@ jobs:
           cp data/signals.json dist/data/signals.json
           cp data/intelligence.json dist/data/intelligence.json
           cp data/briefs.json dist/data/briefs.json
+          cp data/qualification_packets.json dist/data/qualification_packets.json
           cp data/prospect_universe.json dist/data/prospect_universe.json
           cp data/rejected_candidates.json dist/data/rejected_candidates.json
           cp data/discovery_history.json dist/data/discovery_history.json
