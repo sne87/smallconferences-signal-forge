@@ -778,6 +778,22 @@ def preliminary_fit_gates(group):
       'suggested_next_check':'Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending',
     }
 
+def public_financial_screen():
+    """Public revenue screening, not nonprofit identity or event-budget proof."""
+    try:
+        rows=json.loads((ROOT/'data'/'intelligence.json').read_text(encoding='utf-8')).get('targets',[])
+    except (OSError,ValueError,TypeError):return {}
+    lookup={}
+    for row in rows:
+        k=org_key(row.get('name',''))
+        f=row.get('financial') or {}
+        if k and f.get('fit') in ('above','below','within'):
+            lookup[k]={'band':f['fit'],'revenue':f.get('revenue'),
+                'filing_year':f.get('fiscal_year'), 'identity_status':f.get('status'),
+                'source_url':f.get('source_url'),
+                'warning':'Annual organizational revenue, not event budget. Confirm exact legal identity and most recent return.'}
+    return lookup
+
 def organization_stacks(items):
     """Group EXACT named-organizer candidates, never merge chapters heuristically.
 
@@ -785,6 +801,7 @@ def organization_stacks(items):
     All matching and timing fields remain unverified.
     """
     groups={}
+    revenue_screens=public_financial_screen()
     for x in items:
         key=x.get('organization_key')
         if not key:continue
@@ -820,18 +837,20 @@ def organization_stacks(items):
         kind_count=len(group['families'])
         n=len(group['signal_ids'])
         group['mentions']=n
+        group['financial_screen']=revenue_screens.get(group['key'],{'band':'unknown','warning':'Revenue and identity require original filing review.'})
         group['distinct_sources']=source_count
         group['families']=sorted(group['families'])
         group['commitment_flags']=sorted(group['commitment_flags'])
         group['window_stages']=sorted(group['window_stages'])
         group['early_signal_families']=sorted(set(group['families']) & set(ROBERT_EARLY_FAMILIES))
         group['robert_fit_screen']=preliminary_fit_gates(group)
-        group['pre_rfp_research_priority']=('possible_pre_rfp' in group['window_stages'] and not group['commitment_flags'] and 'procurement' not in group['families'])
+        group['pre_rfp_research_priority']=('possible_pre_rfp' in group['window_stages'] and not group['commitment_flags'] and 'procurement' not in group['families'] and group['financial_screen']['band'] not in ('above','below'))
         group['priority']=min(92,28 + min(kind_count,4)*8 + min(source_count,3)*7 +
                               min(20,len(group['early_signal_families'])*10) +
                               (5 if group['priority_count'] else 0) -
                               (18 if group['commitment_flags'] else 0) -
-                              (12 if 'procurement' in group['families'] else 0))
+                              (12 if 'procurement' in group['families'] else 0) -
+                               (35 if group['financial_screen']['band'] in ('above','below') else 0))
         # Revenue filings and the recurring event calendar support fit, but do
         # NOT independently corroborate an open planning or procurement window.
         buying_families=set(group['families'])-{'verified-financial-fit','event-cycle','decision-cadence','venue-committed'}
