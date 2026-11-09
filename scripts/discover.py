@@ -695,7 +695,7 @@ def official_watches(old_items):
     except (ValueError,OSError):pages=[]
     old_by_id={v.get('id'):v for v in old_items}
     result=[];checks=0;failed=[]
-    for spec in pages[:30]:
+    for spec in pages[:40]:
         url=spec.get('url','');org=spec.get('organization','');needle=spec.get('needle','')
         if not url.startswith('https://') or not org or len(needle)<10:continue
         try:
