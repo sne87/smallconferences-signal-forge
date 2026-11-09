@@ -69,3 +69,11 @@ class CycleTests(unittest.TestCase):
   self.assertTrue(outreach_screen(cycles,**flags)['approach_ready'])
 
 if __name__=='__main__':unittest.main()
+
+
+# Future conference year ranges must not silently drop the middle year.
+from opportunity_cycles import explicit_event_years
+assert explicit_event_years("Future conference site selection (2027–2029)") == ["2027", "2028", "2029"]
+assert explicit_event_years("Future conference site selection (2027-2029)") == ["2027", "2028", "2029"]
+assert explicit_event_years("Future conference site selection (2027—2029)") == ["2027", "2028", "2029"]
+assert explicit_event_years("Future conference site selection (2027-2032)") == ["2027", "2032"]
