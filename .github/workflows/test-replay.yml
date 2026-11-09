@@ -31,5 +31,6 @@ jobs:
           python scripts/test_multilane_discovery.py
           python scripts/test_opportunity_gate.py
           python scripts/test_opportunity_cycles.py
+          python scripts/test_brief_triage.py
           python scripts/test_prospect_universe.py
           python scripts/test_governance_discovery.py
