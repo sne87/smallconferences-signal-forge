@@ -52,5 +52,5 @@
   "discoveries": [],
   "daily_counts": [],
   "note": "Baseline comprises previously known organizations and watchlist. Only subsequent new source-indexed organization candidates count; an event announcement or a manually curated watch never counts as a new automatically discovered organization. Does not imply qualification.",
-  "last_scanned_on": "2026-11-08"
+  "last_scanned_on": "2026-11-09"
 }

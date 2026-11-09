@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T06:25:20+00:00",
+  "generated_at": "2026-11-09T06:28:34+00:00",
   "purpose": "Broad official-directory organizer universe; not qualified leads or confirmed future contracts.",
   "organizers": [
     {
@@ -550,7 +550,18 @@
       "qualified": false,
       "robert_ready": false,
       "existing_watchlist": false,
-      "next_verification": "Verify correct EIN and annual revenue, 2 conference cycles, the NEXT sourcing decision, hotel/room-block scale and signed/incumbent commitments."
+      "next_verification": "Verify correct EIN and annual revenue, 2 conference cycles, the NEXT sourcing decision, hotel/room-block scale and signed/incumbent commitments.",
+      "financial": {
+        "status": "provisional-identity",
+        "match": "unique exact name match, EIN confirmation required",
+        "ein": "042612481",
+        "legal_name": "New England Association For College Admission Counseling",
+        "fiscal_year": 2023,
+        "revenue": 786901,
+        "fit": "within",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/42612481.json",
+        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+      }
     },
     {
       "name": "Pennsylvania Association for College Admission Counseling",
@@ -569,7 +580,18 @@
       "qualified": false,
       "robert_ready": false,
       "existing_watchlist": false,
-      "next_verification": "Verify correct EIN and annual revenue, 2 conference cycles, the NEXT sourcing decision, hotel/room-block scale and signed/incumbent commitments."
+      "next_verification": "Verify correct EIN and annual revenue, 2 conference cycles, the NEXT sourcing decision, hotel/room-block scale and signed/incumbent commitments.",
+      "financial": {
+        "status": "provisional-identity",
+        "match": "unique exact name match, EIN confirmation required",
+        "ein": "251494230",
+        "legal_name": "Pennsylvania Association For College Admission Counseling",
+        "fiscal_year": 2023,
+        "revenue": 430971,
+        "fit": "below",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/251494230.json",
+        "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
+      }
     },
     {
       "name": "International Association for College Admission Counseling",
