@@ -21,6 +21,14 @@
         "finding": "Spring 2026 board minutes directed Future Sites Committee to bring RFPs for 2028 and 2029 annual meetings to the Fall 2026 board meeting.",
         "caution": "As of November 2026 the Fall 2026 vote may have happened. Formal RFP process may already be underway; not a verified pre-RFP opportunity.",
         "date": "2026-03-02"
+      },
+      "ai_research_assessment": {
+        "review_status": "Conflict check",
+        "reason": "The Fall 2026 board meeting was due to receive 2028/2029 venue RFPs. Must retrieve the vote before an opening can be asserted.",
+        "must_verify": "venue status, board vote, hotel commitments, planner, solo workload, event budget",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
       }
     },
     {
@@ -40,6 +48,14 @@
         "finding": "June 23, 2026 minutes tasked Chris Conway with 2027–2029 host proposals, budgets and feasibility; June discussion described local hosting and cost concerns. The 2026 conference cost estimate previously reached $36K including $18K in planning services.",
         "caution": "Organization appears highly cost-sensitive; its preferred university/local-host model may leave little room for Robert's fee. End-of-summer location selection target may have passed.",
         "date": "2026-06-23"
+      },
+      "ai_research_assessment": {
+        "review_status": "Timing check",
+        "reason": "Published minutes show location research and cost pressure, but a local-host model and low budget weaken a paid sourcing fit. Summer 2026 selection deadline has passed.",
+        "must_verify": "latest board minutes, actual location, funding, lodging model, planner, fee tolerance",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
       }
     },
     {
@@ -59,6 +75,14 @@
         "finding": "September 2026 HQ update says committee reviewed 2029 venue proposals from Turning Stone and Resorts World Catskills, negotiating concessions, lodging, meeting space and AV.",
         "caution": "Already in a hotel proposal/negotiation process. Not a pre-RFP lead for 2029 unless remaining services are separately influenceable.",
         "date": "2026-09"
+      },
+      "ai_research_assessment": {
+        "review_status": "Pass for pre-RFP 2029",
+        "reason": "2029 venue RFP and negotiations were already underway by September 2026, so this is not an untouched pre-RFP decision.",
+        "must_verify": "later unawarded cycle or distinct non-venue service scope",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
       }
     },
     {
@@ -78,6 +102,14 @@
         "finding": "Official committee page lists 2028 Conference Site Selection Committee chaired by Terri Budde; 2027 annual conference committee works with a service provider.",
         "caution": "Existing service provider may be an incumbent. Must determine who it is and whether 2028 selection is still influenceable.",
         "date": "undated current committee page"
+      },
+      "ai_research_assessment": {
+        "review_status": "Timing check",
+        "reason": "Named 2028 site-selection committee is an early signal, but existing conference service-provider relationship is possible.",
+        "must_verify": "committee minutes, incumbent provider, venue status, hotel nights, decision date",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
       }
     },
     {
@@ -91,7 +123,15 @@
       "source_url": "https://nonprofitoregon.org/conference-notification-form/",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": false
+      "source_rechecked_this_run": false,
+      "ai_research_assessment": {
+        "review_status": "Insufficient evidence",
+        "reason": "Conference feedback is not itself evidence of an unawarded overnight meeting or an outside-advisor buying decision.",
+        "must_verify": "specific future event, overnight rooms, procurement timing, organizer, budget",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
+      }
     },
     {
       "rank": 6,
@@ -104,7 +144,15 @@
       "source_url": "https://www.aeaonline.org/teach",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": false
+      "source_rechecked_this_run": false,
+      "ai_research_assessment": {
+        "review_status": "Timing check",
+        "reason": "Rescheduled summer 2027 conference is a genuine change signal, but venue and planner commitments are unknown.",
+        "must_verify": "current 2027 location and hotel, event size, program tracks, authority",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
+      }
     },
     {
       "rank": 7,
@@ -117,7 +165,15 @@
       "source_url": "https://sasfaa.org/",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": false
+      "source_rechecked_this_run": false,
+      "ai_research_assessment": {
+        "review_status": "Conflict check",
+        "reason": "2027 hotel is named; internal committee handles site selection. Only a later cycle may remain open.",
+        "must_verify": "2028+ site decision and whether outside advisors are allowed",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
+      }
     },
     {
       "rank": 8,
@@ -130,7 +186,15 @@
       "source_url": "https://www.arkansasrealtors.com/",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": false
+      "source_rechecked_this_run": false,
+      "ai_research_assessment": {
+        "review_status": "Timing check",
+        "reason": "Recurring event and 2024 attendance evidence exist; 2026 venue was arranged. Next cycle status unknown.",
+        "must_verify": "2027+ venue, planner, room nights, multi-track staffing and budget",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
+      }
     },
     {
       "rank": 9,
@@ -143,7 +207,15 @@
       "source_url": "https://ncamc.nclm.org/leadership/",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": false
+      "source_rechecked_this_run": false,
+      "ai_research_assessment": {
+        "review_status": "Watch future cycle",
+        "reason": "2029 site committee exists; no supported evidence of current unawarded decision or lodging economics.",
+        "must_verify": "committee selection outcome, venue model, decision authority",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
+      }
     },
     {
       "rank": 10,
@@ -156,7 +228,15 @@
       "source_url": "https://archivistsacwr.org/news/",
       "current_opening_verified": false,
       "qualified": false,
-      "source_rechecked_this_run": false
+      "source_rechecked_this_run": false,
+      "ai_research_assessment": {
+        "review_status": "Watch future cycle",
+        "reason": "2028 volunteer planning committee identified; conference economics and current sourcing status not established.",
+        "must_verify": "host/venue status, overnight attendees, funding, planner and decision maker",
+        "human_approval_required": true,
+        "qualification_checks_supported": 0,
+        "review_basis": "Saved research plus original-source spot checks; no private contracts verified; unverified checks remain unknown."
+      }
     }
   ]
 }
