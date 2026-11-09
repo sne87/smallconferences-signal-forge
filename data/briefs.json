@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:05:14+00:00",
+  "generated_at": "2026-11-09T05:11:13+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -701,6 +701,108 @@
       "commitment_flags": [],
       "suggested_bucket": "early-watch",
       "evidence_digest": "Now accepting invitations for June 2028, 2029 and 2030.",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "mid south educational research association",
+      "name": "Mid-South Educational Research Association",
+      "fingerprint": "3b26f5d21491ed2b5cad",
+      "first_detected": "2026-11-09",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "Mid-South Educational Research Association | Board minutes: 2028-2029 venue proposals and Executive Director negotiation role",
+          "url": "https://www.msera.org/_files/ugd/90ff5d_d5ca989918fb46bb82163a0026f5d727.pdf",
+          "source": "Official association page (monitored)",
+          "reported_date": "",
+          "note": "ontract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville)",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": [
+            "2027 hotel already contracted",
+            "Fall 2026 board vote may have already occurred"
+          ]
+        }
+      ],
+      "financial": {
+        "revenue": null,
+        "fiscal_year": null,
+        "source_url": null,
+        "match_status": "source-unavailable"
+      },
+      "signal_families": [
+        "board-location"
+      ],
+      "commitment_flags": [
+        "2027 hotel already contracted",
+        "Fall 2026 board vote may have already occurred"
+      ],
+      "suggested_bucket": "conflict-check",
+      "evidence_digest": "ontract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville)",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "southern association for college admission counseling",
+      "name": "Southern Association for College Admission Counseling",
+      "fingerprint": "99c15530af196add0a53",
+      "first_detected": "2026-11-09",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "Southern Association for College Admission Counseling | Current independent meeting procurement incumbent HelmsBriscoe",
+          "url": "https://www.sacac.org/annual-conference/",
+          "source": "Official association page (monitored)",
+          "reported_date": "",
+          "note": "ith host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection. There are many considerations given to selecting a location such as space constraints, sleeping room needs, ",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": [
+            "Named incumbent sourcing partner HelmsBriscoe",
+            "Hotels contracted 2-3 years ahead"
+          ]
+        }
+      ],
+      "financial": {
+        "revenue": null,
+        "fiscal_year": null,
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/621140884.json",
+        "match_status": "identity-review"
+      },
+      "signal_families": [
+        "venue-committed"
+      ],
+      "commitment_flags": [
+        "Hotels contracted 2-3 years ahead",
+        "Named incumbent sourcing partner HelmsBriscoe"
+      ],
+      "suggested_bucket": "conflict-check",
+      "evidence_digest": "ith host hotels are set roughly two-three years in advance. SACAC works with Helms Briscoe on our meeting procurement and site selection. There are many considerations given to selecting a location such as space constraints, sleeping room needs, ",
       "ai_summary": "",
       "ai_status": "not_configured",
       "ai_source": "",

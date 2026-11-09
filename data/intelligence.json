@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:03:45+00:00",
+  "generated_at": "2026-11-09T05:09:41+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -1080,6 +1080,48 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
+      "errors": [],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Mid-South Educational Research Association",
+      "state": "",
+      "input_ein": "",
+      "financial": {
+        "status": "source-unavailable",
+        "match": "unknown",
+        "revenue": null,
+        "fit": "unknown",
+        "caveat": "Public financial API unavailable; do not infer revenue."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
+      "errors": [
+        "ProPublica: HTTP Error 404: Not Found"
+      ],
+      "status": "investigation-only"
+    },
+    {
+      "name": "Southern Association for College Admission Counseling",
+      "state": "TX",
+      "input_ein": "621140884",
+      "financial": {
+        "status": "identity-review",
+        "match": "legal name mismatch, investigate alias or chapter",
+        "ein": "621140884",
+        "legal_name": "The Southern Association For College Admission Counseling",
+        "fiscal_year": null,
+        "revenue": null,
+        "fit": "unknown",
+        "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/621140884.json",
+        "caveat": "Form 990 revenue is organization revenue, not conference spend."
+      },
+      "sources": [],
+      "checks": [],
+      "historical_years": [],
+      "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [],
       "status": "investigation-only"
     }
