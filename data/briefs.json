@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T13:37:24+00:00",
+  "generated_at": "2026-11-10T20:56:53+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -203,6 +203,71 @@
       ],
       "qualified": false,
       "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "indiana league of municipal clerks and treasurers",
+      "name": "Indiana League of Municipal Clerks and Treasurers",
+      "fingerprint": "e4182a356a96fa8c0fd4",
+      "first_detected": "2026-11-08",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "Indiana League of Municipal Clerks and Treasurers | 2028 conference site selection committee appointed",
+          "url": "https://aimindiana.org/ilmct-committees/",
+          "source": "Official association page (monitored)",
+          "reported_date": "Current published committee page",
+          "note": "mmittee Legislative Committee Membership Committee Mentor Committee Nominating Committee Parliamentarian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall be a conference Site Selection Committee appointed ",
+          "freshness_warning": "Official source page fetched during this scan",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {},
+      "signal_families": [
+        "committee-forming"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "research-next",
+      "research_triage": {
+        "bucket": "research-next",
+        "official_cycle_sources": 1,
+        "needs_event_year_procurement_check": false,
+        "reason": "Official source identifies a future event-cycle decision; all buying checks remain open"
+      },
+      "pre_rfp_outreach_screen": {
+        "approach_ready": false,
+        "eligible_event_years": [
+          2028
+        ],
+        "missing_checks": [
+          "legal_entity_verified",
+          "revenue_verified",
+          "recurring_event_verified",
+          "scope_verified",
+          "decision_owner_verified",
+          "decision_ahead_verified",
+          "incumbent_checked",
+          "external_advisor_path_verified"
+        ],
+        "status": "research_further",
+        "warning": "Research gate only. Never automatically qualify or contact an organizer."
+      },
+      "evidence_digest": "mmittee Legislative Committee Membership Committee Mentor Committee Nominating Committee Parliamentarian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall be a conference Site Selection Committee appointed ",
+      "ai_summary": "CONFIRMED FACTS: The Indiana League of Municipal Clerks and Treasurers' official committee page identifies a 2028 Conference Site Selection Committee chaired by Terri Budde and references its site-selection rule. Source: https://aimindiana.org/ilmct-committees/ . RESEARCH CLUES: A named committee and chair provide a concrete organizational route for checking an upcoming venue decision. COUNTEREVIDENCE: The committee listing does not show a newly opened contract, selection deadline, lack of incumbent planner or willingness to use a paid independent adviser. The venue may already be chosen. OPEN QUALIFICATION QUESTIONS: What does Rule 06.06 require, and when is the 2028 site chosen? Has the contract or room block already been signed? Who approves vendor contracts? What were attendance, room nights, F&B, AV and conference-specific spending in two recent years? Are existing planner/hotel agreements in place? Is there a narrow sourcing/cost-review assignment Robert can handle alone? Research only, not qualified.",
+      "ai_status": "stale_source_change_recheck_required",
+      "ai_source": "ChatGPT scheduled, source-limited synthesis",
+      "ai_reviewed_at": "2026-11-09",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source_fingerprint": "956e976da748973b2b9b"
     },
     {
       "key": "council of academic programs in communication sciences and disorders",
@@ -867,71 +932,6 @@
       ],
       "qualified": false,
       "caution": "Source-index clues are not proof of an open contract or an external advisor need."
-    },
-    {
-      "key": "indiana league of municipal clerks and treasurers",
-      "name": "Indiana League of Municipal Clerks and Treasurers",
-      "fingerprint": "956e976da748973b2b9b",
-      "first_detected": "2026-11-08",
-      "source_count": 1,
-      "independent_publishers": 1,
-      "source_evidence": [
-        {
-          "title": "Indiana League of Municipal Clerks and Treasurers | 2028 conference site selection committee appointed",
-          "url": "https://aimindiana.org/ilmct-committees/",
-          "source": "Official association page (research snapshot)",
-          "reported_date": "Current published committee page",
-          "note": "ILMCT public committees list a 2028 Conference Site Selection Committee chaired by Terri Budde. It does not state that the venue is unsigned or an independent planner is needed.",
-          "freshness_warning": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
-          "commitment_flags": []
-        }
-      ],
-      "financial": {},
-      "signal_families": [
-        "committee-forming"
-      ],
-      "commitment_flags": [],
-      "suggested_bucket": "research-next",
-      "research_triage": {
-        "bucket": "research-next",
-        "official_cycle_sources": 1,
-        "needs_event_year_procurement_check": false,
-        "reason": "Official source identifies a future event-cycle decision; all buying checks remain open"
-      },
-      "pre_rfp_outreach_screen": {
-        "approach_ready": false,
-        "eligible_event_years": [
-          2028
-        ],
-        "missing_checks": [
-          "legal_entity_verified",
-          "revenue_verified",
-          "recurring_event_verified",
-          "scope_verified",
-          "decision_owner_verified",
-          "decision_ahead_verified",
-          "incumbent_checked",
-          "external_advisor_path_verified"
-        ],
-        "status": "research_further",
-        "warning": "Research gate only. Never automatically qualify or contact an organizer."
-      },
-      "evidence_digest": "ILMCT public committees list a 2028 Conference Site Selection Committee chaired by Terri Budde. It does not state that the venue is unsigned or an independent planner is needed.",
-      "ai_summary": "CONFIRMED FACTS: The Indiana League of Municipal Clerks and Treasurers' official committee page identifies a 2028 Conference Site Selection Committee chaired by Terri Budde and references its site-selection rule. Source: https://aimindiana.org/ilmct-committees/ . RESEARCH CLUES: A named committee and chair provide a concrete organizational route for checking an upcoming venue decision. COUNTEREVIDENCE: The committee listing does not show a newly opened contract, selection deadline, lack of incumbent planner or willingness to use a paid independent adviser. The venue may already be chosen. OPEN QUALIFICATION QUESTIONS: What does Rule 06.06 require, and when is the 2028 site chosen? Has the contract or room block already been signed? Who approves vendor contracts? What were attendance, room nights, F&B, AV and conference-specific spending in two recent years? Are existing planner/hotel agreements in place? Is there a narrow sourcing/cost-review assignment Robert can handle alone? Research only, not qualified.",
-      "ai_status": "stale_source_change_recheck_required",
-      "ai_source": "ChatGPT scheduled, source-limited synthesis",
-      "ai_reviewed_at": "2026-11-09",
-      "next_verification_questions": [
-        "Confirm organizer and correct legal entity/EIN",
-        "Verify two past conference cycles, expected next event and manageable scope",
-        "Quantify event-specific costs, lodging and supplier spend",
-        "Find original dated evidence that a specific site/planning decision is still influenceable",
-        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
-        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
-      ],
-      "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "e4182a356a96fa8c0fd4"
     },
     {
       "key": "international neuroethics society",

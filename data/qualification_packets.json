@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T13:37:24.865219+00:00",
+  "generated_at": "2026-11-10T20:56:53.717178+00:00",
   "source": "Signal Forge indexed public sources and free ProPublica Nonprofit Explorer API",
   "qualified_count": 0,
   "packets": [
@@ -165,6 +165,11 @@
       "qualified": false,
       "event_years": [
         {
+          "year": 2027,
+          "commitment_status": "unknown; source check required",
+          "decision_status": "unknown; source check required"
+        },
+        {
           "year": 2028,
           "commitment_status": "unknown; source check required",
           "decision_status": "unknown; source check required"
@@ -182,14 +187,21 @@
           "title": "Indiana League of Municipal Clerks and Treasurers | 2028 conference site selection committee appointed",
           "document_date": "Current published committee page",
           "publication_date_verified": false,
-          "source": "Official association page (research snapshot)",
+          "source": "Official association page (monitored)",
           "window_stage": "possible_pre_rfp",
           "counterevidence": [],
           "event_cycles": [
             {
+              "year": 2027,
+              "stage": "watch_only",
+              "excerpt": "Annual Conference Committee (2027) Co-Chair: Vicki Kitchen , Clerk-Treasurer, North Liberty Co-Chair: Terri Buckmaster , Clerk",
+              "same_year_commitment": false,
+              "multi_year_ambiguity": false
+            },
+            {
               "year": 2028,
               "stage": "possible_pre_rfp",
-              "excerpt": "ILMCT public committees list a 2028 Conference Site Selection Committee chaired by Terri Budde. It does not state that the venue is unsigned or an independent planner is needed.",
+              "excerpt": "mmittee Legislative Committee Membership Committee Mentor Committee Nominating Committee Parliamentarian Resolutions Committee Retirement Recognition Committee 2028 Conference Site Selection Committee Chair: Terri Budde , Clerk-Treasurer, Remington Rule 06.06 Conference Site Selection Committee. There shall be a conference Site Selection Committee ",
               "same_year_commitment": false,
               "multi_year_ambiguity": false
             }
