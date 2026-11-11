@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T20:56:53.717178+00:00",
+  "generated_at": "2026-11-11T01:18:58.365915+00:00",
   "source": "Signal Forge indexed public sources and free ProPublica Nonprofit Explorer API",
   "qualified_count": 0,
   "packets": [
@@ -541,7 +541,7 @@
             {
               "year": 2027,
               "stage": "host_bid_in_progress",
-              "excerpt": "R | April 12–13, 2027 | No longer accepting proposals Eastern Oregon Nonprofit Conference – Location TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting NIC proposals in spring 2027 Did you recently submit a proposal to present at an upcoming NAO conference ? Pr",
+              "excerpt": "R | April 12–13, 2027 | No longer accepting proposals Eastern Oregon Nonprofit Conference – Location TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting proposals in spring 2027 Did you recently submit a proposal to present at an upcoming conference? Proposals a",
               "same_year_commitment": false,
               "multi_year_ambiguity": false
             }
