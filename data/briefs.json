@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T01:18:57+00:00",
+  "generated_at": "2026-11-11T07:49:40+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -528,8 +528,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "379e3d08cff00a9516fb"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "new york state association of professional land surveyors",
