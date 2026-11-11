@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-11T07:48:47+00:00",
+  "generated_at": "2026-11-11T16:19:49+00:00",
   "scanner_version": "5.1-opportunity-stage-first",
-  "scan_mode": "light",
+  "scan_mode": "deep",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
-  "scan_sources_ok": 72,
+  "scan_sources_ok": 117,
   "official_pages_checked": 17,
   "official_pages_monitored": 29,
   "official_watch_errors": [
@@ -14,31 +14,32 @@
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed",
-    "International Neuroethics Society: HTTPError HTTP Error 403: Forbidden",
-    "Archivists for Congregations of Women Religious: HTTPError HTTP Error 403: Forbidden",
+    "International Neuroethics Society: ValueError expected source passage absent or changed",
+    "Archivists for Congregations of Women Religious: ValueError expected source passage absent or changed",
     "Catholic Media Association: ValueError expected source passage absent or changed",
     "Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat",
     "Oregon PRIMA Chapter: HTTPError HTTP Error 403: Forbidden"
   ],
-  "scan_sources_failed": 13,
-  "scan_queries": 53,
-  "social_index_queries": 6,
+  "scan_sources_failed": 12,
+  "scan_queries": 85,
+  "social_index_queries": 14,
   "named_public_role_targets": 6,
-  "social_index_hits_seen": 60,
+  "social_index_hits_seen": 134,
   "social_direct_post_urls_seen": 0,
   "social_public_posts_archived": 0,
   "social_rejected_by_reason": {
-    "not_direct_social_post": 60
+    "not_direct_social_post": 134
   },
   "social_index_candidates_seen": 0,
-  "primary_source_search_queries": 3,
-  "primary_source_pages_attempted": 2,
-  "primary_source_pages_checked": 0,
+  "primary_source_search_queries": 8,
+  "primary_source_pages_attempted": 6,
+  "primary_source_pages_checked": 3,
   "primary_source_planning_passages": 0,
   "primary_source_research_candidates_added": 0,
   "primary_source_errors": [
-    "official-2029-committee: HTTPError HTTP Error 403: Forbidden",
-    "official-2029-committee: HTTPError HTTP Error 403: Forbidden"
+    "official-future-meetings: HTTPError HTTP Error 403: Forbidden",
+    "official-future-meetings: HTTPError HTTP Error 403: Forbidden",
+    "official-2029-sites: HTTPError HTTP Error 403: Forbidden"
   ],
   "social_by_platform": {
     "linkedin": 0,
@@ -47,7 +48,7 @@
     "x": 0,
     "reddit": 0
   },
-  "sources_attempted": 104,
+  "sources_attempted": 152,
   "coverage_warning": "Public RSS/news, direct association website excerpts and public indexed social post links. Social indexing is incomplete and employee affiliation/decision role unverified. Original publish dates of web excerpts may be unknown. None proves open hotel sourcing.",
   "daily_goal": {
     "date": "2026-11-11",
@@ -2276,22 +2277,21 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 225,
+  "rejected_irrelevant_hits": 320,
   "previous_noise_removed": 0,
   "rejection_reasons": {
-    "organizer_name_missing": 162,
-    "no_event_reference": 159,
-    "no_actionable_change_evidence": 36,
-    "excluded_host": 35,
-    "blog_or_completed_site": 2,
+    "no_event_reference": 192,
+    "organizer_name_missing": 173,
+    "excluded_host": 64,
+    "no_actionable_change_evidence": 35,
+    "blog_or_completed_site": 28,
+    "stale_or_future_index_date": 2,
     "speaker_program_not_venue": 1,
     "legislative_committee_not_meeting_event": 1,
-    "stale_or_future_index_date": 1,
     "not_in_person_site_opportunity": 1,
     "foreign_reference": 1
   },
   "errors": [
-    "committee-formation (bing): ParseError: not well-formed (invalid token): line 1, column 41",
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
@@ -2299,8 +2299,8 @@
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Council of Academic Programs in Communication Sciences and Disorders: ValueError expected source passage absent or changed",
-    "official watch: International Neuroethics Society: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Archivists for Congregations of Women Religious: HTTPError HTTP Error 403: Forbidden",
+    "official watch: International Neuroethics Society: ValueError expected source passage absent or changed",
+    "official watch: Archivists for Congregations of Women Religious: ValueError expected source passage absent or changed",
     "official watch: Catholic Media Association: ValueError expected source passage absent or changed",
     "official watch: Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat",
     "official watch: Oregon PRIMA Chapter: HTTPError HTTP Error 403: Forbidden"
@@ -2320,7 +2320,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Mid-South Educational Research Association",
       "organization_key": "mid south educational research association",
@@ -2446,7 +2446,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "United States Association of Prides",
       "organization_key": "united states association of prides",
@@ -2538,7 +2538,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "University Research Managers Association",
       "organization_key": "university research managers association",
@@ -2630,7 +2630,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Southern Association for College Admission Counseling",
       "organization_key": "southern association for college admission counseling",
@@ -2695,7 +2695,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Society for Historians of American Foreign Relations",
       "organization_key": "society for historians of american foreign relations",
@@ -2745,7 +2745,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "networkED",
       "organization_key": "networked",
@@ -2791,7 +2791,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "North Carolina Association of Municipal Clerks",
       "organization_key": "north carolina association of municipal clerks",
@@ -2853,7 +2853,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "HiTOP Society",
       "organization_key": "hitop society",
@@ -2975,7 +2975,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "National Association of Community Development Extension Professionals",
       "organization_key": "national association of community development extension professionals",
@@ -3053,7 +3053,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association for the Study of Higher Education",
       "organization_key": "association for the study of higher education",
@@ -3115,7 +3115,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
       "organization_key": "indiana league of municipal clerks and treasurers",
@@ -3192,7 +3192,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Leadership Programs",
       "organization_key": "association of leadership programs",
@@ -3271,7 +3271,45 @@
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
-      "qualification": "Unverified source watch"
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "International Neuroethics Society",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-11T16:21:01+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "205230980",
+          "legal_name": "International Neuroethics Society",
+          "fiscal_year": 2023,
+          "revenue": 94677,
+          "fit": "below",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/205230980.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "out-of-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/205230980"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22International%20Neuroethics%20Society%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22International%20Neuroethics%20Society%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22International%20Neuroethics%20Society%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
     },
     {
       "id": "0c10803f5d590d990329",
@@ -3379,7 +3417,69 @@
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
-      "qualification": "Unverified source watch"
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Catholic Media Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-11T16:21:02+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "identity-review",
+          "match": "unresolved",
+          "ein": "",
+          "legal_name": "",
+          "fiscal_year": null,
+          "revenue": null,
+          "fit": "unknown",
+          "source_url": null,
+          "caveat": "Found 0 exact name-and-state matches on first search page. Verify correct legal entity and EIN manually.",
+          "search_url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=Catholic%20Media%20Association",
+          "revenue_range": "unknown",
+          "filing_url": ""
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [
+              {
+                "title": "Jesuit Conference Communications Team Wins 14 Catholic Media Association Awards - Jesuits.org",
+                "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRERISDI1SGw3N1hLNVpveFNSa3psUzZVUzVBdjJRM01aN2ZXU2hsY1hpN09ySGZzaFZjYVJWMU5LdXlFeXhnc2F3R0dOQ1VVREI3cTFIVUdvaXNJZjJYTmlzS0s0QzdGSkxFT09oZmtrcmxJa1FjMjJFWFE3b0N5Q3p6TjBZWmJ2Nlo4UFN4aUNFSUx4SHhMLXFXTEMtcTBta2o2UHFkLWMwYm9qazZnanBOT0c?oc=5",
+                "index_date": "2026-06-22",
+                "excerpt": "Jesuit Conference Communications Team Wins 14 Catholic Media Association Awards Jesuits.org",
+                "event_year_mentions": []
+              },
+              {
+                "title": "Diocese Claims 24 Awards from Catholic Media Association, Including Editor, Writer, and Photographer of the Year - Today's Catholic",
+                "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZVR3b1U1UURWZ3BGZzRnY3M1S0JRZ3d3ZzRMYmNxazVoQzhvWTZmQ3ZHaDFnMDkwamdmOHM1bkdfUkZvU0labzFUYU5od3FjcU9ITk1kOWNmZDJfZ3RjMU03SVJlMWVERy1KT2xpeFhDMWlDZFVNRlVYMWRSSXFJbTUwcnluRS1yYUxRNXM2enNuWldFM2lSdjlxcTRIaXZ2bC1lQlFqa3NqVlU3T09RSklVQQ?oc=5",
+                "index_date": "2025-07-01",
+                "excerpt": "Diocese Claims 24 Awards from Catholic Media Association, Including Editor, Writer, and Photographer of the Year Today's Catholic",
+                "event_year_mentions": []
+              }
+            ],
+            "search_url": "https://www.google.com/search?q=%22Catholic%20Media%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Catholic%20Media%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [
+              {
+                "title": "Diocese Claims 24 Awards from Catholic Media Association, Including Editor, Writer, and Photographer of the Year - Today's Catholic",
+                "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZVR3b1U1UURWZ3BGZzRnY3M1S0JRZ3d3ZzRMYmNxazVoQzhvWTZmQ3ZHaDFnMDkwamdmOHM1bkdfUkZvU0labzFUYU5od3FjcU9ITk1kOWNmZDJfZ3RjMU03SVJlMWVERy1KT2xpeFhDMWlDZFVNRlVYMWRSSXFJbTUwcnluRS1yYUxRNXM2enNuWldFM2lSdjlxcTRIaXZ2bC1lQlFqa3NqVlU3T09RSklVQQ?oc=5",
+                "index_date": "2025-07-01",
+                "excerpt": "Diocese Claims 24 Awards from Catholic Media Association, Including Editor, Writer, and Photographer of the Year Today's Catholic",
+                "event_year_mentions": []
+              }
+            ],
+            "search_url": "https://www.google.com/search?q=%22Catholic%20Media%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
     },
     {
       "id": "2e216974f71afb266d7c",
@@ -3586,7 +3686,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -3632,7 +3732,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -3696,7 +3796,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -3742,7 +3842,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -3806,7 +3906,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-11T07:48:47+00:00",
+      "last_checked": "2026-11-11T16:19:49+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -3898,7 +3998,45 @@
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
-      "qualification": "Unverified source watch"
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Arkansas Education Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-11T16:21:04+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "710004515",
+          "legal_name": "Arkansas Education Association",
+          "fiscal_year": 2023,
+          "revenue": 2760676,
+          "fit": "within",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "in-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
     },
     {
       "id": "53d27bbb760d30f5643c",
@@ -3944,7 +4082,45 @@
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
-      "qualification": "Unverified source watch"
+      "qualification": "Unverified source watch",
+      "research_assist": {
+        "organization_name_candidate": "Arkansas Education Association",
+        "status": "unverified organizer",
+        "checked_at": "2026-11-11T16:21:05+00:00",
+        "decision_window": "unknown",
+        "decision_maker": "unknown",
+        "planner_venue_status": "unknown",
+        "financial": {
+          "status": "provisional-identity",
+          "match": "unique exact name match, EIN confirmation required",
+          "ein": "710004515",
+          "legal_name": "Arkansas Education Association",
+          "fiscal_year": 2023,
+          "revenue": 2760676,
+          "fit": "within",
+          "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
+          "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing.",
+          "revenue_range": "in-range",
+          "filing_url": "https://projects.propublica.org/nonprofits/organizations/710004515"
+        },
+        "research": {
+          "historical_event_mentions": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22annual%20conference%22%20OR%20%22annual%20convention%22%20OR%20%22annual%20meeting%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "planner_and_hotel_counterchecks": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22host%20hotel%22%20OR%20%22room%20block%22%20OR%20%22event%20planner%22%20OR%20%22meeting%20planner%22%20OR%20%22association%20management%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          },
+          "decision_and_leadership_clues": {
+            "results": [],
+            "search_url": "https://www.google.com/search?q=%22Arkansas%20Education%20Association%22%20%28%22conference%20chair%22%20OR%20%22executive%20director%22%20OR%20%22conference%20committee%22%20OR%20%22site%20selection%22%20OR%20%22venue%20proposals%22%29",
+            "status": "indexed clues only, no original-source confirmation"
+          }
+        }
+      }
     },
     {
       "id": "bdda60c722506011eca5",
@@ -4152,10 +4328,15 @@
     }
   ],
   "rejection_audit": {
-    "archived_near_misses": 178,
-    "replayed_this_run": 174,
+    "archived_near_misses": 184,
+    "replayed_this_run": 178,
     "recovered_this_run": 0,
     "historical_rejections_available": false,
     "explanation": "Legacy rejected items were not preserved. This new journal saves near-misses and tests them again."
+  },
+  "discovery_enrichment": {
+    "status": "public-index triage, not buyer qualification",
+    "new_this_run": 4,
+    "caveat": "Only headlines with explicit full nonprofit names are enriched. Other discoveries require manual organizer identity."
   }
 }

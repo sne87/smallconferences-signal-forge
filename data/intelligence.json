@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T20:55:18+00:00",
+  "generated_at": "2026-11-11T16:21:06+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -704,6 +704,16 @@
         {
           "category": "upcoming-event",
           "query_year": 2027,
+          "title": "Timothy Bush Elected as Secretary of Louisiana Travel Association Board - www.visitlakecharles.org",
+          "summary": "Timothy Bush Elected as Secretary of Louisiana Travel Association Board www.visitlakecharles.org",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSUl4OTh2VU1IR3J2X2pFZVA0eU5OY25YbWlWQWY3ZXM4enFTYkdEeTJYRXVWbWpfRG5CU2h1czVBam9wWG9BMTh0TnlERkVrYndXTzlleUVGVlpnalhhMldSc19SejJFRW90aHYyZExTTE1XZnp4cFRZaXdvdlBodF9jMXZHYmdEQjUxNG02ZG5Bb0VqUDhwcEZGbGRQZF9tMFlJdDVSYU1fSDQxdmtaRkI4SWRUM1BYN1c4?oc=5",
+          "index_date": "2026-02-04",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "upcoming-event",
+          "query_year": 2027,
           "title": "Visit Lake Charles Celebrates Louisiana Travel Association Awards, Graduations - visitlakecharles.org",
           "summary": "Visit Lake Charles Celebrates Louisiana Travel Association Awards, Graduations visitlakecharles.org",
           "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNam0zSWNiWEpPNlNyaHEzSEFtRzU2aDlWRmFDT3N3MFRPOUNPZXZDd0l2VnVycThVTXhycGpBZUsweEpSSGo4NW9mRHlwNUpoWWJFcjhtUTA0dFFpaG1yQlU4cmJ0aFdpU3dpVE1ic25GNWlhdTBTTlEtX0haa21uZ2U1T2hyNEx4dGhpeXJrVy00OThRblNTQzJWeWF1QnNrdjBTQzJFdXhINGpUdTBJalQ4Q2dCYzNtZ3h0Y0lldXFJa0E?oc=5",
@@ -798,7 +808,18 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/743242650.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
       },
-      "sources": [],
+      "sources": [
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Terri Bradshaw is new Kentucky Association for Economic Development president - The Lane Report",
+          "summary": "Terri Bradshaw is new Kentucky Association for Economic Development president The Lane Report",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRHc1RE1xeXlmenNIWE1QemdORXBGRlV2NVhaQ0tud0dfSDZTWU11Rk9VUHZFblc3S3l2NU5sRXhfeUxldEk4aDh4SkJ2ZHpUZG96YlhmZkw5bmRzTlllU2FmNW03SjNBSGdBWkxCUVlqNURhb2J6Z3h4bzlBU1RWaGNuT3NaOUdmLVNhWHMzaDF6VjZhQm5mcU45U3Q1amh3bGFKWTJaZ0hjUkxFeFJIMlZJNm9taHRpV210YQ?oc=5",
+          "index_date": "2024-06-06",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
@@ -1065,18 +1086,7 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/596140583.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [
-        {
-          "category": "venue-commitment",
-          "query_year": null,
-          "title": "Communication Alumna Recognized by Florida Society of Association Executives - Florida State University",
-          "summary": "Communication Alumna Recognized by Florida Society of Association Executives Florida State University",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNYnNZS3YyelhjQW1ockJXR1pRQkxVa3JvU2JtTkpyak1IdXBmYWhFSjYxOFZzV2EydDVpSGxGTEZwMldZQlBLTnZhV0Z4bTFRMFdJcVF0dU5rN095alJtZFFmNzZ3ODN4aS1GYnBlQ25WZ2JDNkFnalp5MFU1NXdJTkl5SE0za010TWtuN2VtU3Y1bEt2MWhDd3hIV0tMa1czNEpxTXBOcDIwOVVnT2NlRm9PVS15Tk56bW1QTjhITklWUlA4?oc=5",
-          "index_date": "2020-09-09",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        }
-      ],
+      "sources": [],
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
@@ -1144,7 +1154,9 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [],
+      "errors": [
+        "upcoming-event: HTTPError"
+      ],
       "status": "investigation-only"
     }
   ]
