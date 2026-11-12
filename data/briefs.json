@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T12:59:29+00:00",
+  "generated_at": "2026-11-12T20:59:30+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -442,6 +442,69 @@
       "ai_status": "chatgpt_scheduled",
       "ai_source": "ChatGPT scheduled, source-limited synthesis",
       "ai_reviewed_at": "2026-11-09",
+      "next_verification_questions": [
+        "Confirm organizer and correct legal entity/EIN",
+        "Verify two past conference cycles, expected next event and manageable scope",
+        "Quantify event-specific costs, lodging and supplier spend",
+        "Find original dated evidence that a specific site/planning decision is still influenceable",
+        "Cross-check RFP, selected venue, room block, paid planner and other incumbents",
+        "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
+      ],
+      "qualified": false,
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+    },
+    {
+      "key": "online news association",
+      "name": "Online News Association",
+      "fingerprint": "9fdd4e454f0ffaac59e4",
+      "first_detected": "2026-11-12",
+      "source_count": 1,
+      "independent_publishers": 1,
+      "source_evidence": [
+        {
+          "title": "Online News Association cuts five staff as conference costs climb - PPC Land",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSTRyX2JXZjVfbGFIVWdFRllEY2Y1MllRN2xwbk5NZWp2WV94YWQxeV9QckZjMzdYbHhRQ1pqeF9vVVVYSVpJWC1wd0NGSnNIalNINmpIcjRlWE5oUVNxUWVPZXdXOGFNRmVrTVNqSWlzeGx4dk9jUEIzY3JROXhxWjU0UFRCRUpiZ29z?oc=5",
+          "source": "PPC Land",
+          "reported_date": "2026-11-12",
+          "note": "Online News Association cuts five staff as conference costs climb PPC Land",
+          "freshness_warning": "",
+          "commitment_flags": []
+        }
+      ],
+      "financial": {},
+      "signal_families": [
+        "economics",
+        "economics-watch"
+      ],
+      "commitment_flags": [],
+      "suggested_bucket": "early-watch",
+      "research_triage": {
+        "bucket": "early-watch",
+        "official_cycle_sources": 0,
+        "needs_event_year_procurement_check": false,
+        "reason": "No sufficiently supported, unobstructed event-year research opening yet"
+      },
+      "pre_rfp_outreach_screen": {
+        "approach_ready": false,
+        "eligible_event_years": [],
+        "missing_checks": [
+          "legal_entity_verified",
+          "revenue_verified",
+          "recurring_event_verified",
+          "scope_verified",
+          "decision_owner_verified",
+          "decision_ahead_verified",
+          "incumbent_checked",
+          "external_advisor_path_verified"
+        ],
+        "status": "future_watch_or_skip",
+        "warning": "Research gate only. Never automatically qualify or contact an organizer."
+      },
+      "evidence_digest": "Online News Association cuts five staff as conference costs climb PPC Land",
+      "ai_summary": "",
+      "ai_status": "not_configured",
+      "ai_source": "",
+      "ai_reviewed_at": "",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
         "Verify two past conference cycles, expected next event and manageable scope",

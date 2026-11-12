@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-12T12:56:12+00:00",
+  "generated_at": "2026-11-12T20:56:18+00:00",
   "scanner_version": "5.1-opportunity-stage-first",
   "scan_mode": "deep",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
-  "scan_sources_ok": 122,
+  "scan_sources_ok": 119,
   "official_pages_checked": 17,
   "official_pages_monitored": 29,
   "official_watch_errors": [
@@ -24,21 +24,20 @@
   "scan_queries": 85,
   "social_index_queries": 14,
   "named_public_role_targets": 6,
-  "social_index_hits_seen": 140,
+  "social_index_hits_seen": 134,
   "social_direct_post_urls_seen": 0,
   "social_public_posts_archived": 0,
   "social_rejected_by_reason": {
-    "not_direct_social_post": 140
+    "not_direct_social_post": 134
   },
   "social_index_candidates_seen": 0,
   "primary_source_search_queries": 8,
-  "primary_source_pages_attempted": 8,
-  "primary_source_pages_checked": 6,
+  "primary_source_pages_attempted": 5,
+  "primary_source_pages_checked": 4,
   "primary_source_planning_passages": 0,
   "primary_source_research_candidates_added": 0,
   "primary_source_errors": [
-    "official-conference-hotel: HTTPError HTTP Error 403: Forbidden",
-    "official-conference-hotel: ValueError source_too_large"
+    "official-conference-hotel: HTTPError HTTP Error 403: Forbidden"
   ],
   "social_by_platform": {
     "linkedin": 0,
@@ -47,7 +46,7 @@
     "x": 0,
     "reddit": 0
   },
-  "sources_attempted": 159,
+  "sources_attempted": 153,
   "coverage_warning": "Public RSS/news, direct association website excerpts and public indexed social post links. Social indexing is incomplete and employee affiliation/decision role unverified. Original publish dates of web excerpts may be unknown. None proves open hotel sourcing.",
   "daily_goal": {
     "date": "2026-11-12",
@@ -63,15 +62,17 @@
     "catchup_queries_used": 6,
     "newly_added_this_scan": []
   },
-  "new_discoveries": 0,
-  "new_organizations": [],
-  "new_organizations_count": 0,
+  "new_discoveries": 1,
+  "new_organizations": [
+    "Online News Association"
+  ],
+  "new_organizations_count": 1,
   "new_source_watch_organizations": [],
   "new_source_watch_count": 0,
   "curated_research_additions": 17,
-  "review_priority_count": 4,
+  "review_priority_count": 5,
   "review_watch_count": 25,
-  "stacked_organizations": 22,
+  "stacked_organizations": 23,
   "organizations": [
     {
       "key": "hitop society",
@@ -778,6 +779,79 @@
       "priority": 48,
       "stack_stage": "multiple evidence items, no verified buying window",
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
+      "key": "online news association",
+      "name": "Online News Association",
+      "signal_ids": [
+        "d99944182ab28dae193a"
+      ],
+      "families": [
+        "economics",
+        "economics-watch"
+      ],
+      "commitment_flags": [],
+      "evidence": [
+        {
+          "id": "d99944182ab28dae193a",
+          "title": "Online News Association cuts five staff as conference costs climb - PPC Land",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSTRyX2JXZjVfbGFIVWdFRllEY2Y1MllRN2xwbk5NZWp2WV94YWQxeV9QckZjMzdYbHhRQ1pqeF9vVVVYSVpJWC1wd0NGSnNIalNINmpIcjRlWE5oUVNxUWVPZXdXOGFNRmVrTVNqSWlzeGx4dk9jUEIzY3JROXhxWjU0UFRCRUpiZ29z?oc=5",
+          "source": "PPC Land",
+          "published": "2026-11-12",
+          "document_date": "",
+          "freshness": "",
+          "counterevidence_flags": [],
+          "families": [
+            "economics",
+            "economics-watch"
+          ],
+          "tier": "priority",
+          "window_stage": "watch_only",
+          "bid_deadline": "",
+          "source_type": "html",
+          "source_page_number": null,
+          "event_year": null,
+          "cycle_decisions": [],
+          "whole_document_commitment_flags": []
+        }
+      ],
+      "priority_count": 1,
+      "watch_count": 0,
+      "most_recent": "2026-11-12",
+      "window_stages": [
+        "watch_only"
+      ],
+      "event_years": [],
+      "cycle_candidates": [],
+      "play": "Bold",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-12",
+      "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "economics",
+        "economics-watch"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "No confirmed recurring event history",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Venue and planner agreement status unknown",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": false,
+      "priority": 76,
+      "stack_stage": "single-source clue",
+      "first_question": "Which next conference decision is not yet contracted, and who authorizes an external planner?"
     },
     {
       "key": "nonprofit association of oregon",
@@ -2276,15 +2350,15 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 380,
+  "rejected_irrelevant_hits": 401,
   "previous_noise_removed": 0,
   "rejection_reasons": {
-    "no_event_reference": 221,
-    "organizer_name_missing": 199,
-    "excluded_host": 82,
-    "no_actionable_change_evidence": 38,
-    "blog_or_completed_site": 18,
+    "no_event_reference": 268,
+    "organizer_name_missing": 213,
+    "excluded_host": 56,
+    "no_actionable_change_evidence": 43,
     "foreign_reference": 7,
+    "blog_or_completed_site": 3,
     "speaker_program_not_venue": 1,
     "legislative_committee_not_meeting_event": 1,
     "stale_or_future_index_date": 1,
@@ -2306,6 +2380,58 @@
   ],
   "signals": [
     {
+      "id": "d99944182ab28dae193a",
+      "title": "Online News Association cuts five staff as conference costs climb - PPC Land",
+      "summary": "Online News Association cuts five staff as conference costs climb PPC Land",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSTRyX2JXZjVfbGFIVWdFRllEY2Y1MllRN2xwbk5NZWp2WV94YWQxeV9QckZjMzdYbHhRQ1pqeF9vVVVYSVpJWC1wd0NGSnNIalNINmpIcjRlWE5oUVNxUWVPZXdXOGFNRmVrTVNqSWlzeGx4dk9jUEIzY3JROXhxWjU0UFRCRUpiZ29z?oc=5",
+      "source": "PPC Land",
+      "published": "2026-11-12",
+      "indexed_date": "",
+      "date_basis": "Public search-feed timestamp; confirm original publication date",
+      "origin": "news_index",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-12",
+      "organization_candidate": "Online News Association",
+      "organization_key": "online news association",
+      "review_tier": "priority",
+      "window_stage": "watch_only",
+      "event_year": null,
+      "cycle_decisions": [],
+      "cycle_evidence": "",
+      "whole_document_commitment_flags": [],
+      "bid_deadline": "",
+      "window_flags": [],
+      "hotel_scope_mentioned": false,
+      "strong_evidence": {
+        "economics": "ws Association cuts five staff as conference costs climb - PPC Land Online News Association cuts five staff as conference costs climb PPC Land"
+      },
+      "early_evidence": {
+        "economics-watch": "tion cuts five staff as conference costs climb - PPC Land Online News Association cuts five staff as conference costs climb PPC Land"
+      },
+      "types": [
+        "economics",
+        "economics-watch"
+      ],
+      "priority": 76,
+      "robert_fit_clue": "Sector not yet verified",
+      "pre_rfp_priority": false,
+      "query_id": "regional-hotel-costs",
+      "play": "Bold",
+      "next_action": "Find the actual conference financial issue (rooms, food, AV, attrition, registration) and the responsible committee.",
+      "flags": [],
+      "signal_strength": "Specific indexed buying/planning clue, not a confirmed buyer",
+      "signal_evidence": {
+        "economics": "ws Association cuts five staff as conference costs climb - PPC Land Online News Association cuts five staff as conference costs climb PPC Land"
+      },
+      "evidence_gate": "Named organizer + event + source-text triage; no open hotel or buyer decision verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified discovery",
+      "first_detected": "2026-11-12"
+    },
+    {
       "id": "3e6ecf6e3bda131c950b",
       "title": "Mid-South Educational Research Association | Board minutes: 2028-2029 venue proposals and Executive Director negotiation role",
       "summary": "tee, including new committee members. ● It was noted that the 2027 Annual Meeting now has a signed contract for Pensacola, FL, at the Hilton Pensacola Beach. ● Ideas discussed for the 2028 Annual Meeting included Arkansas (Little Rock and Fayetteville/Bentonville), Kentucky (Lexington), Tennessee (Nashville or Knoxville). ● A motion was made by Dr. Jane Nell",
@@ -2319,7 +2445,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Mid-South Educational Research Association",
       "organization_key": "mid south educational research association",
@@ -2445,7 +2571,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "United States Association of Prides",
       "organization_key": "united states association of prides",
@@ -2537,7 +2663,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "University Research Managers Association",
       "organization_key": "university research managers association",
@@ -2629,7 +2755,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Southern Association for College Admission Counseling",
       "organization_key": "southern association for college admission counseling",
@@ -2694,7 +2820,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Society for Historians of American Foreign Relations",
       "organization_key": "society for historians of american foreign relations",
@@ -2744,7 +2870,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "networkED",
       "organization_key": "networked",
@@ -2790,7 +2916,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "North Carolina Association of Municipal Clerks",
       "organization_key": "north carolina association of municipal clerks",
@@ -2852,7 +2978,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "HiTOP Society",
       "organization_key": "hitop society",
@@ -2974,7 +3100,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "National Association of Community Development Extension Professionals",
       "organization_key": "national association of community development extension professionals",
@@ -3052,7 +3178,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association for the Study of Higher Education",
       "organization_key": "association for the study of higher education",
@@ -3114,7 +3240,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
       "organization_key": "indiana league of municipal clerks and treasurers",
@@ -3191,7 +3317,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Leadership Programs",
       "organization_key": "association of leadership programs",
@@ -3274,7 +3400,7 @@
       "research_assist": {
         "organization_name_candidate": "International Neuroethics Society",
         "status": "unverified organizer",
-        "checked_at": "2026-11-12T12:57:33+00:00",
+        "checked_at": "2026-11-12T20:57:31+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -3428,7 +3554,7 @@
       "research_assist": {
         "organization_name_candidate": "Catholic Media Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-12T12:57:35+00:00",
+        "checked_at": "2026-11-12T20:57:33+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -3693,7 +3819,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -3739,7 +3865,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -3803,7 +3929,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -3849,7 +3975,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -3913,7 +4039,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-12T12:56:12+00:00",
+      "last_checked": "2026-11-12T20:56:18+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -4009,7 +4135,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-12T12:57:36+00:00",
+        "checked_at": "2026-11-12T20:57:34+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -4093,7 +4219,7 @@
       "research_assist": {
         "organization_name_candidate": "Arkansas Education Association",
         "status": "unverified organizer",
-        "checked_at": "2026-11-12T12:57:38+00:00",
+        "checked_at": "2026-11-12T20:57:36+00:00",
         "decision_window": "unknown",
         "decision_maker": "unknown",
         "planner_venue_status": "unknown",
@@ -4335,8 +4461,8 @@
     }
   ],
   "rejection_audit": {
-    "archived_near_misses": 193,
-    "replayed_this_run": 189,
+    "archived_near_misses": 203,
+    "replayed_this_run": 193,
     "recovered_this_run": 0,
     "historical_rejections_available": false,
     "explanation": "Legacy rejected items were not preserved. This new journal saves near-misses and tests them again."

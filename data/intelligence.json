@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T12:57:39+00:00",
+  "generated_at": "2026-11-12T20:57:37+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -407,7 +407,7 @@
       "sources": [
         {
           "category": "event-history",
-          "query_year": 2025,
+          "query_year": 2026,
           "title": "Cempa Community Care's Shannon Burger Wins Executive Leadership Award From The Tennessee Primary Care Association - Chattanoogan.com Breaking News",
           "summary": "Cempa Community Care's Shannon Burger Wins Executive Leadership Award From The Tennessee Primary Care Association Chattanoogan.com Breaking News",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQU1JMUVhPTkZxaHplSTZCSzhmVXVuRy14WGt1T2JkLVdsUEhqdTJmOXNwTm14RXZjdmhMdy1DQzBtUmJST0pET2FUTzhiaVJkc1ktR215a0pkcWZfVEFZUE9EWjdWRzZxQk5scERQWl9zRlRkTDZkQm1mUWM3bGhsN3lEZTEzaTRwWFFzNURxNUJDY2c?oc=5",
@@ -418,7 +418,7 @@
       ],
       "checks": [],
       "historical_years": [
-        2025
+        2026
       ],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [],

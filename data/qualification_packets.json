@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T12:59:29.657813+00:00",
+  "generated_at": "2026-11-12T20:59:30.903223+00:00",
   "source": "Signal Forge indexed public sources and free ProPublica Nonprofit Explorer API",
   "qualified_count": 0,
   "packets": [
@@ -1405,6 +1405,62 @@
       "counterevidence": [],
       "research_priority": 5,
       "one_next_step": "Confirm the exact event-year venue/planner decision and authority in dated organizer minutes",
+      "limitations": "Indexed evidence and EIN name searches are research clues, not independent proof of a current unawarded contract, conference spend, decision authority, or paid advisor fit."
+    },
+    {
+      "key": "online news association",
+      "name": "Online News Association",
+      "suggested_research_bucket": "early-watch",
+      "qualified": false,
+      "event_years": [],
+      "financial_research": {
+        "status": "exact_name_candidates_require_organizer_confirmation",
+        "revenue_status": "unverified",
+        "candidates": [
+          {
+            "legal_name": "Online News Association",
+            "ein": "510389878",
+            "state": "DC",
+            "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/510389878.json",
+            "status": "name_only_unverified"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSTRyX2JXZjVfbGFIVWdFRllEY2Y1MllRN2xwbk5NZWp2WV94YWQxeV9QckZjMzdYbHhRQ1pqeF9vVVVYSVpJWC1wd0NGSnNIalNINmpIcjRlWE5oUVNxUWVPZXdXOGFNRmVrTVNqSWlzeGx4dk9jUEIzY3JROXhxWjU0UFRCRUpiZ29z?oc=5",
+          "title": "Online News Association cuts five staff as conference costs climb - PPC Land",
+          "document_date": "2026-11-12",
+          "publication_date_verified": true,
+          "source": "PPC Land",
+          "window_stage": "watch_only",
+          "counterevidence": [],
+          "event_cycles": []
+        }
+      ],
+      "evidence_checks": {
+        "legal_entity_verified": "unknown",
+        "revenue_verified": "unknown",
+        "recurring_event_verified": "unknown",
+        "scope_verified": "unknown",
+        "decision_owner_verified": "unknown",
+        "decision_ahead_verified": "unknown",
+        "incumbent_checked": "unknown",
+        "external_advisor_path_verified": "unknown"
+      },
+      "unresolved_checks": [
+        "legal_entity_verified",
+        "revenue_verified",
+        "recurring_event_verified",
+        "scope_verified",
+        "decision_owner_verified",
+        "decision_ahead_verified",
+        "incumbent_checked",
+        "external_advisor_path_verified"
+      ],
+      "counterevidence": [],
+      "research_priority": 5,
+      "one_next_step": "Verify a future overnight conference year from the organizer's own event calendar",
       "limitations": "Indexed evidence and EIN name searches are research clues, not independent proof of a current unawarded contract, conference spend, decision authority, or paid advisor fit."
     },
     {
