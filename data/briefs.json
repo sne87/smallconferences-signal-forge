@@ -469,6 +469,17 @@
           "note": "Online News Association cuts five staff as conference costs climb PPC Land",
           "freshness_warning": "",
           "commitment_flags": []
+        },
+        {
+          "title": "A Strategic Shift for ONA",
+          "url": "https://www.journalists.org/news/a-strategic-shift-for-ona",
+          "source": "Online News Association official statement, Niketa Patel",
+          "reported_date": "2026-11-10",
+          "note": "ONA confirms no in-person conference in 2027, pauses in-person events, cites rising convening costs and reduced sponsorship/professional development budgets; board exploring partnerships.",
+          "freshness_warning": "Primary source checked 2026-11-12",
+          "commitment_flags": [
+            "2027 conference cancelled"
+          ]
         }
       ],
       "financial": {},
@@ -501,10 +512,10 @@
         "warning": "Research gate only. Never automatically qualify or contact an organizer."
       },
       "evidence_digest": "Online News Association cuts five staff as conference costs climb PPC Land",
-      "ai_summary": "",
-      "ai_status": "not_configured",
-      "ai_source": "",
-      "ai_reviewed_at": "",
+      "ai_summary": "CONFIRMED FACTS: Online News Association (ONA) announced on November 10, 2026 that it is pausing in-person events and will NOT hold its annual conference in 2027. Its latest conference, ONA26, was in Chicago. Executive Director/CEO Niketa Patel says large-event costs increased while sponsorship and professional-development budgets declined. Long-time staff will leave in November; Patel continues with a board led by Andrew Fitzgerald. ONA will continue its Women's Leadership Accelerator and online activities. Primary evidence: https://www.journalists.org/news/a-strategic-shift-for-ona ; initial discovery: https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSTRyX2JXZjVfbGFIVWdFRllEY2Y1MllRN2xwbk5NZWp2WV94YWQxeV9QckZjMzdYbHhRQ1pqeF9vVVVYSVpJWC1wd0NGSnNIalNINmpIcjRlWE5oUVNxUWVPZXdXOGFNRmVrTVNqSWlzeGx4dk9jUEIzY3JROXhxWjU0UFRCRUpiZ29z?oc=5 . RESEARCH CLUES: Leadership is exploring partnerships and ways to bring the community together again, but has not announced a specific replacement event or sourcing project. Cost pressure may eventually make a smaller-format cost review relevant, conditional on a concrete event decision. COUNTEREVIDENCE: The explicit cancellation of the 2027 conference defeats any claim of an open 2027 hotel/conference RFP; staffing reductions and cost constraints make a paid outside engagement especially uncertain. No evidence of a request for an outside planner or of a viable solo-service assignment for Robert Kraus. OPEN QUALIFICATION QUESTIONS: Will ONA resume an in-person event in 2028 or later, and at what scale? What are event-specific hotel room nights, food and beverage, AV and venue costs (not organizational Form 990 revenue)? Is there an approved budget or actual procurement timeline? Who owns future event sourcing and contracting, and what incumbent venue, planner or supplier commitments exist? Would leadership consider a no-cost comparative venue assessment or paid independent support? Can any future assignment be delivered by Robert alone? Current disposition: watch for a newly approved event cycle; not an actionable pre-RFP conference lead.",
+      "ai_status": "chatgpt_scheduled",
+      "ai_source": "ChatGPT scheduled, source-limited synthesis",
+      "ai_reviewed_at": "2026-11-12",
       "next_verification_questions": [
         "Confirm organizer and correct legal entity/EIN",
         "Verify two past conference cycles, expected next event and manageable scope",
