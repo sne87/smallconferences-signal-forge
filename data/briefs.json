@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T20:59:30+00:00",
+  "generated_at": "2026-11-13T01:57:56+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -469,17 +469,6 @@
           "note": "Online News Association cuts five staff as conference costs climb PPC Land",
           "freshness_warning": "",
           "commitment_flags": []
-        },
-        {
-          "title": "A Strategic Shift for ONA",
-          "url": "https://www.journalists.org/news/a-strategic-shift-for-ona",
-          "source": "Online News Association official statement, Niketa Patel",
-          "reported_date": "2026-11-10",
-          "note": "ONA confirms no in-person conference in 2027, pauses in-person events, cites rising convening costs and reduced sponsorship/professional development budgets; board exploring partnerships.",
-          "freshness_warning": "Primary source checked 2026-11-12",
-          "commitment_flags": [
-            "2027 conference cancelled"
-          ]
         }
       ],
       "financial": {},
