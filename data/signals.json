@@ -1,15 +1,13 @@
 {
-  "generated_at": "2026-11-14T14:18:22+00:00",
+  "generated_at": "2026-11-14T19:16:15+00:00",
   "scanner_version": "5.1-opportunity-stage-first",
   "scan_mode": "light",
   "purpose": "Two-lane named-organizer clues, with conservative source-aware stacking. No automatic qualification.",
-  "scan_sources_ok": 72,
-  "official_pages_checked": 17,
+  "scan_sources_ok": 73,
+  "official_pages_checked": 19,
   "official_pages_monitored": 29,
   "official_watch_errors": [
-    "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
-    "Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
@@ -18,28 +16,25 @@
     "Archivists for Congregations of Women Religious: HTTPError HTTP Error 403: Forbidden",
     "Catholic Media Association: ValueError expected source passage absent or changed",
     "Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat",
-    "Oregon PRIMA Chapter: HTTPError HTTP Error 403: Forbidden"
+    "networkED: ValueError expected source passage absent or changed"
   ],
-  "scan_sources_failed": 12,
+  "scan_sources_failed": 10,
   "scan_queries": 53,
   "social_index_queries": 6,
   "named_public_role_targets": 6,
-  "social_index_hits_seen": 57,
+  "social_index_hits_seen": 61,
   "social_direct_post_urls_seen": 0,
   "social_public_posts_archived": 0,
   "social_rejected_by_reason": {
-    "not_direct_social_post": 57
+    "not_direct_social_post": 61
   },
   "social_index_candidates_seen": 0,
   "primary_source_search_queries": 3,
-  "primary_source_pages_attempted": 4,
+  "primary_source_pages_attempted": 2,
   "primary_source_pages_checked": 2,
   "primary_source_planning_passages": 0,
   "primary_source_research_candidates_added": 0,
-  "primary_source_errors": [
-    "official-hotel-expiration: HTTPError HTTP Error 403: Forbidden",
-    "official-hotel-expiration: HTTPError HTTP Error 403: Forbidden"
-  ],
+  "primary_source_errors": [],
   "social_by_platform": {
     "linkedin": 0,
     "facebook": 0,
@@ -47,7 +42,7 @@
     "x": 0,
     "reddit": 0
   },
-  "sources_attempted": 105,
+  "sources_attempted": 104,
   "coverage_warning": "Public RSS/news, direct association website excerpts and public indexed social post links. Social indexing is incomplete and employee affiliation/decision role unverified. Original publish dates of web excerpts may be unknown. None proves open hotel sourcing.",
   "daily_goal": {
     "date": "2026-11-14",
@@ -1099,10 +1094,10 @@
           "id": "d2c40d9ffb0bc10956e0",
           "title": "Arkansas Education Association | Summer 2027 conference calendar change",
           "url": "https://www.aeaonline.org/teach",
-          "source": "Official association page (research snapshot)",
+          "source": "Official association page (monitored)",
           "published": "",
           "document_date": "",
-          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "freshness": "Official source page fetched during this scan",
           "counterevidence_flags": [],
           "families": [
             "disruption"
@@ -1118,7 +1113,7 @@
               "event_year": 2027,
               "stage": "planning_change_watch",
               "pre_rfp_research_candidate": false,
-              "evidence_excerpt": "The Conference is currently being shifted to Summer 2027.",
+              "evidence_excerpt": "General Conference Information The Conference is currently being shifted to Summer 2027.",
               "other_stages": [
                 "planning_change_watch"
               ],
@@ -1136,10 +1131,10 @@
           "id": "53d27bbb760d30f5643c",
           "title": "Arkansas Education Association | New executive director and program-operations leadership",
           "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-          "source": "Official association page (research snapshot)",
+          "source": "Official association page (monitored)",
           "published": "",
           "document_date": "",
-          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
+          "freshness": "Official source page fetched during this scan",
           "counterevidence_flags": [],
           "families": [
             "capacity"
@@ -1507,10 +1502,10 @@
           "id": "91f7d60a9ddc13f088cb",
           "title": "networkED | Conference chair vacancy covers venue, catering and 2027-2028 budget",
           "url": "https://www.network-ed.org/open-positions",
-          "source": "Official association page (monitored)",
+          "source": "Official association page (research snapshot)",
           "published": "",
           "document_date": "2026-11",
-          "freshness": "Official source page fetched during this scan",
+          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
           "counterevidence_flags": [],
           "families": [
             "capacity"
@@ -1520,8 +1515,43 @@
           "bid_deadline": "",
           "source_type": "html",
           "source_page_number": null,
-          "event_year": null,
-          "cycle_decisions": [],
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [
+                "Posted bid deadline has passed"
+              ],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            },
+            {
+              "event_year": 2028,
+              "stage": "watch_only",
+              "pre_rfp_research_candidate": false,
+              "evidence_excerpt": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review.",
+              "other_stages": [
+                "watch_only"
+              ],
+              "counterevidence_flags": [
+                "Posted bid deadline has passed"
+              ],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+            }
+          ],
           "whole_document_commitment_flags": []
         }
       ],
@@ -1531,7 +1561,9 @@
       "window_stages": [
         "watch_only"
       ],
-      "event_years": [],
+      "event_years": [
+        2027
+      ],
       "cycle_candidates": [],
       "play": "Smart",
       "qualifying_status": "Requires manual verification",
@@ -1994,6 +2026,115 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     },
     {
+      "key": "oregon prima chapter",
+      "name": "Oregon PRIMA Chapter",
+      "signal_ids": [
+        "976a40babc268bcd84f2"
+      ],
+      "families": [
+        "board-location"
+      ],
+      "commitment_flags": [
+        "2027 Fall Conference location announced as Hood River",
+        "Source decisions documented in 2025; may have changed"
+      ],
+      "evidence": [
+        {
+          "id": "976a40babc268bcd84f2",
+          "title": "Oregon PRIMA Chapter | Board documented 2025 venue complaints and 2028 site exploration",
+          "url": "https://orprima.starchapter.com/images/10-28-25_OR-PRIMA_Minutes.pdf",
+          "source": "Official association page (monitored)",
+          "published": "",
+          "document_date": "2025-10-27",
+          "freshness": "Official source page fetched during this scan",
+          "counterevidence_flags": [
+            "Source decisions documented in 2025; may have changed",
+            "2027 Fall Conference location announced as Hood River"
+          ],
+          "families": [
+            "board-location"
+          ],
+          "tier": "watch",
+          "window_stage": "possible_pre_rfp",
+          "bid_deadline": "",
+          "source_type": "html",
+          "source_page_number": null,
+          "event_year": 2027,
+          "cycle_decisions": [
+            {
+              "event_year": 2027,
+              "stage": "possible_pre_rfp",
+              "pre_rfp_research_candidate": true,
+              "evidence_excerpt": "CONFERENCE LOCATIONS SPRING 2027 & FALL 2028 The Board explored venue options for the 2027 Spring Education Session and 2028 Fall Conference. Suggestions included the Florence Convention Center, McMinnville Waves and Aviation Museum or Seaside. Members d iscussed whether the Spring Session should remain in the Valley or move to a destination venue.",
+              "other_stages": [
+                "possible_pre_rfp"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+            },
+            {
+              "event_year": 2028,
+              "stage": "possible_pre_rfp",
+              "pre_rfp_research_candidate": true,
+              "evidence_excerpt": "CONFERENCE LOCATIONS SPRING 2027 & FALL 2028 The Board explored venue options for the 2027 Spring Education Session and 2028 Fall Conference. Suggestions included the Florence Convention Center, McMinnville Waves and Aviation Museum or Seaside. Members d iscussed whether the Spring Session should remain in the Valley or move to a destination venue.",
+              "other_stages": [
+                "possible_pre_rfp"
+              ],
+              "counterevidence_flags": [],
+              "commitment_evidence_same_year": false,
+              "multi_year_sentence": true,
+              "qualified": false,
+              "open_contract_verified": false,
+              "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+            }
+          ],
+          "whole_document_commitment_flags": []
+        }
+      ],
+      "priority_count": 0,
+      "watch_count": 1,
+      "most_recent": "2026-11-08",
+      "window_stages": [
+        "possible_pre_rfp"
+      ],
+      "event_years": [
+        2027
+      ],
+      "cycle_candidates": [],
+      "play": "Smart",
+      "qualifying_status": "Requires manual verification",
+      "first_detected": "2026-11-08",
+      "mentions": 1,
+      "financial_screen": {
+        "band": "unknown",
+        "warning": "Revenue and identity require original filing review."
+      },
+      "distinct_sources": 1,
+      "early_signal_families": [
+        "board-location"
+      ],
+      "robert_fit_screen": {
+        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
+        "recurring_event": "Research previous two event cycles",
+        "event_spend": "Event budget, room nights and supplier spend unverified",
+        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
+        "decision_maker": "Named purchasing authority and accessibility unverified",
+        "venue_planner": "Potential commitment evidence present",
+        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
+        "qualified": false,
+        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
+        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
+      },
+      "pre_rfp_research_priority": false,
+      "priority": 35,
+      "stack_stage": "single-source clue",
+      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
+    },
+    {
       "key": "southern association of student financial aid administrators",
       "name": "Southern Association of Student Financial Aid Administrators",
       "signal_ids": [
@@ -2088,82 +2229,6 @@
       "distinct_sources": 1,
       "early_signal_families": [
         "location-exploration"
-      ],
-      "robert_fit_screen": {
-        "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
-        "recurring_event": "Research previous two event cycles",
-        "event_spend": "Event budget, room nights and supplier spend unverified",
-        "workload": "Attendance, days, tracks, exhibitors and staff unverified",
-        "decision_maker": "Named purchasing authority and accessibility unverified",
-        "venue_planner": "Potential commitment evidence present",
-        "pre_rfp": "Cannot confirm open sourcing from public silence; check decision owner",
-        "qualified": false,
-        "review_goal": "25-50 researched organizers, 12 sourced manual-ready prospects",
-        "suggested_next_check": "Confirm exact event, committee/decision-maker, future hotel and current planner, then event spending"
-      },
-      "pre_rfp_research_priority": false,
-      "priority": 35,
-      "stack_stage": "single-source clue",
-      "first_question": "What is this organization deciding next, and does it have an independent planning need?"
-    },
-    {
-      "key": "oregon prima chapter",
-      "name": "Oregon PRIMA Chapter",
-      "signal_ids": [
-        "976a40babc268bcd84f2"
-      ],
-      "families": [
-        "board-location"
-      ],
-      "commitment_flags": [
-        "2027 Fall Conference location announced as Hood River",
-        "Source decisions documented in 2025; may have changed"
-      ],
-      "evidence": [
-        {
-          "id": "976a40babc268bcd84f2",
-          "title": "Oregon PRIMA Chapter | Board documented 2025 venue complaints and 2028 site exploration",
-          "url": "https://orprima.starchapter.com/images/10-28-25_OR-PRIMA_Minutes.pdf",
-          "source": "Official association page (research snapshot)",
-          "published": "",
-          "document_date": "2025-10-27",
-          "freshness": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
-          "counterevidence_flags": [
-            "Source decisions documented in 2025; may have changed",
-            "2027 Fall Conference location announced as Hood River"
-          ],
-          "families": [
-            "board-location"
-          ],
-          "tier": "watch",
-          "window_stage": "watch_only",
-          "bid_deadline": "",
-          "source_type": "html",
-          "source_page_number": null,
-          "event_year": null,
-          "cycle_decisions": [],
-          "whole_document_commitment_flags": []
-        }
-      ],
-      "priority_count": 0,
-      "watch_count": 1,
-      "most_recent": "2026-11-08",
-      "window_stages": [
-        "watch_only"
-      ],
-      "event_years": [],
-      "cycle_candidates": [],
-      "play": "Smart",
-      "qualifying_status": "Requires manual verification",
-      "first_detected": "2026-11-08",
-      "mentions": 1,
-      "financial_screen": {
-        "band": "unknown",
-        "warning": "Revenue and identity require original filing review."
-      },
-      "distinct_sources": 1,
-      "early_signal_families": [
-        "board-location"
       ],
       "robert_fit_screen": {
         "specialty": "Requires legal identity / nonprofit or SMERF confirmation",
@@ -2349,24 +2414,22 @@
       "first_question": "What is this organization deciding next, and does it have an independent planning need?"
     }
   ],
-  "rejected_irrelevant_hits": 212,
+  "rejected_irrelevant_hits": 232,
   "previous_noise_removed": 0,
   "rejection_reasons": {
-    "organizer_name_missing": 208,
-    "no_event_reference": 146,
-    "no_actionable_change_evidence": 38,
-    "excluded_host": 33,
-    "blog_or_completed_site": 9,
-    "speaker_program_not_venue": 1,
+    "organizer_name_missing": 209,
+    "no_event_reference": 153,
+    "no_actionable_change_evidence": 45,
+    "excluded_host": 45,
+    "foreign_reference": 3,
+    "speaker_program_not_venue": 2,
     "legislative_committee_not_meeting_event": 1,
     "stale_or_future_index_date": 1,
     "not_in_person_site_opportunity": 1,
-    "foreign_reference": 1
+    "blog_or_completed_site": 1
   },
   "errors": [
-    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
-    "official watch: Arkansas Education Association: HTTPError HTTP Error 403: Forbidden",
     "official watch: New York State Association of Professional Land Surveyors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
     "official watch: Association of Local Government Auditors: HTTPError HTTP Error 403: Forbidden",
@@ -2375,7 +2438,7 @@
     "official watch: Archivists for Congregations of Women Religious: HTTPError HTTP Error 403: Forbidden",
     "official watch: Catholic Media Association: ValueError expected source passage absent or changed",
     "official watch: Southern Association of Student Financial Aid Administrators: URLError <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat",
-    "official watch: Oregon PRIMA Chapter: HTTPError HTTP Error 403: Forbidden"
+    "official watch: networkED: ValueError expected source passage absent or changed"
   ],
   "signals": [
     {
@@ -2444,7 +2507,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Mid-South Educational Research Association",
       "organization_key": "mid south educational research association",
@@ -2570,7 +2633,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "United States Association of Prides",
       "organization_key": "united states association of prides",
@@ -2662,7 +2725,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "University Research Managers Association",
       "organization_key": "university research managers association",
@@ -2754,7 +2817,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Southern Association for College Admission Counseling",
       "organization_key": "southern association for college admission counseling",
@@ -2819,7 +2882,7 @@
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Society for Historians of American Foreign Relations",
       "organization_key": "society for historians of american foreign relations",
@@ -2858,44 +2921,79 @@
     {
       "id": "91f7d60a9ddc13f088cb",
       "title": "networkED | Conference chair vacancy covers venue, catering and 2027-2028 budget",
-      "summary": "diences Strong organizational and communication skills View the full Professional Outreach Chair job description (opens in a new tab) Conference Planning Chair Leads planning for the annual Gateway to Innovation Conference, from theme and speakers to venue, budget and the post-conference review. Term Two years, renewable once by majority vote Time About 5 to",
+      "summary": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review. Event size and nonprofit revenue unknown.",
       "url": "https://www.network-ed.org/open-positions",
-      "source": "Official association page (monitored)",
+      "source": "Official association page (research snapshot)",
       "published": "",
       "indexed_date": "",
-      "date_basis": "Public webpage checked on 2026-11-14; original publication date not established",
+      "date_basis": "Research snapshot checked 2026-11-08; runner could not access page in latest scan",
       "origin": "official_watch",
       "platform": "",
       "original_post_checked": false,
       "detected": "2026-11-09",
       "first_detected": "2026-11-09",
       "last_checked": "2026-11-14T14:18:22+00:00",
-      "monitor_status": "Official source page fetched during this scan",
+      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
       "organization_candidate": "networkED",
       "organization_key": "networked",
       "review_tier": "watch",
       "window_stage": "watch_only",
+      "event_year": 2027,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [
+            "Posted bid deadline has passed"
+          ],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        },
+        {
+          "event_year": 2028,
+          "stage": "watch_only",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review.",
+          "other_stages": [
+            "watch_only"
+          ],
+          "counterevidence_flags": [
+            "Posted bid deadline has passed"
+          ],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Find original, dated evidence of a specific future planning or cost decision."
+        }
+      ],
       "pre_rfp_priority": false,
-      "cycle_decisions": [],
-      "event_year": null,
       "strong_evidence": {},
       "early_evidence": {
-        "capacity": "diences Strong organizational and communication skills View the full Professional Outreach Chair job description (opens in a new tab) Conference Planning Chair Leads planning for the annual Gateway to Innovation Conference, from theme and speakers to venue, budget and the post-conference review. Term Two years, renewable once by majority vote Time About 5 to 10 hours a month Reports to Executive Board Full role description Hide role description What you'll do Set the conference theme, objectives and planning timeline with the "
+        "capacity": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review. Event size and nonprofit revenue unknown."
       },
       "types": [
         "capacity"
       ],
-      "priority": 36,
-      "query_id": "official-page-monitor",
+      "priority": 30,
+      "query_id": "official-page-baseline",
       "play": "Smart",
-      "next_action": "Verify whether Gateway to Innovation attracts paid overnight hotel nights and meets Robert's scale, and whether an outside cost-assessment professional could supplement volunteer leadership.",
+      "next_action": "Recheck original source because automated access failed. Verify whether Gateway to Innovation attracts paid overnight hotel nights and meets Robert's scale, and whether an outside cost-assessment professional could supplement volunteer leadership.",
       "flags": [],
       "source_document_date": "2026-11",
-      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
       "signal_evidence": {
-        "capacity": "diences Strong organizational and communication skills View the full Professional Outreach Chair job description (opens in a new tab) Conference Planning Chair Leads planning for the annual Gateway to Innovation Conference, from theme and speakers to venue, budget and the post-conference review. Term Two years, renewable once by majority vote Time About 5 to 10 hours a month Reports to Executive Board Full role description Hide role description What you'll do Set the conference theme, objectives and planning timeline with the "
+        "capacity": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review. Event size and nonprofit revenue unknown."
       },
-      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
@@ -2915,7 +3013,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "North Carolina Association of Municipal Clerks",
       "organization_key": "north carolina association of municipal clerks",
@@ -2977,7 +3075,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "HiTOP Society",
       "organization_key": "hitop society",
@@ -3099,7 +3197,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "National Association of Community Development Extension Professionals",
       "organization_key": "national association of community development extension professionals",
@@ -3177,7 +3275,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association for the Study of Higher Education",
       "organization_key": "association for the study of higher education",
@@ -3239,7 +3337,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Indiana League of Municipal Clerks and Treasurers",
       "organization_key": "indiana league of municipal clerks and treasurers",
@@ -3316,7 +3414,7 @@
       "original_post_checked": false,
       "detected": "2026-11-08",
       "first_detected": "2026-11-08",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Leadership Programs",
       "organization_key": "association of leadership programs",
@@ -3344,6 +3442,86 @@
       "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
       "signal_evidence": {
         "venue-decision": "d with receiving formal contract bids from partners in your community. IMPORTANT DETAILS The letter of intent is to express your program's interest in hosting. At this stage, please refrain from soliciting formal bids from venues and hotels within your community. Specific conference dates are negotiable, but July is preferred. The Association of Leadership Programs serves as the official organizer of the conference and the financial administrator, with support and enhancement from the host program. ALP will host all confe"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
+      "id": "976a40babc268bcd84f2",
+      "title": "Oregon PRIMA Chapter | Board documented 2025 venue complaints and 2028 site exploration",
+      "summary": "rs, and an Emerging Risk Consortium online event scheduled for January 27th (free for national PRIMA members). IX. CONFERENCE LOCATIONS SPRING 2027 & FALL 2028 The Board explored venue options for the 2027 Spring Education Session and 2028 Fall Conference. Suggestions included the Florence Convention Center, McMinnville Waves and Aviation Museum or Seaside. ",
+      "url": "https://orprima.starchapter.com/images/10-28-25_OR-PRIMA_Minutes.pdf",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-14; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-08",
+      "first_detected": "2026-11-08",
+      "last_checked": "2026-11-14T19:16:15+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Oregon PRIMA Chapter",
+      "organization_key": "oregon prima chapter",
+      "review_tier": "watch",
+      "window_stage": "possible_pre_rfp",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "possible_pre_rfp",
+          "pre_rfp_research_candidate": true,
+          "evidence_excerpt": "CONFERENCE LOCATIONS SPRING 2027 & FALL 2028 The Board explored venue options for the 2027 Spring Education Session and 2028 Fall Conference. Suggestions included the Florence Convention Center, McMinnville Waves and Aviation Museum or Seaside. Members d iscussed whether the Spring Session should remain in the Valley or move to a destination venue.",
+          "other_stages": [
+            "possible_pre_rfp"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+        },
+        {
+          "event_year": 2028,
+          "stage": "possible_pre_rfp",
+          "pre_rfp_research_candidate": true,
+          "evidence_excerpt": "CONFERENCE LOCATIONS SPRING 2027 & FALL 2028 The Board explored venue options for the 2027 Spring Education Session and 2028 Fall Conference. Suggestions included the Florence Convention Center, McMinnville Waves and Aviation Museum or Seaside. Members d iscussed whether the Spring Session should remain in the Valley or move to a destination venue.",
+          "other_stages": [
+            "possible_pre_rfp"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": true,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "Confirm which future venue or event budget decision remains uncommitted and who can approve help."
+        }
+      ],
+      "event_year": 2027,
+      "strong_evidence": {},
+      "early_evidence": {
+        "board-location": "rs, and an Emerging Risk Consortium online event scheduled for January 27th (free for national PRIMA members). IX. CONFERENCE LOCATIONS SPRING 2027 & FALL 2028 The Board explored venue options for the 2027 Spring Education Session and 2028 Fall Conference. Suggestions included the Florence Convention Center, McMinnville Waves and Aviation Museum or Seaside. Members d iscussed whether the Spring Session should remain in the Valley or move to a destination venue. Dustin empathized the importance of securing a contract promptly to ensure availability. Katie will"
+      },
+      "types": [
+        "board-location"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Find 2026 board minutes and confirm which 2028 Fall Conference location/hotel decision is still influenceable; quantify actual room nights and chapter revenue before Robert outreach.",
+      "flags": [
+        "Source decisions documented in 2025; may have changed",
+        "2027 Fall Conference location announced as Hood River"
+      ],
+      "source_document_date": "2025-10-27",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "board-location": "rs, and an Emerging Risk Consortium online event scheduled for January 27th (free for national PRIMA members). IX. CONFERENCE LOCATIONS SPRING 2027 & FALL 2028 The Board explored venue options for the 2027 Spring Education Session and 2028 Fall Conference. Suggestions included the Florence Convention Center, McMinnville Waves and Aviation Museum or Seaside. Members d iscussed whether the Spring Session should remain in the Valley or move to a destination venue. Dustin empathized the importance of securing a contract promptly to ensure availability. Katie will"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
       "verified_revenue": false,
@@ -3586,55 +3764,6 @@
       "qualification": "Unverified source watch"
     },
     {
-      "id": "976a40babc268bcd84f2",
-      "title": "Oregon PRIMA Chapter | Board documented 2025 venue complaints and 2028 site exploration",
-      "summary": "October 2025 board minutes approved $36,449.41 Eagle Crest Resort payment and cited cleanliness/AV/food complaints; considered alternatives for 2027 Spring and 2028 Fall. 2027 fall city Hood River announced subsequently, 2028 commitments require fresh check.",
-      "url": "https://orprima.starchapter.com/images/10-28-25_OR-PRIMA_Minutes.pdf",
-      "source": "Official association page (research snapshot)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Research snapshot checked 2026-11-08; runner could not access page in latest scan",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-08",
-      "first_detected": "2026-11-08",
-      "last_checked": "",
-      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-08",
-      "organization_candidate": "Oregon PRIMA Chapter",
-      "organization_key": "oregon prima chapter",
-      "review_tier": "watch",
-      "window_stage": "watch_only",
-      "event_year": null,
-      "cycle_decisions": [],
-      "pre_rfp_priority": false,
-      "strong_evidence": {},
-      "early_evidence": {
-        "board-location": "October 2025 board minutes approved $36,449.41 Eagle Crest Resort payment and cited cleanliness/AV/food complaints; considered alternatives for 2027 Spring and 2028 Fall. 2027 fall city Hood River announced subsequently, 2028 commitments require fresh check."
-      },
-      "types": [
-        "board-location"
-      ],
-      "priority": 30,
-      "query_id": "official-page-baseline",
-      "play": "Smart",
-      "next_action": "Recheck original source because automated access failed. Find 2026 board minutes and confirm which 2028 Fall Conference location/hotel decision is still influenceable; quantify actual room nights and chapter revenue before Robert outreach.",
-      "flags": [
-        "Source decisions documented in 2025; may have changed",
-        "2027 Fall Conference location announced as Hood River"
-      ],
-      "source_document_date": "2025-10-27",
-      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
-      "signal_evidence": {
-        "board-location": "October 2025 board minutes approved $36,449.41 Eagle Crest Resort payment and cited cleanliness/AV/food complaints; considered alternatives for 2027 Spring and 2028 Fall. 2027 fall city Hood River announced subsequently, 2028 commitments require fresh check."
-      },
-      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch"
-    },
-    {
       "id": "af1518344eca1a7b1f04",
       "title": "New York State Association of Professional Land Surveyors | 2029 hotel proposals under review",
       "summary": "The committee also reviewed proposals from Turning Stone and Resorts World Catskills for the 2029 conference.",
@@ -3697,6 +3826,68 @@
       "qualification": "Unverified source watch"
     },
     {
+      "id": "d2c40d9ffb0bc10956e0",
+      "title": "Arkansas Education Association | Summer 2027 conference calendar change",
+      "summary": " We offer educators the opportunity to track their own growth and development so they can individualize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to be a presenter! Learn more Vendor A",
+      "url": "https://www.aeaonline.org/teach",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-14; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-14T19:16:15+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Arkansas Education Association",
+      "organization_key": "arkansas education association",
+      "review_tier": "watch",
+      "window_stage": "planning_change_watch",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [
+        {
+          "event_year": 2027,
+          "stage": "planning_change_watch",
+          "pre_rfp_research_candidate": false,
+          "evidence_excerpt": "General Conference Information The Conference is currently being shifted to Summer 2027.",
+          "other_stages": [
+            "planning_change_watch"
+          ],
+          "counterevidence_flags": [],
+          "commitment_evidence_same_year": false,
+          "multi_year_sentence": false,
+          "qualified": false,
+          "open_contract_verified": false,
+          "next_step": "A committee or timing change is real, but determine whether it changes hotel or planner sourcing."
+        }
+      ],
+      "event_year": 2027,
+      "strong_evidence": {},
+      "early_evidence": {
+        "disruption": " We offer educators the opportunity to track their own growth and development so they can individualize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to be a presenter! Learn more Vendor Applications Be a vendor at the AEA Conference Learn more Highlights from the 2025 Conference Check out some highlights from the 2025 Professional Development Conferen"
+      },
+      "types": [
+        "disruption"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
+      "flags": [],
+      "source_document_date": "",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "disruption": " We offer educators the opportunity to track their own growth and development so they can individualize their career trajectory. General Conference Information The Conference is currently being shifted to Summer 2027. Check back for more information. Apply to be a Presenter or Vendor Workshop Proposals Submit a proposal to be a presenter! Learn more Vendor Applications Be a vendor at the AEA Conference Learn more Highlights from the 2025 Conference Check out some highlights from the 2025 Professional Development Conferen"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
       "id": "b6bf4a5ddd897e69bd79",
       "title": "Nonprofit Association of Oregon | Attendee-input process for recurring conferences",
       "summary": "hip Nonprofit Law and Compliance Issues Program Management Public Policy Support for Rural Nonprofits Strategic & Business Planning Work Culture Other Topic(s) Help NAO Shape Your Conference Experience If you have attended an NAO conference in the past, please share your experience. What did you enjoy the most, and/or what you’d like to see us do differently",
@@ -3710,7 +3901,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -3743,6 +3934,52 @@
       "qualification": "Unverified source watch"
     },
     {
+      "id": "53d27bbb760d30f5643c",
+      "title": "Arkansas Education Association | New executive director and program-operations leadership",
+      "summary": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professional Excellence Advocating for Change Join Our Movement Take Action Search aeaonline.org … Search Close Search Suggested Results See All Search About AEA Member Benefits Members Login A",
+      "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
+      "source": "Official association page (monitored)",
+      "published": "",
+      "indexed_date": "",
+      "date_basis": "Public webpage checked on 2026-11-14; original publication date not established",
+      "origin": "official_watch",
+      "platform": "",
+      "original_post_checked": false,
+      "detected": "2026-11-06",
+      "first_detected": "2026-11-06",
+      "last_checked": "2026-11-14T19:16:15+00:00",
+      "monitor_status": "Official source page fetched during this scan",
+      "organization_candidate": "Arkansas Education Association",
+      "organization_key": "arkansas education association",
+      "review_tier": "watch",
+      "window_stage": "watch_only",
+      "pre_rfp_priority": false,
+      "cycle_decisions": [],
+      "event_year": null,
+      "strong_evidence": {},
+      "early_evidence": {
+        "capacity": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professional Excellence Advocating for Change Join Our Movement Take Action Search aeaonline.org … Search Close Search Suggested Results See All Search About AEA Member Benefits Members Login AEA News New from A"
+      },
+      "types": [
+        "capacity"
+      ],
+      "priority": 36,
+      "query_id": "official-page-monitor",
+      "play": "Smart",
+      "next_action": "Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
+      "flags": [],
+      "source_document_date": "",
+      "signal_strength": "Monitored official source passage; NOT proof of an open external contract",
+      "signal_evidence": {
+        "capacity": "The Arkansas Education Association Announces Hiring of Renee Johnson as Executive Director | NEA AR Skip Navigation Menu Close Student Success Your Rights & Workplace Professional Excellence Advocating for Change Join Our Movement Take Action Search aeaonline.org … Search Close Search Suggested Results See All Search About AEA Member Benefits Members Login AEA News New from A"
+      },
+      "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
+      "verified_revenue": false,
+      "verified_event": false,
+      "verified_opening": false,
+      "qualification": "Unverified source watch"
+    },
+    {
       "id": "00a7a89cdd60981d6e2d",
       "title": "Nonprofit Association of Oregon | 2027 conference cycle and program decision milestones",
       "summary": "R | April 12–13, 2027 | No longer accepting proposals Eastern Oregon Nonprofit Conference – Location TBD | Spring 2027 | We will review proposals in early 2027 Nonprofit Impact Conference – Portland, OR | Fall 2027 | We will begin accepting proposals in spring 2027 Did you recently submit a proposal to present at an upcoming conference? Proposals are current",
@@ -3756,7 +3993,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Nonprofit Association of Oregon",
       "organization_key": "nonprofit association of oregon",
@@ -3820,7 +4057,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Association of Local Government Auditors",
       "organization_key": "association of local government auditors",
@@ -3866,7 +4103,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -3930,7 +4167,7 @@
       "original_post_checked": false,
       "detected": "2026-11-06",
       "first_detected": "2026-11-06",
-      "last_checked": "2026-11-14T14:18:22+00:00",
+      "last_checked": "2026-11-14T19:16:15+00:00",
       "monitor_status": "Official source page fetched during this scan",
       "organization_candidate": "Council of Academic Programs in Communication Sciences and Disorders",
       "organization_key": "council of academic programs in communication sciences and disorders",
@@ -3957,114 +4194,6 @@
         "verified-financial-fit": "ta is from the IRS. See an issue with the data? Contact Us Fiscal Year Ending June 2025 Extracted Financial Data Extracted Financial Data from Form 990 Revenue $1,930,497 Expenses $1,459,664 Net Income $470,833 Net Assets $2,920,917 Notable Sources of Revenue Percent of Total Revenue Contributions $5,000 0.3% Program Services $1,855,287 96.1% Investment Income $66,077 3.4% Bond Proceeds $0 Royalties $0 Rental Property Income $0 Net Fundraising $0 Sales of Assets $0 Net Invent"
       },
       "evidence_gate": "Named association and verifiable original page; recurring event/financial fit not yet verified",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch"
-    },
-    {
-      "id": "d2c40d9ffb0bc10956e0",
-      "title": "Arkansas Education Association | Summer 2027 conference calendar change",
-      "summary": "The Conference is currently being shifted to Summer 2027.",
-      "url": "https://www.aeaonline.org/teach",
-      "source": "Official association page (research snapshot)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T23:02:23+00:00",
-      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
-      "organization_candidate": "Arkansas Education Association",
-      "organization_key": "arkansas education association",
-      "review_tier": "watch",
-      "window_stage": "planning_change_watch",
-      "event_year": 2027,
-      "cycle_decisions": [
-        {
-          "event_year": 2027,
-          "stage": "planning_change_watch",
-          "pre_rfp_research_candidate": false,
-          "evidence_excerpt": "The Conference is currently being shifted to Summer 2027.",
-          "other_stages": [
-            "planning_change_watch"
-          ],
-          "counterevidence_flags": [],
-          "commitment_evidence_same_year": false,
-          "multi_year_sentence": false,
-          "qualified": false,
-          "open_contract_verified": false,
-          "next_step": "A committee or timing change is real, but determine whether it changes hotel or planner sourcing."
-        }
-      ],
-      "pre_rfp_priority": false,
-      "strong_evidence": {},
-      "early_evidence": {
-        "disruption": "The Conference is currently being shifted to Summer 2027."
-      },
-      "types": [
-        "disruption"
-      ],
-      "priority": 30,
-      "query_id": "official-page-baseline",
-      "play": "Smart",
-      "next_action": "Recheck original source because automated access failed. Ask whether the summer 2027 move reopened any venue, vendor or full-service planning decisions. Verify conference scope and hotel demand.",
-      "flags": [],
-      "source_document_date": "",
-      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
-      "signal_evidence": {
-        "disruption": "The Conference is currently being shifted to Summer 2027."
-      },
-      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
-      "verified_revenue": false,
-      "verified_event": false,
-      "verified_opening": false,
-      "qualification": "Unverified source watch"
-    },
-    {
-      "id": "53d27bbb760d30f5643c",
-      "title": "Arkansas Education Association | New executive director and program-operations leadership",
-      "summary": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development.",
-      "url": "https://www.aeaonline.org/about-aea/media-center/press-releases/arkansas-education-association-announces-hiring-renee-johnson",
-      "source": "Official association page (research snapshot)",
-      "published": "",
-      "indexed_date": "",
-      "date_basis": "Research snapshot checked 2026-11-06; runner could not access page in latest scan",
-      "origin": "official_watch",
-      "platform": "",
-      "original_post_checked": false,
-      "detected": "2026-11-06",
-      "first_detected": "2026-11-06",
-      "last_checked": "2026-11-08T23:02:23+00:00",
-      "monitor_status": "NOT RECHECKED LIVE: saved public-source research baseline from 2026-11-06",
-      "organization_candidate": "Arkansas Education Association",
-      "organization_key": "arkansas education association",
-      "review_tier": "watch",
-      "window_stage": "watch_only",
-      "event_year": null,
-      "cycle_decisions": [],
-      "pre_rfp_priority": false,
-      "strong_evidence": {},
-      "early_evidence": {
-        "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
-      },
-      "types": [
-        "capacity"
-      ],
-      "priority": 30,
-      "query_id": "official-page-baseline",
-      "play": "Smart",
-      "next_action": "Recheck original source because automated access failed. Determine whether new leadership changed oversight of the summer 2027 conference, rather than assuming the new director will outsource planning.",
-      "flags": [],
-      "source_document_date": "",
-      "signal_strength": "Previously verified public passage, NOT confirmed current; outside planning need unverified",
-      "signal_evidence": {
-        "capacity": "The Arkansas Education Association announced hiring Renee Johnson as executive director in February 2026, overseeing organizational strategy, operations, and program development."
-      },
-      "evidence_gate": "Known public research baseline; URL not reachable from automated runner",
       "verified_revenue": false,
       "verified_event": false,
       "verified_opening": false,
@@ -4276,8 +4405,8 @@
     }
   ],
   "rejection_audit": {
-    "archived_near_misses": 229,
-    "replayed_this_run": 227,
+    "archived_near_misses": 230,
+    "replayed_this_run": 229,
     "recovered_this_run": 0,
     "historical_rejections_available": false,
     "explanation": "Legacy rejected items were not preserved. This new journal saves near-misses and tests them again."
