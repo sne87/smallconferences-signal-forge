@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-15T17:50:50+00:00",
+  "generated_at": "2026-11-15T22:58:21+00:00",
   "purpose": "Auditable near-miss INDEXED RESULTS, not leads; automatically re-screened when discovery criteria change.",
   "historical_warning": "Before this feature, discarded indexed items were NOT stored. Replaying earlier misses requires running the public searches again.",
-  "count": 242,
-  "replayed_this_run": 238,
+  "count": 243,
+  "replayed_this_run": 242,
   "recovered_this_run": 0,
   "items": [
     {
@@ -600,6 +600,21 @@
       "published": "2026-10-27",
       "query_id": "association-budget-notes",
       "engine": "google",
+      "reason": "organizer_name_missing",
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "review_status": "unqualified_near_miss",
+      "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
+    },
+    {
+      "id": "9be5ff8e92f29398056b",
+      "url": "https://conferencealert.com/usa",
+      "title": "Upcoming Conferences in USA 2026-2027 (12,403 Events) | Conference ...",
+      "summary": "Browse 12,403 upcoming conferences in USA for 2026-2027 with dates, cities, organizers and Call for Papers (CFP) deadlines. Find visa invitation letters and Scopus-indexed conferences.",
+      "source": "Public news index",
+      "published": "2026-11-15",
+      "query_id": "association-host-interest",
+      "engine": "web",
       "reason": "organizer_name_missing",
       "first_seen": "2026-11-15",
       "last_seen": "2026-11-15",
