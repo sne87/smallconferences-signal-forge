@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T23:04:47.602434+00:00",
+  "generated_at": "2026-11-16T02:53:19.521356+00:00",
   "source": "Signal Forge indexed public sources and free ProPublica Nonprofit Explorer API",
   "qualified_count": 0,
   "packets": [
@@ -1651,7 +1651,18 @@
       "name": "networkED",
       "suggested_research_bucket": "early-watch",
       "qualified": false,
-      "event_years": [],
+      "event_years": [
+        {
+          "year": 2027,
+          "commitment_status": "unknown; source check required",
+          "decision_status": "unknown; source check required"
+        },
+        {
+          "year": 2028,
+          "commitment_status": "unknown; source check required",
+          "decision_status": "unknown; source check required"
+        }
+      ],
       "financial_research": {
         "status": "exact_name_candidates_require_organizer_confirmation",
         "revenue_status": "unverified",
@@ -1671,10 +1682,25 @@
           "title": "networkED | Conference chair vacancy covers venue, catering and 2027-2028 budget",
           "document_date": "2026-11",
           "publication_date_verified": false,
-          "source": "Official association page (monitored)",
+          "source": "Official association page (research snapshot)",
           "window_stage": "watch_only",
           "counterevidence": [],
-          "event_cycles": []
+          "event_cycles": [
+            {
+              "year": 2027,
+              "stage": "watch_only",
+              "excerpt": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review.",
+              "same_year_commitment": false,
+              "multi_year_ambiguity": true
+            },
+            {
+              "year": 2028,
+              "stage": "watch_only",
+              "excerpt": "networkED is recruiting a Conference Planning Chair for a 2027-2028 board term, applications due November 13, 2026, with responsibility for venue, catering, AV, budget and post-event review.",
+              "same_year_commitment": false,
+              "multi_year_ambiguity": true
+            }
+          ]
         }
       ],
       "evidence_checks": {
@@ -1699,7 +1725,7 @@
       ],
       "counterevidence": [],
       "research_priority": 5,
-      "one_next_step": "Verify a future overnight conference year from the organizer's own event calendar",
+      "one_next_step": "Confirm the exact event-year venue/planner decision and authority in dated organizer minutes",
       "limitations": "Indexed evidence and EIN name searches are research clues, not independent proof of a current unawarded contract, conference spend, decision authority, or paid advisor fit."
     }
   ]
