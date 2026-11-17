@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-16T22:19:41+00:00",
+  "generated_at": "2026-11-17T04:38:05+00:00",
   "source": "public web-indexed social URLs only",
-  "social_queries_attempted": 6,
-  "indexed_social_urls_returned": 55,
+  "social_queries_attempted": 14,
+  "indexed_social_urls_returned": 140,
   "public_posts_retained": 0,
-  "rejected_social_index_hits": 55,
+  "rejected_social_index_hits": 140,
   "errors": [
-    "board-event-review (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "venue-evaluation (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "site-committee (google): HTTPError: HTTP Error 429: Too Many Requests",
     "hotel-renovation (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "board-venue-discussion (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "window-host-2028 (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "window-venue-options (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "window-host-invitation (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "window-host-need (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "window-board-budget (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "member-feedback (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "conference-redesign (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "attendance-concerns (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "catch-healthcare-association (google): HTTPError: HTTP Error 429: Too Many Requests"
+    "future-site (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "association-committee-minutes (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "venue-comparison-board (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "conference-contract-renewal (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "window-host-2029 (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "sponsor-value (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "veterans-site (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "location-decision (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "convention-2028 (google): HTTPError: HTTP Error 429: Too Many Requests"
   ],
   "notices": [
     "Public posts may be omitted by search-engine indexes. No API login or private group access is used.",
@@ -25,5 +25,5 @@
     "A committee planning the conference program is different from selecting hotels or hiring a planner."
   ],
   "items": [],
-  "latest_external_reconciliation": "2026-11-16T11:44:39+00:00"
+  "latest_external_reconciliation": "2026-11-16T22:19:41+00:00"
 }
