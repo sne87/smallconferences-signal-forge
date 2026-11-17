@@ -1,29 +1,16 @@
 {
-  "generated_at": "2026-11-17T04:38:05+00:00",
+  "generated_at": "2026-11-17T14:39:36+00:00",
   "source": "public web-indexed social URLs only",
-  "social_queries_attempted": 14,
-  "indexed_social_urls_returned": 140,
+  "social_queries_attempted": 6,
+  "indexed_social_urls_returned": 60,
   "public_posts_retained": 0,
-  "rejected_social_index_hits": 140,
-  "errors": [
-    "venue-evaluation (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "site-committee (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "hotel-renovation (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "future-site (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "association-committee-minutes (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "venue-comparison-board (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "conference-contract-renewal (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "window-host-2029 (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "sponsor-value (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "veterans-site (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "location-decision (google): HTTPError: HTTP Error 429: Too Many Requests",
-    "convention-2028 (google): HTTPError: HTTP Error 429: Too Many Requests"
-  ],
+  "rejected_social_index_hits": 60,
+  "errors": [],
   "notices": [
     "Public posts may be omitted by search-engine indexes. No API login or private group access is used.",
     "Public post or commenter is not automatically an employee, buyer or event-planning decision maker.",
     "A committee planning the conference program is different from selecting hotels or hiring a planner."
   ],
   "items": [],
-  "latest_external_reconciliation": "2026-11-16T22:19:41+00:00"
+  "latest_external_reconciliation": "2026-11-17T04:38:05+00:00"
 }
