@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-17T14:39:36+00:00",
+  "generated_at": "2026-11-17T22:59:17+00:00",
   "purpose": "Auditable near-miss INDEXED RESULTS, not leads; automatically re-screened when discovery criteria change.",
   "historical_warning": "Before this feature, discarded indexed items were NOT stored. Replaying earlier misses requires running the public searches again.",
-  "count": 280,
-  "replayed_this_run": 277,
+  "count": 283,
+  "replayed_this_run": 280,
   "recovered_this_run": 0,
   "items": [
     {
@@ -487,6 +487,51 @@
       "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
     },
     {
+      "id": "b785ff5a2b3cee97e5f3",
+      "url": "https://conferencealert.com/usa",
+      "title": "Upcoming Conferences in USA 2026-2027 (12,154 Events) | Conference ...",
+      "summary": "Browse 12,154 upcoming conferences in USA for 2026-2027 with dates, cities, organizers and Call for Papers (CFP) deadlines. Find visa invitation letters and Scopus-indexed conferences.",
+      "source": "Public news index",
+      "published": "2026-11-17",
+      "query_id": "association-host-interest",
+      "engine": "web",
+      "reason": "organizer_name_missing",
+      "first_seen": "2026-11-17",
+      "last_seen": "2026-11-17",
+      "review_status": "unqualified_near_miss",
+      "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
+    },
+    {
+      "id": "52c64e59cc74da75a807",
+      "url": "https://www.carsoncity.gov/government/departments-g-z/parks-recreation-open-space/reservable-facilities",
+      "title": "Reservable Facilities - Carson City",
+      "summary": "Whether you are planning a wedding reception, sporting event, rodeo, or business conference, Carson City Parks, Recreation and Open Space has a variety of facilities that will fit your needs. To make a reservation, contact parksinfo@carsoncity.gov. or (775) 283-7425.",
+      "source": "Public news index",
+      "published": "2026-11-16",
+      "query_id": "association-host-interest",
+      "engine": "web",
+      "reason": "organizer_name_missing",
+      "first_seen": "2026-11-17",
+      "last_seen": "2026-11-17",
+      "review_status": "unqualified_near_miss",
+      "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
+    },
+    {
+      "id": "422b23fc792667dd4337",
+      "url": "https://publicworks.nv.gov/uploadedFiles/publicworksnvgov/content/Documents/Leasing/OtherCCVenues.pdf",
+      "title": "Event Venues in Carson City - Nevada",
+      "summary": "The recently restored 1903 mansion has meeting rooms that seat up to 6 people each and conference rooms that seat up to 14 people each. The building can also accommodate special events.",
+      "source": "Public news index",
+      "published": "2026-11-15",
+      "query_id": "association-host-interest",
+      "engine": "web",
+      "reason": "organizer_name_missing",
+      "first_seen": "2026-11-17",
+      "last_seen": "2026-11-17",
+      "review_status": "unqualified_near_miss",
+      "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
+    },
+    {
       "id": "0521324bb7358e6833dd",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5pTEw1NlhySllqTlR6OUxBV0FBakdfNFA4Zi1kS0RVVTBha2tzR1hxM19oN1Q2Z3BucWlXaExtWU9pOXh2cWEwUS1ZZjFRc24wWUFiMmF3eE1XSExWOWFydHFtZTRJVkdFbldkUjEySlI?oc=5",
       "title": "Budgets, LPH property topped city's list at Rural Ontario Municipal Association conference - CBC",
@@ -662,6 +707,21 @@
       "engine": "google",
       "reason": "no_actionable_change_evidence",
       "first_seen": "2026-11-17",
+      "last_seen": "2026-11-17",
+      "review_status": "unqualified_near_miss",
+      "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
+    },
+    {
+      "id": "7ce2f10c857f78b79c3c",
+      "url": "https://www.ieee.org/conferences-events",
+      "title": "Conferences & Events | IEEE",
+      "summary": "Join an IEEE Society and gain free access to webinars, conference presentations, workshops, and more in your field. Learn how IEEE conferences can help you stay on the cutting edge, expand your network, and share your vision. Engineer the future. Join IEEE. Join IEEE to connect with 500,000+ members.",
+      "source": "Public news index",
+      "published": "2026-06-04",
+      "query_id": "association-host-interest",
+      "engine": "web",
+      "reason": "no_actionable_change_evidence",
+      "first_seen": "2026-11-09",
       "last_seen": "2026-11-17",
       "review_status": "unqualified_near_miss",
       "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
@@ -1817,21 +1877,6 @@
       "engine": "web",
       "reason": "organizer_name_missing",
       "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14",
-      "review_status": "unqualified_near_miss",
-      "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
-    },
-    {
-      "id": "7ce2f10c857f78b79c3c",
-      "url": "https://www.ieee.org/conferences-events",
-      "title": "Conferences & Events | IEEE",
-      "summary": "Register your conference or event with IEEE. Explore ideas for reducing your event’s environmental footprint. Find sustainability guides, carbon-footprint calculators, vendors, carbon-offsetting resources, and more. The IEEE Conferences, Events & Experiences (CEE) team can help you plan an exceptional conference.",
-      "source": "Public news index",
-      "published": "2026-06-04",
-      "query_id": "association-host-interest",
-      "engine": "web",
-      "reason": "organizer_name_missing",
-      "first_seen": "2026-11-09",
       "last_seen": "2026-11-14",
       "review_status": "unqualified_near_miss",
       "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
