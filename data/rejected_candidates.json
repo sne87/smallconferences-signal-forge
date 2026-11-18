@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-18T04:33:49+00:00",
+  "generated_at": "2026-11-18T14:16:51+00:00",
   "purpose": "Auditable near-miss INDEXED RESULTS, not leads; automatically re-screened when discovery criteria change.",
   "historical_warning": "Before this feature, discarded indexed items were NOT stored. Replaying earlier misses requires running the public searches again.",
-  "count": 289,
-  "replayed_this_run": 283,
+  "count": 290,
+  "replayed_this_run": 289,
   "recovered_this_run": 0,
   "items": [
     {
@@ -675,6 +675,21 @@
       "published": "2026-10-20",
       "query_id": "location-decision",
       "engine": "google",
+      "reason": "organizer_name_missing",
+      "first_seen": "2026-11-18",
+      "last_seen": "2026-11-18",
+      "review_status": "unqualified_near_miss",
+      "caution": "Public-index snippet only. No venue availability, buying intent or buyer fit established."
+    },
+    {
+      "id": "22161b39791a74ee28cb",
+      "url": "https://www.vocabulary.com/dictionary/conference",
+      "title": "Conference - Definition, Meaning & Synonyms | Vocabulary.com",
+      "summary": "A conference is a formal get-together where people talk (or \"confer\") about a chosen topic, like when your office holds a conference to talk about the problem of snoring during meetings.",
+      "source": "Public news index",
+      "published": "2026-11-11",
+      "query_id": "association-host-interest",
+      "engine": "web",
       "reason": "organizer_name_missing",
       "first_seen": "2026-11-18",
       "last_seen": "2026-11-18",
