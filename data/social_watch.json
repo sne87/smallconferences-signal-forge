@@ -1,16 +1,23 @@
 {
-  "generated_at": "2026-11-19T22:16:56+00:00",
+  "generated_at": "2026-11-20T03:31:01+00:00",
   "source": "public web-indexed social URLs only",
   "social_queries_attempted": 6,
-  "indexed_social_urls_returned": 60,
+  "indexed_social_urls_returned": 46,
   "public_posts_retained": 0,
-  "rejected_social_index_hits": 60,
-  "errors": [],
+  "rejected_social_index_hits": 46,
+  "errors": [
+    "site-committee (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "future-site (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "site-selection (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "board-scheduled-location (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "committee-shortage (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "religious-site (google): HTTPError: HTTP Error 429: Too Many Requests"
+  ],
   "notices": [
     "Public posts may be omitted by search-engine indexes. No API login or private group access is used.",
     "Public post or commenter is not automatically an employee, buyer or event-planning decision maker.",
     "A committee planning the conference program is different from selecting hotels or hiring a planner."
   ],
   "items": [],
-  "latest_external_reconciliation": "2026-11-19T13:30:01+00:00"
+  "latest_external_reconciliation": "2026-11-19T22:16:56+00:00"
 }
