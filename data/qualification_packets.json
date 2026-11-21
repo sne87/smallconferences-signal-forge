@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T02:31:31.306485+00:00",
+  "generated_at": "2026-11-21T11:25:49.576992+00:00",
   "source": "Signal Forge indexed public sources and free ProPublica Nonprofit Explorer API",
   "qualified_count": 0,
   "packets": [
@@ -1581,14 +1581,14 @@
           "title": "University Research Managers Association | 2028 host selection December 2026; hotel reservations January-June 2027",
           "document_date": null,
           "publication_date_verified": false,
-          "source": "Official association page (monitored)",
+          "source": "Official association page (research snapshot)",
           "window_stage": "watch_only",
           "counterevidence": [],
           "event_cycles": [
             {
               "year": 2027,
               "stage": "watch_only",
-              "excerpt": "2027 January-June: Confirm conference dates. Reserve hotel and conference rooms.",
+              "excerpt": "January-June 2027: confirm dates and reserve hotel and conference rooms.",
               "same_year_commitment": false,
               "multi_year_ambiguity": false
             }
