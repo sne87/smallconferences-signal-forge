@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T21:18:11+00:00",
+  "generated_at": "2026-11-21T02:31:29+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -745,8 +745,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "e934640c7f773463ffe5"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "north carolina association of municipal clerks",
@@ -1466,8 +1465,7 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
-      "ai_source_fingerprint": "176477e8683d549e1c81"
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
     },
     {
       "key": "southern association for college admission counseling",
