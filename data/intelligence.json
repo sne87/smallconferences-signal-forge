@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T08:12:10+00:00",
+  "generated_at": "2026-11-22T16:27:35+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -1166,10 +1166,7 @@
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
       "errors": [
-        "event-history: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
+        "incumbent-planner: HTTPError"
       ],
       "status": "investigation-only"
     }
