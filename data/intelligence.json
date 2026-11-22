@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T00:29:04+00:00",
+  "generated_at": "2026-11-22T08:12:10+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -1046,15 +1046,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1076,11 +1068,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1098,20 +1086,22 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/596140583.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [],
+      "sources": [
+        {
+          "category": "venue-commitment",
+          "query_year": null,
+          "title": "Communication Alumna Recognized by Florida Society of Association Executives - Florida State University",
+          "summary": "Communication Alumna Recognized by Florida Society of Association Executives Florida State University",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNYnNZS3YyelhjQW1ockJXR1pRQkxVa3JvU2JtTkpyak1IdXBmYWhFSjYxOFZzV2EydDVpSGxGTEZwMldZQlBLTnZhV0Z4bTFRMFdJcVF0dU5rN095alJtZFFmNzZ3ODN4aS1GYnBlQ25WZ2JDNkFnalp5MFU1NXdJTkl5SE0za010TWtuN2VtU3Y1bEt2MWhDd3hIV0tMa1czNEpxTXBOcDIwOVVnT2NlRm9PVS15Tk56bW1QTjhITklWUlA4?oc=5",
+          "index_date": "2020-09-09",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
-        "incumbent-planner: HTTPError",
-        "decision-path: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1130,10 +1120,7 @@
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
       "errors": [
-        "ProPublica: HTTP Error 404: Not Found",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
+        "ProPublica: HTTP Error 404: Not Found"
       ],
       "status": "investigation-only"
     },
@@ -1156,11 +1143,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "early-decision: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -1184,10 +1167,6 @@
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
       "errors": [
         "event-history: HTTPError",
-        "event-history: HTTPError",
-        "upcoming-event: HTTPError",
-        "upcoming-event: HTTPError",
-        "venue-commitment: HTTPError",
         "incumbent-planner: HTTPError",
         "decision-path: HTTPError",
         "early-decision: HTTPError"
