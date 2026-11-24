@@ -1,12 +1,16 @@
 {
-  "generated_at": "2026-11-23T14:56:05+00:00",
+  "generated_at": "2026-11-24T02:21:10+00:00",
   "source": "public web-indexed social URLs only",
   "social_queries_attempted": 6,
-  "indexed_social_urls_returned": 54,
+  "indexed_social_urls_returned": 60,
   "public_posts_retained": 0,
-  "rejected_social_index_hits": 54,
+  "rejected_social_index_hits": 60,
   "errors": [
-    "committee-formation (google): HTTPError: HTTP Error 429: Too Many Requests"
+    "conference-budget (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "board-scheduled-location (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "window-host-invitation (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "window-board-budget (google): HTTPError: HTTP Error 429: Too Many Requests",
+    "nonprofit-venue (google): HTTPError: HTTP Error 429: Too Many Requests"
   ],
   "notices": [
     "Public posts may be omitted by search-engine indexes. No API login or private group access is used.",
@@ -14,5 +18,5 @@
     "A committee planning the conference program is different from selecting hotels or hiring a planner."
   ],
   "items": [],
-  "latest_external_reconciliation": "2026-11-23T03:47:43+00:00"
+  "latest_external_reconciliation": "2026-11-23T14:56:05+00:00"
 }
