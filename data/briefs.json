@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T02:22:06+00:00",
+  "generated_at": "2026-11-24T12:44:36+00:00",
   "version": "1.0",
   "ai_configured": false,
   "ai_calls_this_run": 0,
@@ -138,7 +138,7 @@
     {
       "key": "association for the study of higher education",
       "name": "Association for the Study of Higher Education",
-      "fingerprint": "3ef185072f7a859456e5",
+      "fingerprint": "d7b6c36c1d5d5638b537",
       "first_detected": "2026-11-08",
       "source_count": 1,
       "independent_publishers": 1,
@@ -154,8 +154,8 @@
         }
       ],
       "financial": {
-        "revenue": 931497,
-        "fiscal_year": 2023,
+        "revenue": 888115,
+        "fiscal_year": 2024,
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/521071242.json",
         "match_status": "filing-found"
       },
@@ -202,7 +202,8 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source_fingerprint": "3ef185072f7a859456e5"
     },
     {
       "key": "indiana league of municipal clerks and treasurers",
@@ -362,7 +363,7 @@
     {
       "key": "association of local government auditors",
       "name": "Association of Local Government Auditors",
-      "fingerprint": "e71e86972cce4072c616",
+      "fingerprint": "1dd68437b3913a518492",
       "first_detected": "2026-11-06",
       "source_count": 3,
       "independent_publishers": 2,
@@ -400,8 +401,8 @@
         }
       ],
       "financial": {
-        "revenue": 975045,
-        "fiscal_year": 2024,
+        "revenue": 1101786,
+        "fiscal_year": 2025,
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/232539807.json",
         "match_status": "filing-found"
       },
@@ -439,7 +440,7 @@
       },
       "evidence_digest": "a is from the IRS. See an issue with the data? Contact Us Fiscal Year Ending March 2025 Extracted Financial Data Extracted Financial Data from Form 990 Revenue $1,101,786 Expenses $991,908 Net Income $109,878 Net Assets $754,771 Notable Sources of Revenue Percent of Total Revenue Contributions $181,311 16.5% Program Services $882,700 80.1% Investment Income  Additional separate clue: ALGA's board approves conference sites three years ahead. As of February 2026, 2026 Cleveland, 2027 Denver and 2028 St. Louis were selected; 2029 status was not established by this source.",
       "ai_summary": "CONFIRMED FACTS (saved evidence): ALGA's site-selection description says its board approves conference locations roughly three years ahead and, in the February 2026 research snapshot, 2026 Cleveland, 2027 Denver and 2028 St. Louis were already selected: https://algaonline.org/page/LTCP_Site_Selection . The conference page advertises a May 2–5, 2027 hybrid Denver event with hundreds of participants in person and online: https://algaonline.org/page/conference . FY2025 Form 990 extraction reports $1,101,786 in ORGANIZATIONAL revenue, not conference spending: https://projects.propublica.org/nonprofits/organizations/232539807 . RESEARCH CLUES: The three-year board process makes 2029 or later a logical cycle to investigate, with potentially meaningful hotel, AV and hybrid-meeting expenses. COUNTEREVIDENCE: The 2026–2028 host cities are already approved. Approval of a city does not establish whether hotel/vendor scopes remain negotiable. February source snapshots do not establish the current 2029 decision or contract status; ALGA's board and site-selection structure may already cover Robert's role. OPEN QUALIFICATION QUESTIONS: Has the 2029 site been voted on or contracted, and when is the next selection meeting? Who signs, who runs venue procurement, and is an incumbent planner or sourcing firm involved? Document actual annual conference room nights, attendance, hotel/F&B/AV and hybrid production costs rather than extrapolating Form 990 revenue. Is there a fee-paid independent audit or limited sourcing role feasible for Robert alone? No current open RFP or outside-planner demand verified; research only.",
-      "ai_status": "chatgpt_scheduled",
+      "ai_status": "stale_source_change_recheck_required",
       "ai_source": "ChatGPT scheduled, source-limited synthesis",
       "ai_reviewed_at": "2026-11-09",
       "next_verification_questions": [
@@ -451,7 +452,8 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source_fingerprint": "e71e86972cce4072c616"
     },
     {
       "key": "online news association",
@@ -519,7 +521,7 @@
     {
       "key": "nonprofit association of oregon",
       "name": "Nonprofit Association of Oregon",
-      "fingerprint": "b90f21b69ba3c0f0c04d",
+      "fingerprint": "b90be5ad466044f28aa7",
       "first_detected": "2026-11-06",
       "source_count": 2,
       "independent_publishers": 1,
@@ -544,8 +546,8 @@
         }
       ],
       "financial": {
-        "revenue": 2287021,
-        "fiscal_year": 2023,
+        "revenue": 2091377,
+        "fiscal_year": 2024,
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/930685385.json",
         "match_status": "filing-found"
       },
@@ -591,7 +593,8 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source_fingerprint": "b90f21b69ba3c0f0c04d"
     },
     {
       "key": "new york state association of professional land surveyors",
@@ -673,7 +676,7 @@
     {
       "key": "arkansas education association",
       "name": "Arkansas Education Association",
-      "fingerprint": "2b35657eeab69f126519",
+      "fingerprint": "9e5a51178e1ed9a54936",
       "first_detected": "2026-11-06",
       "source_count": 2,
       "independent_publishers": 1,
@@ -698,8 +701,8 @@
         }
       ],
       "financial": {
-        "revenue": 2760676,
-        "fiscal_year": 2023,
+        "revenue": 3170296,
+        "fiscal_year": 2024,
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
         "match_status": "filing-found"
       },
@@ -745,7 +748,8 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source_fingerprint": "2b35657eeab69f126519"
     },
     {
       "key": "north carolina association of municipal clerks",
@@ -1329,7 +1333,7 @@
     {
       "key": "southern association of student financial aid administrators",
       "name": "Southern Association of Student Financial Aid Administrators",
-      "fingerprint": "2016454b1c57f5f70c7a",
+      "fingerprint": "b3251272c4f20c502cc3",
       "first_detected": "2026-11-08",
       "source_count": 1,
       "independent_publishers": 1,
@@ -1348,8 +1352,8 @@
         }
       ],
       "financial": {
-        "revenue": 501966,
-        "fiscal_year": 2024,
+        "revenue": 512302,
+        "fiscal_year": 2025,
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/581575818.json",
         "match_status": "filing-found"
       },
@@ -1385,7 +1389,7 @@
       },
       "evidence_digest": "SASFAA maintains a Site Selection committee securing conference sites, contracts and board meeting locations; 2027 Jacksonville hotel is already public, 2028 venue still needs verification.",
       "ai_summary": "CONFIRMED FACTS: The saved official SASFAA volunteer-page research snapshot describes an internal Site Selection Committee responsible for conference sites and contracts, and names Hyatt Regency Jacksonville Riverwalk for 2027. Evidence: https://sasfaa.org/Volunteer . A provisional FY2024 organizational revenue match of $501,966 is linked to https://projects.propublica.org/nonprofits/api/v2/organizations/581575818.json ; this is NOT an event budget and legal-entity matching needs confirmation. RESEARCH CLUES: A future 2028 cycle may warrant a status check, but no dated 2028 site-search opening is established. COUNTEREVIDENCE: The 2027 hotel is already named, and an internal committee performs site selection; the official page was not rechecked live in the latest scan. OPEN QUALIFICATION QUESTIONS: Verify 2028 venue/RFP and contract stage, previous event attendance and room nights, event-only spending, incumbent sourcing support, committee chair and signing authority. Is outside paid cost review welcome, and is a narrow engagement manageable for Robert alone? Not approach-ready.",
-      "ai_status": "chatgpt_scheduled",
+      "ai_status": "stale_source_change_recheck_required",
       "ai_source": "ChatGPT scheduled, source-limited synthesis",
       "ai_reviewed_at": "2026-11-09",
       "next_verification_questions": [
@@ -1397,7 +1401,8 @@
         "Identify decision owner, fee-paid outside-advisor openness and decision deadline"
       ],
       "qualified": false,
-      "caution": "Source-index clues are not proof of an open contract or an external advisor need."
+      "caution": "Source-index clues are not proof of an open contract or an external advisor need.",
+      "ai_source_fingerprint": "2016454b1c57f5f70c7a"
     },
     {
       "key": "oregon prima chapter",

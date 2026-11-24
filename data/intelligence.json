@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T16:27:35+00:00",
+  "generated_at": "2026-11-24T12:42:51+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -15,8 +15,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "300170683",
         "legal_name": "New York State Association For College Admission Counseling Inc",
-        "fiscal_year": 2023,
-        "revenue": 550617,
+        "fiscal_year": 2024,
+        "revenue": 587296,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/300170683.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -50,8 +50,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "710004515",
         "legal_name": "Arkansas Education Association",
-        "fiscal_year": 2023,
-        "revenue": 2760676,
+        "fiscal_year": 2024,
+        "revenue": 3170296,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -83,8 +83,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "930685385",
         "legal_name": "Nonprofit Association Of Oregon",
-        "fiscal_year": 2023,
-        "revenue": 2287021,
+        "fiscal_year": 2024,
+        "revenue": 2091377,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/930685385.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -191,8 +191,8 @@
         "match": "unique exact name match, EIN confirmation required",
         "ein": "542047783",
         "legal_name": "Text Encoding Initiative Consortium",
-        "fiscal_year": 2023,
-        "revenue": 47572,
+        "fiscal_year": 2024,
+        "revenue": 40014,
         "fit": "below",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/542047783.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
@@ -236,8 +236,8 @@
         "match": "unique exact name match, EIN confirmation required",
         "ein": "200006098",
         "legal_name": "Public Management Research Association",
-        "fiscal_year": 2023,
-        "revenue": 159318,
+        "fiscal_year": 2024,
+        "revenue": 187285,
         "fit": "below",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/200006098.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
@@ -301,8 +301,8 @@
         "match": "unique exact name match, EIN confirmation required",
         "ein": "237401813",
         "legal_name": "Arkansas Historical Association",
-        "fiscal_year": 2024,
-        "revenue": 133234,
+        "fiscal_year": 2025,
+        "revenue": 153020,
         "fit": "below",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/237401813.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
@@ -323,8 +323,8 @@
         "match": "unique exact name match, EIN confirmation required",
         "ein": "237389213",
         "legal_name": "Arkansas Speech Language Hearing Association",
-        "fiscal_year": 2023,
-        "revenue": 22405,
+        "fiscal_year": 2024,
+        "revenue": 50187,
         "fit": "below",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/237389213.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
@@ -345,8 +345,8 @@
         "match": "unique exact name match, EIN confirmation required",
         "ein": "720545987",
         "legal_name": "Louisiana Historical Association",
-        "fiscal_year": 2023,
-        "revenue": 48129,
+        "fiscal_year": 2024,
+        "revenue": 77727,
         "fit": "below",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/720545987.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
@@ -387,8 +387,8 @@
         "match": "unique exact name match, EIN confirmation required",
         "ein": "640786349",
         "legal_name": "Nami Mississippi",
-        "fiscal_year": 2024,
-        "revenue": 409839,
+        "fiscal_year": 2025,
+        "revenue": 395540,
         "fit": "below",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/640786349.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
@@ -409,8 +409,8 @@
         "match": "unique exact name match, EIN confirmation required",
         "ein": "621036411",
         "legal_name": "Tennessee Primary Care Association",
-        "fiscal_year": 2023,
-        "revenue": 4383702,
+        "fiscal_year": 2024,
+        "revenue": 3907184,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/621036411.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
@@ -565,7 +565,9 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [],
+      "errors": [
+        "upcoming-event: HTTPError"
+      ],
       "status": "investigation-only"
     },
     {
@@ -597,8 +599,8 @@
         "match": "unique exact name match, EIN confirmation required",
         "ein": "352301243",
         "legal_name": "South Carolina Athletic Trainers Association",
-        "fiscal_year": 2023,
-        "revenue": 106494,
+        "fiscal_year": 2024,
+        "revenue": 110307,
         "fit": "below",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/352301243.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
@@ -813,8 +815,8 @@
         "match": "unique exact name match, EIN confirmation required",
         "ein": "743242650",
         "legal_name": "Kentucky Association For Economic Development",
-        "fiscal_year": 2023,
-        "revenue": 537116,
+        "fiscal_year": 2024,
+        "revenue": 669187,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/743242650.json",
         "caveat": "Revenue found on exact name match, but confirm EIN against original organization website or filing."
@@ -858,8 +860,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "521071242",
         "legal_name": "Association For The Study Of Higher Education",
-        "fiscal_year": 2023,
-        "revenue": 931497,
+        "fiscal_year": 2024,
+        "revenue": 888115,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/521071242.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -880,8 +882,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "931174536",
         "legal_name": "Housing Oregon",
-        "fiscal_year": 2023,
-        "revenue": 598919,
+        "fiscal_year": 2024,
+        "revenue": 812382,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/931174536.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -902,8 +904,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "042688900",
         "legal_name": "New England Museum Association Inc",
-        "fiscal_year": 2023,
-        "revenue": 772984,
+        "fiscal_year": 2024,
+        "revenue": 642651,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/42688900.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -949,18 +951,82 @@
         "match": "EIN supplied in watchlist",
         "ein": "541042825",
         "legal_name": "Southeastern Museums Conference Inc",
-        "fiscal_year": 2023,
-        "revenue": 411676,
-        "fit": "below",
+        "fiscal_year": 2024,
+        "revenue": 531099,
+        "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/541042825.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [],
+      "sources": [
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "The Museum of History and Holocaust Education Receives a Southeastern Museums Conference Exhibition Award - Kennesaw State University",
+          "summary": "The Museum of History and Holocaust Education Receives a Southeastern Museums Conference Exhibition Award Kennesaw State University",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcmw3Vm5DaGdlY3hVMVVmUjNQRlcxRkxHQ0U4UlIybXdPRHZGMUk1REVZYVlnOXBDVlFkRXJQZUtSb1BUZmFfcGVaRElKVlBxd0I4MTByQ09ER3Z5WkJCbUZ5cTdZd25iZ3c4QTE4aDdpd0gxSjFZOUVNeWdrVjY0Q3lwa2VsTHhwVGdaXzMwWnJ3X0tkdkVJQkx2WU1BTGRvdkpXaFZCbTVRQW8?oc=5",
+          "index_date": "2025-10-08",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "event-history",
+          "query_year": 2025,
+          "title": "Customs House receives honors from Southeastern Museums Conference - Clarksville Now",
+          "summary": "Customs House receives honors from Southeastern Museums Conference Clarksville Now",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYXhNajZYSU1qRjV5dWRKcF80ZWwtWWNsdlh0MWxHX2V6b19ZaFdiZ2FZWU9LZG1VUzZBRUhTMWRiR1BRbWw4cnBGQktUMjlwQUo0TVhLcmlnWTI1Q0N1NURqR1VPT0NUSk1NcXRfTlptZW0tVTczWnBfb0oyLW9lZHhGeHoyX3hfME53WWV0MG1CaEJWa3J6TlA2X1F3TjVJNUE?oc=5",
+          "index_date": "2025-10-10",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "event-history",
+          "query_year": 2026,
+          "title": "Dewalds receive distinguished contributor award from 2026 Southeastern Museums Conference - Clarksville Now",
+          "summary": "Dewalds receive distinguished contributor award from 2026 Southeastern Museums Conference Clarksville Now",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTFliZml6bXFmNGVmMUY0LVI1ZDZMSi03bjlTbDl0WXlFZ2VZdEc4WTZmdmZ1OTl2VmZUb3YzZG1ubXItdDZFdlZTLW9LWjdOYXB3VnlhYXhZWENBaFlmRDFnMGRDQkRiNVV1bUo3Ui1xX3pjRUs0VEpuVk5EZGdnZ3ZIMmFkS3RIY2I4Y0daS2JEVUlITWxPa3lqTHFtaDJXdnlSQ0FPXzF0ZkQ2NTBRbktCNGpXMlltWUtqUkdFeGs?oc=5",
+          "index_date": "2026-09-26",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "event-history",
+          "query_year": 2026,
+          "title": "Customs House Museum receives Southeastern Museums Conference awards - Clarksville Now",
+          "summary": "Customs House Museum receives Southeastern Museums Conference awards Clarksville Now",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLTlCWmtBbU9WX1c5Vi1tTWRCUjNjSkZrV0Y1YzJyWVkyWEZNWFV2Y0JfN1VyVi05NHNETjlnckpraWJzYUh1NG1CdjJUazFXc2ZRUXpnY2FKUE15NGhLOUFTZDRSSlRraWUtTGQ1WjE0S19BVjh0dy1UdTV0T1VSWFI2bHh4MlZUU0RfVC1uVGlvRjg4Mmw2ZWUtM29DRnpmeUxYdw?oc=5",
+          "index_date": "2026-09-16",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Tennessee State Museum Receives Southeastern Museums Conference Exhibition Award - TN.gov",
+          "summary": "Tennessee State Museum Receives Southeastern Museums Conference Exhibition Award TN.gov",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOTlCa1NvQXEwdzNFOFdrVTFSQ3pEZVRZX3lIU3EyenJuNkdoMEt6Q29nWDBTY3d3bFhNeFhzQ1ZjMVdkdnFYRlNMWGxwSkFoQXN1UFlyY0Q3ZW9sSDNsSmxxeXJ0SW9wV2w2YTZhUC0tVjlsMm1jNG1NQlRkNGZ4M2dobVBSYjV1bVpJWUVhVlNBTnlEVHBGbGdabXc2ZXVBV0xnajQzSjJrU3VKUUNEUnZxLVRBU0xNSG5hdmZCczBITW8?oc=5",
+          "index_date": "2022-09-01",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Customs House Museum recognized at Southeastern Museums Conference - The Leaf-Chronicle",
+          "summary": "Customs House Museum recognized at Southeastern Museums Conference The Leaf-Chronicle",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRHI0X003Tm9IVXlESDNUaEpKdUdIcC1SQVZfLUZlUnhTNnczQjJzTW5aeUZkeXJORnl0VzNEY19kYU5MVWZNRmdMODRMNEtrT2pRNTJSQTF3TVhtdmozSUFtblE2eTMxUTZQNk9mQWRoUFNpbjBad1c5cGx0TTRUeUZhaFFRbXlNQzdIaXhsWXlPUTZSeVg5UkJzRlpDYnEtSmpjMWtncEZXS3Ztblp2ZFc0NFpKZnRHZUZMejFrUXVIc2diMzNjdEkzbEtwb1NSMkNqdmpsY0R5SG9T?oc=5",
+          "index_date": "2022-11-03",
+          "clues": [],
+          "date_warning": "Original source date and event date unverified."
+        }
+      ],
       "checks": [],
-      "historical_years": [],
-      "next_step": "Outside the preferred $500K-$7M revenue band. Reconsider only with evidence of strong event-specific spend and external planning need.",
+      "historical_years": [
+        2026,
+        2025
+      ],
+      "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
       "errors": [],
-      "status": "financial-out-of-band"
+      "status": "investigation-only"
     },
     {
       "name": "Association of African American Museums",
@@ -971,8 +1037,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "311609577",
         "legal_name": "Association Of African American Museums",
-        "fiscal_year": 2023,
-        "revenue": 1865648,
+        "fiscal_year": 2024,
+        "revenue": 2099724,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/311609577.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -1010,15 +1076,15 @@
       "state": "OK",
       "input_ein": "480951722",
       "financial": {
-        "status": "no-financial-filing",
+        "status": "filing-found",
         "match": "EIN supplied in watchlist",
         "ein": "480951722",
         "legal_name": "Chamber Of Commerce Executives Of Kansas Inc",
-        "fiscal_year": null,
-        "revenue": null,
-        "fit": "unknown",
+        "fiscal_year": 2024,
+        "revenue": 607955,
+        "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/480951722.json",
-        "caveat": "No comparable numeric total revenue in available filings."
+        "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
       "sources": [],
       "checks": [],
@@ -1036,8 +1102,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "232539807",
         "legal_name": "Association Of Local Government Auditors",
-        "fiscal_year": 2024,
-        "revenue": 975045,
+        "fiscal_year": 2025,
+        "revenue": 1101786,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/232539807.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -1057,7 +1123,7 @@
         "status": "identity-review",
         "match": "legal name mismatch, investigate alias or chapter",
         "ein": "630784938",
-        "legal_name": "Council Of Graduate Programs In Communication Sciences And Disorde",
+        "legal_name": "Council Of Academic Programs In Communication Sciences And Disorde",
         "fiscal_year": null,
         "revenue": null,
         "fit": "unknown",
@@ -1080,8 +1146,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "596140583",
         "legal_name": "Florida Society Of Association Executives Inc",
-        "fiscal_year": 2023,
-        "revenue": 1368714,
+        "fiscal_year": 2024,
+        "revenue": 1608294,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/596140583.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -1155,8 +1221,8 @@
         "match": "EIN supplied in watchlist",
         "ein": "581575818",
         "legal_name": "Southern Association Of Student Financial Aid Administrators Inc",
-        "fiscal_year": 2024,
-        "revenue": 501966,
+        "fiscal_year": 2025,
+        "revenue": 512302,
         "fit": "within",
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/581575818.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
@@ -1165,9 +1231,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [
-        "incumbent-planner: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     }
   ]
