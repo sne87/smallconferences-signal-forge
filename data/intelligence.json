@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T12:42:51+00:00",
+  "generated_at": "2026-11-26T20:18:25+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -56,18 +56,7 @@
         "source_url": "https://projects.propublica.org/nonprofits/api/v2/organizations/710004515.json",
         "caveat": "Form 990 revenue is organization revenue, not conference spend."
       },
-      "sources": [
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Arkansas Education Association Calls for Statewide Safety Standards for School Reopening - KUAF Public Radio",
-          "summary": "Arkansas Education Association Calls for Statewide Safety Standards for School Reopening KUAF Public Radio",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPY0xaZ2UwSmkxVFJDQUpXSlIzRnBWa19VdnZWQzlrU2lmc3FDX0RFYUlHcjRSNGFsbTZLdDZFX0lZZ1htTDlVX1hZOUlRMUdOVzVpanBVUWtDVEVReHVnMGlIZkF0ZVZUbElmMGVUVHJfMk9MM0pHeWd3UTJLSHlQT0hER21GYThhUHNrYzA0UmVnal9IZndUUVdLXzFUaW5sQVBhU2t0d0IzZmRfUGxDMVNEV2lfSWUxdHJqVlpUY1pSczZfd3BBV0IyZDFwNzVqSFBaSlkxMF9DVmZQ?oc=5",
-          "index_date": "2020-07-13",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        }
-      ],
+      "sources": [],
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
@@ -565,9 +554,7 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Verify EIN and latest Form 990 identity before treating revenue as screened.",
-      "errors": [
-        "upcoming-event: HTTPError"
-      ],
+      "errors": [],
       "status": "investigation-only"
     },
     {
@@ -912,32 +899,18 @@
       },
       "sources": [
         {
-          "category": "event-history",
-          "query_year": 2025,
-          "title": "New England Museum Association honors Yerdon - Seacoastonline.com",
-          "summary": "New England Museum Association honors Yerdon Seacoastonline.com",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcldaeDZoRHRRTlNQVmpYcGdUTWlJS093V2lwTXVOemxZLUM1N21qVGtVejBVYnBid3cxcHdOMEM3M0NXTDRjTlE0TjBZSGZiakpleHpjT1RhUGY0bzVzZk92ektiRkR2RzkyamZ0WVNfMjFSa2szZHBGMjhITnVoY1FrWnBwSVVUZ3ZldU9RMHVubUstTkdTN0tOazBQbmlOcUE2Z2ZkbjhnZjND?oc=5",
-          "index_date": "2018-11-27",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
           "category": "decision-path",
           "query_year": null,
-          "title": "Dan Yaeger is new executive director of New England Museum Association - Wicked Local",
-          "summary": "Dan Yaeger is new executive director of New England Museum Association Wicked Local",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc0doSnctVWoyWGlTcHNaOUFHSjVKV1g0QlJXNjhaUlNrRnFJNHVldmhRdDI1NUM1NzlyaHJxdGpoczRva0lLOGxmY2hPN3pjZS1pUmF2MkNzX0VISnN2TG90b3ZZTVlpdGNOdmJhWTVkd0t6NHZfRHpCYnpOYmtkM0hLWnh6blJzWUl4cnJzV3NZZTFmSGdBZ1IzS1djRzVURTZEdmxSZjY?oc=5",
-          "index_date": "2010-04-02",
-          "clues": [
-            "decision-role"
-          ],
+          "title": "Harvard Museums of Science & Culture honored by the New England Museum Association - Harvard Gazette",
+          "summary": "Harvard Museums of Science & Culture honored by the New England Museum Association Harvard Gazette",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLWNQdkxDZXdhSUlRTlRzRENEX01iczZWU0pBVmFtZUpoV1ozVDIxWHc3R3dwZkdseHo5TkZGXzU1UUdoZjh4bmFxdThDdFc0RkVIcjYwS1pJa05HaUs5eGp6Tm43LThYSGVuMWsyeDNBQTdGLXozYjdyNlQ4MnFiSHNTMUJjb05TcXVVRldkdm1CdWc3X1FjcWhOTlBvb2FrS010b3ozV0VMMnJuSEQweWdDTnc2bjBMc0ZXaTNNOS1SVS1EejJpeA?oc=5",
+          "index_date": "2025-12-09",
+          "clues": [],
           "date_warning": "Original source date and event date unverified."
         }
       ],
       "checks": [],
-      "historical_years": [
-        2025
-      ],
+      "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
       "errors": [],
       "status": "investigation-only"
@@ -985,16 +958,6 @@
           "summary": "Dewalds receive distinguished contributor award from 2026 Southeastern Museums Conference Clarksville Now",
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTFliZml6bXFmNGVmMUY0LVI1ZDZMSi03bjlTbDl0WXlFZ2VZdEc4WTZmdmZ1OTl2VmZUb3YzZG1ubXItdDZFdlZTLW9LWjdOYXB3VnlhYXhZWENBaFlmRDFnMGRDQkRiNVV1bUo3Ui1xX3pjRUs0VEpuVk5EZGdnZ3ZIMmFkS3RIY2I4Y0daS2JEVUlITWxPa3lqTHFtaDJXdnlSQ0FPXzF0ZkQ2NTBRbktCNGpXMlltWUtqUkdFeGs?oc=5",
           "index_date": "2026-09-26",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "event-history",
-          "query_year": 2026,
-          "title": "Customs House Museum receives Southeastern Museums Conference awards - Clarksville Now",
-          "summary": "Customs House Museum receives Southeastern Museums Conference awards Clarksville Now",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLTlCWmtBbU9WX1c5Vi1tTWRCUjNjSkZrV0Y1YzJyWVkyWEZNWFV2Y0JfN1VyVi05NHNETjlnckpraWJzYUh1NG1CdjJUazFXc2ZRUXpnY2FKUE15NGhLOUFTZDRSSlRraWUtTGQ1WjE0S19BVjh0dy1UdTV0T1VSWFI2bHh4MlZUU0RfVC1uVGlvRjg4Mmw2ZWUtM29DRnpmeUxYdw?oc=5",
-          "index_date": "2026-09-16",
           "clues": [],
           "date_warning": "Original source date and event date unverified."
         },
