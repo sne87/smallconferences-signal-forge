@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T20:18:25+00:00",
+  "generated_at": "2026-11-27T12:48:01+00:00",
   "version": "3.0",
   "scope": "Public target-only pre-RFP due diligence. Not confirmed opportunities, contract status, or decision dates.",
   "data_privacy": "Watchlist and output reside in public repository if deployed with GitHub Pages. Do not include private notes.",
@@ -907,6 +907,18 @@
           "index_date": "2025-12-09",
           "clues": [],
           "date_warning": "Original source date and event date unverified."
+        },
+        {
+          "category": "decision-path",
+          "query_year": null,
+          "title": "Dan Yaeger is new executive director of New England Museum Association - Wicked Local",
+          "summary": "Dan Yaeger is new executive director of New England Museum Association Wicked Local",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc0doSnctVWoyWGlTcHNaOUFHSjVKV1g0QlJXNjhaUlNrRnFJNHVldmhRdDI1NUM1NzlyaHJxdGpoczRva0lLOGxmY2hPN3pjZS1pUmF2MkNzX0VISnN2TG90b3ZZTVlpdGNOdmJhWTVkd0t6NHZfRHpCYnpOYmtkM0hLWnh6blJzWUl4cnJzV3NZZTFmSGdBZ1IzS1djRzVURTZEdmxSZjY?oc=5",
+          "index_date": "2010-04-02",
+          "clues": [
+            "decision-role"
+          ],
+          "date_warning": "Original source date and event date unverified."
         }
       ],
       "checks": [],
@@ -970,16 +982,6 @@
           "index_date": "2022-09-01",
           "clues": [],
           "date_warning": "Original source date and event date unverified."
-        },
-        {
-          "category": "decision-path",
-          "query_year": null,
-          "title": "Customs House Museum recognized at Southeastern Museums Conference - The Leaf-Chronicle",
-          "summary": "Customs House Museum recognized at Southeastern Museums Conference The Leaf-Chronicle",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRHI0X003Tm9IVXlESDNUaEpKdUdIcC1SQVZfLUZlUnhTNnczQjJzTW5aeUZkeXJORnl0VzNEY19kYU5MVWZNRmdMODRMNEtrT2pRNTJSQTF3TVhtdmozSUFtblE2eTMxUTZQNk9mQWRoUFNpbjBad1c5cGx0TTRUeUZhaFFRbXlNQzdIaXhsWXlPUTZSeVg5UkJzRlpDYnEtSmpjMWtncEZXS3Ztblp2ZFc0NFpKZnRHZUZMejFrUXVIc2diMzNjdEkzbEtwb1NSMkNqdmpsY0R5SG9T?oc=5",
-          "index_date": "2022-11-03",
-          "clues": [],
-          "date_warning": "Original source date and event date unverified."
         }
       ],
       "checks": [],
@@ -1031,7 +1033,10 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [],
+      "errors": [
+        "event-history: HTTPError",
+        "incumbent-planner: HTTPError"
+      ],
       "status": "investigation-only"
     },
     {
@@ -1053,7 +1058,9 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [],
+      "errors": [
+        "incumbent-planner: HTTPError"
+      ],
       "status": "investigation-only"
     },
     {
@@ -1194,7 +1201,9 @@
       "checks": [],
       "historical_years": [],
       "next_step": "Confirm at least two past conference cycles and exact future event from organizer pages.",
-      "errors": [],
+      "errors": [
+        "decision-path: HTTPError"
+      ],
       "status": "investigation-only"
     }
   ]
